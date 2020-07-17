@@ -1,0 +1,34 @@
+.main_top { background: url("http://img.modetour.com/modemobile/2018/cruise/main/main_bg.jpg") center 0 no-repeat; background-size: cover; }
+.main_top h1 { color: #FFF; font-size: 28px; font-weight: 500; padding-top: 35%; text-align: center; padding-bottom: 20px; }
+.main_top p { color: #FFF; font-size: 14px; text-align: center; font-weight: 400; }
+.main_top .choice { text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, 10%); -webkit-transform: translate(-50%, 10%); }
+.main_top .choice p { font-size: 21px; color: #FFF; text-align: center; margin-bottom: 20px; font-weight: 500; }
+.main_top .choice a { color: #888888; font-size: 15px; background: #FFF; display: inline-block; width: 173px; text-align: left; box-sizing: border-box; padding: 12px 0 12px 20px; text-decoration: none; font-weight: 600; border-radius: 20px 20px; position: relative; }
+.main_top .choice a:after { content: ''; display: inline-block; background: url("http://img.modetour.com/modemobile/2018/cruise/icon.png") no-repeat; background-size: 270px auto; background-position: -27px -5px; width: 10px; height: 7px; position: absolute; right: 20px; top: 50%; margin-top: -4px; }
+.main_top a.move { display: block; background: url("http://img.modetour.com/modemobile/2018/cruise/icon.png") no-repeat; background-size: 270px auto; background-position: -42px 0px; width: 28px; height: 16px; position: absolute; bottom: 10%; left: 50%; margin-left: -14px; }
+
+.main_section .main_in ul.slide_list li { border-top: 1px #e6e6e6 solid; position: relative; padding: 35px 0 35px 0px; }
+.main_section .main_in ul.slide_list li h2 { padding-left: 15px; }
+.main_section .main_in ul.slide_list li .swiper-slide { width: 80%; }
+.main_section .main_in ul.slide_list li .swiper-slide:first-child { padding-left: 15px; }
+.main_section .main_in ul.slide_list li .swiper-slide:last-child { padding-right: 15px; }
+.main_section .main_in ul.slide_list li .swiper-slide a { position: relative; }
+.main_section .main_in ul.slide_list li .swiper-slide a img { width: 100%; }
+.main_section .main_in ul.slide_list li .swiper-slide a .txt { position: absolute; top: 50%; left: 0; right: 0; margin-top: -30px; color: #FFF; text-align: center; }
+.main_section .main_in ul.slide_list li .swiper-slide a .txt p { font-size: 20px; font-weight: 600; }
+.main_section .main_in ul.slide_list li .swiper-slide a .txt span { display: block; font-weight: 300; font-size: 14px; width: 85px; border: 1px #FFF solid; text-align: center; padding: 7px 0; margin: 0 auto; line-height: 100%; margin-top: 15px; }
+.main_section .main_in ul.slide_list li h2 { color: #000; font-size: 15px; font-weight: 500; margin-bottom: 15px; }
+.main_section .main_in ul.slide_list li a.btn_more { font-size: 14px; color: #888888; font-weight: 400; position: absolute; text-decoration: none; top: 35px; right: 15px; padding-right: 10px; }
+.main_section .main_in ul.slide_list li a.btn_more:after { content: ''; background: url("http://img.modetour.com/modemobile/2018/cruise/icon.png") no-repeat; background-size: 270px auto; background-position: -29px -20px; display: block; width: 6px; height: 10px; position: absolute; top: 3px; right: 0; }
+.main_section .main_in ul.slide_list li.promotion_list .swiper-slide a .txt { margin-top: -35px; }
+.main_section .main_in ul.slide_list li.promotion_list .swiper-slide a .txt span { border: none; width: auto; line-height: 16px; }
+.main_section .main_in ul.slide_list li:first-child { border: none; }
+.main_section .main_in ul.txt_list > li { border-top: 1px #e6e6e6 solid; }
+.main_section .main_in ul.txt_list > li a { display: block; text-decoration: none; color: #000; font-size: 15px; font-weight: 500; padding: 15px 0 15px 15px; position: relative; }
+.main_section .main_in ul.txt_list > li:first-child a:after { content: ''; display: block; background: url("http://img.modetour.com/modemobile/2018/cruise/icon.png") no-repeat; background-size: 270px auto; width: 6px; height: 10px; background-position: -40px -20px; position: absolute; right: 15px; top: 50%; margin-top: -5px; }
+.main_section .main_in ul.txt_list > li.cruise_list h2 a:after { content: ''; display: block; background: url("http://img.modetour.com/modemobile/2018/cruise/icon.png") no-repeat; background-size: 270px auto; width: 10px; height: 6px; background-position: -51px -22px; position: absolute; right: 15px; top: 50%; margin-top: -3px; }
+.main_section .main_in ul.txt_list > li.cruise_list h2 a.on:after { background-position: -65px -22px; }
+.main_section .main_in ul.txt_list > li.cruise_list ul { border-top: 1px #e6e6e6 solid; padding: 10px 0; display: none; }
+.main_section .main_in ul.txt_list > li.cruise_list ul li a { font-size: 13px; font-weight: 500; color: #777777; padding-top: 10px; padding-bottom: 10px; }
+
+/*# sourceMappingURL=main.css.map */
