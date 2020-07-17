@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/sub.css" />
+	<script src="../js/1.11.3.min.js"></script>
+	<script src="../js/active.js"></script>
+	<!-- [s]: 추가 플러그인 -->
+	<script src="../js/plugin/cycle2.js"></script>
+	<script src="../js/plugin/cycle2.carousel.js"></script>
+	<!-- [e]: 추가 플러그인 -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//스크롤 특정 위치시 배경 바뀜
+			var moveT = $('#move').offset().top - 200;
+			function bgChange(){
+				var sct = $(window).scrollTop();
+				if(sct>moveT){
+					$('header h1.logo').css('background-position','-1px -212px');
+					$('header a.btn_menu').css('background-position','-345px -122px');
+				}else{
+					$('header h1.logo').css('background-position','-219px 0px');
+					$('header a.btn_menu').css('background-position','-296px -122px');
+				}
+			}
+
+			//스크롤이 처음 올라갔을때 top 버튼 안보임
+			function dpnoneTop(){
+				var t = $(this);
+				if(t.scrollTop()>200){
+					$('.btn_top').fadeIn();
+				}else{
+					$('.btn_top').fadeOut();
+				}
+			}
+
+			$(window).scroll(function(){
+				bgChange();
+				dpnoneTop();
+			});
+		});
+
+		//카카오 팝업
+		function kakao(popHeight,popWidth){
+			var winHeight =  $( window ).height();
+			var winWidth = document.body.clientWidth;	// 현재창의 너비
+			var winX = window.screenLeft;	// 현재창의 x좌표
+			var winY = window.screenTop;	// 현재창의 y좌표
+			var popX = winX + (winWidth - popWidth)/2;
+			var popY = winY + (winHeight - popHeight)/2;
+			window.open("kakao_popup.html","popup","width="+popWidth+"px,height="+popHeight+"px,top="+popY+",left="+popX+",menubar=no, scrollbars=no, resizable=no");
+		}
+		//선사 팝업
+		function cruiseTable(popHeight){
+			var winHeight =  $( window ).height();
+			var winWidth = document.body.clientWidth;	// 현재창의 너비
+			var winX = window.screenLeft;	// 현재창의 x좌표
+			var winY = window.screenTop;	// 현재창의 y좌표
+			var popY = winY + (winHeight - popHeight)/2;
+			window.open("all_cruise_table.html","popup","width="+winWidth+"px,height="+popHeight+"px,top="+popY+",left="+0);
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<h1 class="logo"><a href="main.html"></a></h1>
+		<a href="" class="btn_menu"></a>
+		<div class="menu_wrap"></div><!-- 하얀 배경 -->
+		<div class="menu_in">
+			<a href="" class="close"></a>
+			<ul class="big_menu">
+				<li><a href="company_infor.html">회사소개</a></li>
+				<li>
+					<a href="submain.html">테마별 크루즈여행</a>
+					<ul>
+						<li><a href="thema_cruise01.html">나의 첫 크루즈</a></li>
+						<li><a href="thema_cruise02.html">크루즈 매니아</a></li>
+						<li><a href="thema_cruise03.html">6성급 럭셔리 크루즈</a></li>
+						<li><a href="thema_cruise04.html">리버크루즈</a></li>
+						<li><a href="thema_cruise05.html">탐험 크루즈</a></li>
+						<li><a href="thema_cruise06.html">크루즈&amp;현지투어</a></li>
+						<li><a href="thema_cruise07.html">세계일주</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="area01.html">지역별 크루즈여행</a>
+					<ul>
+						<li><a href="area01.html#move">지중해</a></li>
+						<li><a href="area02.html#move">알래스카</a></li>
+						<li><a href="area03.html#move">북유럽</a></li>
+						<li><a href="area04.html#move">유럽리버</a></li>
+						<li><a href="area05.html#move">미서부/멕시코</a></li>
+						<li><a href="area06.html#move">캐나다/뉴잉글랜드</a></li>
+						<li><a href="area07.html#move">아프리카/중동</a></li>
+						<li><a href="area08.html#move">중남미/파나마운하</a></li>
+						<li><a href="area09.html#move">갈라파고스</a></li>
+						<li><a href="area10.html#move">아시아</a></li>
+						<li><a href="area11.html#move">남극</a></li>
+						<li><a href="area12.html#move">카리브해</a></li>
+						<li><a href="area13.html#move">호주/뉴질랜드</a></li>
+						<li><a href="area14.html#move">남태평양</a></li>
+						<li><a href="area15.html#move">하와이</a></li>
+						<li><a href="area16.html#move">세계일주</a></li>
+					</ul>
+				</li>
+				<li><a href="recommend_page.html">프로모션</a></li>
+			</ul><!-- big_menu -->
+			<ul class="service">
+				<li>
+					<span class="tit">카카오톡 상담하기</span>
+					<span>
+						<img src="//img.modetour.com/modewebagent/2017/cruise/search_img.jpg" alt="">
+						<a href="" onclick="kakao(690,700);return false;" class="apply_kakao">신청방법</a>
+					</span>
+				</li>
+				<li>
+					<span class="tit">TEL</span>
+					<span class="tel"><img src="//img.modetour.com/modewebagent/2017/cruise/img_tel.png" alt=""></span>
+				</li>
+			</ul><!-- service -->
+			<div class="foot">
+				<span>개인정보 취급방침</span>
+				<address>
+					서울시 중구 을지로 16 백남빌딩 506호 크루즈 인터내셔널<br />
+					대표이사 유인태<br />
+					사업자등록번호 104-81-53278<br />
+					통신판매업신고번호 중구 제 03295호<br />
+					COPYRIGHT CRUISE INTERNATIONAL INC. ALL RIGHT RESERVED.
+				</address>
+			</div>
+		</div>
+	</header>
+	<section class="slide_wrap">
+		<div class="cruise_slide" id="top_slide">
+			<ul class="cycle-slideshow thema07" 
+				data-cycle-slides=">li"
+				data-cycle-fx="fadeout"
+				data-cycle-timeout="4000" 
+				data-cycle-prev=".img-prev"
+				data-cycle-next=".img-next"
+			>
+				<li class="img01">
+					<div class="wrap">
+						<span>세계일주</span>
+						<dl>
+							<dt>세상 모든 사람들의<br />버킷리스트</dt>
+							<dd>시대를 초월하여 크루즈의 꽃이라고 불리는<br />꿈의 여행 세계일주<br />많은 이들이 꿈꾸지만 누구나 갈 수 있는 것은 아니기에<br />더 매력적이고 값진 여행이 될 것입니다.</dd>
+						</dl>
+					</div>
+				</li>
+				<li class="img02">
+					<div class="wrap">
+						<span>세계일주</span>
+						<dl>
+							<dt>지구 한바퀴를 도는 것<br />그 이상</dt>
+							<dd>공항 픽업 서비스, 세계일주 기념 갈라 파티,<br />박물관을 대관 하는 특별 이벤트 등<br />세계 일주 크루즈 승객들은<br />기대와 상상을 뛰어넘는 서비스를 받을 수 있습니다.</dd>
+						</dl>
+					</div>
+				</li>
+				<li class="img03">
+					<div class="wrap">
+						<span>세계일주</span>
+						<dl>
+							<dt>108일간의<br />세계 일주</dt>
+							<dd>크루즈 선사에 따라 세부 일정, 요금, 기간이<br />상이하므로 전문가와 상의하는 것이 좋습니다.<br />100일의 기간이 부담스럽다면 원하는 구간만 선택하여<br />30일, 혹은 50일 등 일부 구간 탑승도 가능합니다.</dd>
+						</dl>
+					</div>
+				</li>
+			</ul>
+			<div class="control">
+				<span class="img-prev"><span class="text_blind">이전</span></span>
+			    <span class="img-next"><span class="text_blind">다음</span></span>
+			</div>
+			<a href="#move" class="move"></a>
+		</div><!-- img_slide -->
+	</section>
+	<section class="thema_cruise_page">
+		<div id="move"></div>
+		<div class="content_wrap">
+			<div id="recommand_cruise" class="cruise_con">
+				<div class="wrap">
+					<h2>추천선사</h2>
+					<p class="txt">1522년, 페르디난트 마젤란의 세계일주 항해의 성공 이후<br />1880년대 본격적인 세계일주 크루즈가 시작된 이래, 현재까지도 지구 한바퀴를 도는 가장 호화로운 항해입니다.</p>
+					<ul class="toggle_menu">
+						<li class="menu01">
+							<a href="">
+								<span class="left"><i></i></span>
+								<span class="right"><span class="txt_under">실버시 크루즈</span></span>
+							</a>
+							<div class="menu_in">
+								<div class="slide_wrap">	
+									<h3 class="logo"><i></i>실버시 크루즈</h3>
+									<div class="slide">	
+										<ul class="cycle-slideshow"
+											data-cycle-slides=">li"
+											data-cycle-fx="scrollHorz" 
+											data-cycle-timeout="3000" 
+											data-cycle-prev=".menu01_prev"
+											data-cycle-next=".menu01_next"
+										>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/silversea/slide01.jpg" alt=""></li>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/silversea/slide02.jpg" alt=""></li>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/silversea/slide03.jpg" alt=""></li>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/silversea/slide04.jpg" alt=""></li>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/silversea/slide05.jpg" alt=""></li>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/silversea/slide06.jpg" alt=""></li>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/silversea/slide07.jpg" alt=""></li>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/silversea/slide08.jpg" alt=""></li>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/silversea/slide09.jpg" alt=""></li>
+										</ul>
+										<div class="control">	
+											<span class="menu01_prev comprev"></span>
+											<span class="menu01_next comnext"></span>
+										</div>
+									</div>
+									<p class="infor">	
+										전 객실이 버틀러 서비스가 제공되는 스위트 객실로만 이루어진 럭셔리 크루즈 입니다.<br />
+										맞춤 서비스를 위해 승객 수를 100명에서 500명으로 제한하고 있으며 편안한 휴식과 즐거운 여행을 동시에 할 수 있는 해상 최고의 호사를 약속합니다.
+										<br />
+										<br />
+										일반적으로 크루즈 요금에 포함 되어 있지 않은 팁이나 음료, 주류 등의 요금까지 일체의 모든 서비스를 포함하여 제공합니다.<br />
+										때문에 여행 기간 중 선상 카드를 꺼내 영수증에 사인을 하는 번거로움을 최소화하여 집과같은 편안함을 누릴 수 있습니다.<br />
+										또한 전 객실이 바다를 조망할 수 있는 오션뷰 이며, 80% 이상의 객실이 개별 발코니가 딸려 있고<br />
+										실내는 충분한 공간확보를 위해 승선승객 수를 제한하고 있습니다. 객실 내부는 신선한 과일과 꽃, 고급 목욕가운과 이탈리아산 침대시트와 베개,<br />
+										대리석 장식의 욕실 등 최고급 어메니티를 제공하고 있어 격조 높은 호화 크루즈의 진면목을 보이고 있습니다.<br />
+										여러분을 실버시 크루즈의 멤버쉽이자 해상 최고의 커뮤니티 - 베네시안 소사이어티로 초대합니다.
+
+									</p>
+								</div><!-- slide_wrap -->
+								<div class="service_wrap">	
+									<h3>서비스 포함 여부</h3>
+									<ul>
+										<li>
+											<div class="th">메인 레스토랑</div>
+											<div class="td">오픈시팅</div>
+										</li>
+										<li>
+											<div class="th">주류(바,라운지)</div>
+											<div class="td">포함</div>
+										</li>
+										<li>
+											<div class="th">식사시 주류</div>
+											<div class="td">포함</div>
+										</li>
+										<li>
+											<div class="th">생수/음료(레스토랑&amp;미니바)</div>
+											<div class="td">포함</div>
+										</li>
+										<li>
+											<div class="th">선상팁</div>
+											<div class="td">포함</div>
+										</li>
+										<li>
+											<div class="th">버틀러</div>
+											<div class="td">포함</div>
+										</li>
+										<li>
+											<div class="th">기항지 관광</div>
+											<div class="td">불포함</div>
+										</li>
+										<li>
+											<div class="th">특징</div>
+											<div class="td">전 객실 스위트 버틀러 서비스 제공</div>
+										</li>
+										<li>
+											<div class="th">할인정책</div>
+											<div class="td">베네시안 소사이어티 멤버쉽 할인 / 선내 예약 할인</div>
+										</li>
+									</ul>
+									<a href="https://www.silversea.com/destinations/world-cruise.html" target="_blank">일정 보기</a>
+								</div>
+							</div><!-- menu_in -->
+						</li>
+						<li class="menu02">
+							<a href="">
+								<span class="left"><i></i></span>
+								<span class="right"><span class="txt_under">리젠트 세븐시즈 크루즈</span></span>
+							</a>
+							<div class="menu_in">
+								<div class="slide_wrap">	
+									<h3 class="logo"><i></i>리젠트 세븐시즈 크루즈</h3>
+									<div class="slide">	
+										<ul class="cycle-slideshow"
+											data-cycle-slides=">li"
+											data-cycle-fx="scrollHorz" 
+											data-cycle-timeout="3000" 
+											data-cycle-prev=".menu02_prev"
+											data-cycle-next=".menu02_next"
+										>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/regent/slide01.jpg" alt=""></li>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/regent/slide02.jpg" alt=""></li>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/regent/slide03.jpg" alt=""></li>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/regent/slide04.jpg" alt=""></li>
+										</ul>
+										<div class="control">	
+											<span class="menu02_prev comprev"></span>
+											<span class="menu02_next comnext"></span>
+										</div>
+									</div>
+									<p class="infor">	
+										전 세계에서 유일하게 진정한 All Inclusive 크루즈를 운영하는 선사입니다.<br />
+										호사스러운 경험을 누구보다 경제적으로 누릴 수 있도록 일반적으로 차가 요금을 내야 하는 크루즈 승선 전 호텔 숙박과<br />
+										기항지 관광, 스페셜 레스토랑 이용, 주류 및 승무원 팁까지 모든 것을 크루즈 요금에 포함하여 제공합니다.<br />
+										크루즈 예약 시 지불하는 비용 이외에 별도의 지출은 거의 없으면서<br />
+										다양하고 새로운 경험을 마음껏 누릴 수 있습니다.
+									</p>
+								</div><!-- slide_wrap -->
+								<div class="service_wrap">	
+									<h3>서비스 포함 여부</h3>
+									<ul>
+										<li>
+											<div class="th">메인 레스토랑</div>
+											<div class="td">오픈시팅</div>
+										</li>
+										<li>
+											<div class="th">주류(바,라운지)</div>
+											<div class="td">포함</div>
+										</li>
+										<li>
+											<div class="th">식사시 주류</div>
+											<div class="td">포함</div>
+										</li>
+										<li>
+											<div class="th">생수/음료(레스토랑&amp;미니바)</div>
+											<div class="td">포함</div>
+										</li>
+										<li>
+											<div class="th">선상팁</div>
+											<div class="td">포함</div>
+										</li>
+										<li>
+											<div class="th">버틀러</div>
+											<div class="td">펜트하우스 이상</div>
+										</li>
+										<li>
+											<div class="th">기항지 관광</div>
+											<div class="td">포함</div>
+										</li>
+										<li>
+											<div class="th">특징</div>
+											<div class="td">스페셜 레스토랑 이용 요금 무료</div>
+										</li>
+										<li>
+											<div class="th">할인정책</div>
+											<div class="td">컨시어지 등급이상 승선 전 1박 호텔 무료 제공 / 선내 예약 할인</div>
+										</li>
+									</ul>
+									<a href="https://www.rssc.com/destinations/grand-voyages" target="_blank">일정 보기</a>
+								</div>
+							</div><!-- menu_in -->
+						</li>
+						<li class="menu03">
+							<a href="">
+								<span class="left"><i></i></span>
+								<span class="right"><span class="txt_under">크리스탈 크루즈</span></span>
+							</a>
+							<div class="menu_in">
+								<div class="slide_wrap">	
+									<h3 class="logo"><i></i>크리스탈 크루즈</h3>
+									<div class="slide">	
+										<ul class="cycle-slideshow"
+											data-cycle-slides=">li"
+											data-cycle-fx="scrollHorz" 
+											data-cycle-timeout="3000" 
+											data-cycle-prev=".menu03_prev"
+											data-cycle-next=".menu03_next"
+										>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/crystal/slide01.jpg" alt=""></li>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/crystal/slide02.jpg" alt=""></li>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/crystal/slide03.jpg" alt=""></li>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/crystal/slide04.jpg" alt=""></li>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/crystal/slide05.jpg" alt=""></li>
+										</ul>
+										<div class="control">	
+											<span class="menu03_prev comprev"></span>
+											<span class="menu03_next comnext"></span>
+										</div>
+									</div>
+									<p class="infor">	
+										크리스탈 크루즈는 세계적인 여행잡지인 Conde Nast Traveler 독자 투표에서 23년연속 세계 최고의 크루즈로 선정 되었으며<br />
+										이 기록은 전 세계 호텔과 리조트를 통틀어 전무후무한 기록입니다.<br />
+										<br />
+										6성급 호화 크루즈로는 유일하게 대형 크루즈 선박을 운영하고 있으며,<br />
+										다양한 고객의 니즈를 만족 시키기 위하여 세분화된 객실 등급을 선보입니다.<br />
+										저명한 일식 주방장 노부 마츠히사의 일식 레스토랑, 벌리츠, 야마하 등 전문 교육기관과 제휴한 선내 엔터테인먼트와 교육 프로그램을 제공하며<br />다양한 테마와 이벤트 등 섬세하게 짜인 프로그램으로 고객의 오감을 만족시킵니다.<br />
+										<br />
+										오션 크루즈 뿐만 아니라 리버 크루즈와 요트 크루즈, 전세기 등 폭 넓은 여행 상품을 운영 하고 있습니다.
+									</p>
+								</div><!-- slide_wrap -->
+								<div class="service_wrap">	
+									<h3>서비스 포함 여부</h3>
+									<ul>
+										<li>
+											<div class="th">메인 레스토랑</div>
+											<div class="td">오픈시팅</div>
+										</li>
+										<li>
+											<div class="th">주류(바,라운지)</div>
+											<div class="td">포함</div>
+										</li>
+										<li>
+											<div class="th">식사시 주류</div>
+											<div class="td">포함</div>
+										</li>
+										<li>
+											<div class="th">생수/음료(레스토랑&amp;미니바)</div>
+											<div class="td">포함</div>
+										</li>
+										<li>
+											<div class="th">선상팁</div>
+											<div class="td">포함</div>
+										</li>
+										<li>
+											<div class="th">버틀러</div>
+											<div class="td">펜트하우스 이상</div>
+										</li>
+										<!-- 18-01-29 [s]: 수정 -->
+										<li>
+											<div class="th">기항지 관광</div>
+											<div class="td">불포함</div>
+										</li>
+										<!-- 18-01-29 [e]: 수정 -->
+										<li>
+											<div class="th">특징</div>
+											<div class="td">노부 마츠히사 일식 레스토랑</div>
+										</li>
+										<li>
+											<div class="th">할인정책</div>
+											<div class="td">크리스탈 소사이어티 멤버쉽 할인 / 선내 예약 할인 / 전액 미리 결제시 할인</div>
+										</li>
+									</ul>
+									<a href="http://www.crystalcruises.com/voyage/details/Los-Angeles-to-Monte-Carlo-ocy190113-85" target="_blank">일정 보기</a>
+								</div>
+							</div><!-- menu_in -->
+						</li>
+						<li class="menu04">
+							<a href="">
+								<span class="left"><i></i></span>
+								<span class="right"><span class="txt_under">오세아니아 크루즈</span></span>
+							</a>
+							<div class="menu_in">
+								<div class="slide_wrap">	
+									<h3 class="logo"><i></i>오세아니아 크루즈</h3>
+									<div class="slide">	
+										<ul class="cycle-slideshow"
+											data-cycle-slides=">li"
+											data-cycle-fx="scrollHorz" 
+											data-cycle-timeout="3000" 
+											data-cycle-prev=".menu04_prev"
+											data-cycle-next=".menu04_next"
+										>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/oceania/slide01.jpg" alt=""></li>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/oceania/slide02.jpg" alt=""></li>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/oceania/slide03.jpg" alt=""></li>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/oceania/slide04.jpg" alt=""></li>
+											<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/oceania/slide05.jpg" alt=""></li>
+										</ul>
+										<div class="control">	
+											<span class="menu04_prev comprev"></span>
+											<span class="menu04_next comnext"></span>
+										</div>
+									</div>
+									<p class="infor">	
+										차별화된 크루즈 일정과 해상 최고의 요리를 제공하는 선사 입니다.<br />방문하는 지역을 충분히 관광 할 수 있도록 선택 된 기항지와 가장 긴 체류 시간,<br />최대 7가지의 무료 식사 옵션을 제공하면서 소형 럭셔리 크루즈와 대중적인 크루즈의 장점만을 모은 크루즈 입니다.<br />턱시도, 드레스와 같은 격식 대신 고급 리조트 컨셉으로 자유분방하면서 합리적인 럭셔리를 추구하며<br />여행객 사이에서 가장 트렌디한 크루즈 선사로 자리매김 하고 있습니다.
+									</p>
+								</div><!-- slide_wrap -->
+								<div class="service_wrap">	
+									<h3>서비스 포함 여부</h3>
+									<ul>
+										<li>
+											<div class="th">메인 레스토랑</div>
+											<div class="td">오픈시팅</div>
+										</li>
+										<li>
+											<div class="th">주류(바,라운지)</div>
+											<div class="td">불포함</div>
+										</li>
+										<li>
+											<div class="th">식사시 주류</div>
+											<div class="td">불포함</div>
+										</li>
+										<li>
+											<div class="th">생수/음료(레스토랑&amp;미니바)</div>
+											<div class="td">포함</div>
+										</li>
+										<li>
+											<div class="th">선상팁</div>
+											<div class="td">불포함</div>
+										</li>
+										<li>
+											<div class="th">버틀러</div>
+											<div class="td">펜트하우스 이상</div>
+										</li>
+										<li>
+											<div class="th">기항지 관광</div>
+											<div class="td">불포함</div>
+										</li>
+										<li>
+											<div class="th">특징</div>
+											<div class="td">스페셜 레스토랑 이용 요금 무료</div>
+										</li>
+										<li>
+											<div class="th">할인정책</div>
+											<div class="td">선내 예약 할인</div>
+										</li>
+									</ul>
+									<a href="https://www.oceaniacruises.com/around-the-world-cruises/new-york-to-miami-INS190111H/" target="_blank">일정 보기</a>
+								</div>
+							</div><!-- menu_in -->
+						</li>
+					</ul><!-- toggle_menu -->
+					<div class="price_table">
+						<a href="" onclick="cruiseTable(686);return false;" class="all_price">전체 비교표 보기</a>
+						<table>
+							<caption>크루즈 정보 비교 표</caption>
+							<colgroup>
+								<col width="94px">
+								<col width="159px">
+								<col width="209px">
+								<col width="210px">
+								<col width="210px">
+								<col width="212px">
+							</colgroup>
+							<thead>
+								<tr>
+									<th colspan="2" rowspan="2" scope="colgroup">선사</th>
+									<th scope="col" colspan="3">럭셔리 크루즈</th>
+									<th scope="col">디럭스 프리미엄</th>
+								</tr>
+								<tr>
+									<th scope="col">실버시 크루즈</th>
+									<th scope="col">리젠트 세븐시즈 크루즈</th>
+									<th scope="col">크리스탈 크루즈</th>
+									<th scope="col">오세아니아 크루즈</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="head">
+									<th rowspan="4" scope="row">선박제원</th>
+									<th>운항선박</th>
+									<td>실버위스퍼</td>
+									<td>세븐시즈네비게이터</td>
+									<td>크리스탈 세레니티</td>
+									<td>인시그니아</td>
+								</tr>
+								<tr>
+									<th scope="row">선박크기</th>
+									<td>28,258 GRT</td>
+									<td>28,803 GRT</td>
+									<td>68,870 GRT</td>
+									<td>30,277 GRT</td>
+								</tr>
+								<tr>
+									<th scope="row">승객수</th>
+									<td>382명</td>
+									<td>490명</td>
+									<td>1,070명</td>
+									<td>684명</td>
+								</tr>
+								<tr>
+									<th scope="row">승객:승무원</th>
+									<td>1.3 : 1</td>
+									<td>1.42 : 1</td>
+									<td>1.66 : 1</td>
+									<td>1.56 : 1</td>
+								</tr>
+								<tr class="head">
+									<th rowspan="7" scope="row">서비스<br />포함여부</th>
+									<th>메인레스토랑</th>
+									<td>오픈시팅</td>
+									<td>오픈시팅</td>
+									<td>오픈시팅</td>
+									<td>오픈시팅</td>
+								</tr>
+								<tr>
+									<th scope="row">주류(바,라운지)</th>
+									<td>포함</td>
+									<td>포함</td>
+									<td>포함</td>
+									<td>불포함</td>
+								</tr>
+								<tr>
+									<th scope="row">식사시 주류</th>
+									<td>포함</td>
+									<td>포함</td>
+									<td>포함</td>
+									<td>불포함</td>
+								</tr>
+								<tr>
+									<th scope="row">생수/음료<br />(레스토랑&amp;미니바)</th>
+									<td>포함</td>
+									<td>포함</td>
+									<td>포함</td>
+									<td>포함</td>
+								</tr>
+								<tr>
+									<th scope="row">선상팁</th>
+									<td>포함</td>
+									<td>포함</td>
+									<td>포함</td>
+									<td>불포함</td>
+								</tr>
+								<tr>
+									<th scope="row">버틀러</th>
+									<td>포함</td>
+									<td>펜트하우스 이상</td>
+									<td>펜트하우스 이상</td>
+									<td>펜트하우스 이상</td>
+								</tr>
+								<tr>
+									<th scope="row">기항지 관광</th>
+									<td>불포함</td>
+									<td>포함</td>
+									<td>불포함</td>
+									<td>불포함</td>
+								</tr>
+								<tr class="head">
+									<th rowspan="7" scope="row">일정 및<br />요금</th>
+									<th>여행일</th>
+									<td>133일</td>
+									<td>132일</td>
+									<td>86일</td>
+									<td>180일</td>
+								</tr>
+								<tr>
+									<th scope="row">승선</th>
+									<td>샌프란시스코</td>
+									<td>로스앤젤레스</td>
+									<td>로스앤젤레스</td>
+									<td>뉴욕</td>
+								</tr>
+								<tr>
+									<th scope="row">하선</th>
+									<td>런던</td>
+									<td>뉴욕</td>
+									<td>몬테카를로</td>
+									<td>마이애미</td>
+								</tr>
+								<tr>
+									<th scope="row">주요구간</th>
+									<td>파페에테/시드니/발리/도쿄/몸바사<br />싱가포르/케이프타운/리스본</td>
+									<td>파페에테, 시드니, 홍콩,<br />싱가포르, 두바이, 로마</td>
+									<td>오클랜드, 퍼스, 케이프타운,<br />몬테카를로</td>
+									<td>로스앤젤레스, 시드니, 도쿄<br />싱가포르, 두바이, 로마, 던전</td>
+								</tr>
+								<tr>
+									<th scope="row">요금</th>
+									<td>1인 $58,000 부터~</td>
+									<td>1인 $59,809 부터~</td>
+									<td>1인 $26,285 부터~</td>
+									<td>1인 $38,909 부터~</td>
+								</tr>
+								<tr>
+									<th scope="row">특전</th>
+									<td>트랜스퍼, 객실당 $4,000선상크레딧,<br />세탁서비스, 의료서비스,<br />기항지 스페셜 이벤트</td>
+									<td>갈라디너, 세탁서비스,<br />무제한 무선인터넷, 의료서비스,<br />기항지 스페셜 이벤트</td>
+									<td>갈라디너, 트랜스퍼,<br />1인당$2,000 선상크레딧,<br />기항지 스페셜 이벤트</td>
+									<td>기항지 72개무료<br />혹은 무제한 주류 중 선택</td>
+								</tr>
+								<tr>
+									<th scope="row">일정</th>
+									<td><a href="https://www.silversea.com/destinations/world-cruise.html" target="_blank"><img src="//img.modetour.com/modewebagent/2017/cruise/submain/btn_go_schedule.png" alt="일정보기"></a></td>
+									<td><a href="https://www.rssc.com/destinations/grand-voyages" target="_blank"><img src="//img.modetour.com/modewebagent/2017/cruise/submain/btn_go_schedule.png" alt="일정보기"></a></td>
+									<td><a href="http://www.crystalcruises.com/voyage/details/Los-Angeles-to-Monte-Carlo-ocy190113-85" target="_blank"><img src="//img.modetour.com/modewebagent/2017/cruise/submain/btn_go_schedule.png" alt="일정보기"></a></td>
+									<td><a href="https://www.oceaniacruises.com/around-the-world-cruises/new-york-to-miami-INS190111H/" target="_blank"><img src="//img.modetour.com/modewebagent/2017/cruise/submain/btn_go_schedule.png" alt="일정보기"></a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!-- price_table -->
+					<div class="promotion_area">
+						<h3>추천일정</h3>
+						<ul>
+							<li>
+								<img src="//img.modetour.com/modewebagent/2017/cruise/submain/promotion_img03.jpg" alt="">
+								<a href="promotion01.html">바로가기</a>
+							</li>
+						</ul>
+					</div>
+				</div><!-- wrap -->
+			</div><!-- recommand_cruise -->
+		</div>
+		
+	</section>
+	<footer>
+		<div class="bottom01">
+			<div class="wrap">
+				<h2>크루즈인터내셔널고객센터</h2>
+				<div class="infor">
+					<ul>
+						<li>
+							예약문의<strong>02-775-0100</strong>
+							<div class="email">cruise@cruise.co.kr</div>
+						</li>
+						<li>
+							제휴문의<strong>02-775-0240</strong>
+							<div class="email">sales@cruise.co.kr</div>
+						</li>
+					</ul>
+				</div><!-- infor -->
+				<div class="sns">
+					<ul>
+						<li class="sns01"><a href="" onclick="kakao(690,700);return false;">카카오</a></li>
+						<li class="sns02"><a href="http://www.modetour.com/main/" target="_blank">모두투어</a></li>
+					</ul>
+				</div>
+			</div>
+		</div><!-- bottom01 -->
+		<div class="bottom02">
+				<div class="wrap">
+					<h1><span class="text_blind">CRUISE</span></h1>
+					<address>
+						<div>개인정보 취급방침</div>
+						서울시 중구 을지로 1 백남빌딩 506호 크루즈 인터내셔널 | 대표이사 : 유인태 | 사업자등록번호 : 104-81-53278 | 통신판매업신고번호 : 중구 제 03295호<br />COPYRIGHT CRUISE INTERNATIONAL INC. ALL RIGHTS RESERVED 
+					</address>
+				</div>
+			</div>
+	</footer>
+
+	<!-- [s] top 버튼 -->
+	<a href="#" class="btn_top"><img src="//img.modetour.com/modewebagent/2017/cruise/btn_top.png" alt="위로올라가기"></a>
+	<!-- [e] top 버튼 -->
+</body>
+</html>

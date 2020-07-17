@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/sub.css" />
+	<script src="../js/1.11.3.min.js"></script>
+	<script src="../js/active.js"></script>
+	<!-- [s]: 추가 플러그인 -->
+	<script src="../js/plugin/cycle2.js"></script>
+	<script src="../js/plugin/cycle2.carousel.js"></script>
+	<!-- [e]: 추가 플러그인 -->
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+			//스크롤 특정 위치시 배경과 컬러바뀜
+			var moveT = $('#move').offset().top + 450;
+			function bgChange(){
+				var sct = $(window).scrollTop();
+				if(sct>moveT){
+					$('header h1.logo').css('background-position','-1px -212px');
+					$('header a.btn_menu').css('background-position','-345px -122px');
+				}else{
+					$('header h1.logo').css('background-position','-219px 0px');
+					$('header a.btn_menu').css('background-position','-296px -122px');
+				}
+			}
+			//스크롤 특정 위치시 컬러바뀜
+			var moveTxt = $('#move').offset().top + 100;
+			function txtChange(){
+				var sct = $(window).scrollTop();
+				if(sct>moveTxt){
+					$('.quick_menu a').css('color','#000');
+				}else{
+					$('.quick_menu a').css('color','#FFF');
+				}
+			}
+			//스크롤 이동시 메뉴 on
+			var con1T = $('#con1').offset().top+525;
+			var con2T = $('#con2').offset().top+700;
+			var con3T = $('#con3').offset().top+525;
+			var con4T = $('#con4').offset().top+500;
+			var con5T = $('#con5').offset().top;
+
+			function menuOn(){
+				var sct = $(window).scrollTop();
+				var select = $('.quick_menu ul li');
+				function add(){
+					$('.quick_menu ul').addClass('on');
+				}
+				if(sct<con1T){
+					add();
+					select.eq(0).addClass('on').siblings().removeClass('on');
+				}else if(sct>=con1T && sct<con2T){
+					add();
+					select.eq(1).addClass('on').siblings().removeClass('on');
+				}else if(sct>=con2T && sct<con3T){
+					add();
+					select.eq(2).addClass('on').siblings().removeClass('on');
+				}else if(sct>=con3T && sct<con4T){
+					add();
+					select.eq(3).addClass('on').siblings().removeClass('on');
+				}else if(sct>=con4T && sct<con5T){
+					add();
+					select.eq(4).addClass('on').siblings().removeClass('on');
+				}else{
+					add();
+					select.eq(5).addClass('on').siblings().removeClass('on');
+				}
+			}
+
+			//스크롤이 처음 올라갔을때 top 버튼 안보임
+			function dpnoneTop(){
+				var t = $(this);
+				if(t.scrollTop()>200){
+					$('.btn_top').fadeIn();
+				}else{
+					$('.btn_top').fadeOut();
+				}
+			}
+
+			$(window).scroll(function(){
+				bgChange();
+				txtChange();
+				menuOn();
+				dpnoneTop();
+			});
+		});
+		
+		//카카오 팝업
+		function kakao(popHeight,popWidth){
+			var winHeight =  $( window ).height();
+			var winWidth = document.body.clientWidth;	// 현재창의 너비
+			var winX = window.screenLeft;	// 현재창의 x좌표
+			var winY = window.screenTop;	// 현재창의 y좌표
+			var popX = winX + (winWidth - popWidth)/2;
+			var popY = winY + (winHeight - popHeight)/2;
+			window.open("kakao_popup.html","popup","width="+popWidth+"px,height="+popHeight+"px,top="+popY+",left="+popX+",menubar=no, scrollbars=no, resizable=no");
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<h1 class="logo"><a href="main.html"></a></h1>
+		<a href="" class="btn_menu"></a>
+		<div class="menu_wrap"></div><!-- 하얀 배경 -->
+		<div class="menu_in">
+			<a href="" class="close"></a>
+			<ul class="big_menu">
+				<li><a href="company_infor.html">회사소개</a></li>
+				<li>
+					<a href="submain.html">테마별 크루즈여행</a>
+					<ul>
+						<li><a href="thema_cruise01.html">나의 첫 크루즈</a></li>
+						<li><a href="thema_cruise02.html">크루즈 매니아</a></li>
+						<li><a href="thema_cruise03.html">6성급 럭셔리 크루즈</a></li>
+						<li><a href="thema_cruise04.html">리버크루즈</a></li>
+						<li><a href="thema_cruise05.html">탐험 크루즈</a></li>
+						<li><a href="thema_cruise06.html">크루즈&amp;현지투어</a></li>
+						<li><a href="thema_cruise07.html">세계일주</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="area01.html">지역별 크루즈여행</a>
+					<ul>
+						<li><a href="area01.html#move">지중해</a></li>
+						<li><a href="area02.html#move">알래스카</a></li>
+						<li><a href="area03.html#move">북유럽</a></li>
+						<li><a href="area04.html#move">유럽리버</a></li>
+						<li><a href="area05.html#move">미서부/멕시코</a></li>
+						<li><a href="area06.html#move">캐나다/뉴잉글랜드</a></li>
+						<li><a href="area07.html#move">아프리카/중동</a></li>
+						<li><a href="area08.html#move">중남미/파나마운하</a></li>
+						<li><a href="area09.html#move">갈라파고스</a></li>
+						<li><a href="area10.html#move">아시아</a></li>
+						<li><a href="area11.html#move">남극</a></li>
+						<li><a href="area12.html#move">카리브해</a></li>
+						<li><a href="area13.html#move">호주/뉴질랜드</a></li>
+						<li><a href="area14.html#move">남태평양</a></li>
+						<li><a href="area15.html#move">하와이</a></li>
+						<li><a href="area16.html#move">세계일주</a></li>
+					</ul>
+				</li>
+				<li><a href="recommend_page.html">프로모션</a></li>
+			</ul><!-- big_menu -->
+			<ul class="service">
+				<li>
+					<span class="tit">카카오톡 상담하기</span>
+					<span>
+						<img src="//img.modetour.com/modewebagent/2017/cruise/search_img.jpg" alt="">
+						<a href="" onclick="kakao(690,700);return false;" class="apply_kakao">신청방법</a>
+					</span>
+				</li>
+				<li>
+					<span class="tit">TEL</span>
+					<span class="tel"><img src="//img.modetour.com/modewebagent/2017/cruise/img_tel.png" alt=""></span>
+				</li>
+			</ul><!-- service -->
+			<div class="foot">
+				<span>개인정보 취급방침</span>
+				<address>
+					서울시 중구 을지로 16 백남빌딩 506호 크루즈 인터내셔널<br />
+					대표이사 유인태<br />
+					사업자등록번호 104-81-53278<br />
+					통신판매업신고번호 중구 제 03295호<br />
+					COPYRIGHT CRUISE INTERNATIONAL INC. ALL RIGHT RESERVED.
+				</address>
+			</div>
+		</div>
+	</header>
+	<section class="slide_wrap area_cruise">
+		<div class="bg"></div>
+		<div class="map" id="con1">
+			<div class="wrap">
+				<h2>지역별로 보는<br />크루즈 여행</h2>
+				<ul>
+					<li class="area01">
+						<a href="area01.html#move"><span class="text_blind">지중해</span></a>
+					</li>
+					<li class="area02">
+						<a href="area02.html#move"><span class="text_blind">알래스카</span></a>
+					</li>
+					<li class="area03">
+						<a href="area03.html#move"><span class="text_blind">북유럽</span></a>
+					</li>
+					<li class="area04">
+						<a href="area04.html#move"><span class="text_blind">유럽리버</span></a>
+					</li>
+					<li class="area05">
+						<a href="area05.html#move"><span class="text_blind">미서부,메시코</span></a>
+					</li>
+					<li class="area06">
+						<a href="area06.html#move"><span class="text_blind">캐나다,뉴잉글랜드</span></a>
+					</li>
+					<li class="area07">
+						<a href="area07.html#move"><span class="text_blind">아프리카,중동</span></a>
+					</li>
+					<li class="area08">
+						<a href="area08.html#move"><span class="text_blind">중남미,파나마운하</span></a>
+					</li>
+					<li class="area09">
+						<a href="area09.html#move"><span class="text_blind">갈라파고스</span></a>
+					</li>
+					<li class="area10">
+						<a href="area10.html#move"><span class="text_blind">아시아</span></a>
+					</li>
+					<li class="area11">
+						<a href="area11.html#move"><span class="text_blind">남극</span></a>
+					</li>
+					<li class="area12 on">
+						<a href="#move"><span class="text_blind">카리브해</span></a>
+					</li>
+					<li class="area13">
+						<a href="area13.html#move"><span class="text_blind">호주,뉴질랜드</span></a>
+					</li>
+					<li class="area14">
+						<a href="area14.html#move"><span class="text_blind">남태평양</span></a>
+					</li>
+					<li class="area15">
+						<a href="area15.html#move"><span class="text_blind">하와이</span></a>
+					</li>
+					<li class="area16">
+						<a href="area16.html#move"><span class="text_blind">세계일주</span></a>
+					</li>
+				</ul>
+			</div>
+		</div><!-- map -->
+	</section>
+	<section class="area_cruise_page">
+		<div class="area_main">
+			<div id="move"></div>
+			<div class="com_tit tit12" id="con2">
+				<h2>카리브해</h2>
+				<div class="infor">
+					<div class="wrap">
+						<dl class="season">
+							<dt>크루즈시즌</dt>
+							<dd>11월~1월</dd>
+						</dl>
+						<dl class="period">
+							<dt>여행기간</dt>
+							<dd>8일~15일</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content_wrap">
+			<div class="wrap">
+				<p class="area_txt">짙푸른 바다가 부서지는 새하얀 모래사장, 뜨거운 태양아래 붉은 열대 꽃잎들이 빛나고 노란색의 방갈로와 초록색의 야자수가 바람에 흔들리는 곳.<br />눈부신 해안의 속까지 후련한 바람과 그림같이 아름다운 섬들이 바로 카리브해입니다.<br />이국적인 카리브의 태양과 함께 하는 카리브해 크루즈에서는 최고의 여유로움과 낭만을 만끽하실 수 있습니다.<br />카리브해 크루즈는 연중 가능하나, 9~10월 중의 허리케인 시즌과 7~8월 한여름은 피하는 것이 좋습니다.</p>
+				<p class="notice area12_notice"><i></i>카리브해 일정 중 쿠바를 포함하는 일정은 숙소와 이동 방법을 한번에 해결 할 수 있어<br />가장 빨리 마감되는 인기 일정입니다.</p>
+				<div class="slide">
+					<ul
+						class="cycle-slideshow"
+						data-cycle-slides=">li"
+						data-cycle-fx="scrollHorz" 
+						data-cycle-timeout="3000" 
+						data-cycle-prev=".area_prev"
+						data-cycle-next=".area_next"
+					>
+						<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/area12/slide01.jpg" alt=""></li>
+						<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/area12/slide02.jpg" alt=""></li>
+						<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/area12/slide03.jpg" alt=""></li>
+						<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/area12/slide04.jpg" alt=""></li>
+						<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/area12/slide05.jpg" alt=""></li>
+					</ul>
+					<div class="control">	
+						<span class="area_prev"></span>
+						<span class="area_next"></span>
+					</div>
+				</div><!-- slide -->
+				<div class="ex_schedule" id="con3">
+					<h3>예시일정<span>쿠바 8일</span></h3>
+					<img src="//img.modetour.com/modewebagent/2017/cruise/submain/area12/area12_map.jpg" alt="">
+					<table>
+						<caption>일정표</caption>
+						<colgroup>
+							<col width="196px">
+							<col width="372px">
+							<col width="528px">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">일정</th>
+								<th scope="col">지역(항구)</th>
+								<th scope="col">관광지(프로그램)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td scope="row">1일차</td>
+								<td>미국 마이애미</td>
+								<td>크루즈 승선</td>
+							</tr>
+							<tr>
+								<td scope="row">2일차</td>
+								<td>쿠바 아바나</td>
+								<td>시내관광, 비냘레스 계곡,헤밍웨이 투어</td>
+							</tr>
+							<tr>
+								<td scope="row">3일차</td>
+								<td>쿠바 아바나</td>
+								<td>부에나 비스타 소셜클럽, 쿠바 럼, 시가와 예술</td>
+							</tr>
+							<tr>
+								<td scope="row">4일차</td>
+								<td>공해상</td>
+								<td>공해상</td>
+							</tr>
+							<tr>
+								<td scope="row">5일차</td>
+								<td>쿠바 씨엔푸에고스</td>
+								<td>역사지구 방문, 시가 공장, 스노쿨링, 국립공원 방문</td>
+							</tr>
+							<tr>
+								<td scope="row">6일차</td>
+								<td>쿠바 산티아고 데 쿠바</td>
+								<td>키바레 트로피카나, 시내관광, 엘 코브레</td>
+							</tr>
+							<tr>
+								<td scope="row">7일차</td>
+								<td>공해상</td>
+								<td>공해상</td>
+							</tr>
+							<tr>
+								<td scope="row">8일차</td>
+								<td>미국 마이애미</td>
+								<td>크루즈 하선</td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!-- ex_schedule -->
+				<div class="more_schedule" id="con4">
+					<h3>카리브해 일정 더보기</h3>
+					<ul>
+						<li class="menu01">
+							<a href="https://www.silversea.com/cruise/cruise-results.destination_central-america-caribbean-cruise.date_all.html" target="_blank">
+								<span class="left"><i></i></span>
+								<span class="right">
+									실버시 크루즈 카리브해 일정
+									<span class="more">일정보기</span> 
+								</span>
+							</a>
+						</li>
+						<li class="menu02">
+							<a href="https://www.rssc.com/destinations/tropics" target="_blank">
+								<span class="left"><i></i></span>
+								<span class="right">
+									리젠트 세븐시즈 크루즈 카리브해 일정
+									<span class="more">일정보기</span> 
+								</span>
+							</a>
+						</li>
+						<li class="menu03">
+							<a href="http://www.crystalcruises.com/voyage-finder/results?region=CAR&year=all&" target="_blank">
+								<span class="left"><i></i></span>
+								<span class="right">
+									크리스탈 크루즈 카리브해 일정
+									<span class="more">일정보기</span> 
+								</span>
+							</a>
+						</li>
+						<li class="menu04">
+							<a href="https://www.oceaniacruises.com/cruise-finder/#destinations=caribbean" target="_blank">
+								<span class="left"><i></i></span>
+								<span class="right">
+									오세아니아 크루즈 카리브해 일정
+									<span class="more">일정보기</span> 
+								</span>
+							</a>
+						</li>
+						<li class="menu05">
+							<a href="https://www.costacruisesasia.com/pao/cruise_vacation/caribbean.html" target="_blank">
+								<span class="left"><i></i></span>
+								<span class="right">
+									코스타 크루즈 카리브해 일정
+									<span class="more">일정보기</span> 
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div><!-- more_schedule -->
+				<!-- [s]: 18-02-27 수정 -->
+				<div class="promotion_area" id="con5">
+					<h3>추천일정</h3>
+					<ul>
+						<li>
+							<img src="//img.modetour.com/modewebagent/2017/cruise/submain/promotion_180227/180227_banner.jpg" alt="">
+							<a href="promotion_180227.html">바로가기</a>
+						</li>
+					</ul>
+				</div>
+				<!-- [e]: 18-02-27 수정 -->
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="bottom01">
+			<div class="wrap">
+				<h2>크루즈인터내셔널고객센터</h2>
+				<div class="infor">
+					<ul>
+						<li>
+							예약문의<strong>02-775-0100</strong>
+							<div class="email">cruise@cruise.co.kr</div>
+						</li>
+						<li>
+							제휴문의<strong>02-775-0240</strong>
+							<div class="email">sales@cruise.co.kr</div>
+						</li>
+					</ul>
+				</div><!-- infor -->
+				<div class="sns">
+					<ul>
+						<li class="sns01"><a href="" onclick="kakao(690,700);return false;">카카오</a></li>
+						<li class="sns02"><a href="http://www.modetour.com/main/" target="_blank">모두투어</a></li>
+					</ul>
+				</div>
+			</div>
+		</div><!-- bottom01 -->
+		<div class="bottom02">
+				<div class="wrap">
+					<h1><span class="text_blind">CRUISE</span></h1>
+					<address>
+						<div>개인정보 취급방침</div>
+						서울시 중구 을지로 1 백남빌딩 506호 크루즈 인터내셔널 | 대표이사 : 유인태 | 사업자등록번호 : 104-81-53278 | 통신판매업신고번호 : 중구 제 03295호<br />COPYRIGHT CRUISE INTERNATIONAL INC. ALL RIGHTS RESERVED 
+					</address>
+				</div>
+			</div>
+	</footer>
+	
+	<!-- [s]: 퀵메뉴 --> 
+	<div class="quick_menu">
+		<ul>
+			<li class="on"><a href="#con1">지역</a></li>
+			<li><a href="#con2">소개</a></li>
+			<li><a href="#con3">예시일정</a></li>
+			<li><a href="#con4">일정 더보기</a></li>
+			<li><a href="#con5">추천일정</a></li>
+		</ul>
+	</div>
+	<!-- [e]: 퀵메뉴 -->
+	
+	<!-- [s] top 버튼 -->
+	<a href="#" class="btn_top"><img src="//img.modetour.com/modewebagent/2017/cruise/btn_top.png" alt="위로올라가기"></a>
+	<!-- [e] top 버튼 -->
+</body>
+</html>

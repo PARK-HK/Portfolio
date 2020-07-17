@@ -1,0 +1,129 @@
+.video_wrap { position: fixed; top: 0; left: 0; right: 0; bottom: 0; }
+.video_wrap .video { width: 2000px; position: absolute; left: 50%; margin-left: -1000px; top: -100px; }
+.video_wrap .bg { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 1; background: url("//img.modetour.com/modewebagent/2017/cruise/int_bg.png") center 0 no-repeat; }
+.video_wrap .in { position: absolute; z-index: 9; text-align: center; top: 0; left: 0; right: 0; bottom: 0; }
+.video_wrap .in h1 { width: 153px; height: 58px; background: url("//img.modetour.com/modewebagent/2017/cruise/logo_sprite.png") 0 0 no-repeat; margin: 30px auto 0; }
+.video_wrap .in .text_wrap { position: absolute; bottom: 21%; left: 0; right: 0; }
+.video_wrap .in .text_wrap h2 { font-size: 60px; color: #FFF; font-weight: normal; letter-spacing: -5px; margin-top: 560px; }
+.video_wrap .in .text_wrap .go { display: inline-block; zoom: 1; *display: inline; position: relative; text-decoration: none; margin: 65px auto 0; }
+.video_wrap .in .text_wrap .go .txt { display: block; border: 1px #FFF solid; padding: 16px 40px; position: relative; color: #FFF; z-index: 2; letter-spacing: -0.5px; font-size: 14px; }
+.video_wrap .in .text_wrap .go .txt:hover { color: #000; }
+.video_wrap .in .text_wrap .go .bg { display: block; background: #FFF; position: absolute; top: 0; left: 0; height: 100%; width: 0; }
+.video_wrap .bottom_logo { width: 87px; height: 36px; background: url("//img.modetour.com/modewebagent/2017/cruise/logo_sprite.png") 0 -62px no-repeat; position: fixed; right: 50px; bottom: 50px; z-index: 2; }
+
+.main_bg { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: -1; background: url("//img.modetour.com/modewebagent/2017/cruise/main/main_bg.jpg") center 0 no-repeat; }
+
+.main { padding-top: 149px; overflow: hidden; }
+.main .box_wrap { width: 888px; margin: 20px auto 0; }
+.main .box_wrap .top { margin-bottom: 20px; overflow: hidden; }
+.main .box_wrap .top .map { position: relative; background: url("//img.modetour.com/modewebagent/2017/cruise/main/map_img.jpg") no-repeat; width: 588px; height: 336px; }
+.main .box_wrap .top .map ul { position: relative; width: 100%; height: 100%; }
+.main .box_wrap .top .map ul li { position: absolute; }
+.main .box_wrap .top .map ul li a { position: absolute; top: 0; left: 0; }
+.main .box_wrap .top .map ul li a i { background: url("//img.modetour.com/modewebagent/2017/cruise/icon_sprite.png") -1px -119px no-repeat; display: block; width: 20px; height: 20px; }
+.main .box_wrap .top .map ul li a span.area_name { height: 37px; background: url("//img.modetour.com/modewebagent/2017/cruise/icon_sprite.png") no-repeat; position: absolute; top: -33px; z-index: 1; display: none; }
+.main .box_wrap .top .map ul li a:hover i { background-position: -27px -119px; }
+.main .box_wrap .top .map ul li a:hover span.area_name { display: block; }
+.main .box_wrap .top .map ul li.on i { background-position: -27px -119px; }
+.main .box_wrap .top .map ul li.on span.area_name { display: block; height: 37px; background: url("//img.modetour.com/modewebagent/2017/cruise/icon_sprite.png") no-repeat; position: absolute; top: -33px; z-index: 1; }
+.main .box_wrap .top .map ul li.area01 { top: 43px; left: 326px; }
+.main .box_wrap .top .map ul li.area01 span.area_name { width: 76px; left: -27px; }
+.main .box_wrap .top .map ul li.area02 { bottom: 58px; left: 252px; }
+.main .box_wrap .top .map ul li.area02 span.area_name { width: 103px; left: -41px; background-position: -79px 0; }
+.main .box_wrap .top .map ul li.area03 { top: 126px; left: 118px; }
+.main .box_wrap .top .map ul li.area03 span.area_name { width: 76px; left: -27px; background-position: 0px -39px; }
+.main .box_wrap .top .map ul li.area04 { bottom: 133px; left: 218px; }
+.main .box_wrap .top .map ul li.area04 span.area_name { width: 76px; left: -27px; background-position: -80px -39px; }
+.main .box_wrap .top .map ul li.area05 { top: 132px; left: 205px; }
+.main .box_wrap .top .map ul li.area05 span.area_name { width: 76px; left: -27px; background-position: -186px 0px; }
+.main .box_wrap .top .map ul li.area06 { top: 95px; left: 30px; }
+.main .box_wrap .top .map ul li.area06 span.area_name { width: 76px; left: -27px; background-position: -266px 0px; }
+.main .box_wrap .top .map ul li.area07 { bottom: 180px; left: 84px; }
+.main .box_wrap .top .map ul li.area07 span.area_name { width: 76px; left: -27px; background-position: -346px 0px; }
+.main .box_wrap .top .map ul li.area08 { bottom: 118px; left: 82px; }
+.main .box_wrap .top .map ul li.area08 span.area_name { width: 103px; left: -40px; background-position: -161px -39px; }
+.main .box_wrap .top .map ul li.area09 { bottom: 70px; left: 365px; }
+.main .box_wrap .top .map ul li.area09 span.area_name { width: 58px; left: -17px; background-position: -427px 0px; }
+.main .box_wrap .top .map ul li.area10 { bottom: 155px; right: 62px; }
+.main .box_wrap .top .map ul li.area10 span.area_name { width: 76px; left: -27px; background-position: -268px -39px; }
+.main .box_wrap .top .map ul li.area11 { bottom: 118px; right: 90px; }
+.main .box_wrap .top .map ul li.area11 span.area_name { width: 126px; left: -52px; background-position: -349px -39px; }
+.main .box_wrap .top .map ul li.area12 { bottom: 91px; right: 126px; }
+.main .box_wrap .top .map ul li.area12 span.area_name { width: 89px; left: -33px; background-position: 0px -79px; }
+.main .box_wrap .top .map ul li.area13 { bottom: 148px; right: 222px; }
+.main .box_wrap .top .map ul li.area13 span.area_name { width: 76px; left: -27px; background-position: -93px -79px; }
+.main .box_wrap .top .map ul li.area14 { top: 94px; right: 204px; }
+.main .box_wrap .top .map ul li.area14 span.area_name { width: 76px; left: -27px; background-position: -175px -79px; }
+.main .box_wrap .top .map ul li.area15 { top: 129px; right: 154px; }
+.main .box_wrap .top .map ul li.area15 span.area_name { width: 127px; left: -52px; background-position: -257px -79px; }
+.main .box_wrap .top .map ul li.area16 { top: 160px; right: 154px; }
+.main .box_wrap .top .map ul li.area16 span.area_name { width: 101px; left: -39px; background-position: -389px -79px; }
+.main .box_wrap .top .box { float: left; margin-left: 20px; }
+.main .box_wrap .top .box h2 { margin-bottom: 10px; }
+.main .box_wrap .top .box h2 a { color: #FFF; font-size: 19px; font-weight: normal; letter-spacing: -0.5px; text-decoration: none; }
+.main .box_wrap .top .box:first-child { margin-left: 0; }
+.main .box_wrap .top .box .slide { position: relative; }
+.main .box_wrap .top .box .slide li { width: 280px; height: 336px; text-align: center; }
+.main .box_wrap .top .box .slide li .tit { color: #FFF; font-weight: bold; font-size: 25px; text-align: center; padding-top: 100px; position: relative; }
+.main .box_wrap .top .box .slide li .tit i { display: block; background: url("//img.modetour.com/modewebagent/2017/cruise/icon_sprite.png") no-repeat; margin: 0 auto 10px; position: absolute; left: 50%; bottom: 25px; }
+.main .box_wrap .top .box .slide li a.go { display: inline-block; zoom: 1; *display: inline; position: relative; text-decoration: none; margin-top: 40px; }
+.main .box_wrap .top .box .slide li a.go .txt { display: block; border: 1px #FFF solid; padding: 10px 40px; position: relative; color: #FFF; z-index: 2; letter-spacing: -0.5px; font-size: 16px; padding-right: 53px; }
+.main .box_wrap .top .box .slide li a.go .txt:after { display: block; content: ''; width: 22px; height: 14px; background: url("//img.modetour.com/modewebagent/2017/cruise/icon_sprite.png") -111px -119px no-repeat; position: absolute; top: 12px; left: 110px; }
+.main .box_wrap .top .box .slide li a.go .txt:hover { color: #000; }
+.main .box_wrap .top .box .slide li a.go .txt:hover:after { background-position: -111px -136px; }
+.main .box_wrap .top .box .slide li a.go .bg { display: block; background: #FFF; position: absolute; top: 0; left: 0; height: 100%; width: 0; }
+.main .box_wrap .top .box .slide li.slide01 { background: url("//img.modetour.com/modewebagent/2017/cruise/main/thema_cruise01.jpg") no-repeat; }
+.main .box_wrap .top .box .slide li.slide01 i { width: 44px; height: 41px; background-position: -55px -117px; margin-left: -22px; }
+.main .box_wrap .top .box .slide li.slide02 { background: url("//img.modetour.com/modewebagent/2017/cruise/main/thema_cruise02.jpg") no-repeat; }
+.main .box_wrap .top .box .slide li.slide02 i { width: 51px; height: 52px; background-position: -117px -276px; margin-left: -25px; }
+.main .box_wrap .top .box .slide li.slide03 { background: url("//img.modetour.com/modewebagent/2017/cruise/main/thema_cruise03.jpg") no-repeat; }
+.main .box_wrap .top .box .slide li.slide03 i { width: 43px; height: 41px; background-position: -174px -282px; margin-left: -21px; }
+.main .box_wrap .top .box .slide li.slide04 { background: url("//img.modetour.com/modewebagent/2017/cruise/main/thema_cruise04.jpg") no-repeat; }
+.main .box_wrap .top .box .slide li.slide04 i { width: 71px; height: 30px; background-position: -227px -287px; margin-left: -35px; }
+.main .box_wrap .top .box .slide li.slide05 { background: url("//img.modetour.com/modewebagent/2017/cruise/main/thema_cruise05.jpg") no-repeat; }
+.main .box_wrap .top .box .slide li.slide05 i { width: 47px; height: 47px; background-position: -280px -225px; margin-left: -23px; }
+.main .box_wrap .top .box .slide li.slide06 { background: url("//img.modetour.com/modewebagent/2017/cruise/main/thema_cruise06.jpg") no-repeat; }
+.main .box_wrap .top .box .slide li.slide06 i { width: 45px; height: 45px; background-position: -337px -227px; margin-left: -22px; }
+.main .box_wrap .top .box .slide li.slide07 { background: url("//img.modetour.com/modewebagent/2017/cruise/main/thema_cruise07.jpg") no-repeat; }
+.main .box_wrap .top .box .slide li.slide07 i { width: 41px; height: 41px; background-position: -393px -227px; margin-left: -20px; }
+.main .box_wrap .top .box .slide li.slide08 { background: url("//img.modetour.com/modewebagent/2017/cruise/main/190416_thema_cruise08.jpg") no-repeat; }
+.main .box_wrap .top .box .slide li.slide08 i { width: 51px; height: 52px; background-position: -117px -276px; margin-left: -25px; }
+.main .box_wrap .top .box .slide .boxslide-pager { position: absolute; bottom: 20px; right: 20px; z-index: 999; }
+.main .box_wrap .top .box .slide .boxslide-pager span { display: inline-block; zoom: 1; *display: inline; width: 10px; height: 10px; background: url("//img.modetour.com/modewebagent/2017/cruise/icon_sprite.png") -144px -120px no-repeat; font-size: 0; margin-left: 5px; cursor: pointer; }
+.main .box_wrap .top .box .slide .boxslide-pager span:first-child { margin-left: 0; }
+.main .box_wrap .top .box .slide .boxslide-pager span.cycle-pager-active { width: 26px; height: 10px; background-position: -143px -136px; }
+.main .box_wrap .bottom { overflow: hidden; }
+.main .box_wrap .bottom .box { float: left; margin-left: 20px; }
+.main .box_wrap .bottom .box:first-child { margin-left: 0; }
+.main .box_wrap .bottom .box .in { width: 280px; position: relative; }
+.main .box_wrap .bottom .box .in a.go_infor { display: block; background: #2c2c2e; color: #FFF; text-decoration: none; font-weight: bold; font-size: 22px; padding: 15px 25px; position: relative; }
+.main .box_wrap .bottom .box .in a.go_infor:after { content: ''; display: block; width: 19px; height: 19px; background: url("//img.modetour.com/modewebagent/2017/cruise/icon_sprite.png") -220px -120px no-repeat; position: absolute; top: 15px; right: 20px; }
+.main .box_wrap .bottom .box .in a.apply_kakao { display: block; text-decoration: none; color: #FFF; border-bottom: 1px #FFF solid; position: absolute; bottom: 78px; right: 17px; letter-spacing: -1px; font-size: 14px; padding-bottom: 3px; padding-right: 8px; }
+.main .box_wrap .bottom .box .in a.apply_kakao:after { content: ''; display: block; width: 4px; height: 7px; background: url("//img.modetour.com/modewebagent/2017/cruise/icon_sprite.png") -486px -183px no-repeat; position: absolute; top: 5px; right: 0; }
+.main .box_wrap .bottom .box .promotion_slide { position: relative; }
+.main .box_wrap .bottom .box .promotion_slide li a { text-decoration: none; font-size: 20px; font-weight: bold; color: #ffa507; letter-spacing: -0.5px; position: absolute; left: 320px; bottom: 63px; padding-right: 35px; }
+.main .box_wrap .bottom .box .promotion_slide li a:after { content: ''; display: block; width: 22px; height: 14px; background: url("//img.modetour.com/modewebagent/2017/cruise/icon_sprite.png") -111px -153px no-repeat; position: absolute; top: 5px; right: 0px; }
+.main .box_wrap .bottom .box .promotion_slide .pro-pager { position: absolute; bottom: 20px; right: 90px; z-index: 999; }
+.main .box_wrap .bottom .box .promotion_slide .pro-pager span { display: inline-block; zoom: 1; *display: inline; width: 11px; height: 10px; background: url("//img.modetour.com/modewebagent/2017/cruise/icon_sprite.png") -160px -153px no-repeat; font-size: 0; margin-left: 5px; cursor: pointer; }
+.main .box_wrap .bottom .box .promotion_slide .pro-pager span:first-child { margin-left: 0; }
+.main .box_wrap .bottom .box .promotion_slide .pro-pager span.cycle-pager-active { width: 26px; height: 10px; background-position: -143px -136px; }
+.main .box_wrap .bottom .box .promotion_slide a.btn_more { position: absolute; text-decoration: none; font-size: 14px; color: #898989; letter-spacing: -1px; right: 30px; bottom: 19px; z-index: 999; padding-right: 10px; }
+.main .box_wrap .bottom .box .promotion_slide a.btn_more:after { content: ''; display: block; background: url("//img.modetour.com/modewebagent/2017/cruise/icon_sprite.png") -484px -165px; width: 7px; height: 7px; position: absolute; right: 0; top: 5px; }
+.main .logo_list { position: relative; padding: 0 60px; width: 807px; margin: 54px auto; }
+.main .logo_list a { display: inline-block; zoom: 1; *display: inline; margin-left: 20px; height: 49px; }
+.main .logo_list a:first-child { margin-left: 0; }
+.main .logo_list a.logo01 { width: 91px; background: url("//img.modetour.com/modewebagent/2017/cruise/logo_sprite.png") -1px -307px no-repeat; }
+.main .logo_list a.logo02 { width: 208px; background: url("//img.modetour.com/modewebagent/2017/cruise/logo_sprite.png") -106px -307px no-repeat; }
+.main .logo_list a.logo03 { width: 146px; background: url("//img.modetour.com/modewebagent/2017/cruise/logo_sprite.png") -330px -307px no-repeat; }
+.main .logo_list a.logo04 { width: 141px; background: url("//img.modetour.com/modewebagent/2017/cruise/logo_sprite.png") 0px -356px no-repeat; }
+.main .logo_list a.logo05 { width: 115px; background: url("//img.modetour.com/modewebagent/2017/cruise/logo_sprite.png") -151px -356px no-repeat; }
+.main .logo_list a.logo06 { width: 223px; background: url("//img.modetour.com/modewebagent/2017/cruise/logo_sprite.png") -277px -356px no-repeat; }
+.main .logo_list a.logo07 { width: 125px; background: url("//img.modetour.com/modewebagent/2017/cruise/logo_sprite.png") 0px -405px no-repeat; }
+.main .logo_list a.logo08 { width: 120px; background: url("//img.modetour.com/modewebagent/2017/cruise/logo_sprite.png") -139px -405px no-repeat; }
+.main .logo_list .control span { display: block; width: 8px; height: 15px; background: url("//img.modetour.com/modewebagent/2017/cruise/icon_sprite.png") no-repeat; cursor: pointer; position: absolute; top: 19px; }
+.main .logo_list .control span.prev { background-position: -180px -253px; left: -50px; }
+.main .logo_list .control span.prev:hover { background-position: -250px -122px; }
+.main .logo_list .control span.next { background-position: -197px -253px; right: -50px; }
+.main .logo_list .control span.next:hover { background-position: -268px -122px; }
+
+/*# sourceMappingURL=main.css.map */
