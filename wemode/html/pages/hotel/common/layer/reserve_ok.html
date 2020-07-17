@@ -1,0 +1,32 @@
+<div class="reserve_ok_layer ok_reserve_area" id="reserve_ok">
+    <div class="ok_reserve_box">
+        <div class="confirm">예약이 취소 되었습니다.</div>
+        <div class="txt">이용해 주셔서 감사합니다.</div>
+        <div class="ok_reserve_btn_box">
+            <a href="#" class="cancel"><span>취소</span></a>
+            <a href="#" class="ok"><span>확인</span></a>
+        </div>
+    </div> <!-- // ok_reserve_box -->
+</div> <!-- // reserve_ok_layer -->
+<script type="text/javascript">
+    // 예약취소완료
+    var $body=jQuery('body');
+
+    $body.on("click",'.ok',function(){
+        var txt=jQuery(this).attr("href");
+        $body.find(txt).show();
+        $body.css({"overflow-y":"hidden"});
+        $body.css({"overflow-x":"hidden"});
+        jQuery(".reserve_ok_layer .ok").on("click",function(e){ // 확인
+            e.preventDefault();
+            jQuery(".reserve_ok_layer").hide();
+            $body.css({"overflow-y":"visible"});
+        });
+
+        jQuery(".reserve_ok_layer .cancel").on("click",function(e){ // 취소
+            e.preventDefault();
+            jQuery(".reserve_ok_layer").hide();
+            $body.css({"overflow-y":"visible"});
+        });
+    }); 
+</script>

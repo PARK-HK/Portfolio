@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie8 ie no-js" lang="ko"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9 ie no-js" lang="ko"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="ko"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>모두투어 - 일정표 메일 발송</title>
+	<meta name="keywords" content="모두투어, 여행사, 해외여행, 해외항공, 동남아여행, 중국여행, 일본여행, 미주여행, 남태평양여행, 유럽여행, 인도여행, 아프리카 여행, 골프여행, 패키지, 에어텔, 허니문, 자유여행, 골프여행, jm프리미엄, 크루즈, 국내여행, 제주여행, 호텔, 숙박, 해외호텔, 국내숙박, 항공권 ,해외항공권 ,국내항공권, 철도 ,패스, 여행정보, 추천여행사, 최저가항공권" />
+	<meta name="description" content="대한민국 여행의 기준이 되다! 모두투어는 해외여행, 국내여행, 패키지여행, 에어텔, 항공권, 호텔 등 각종 여행정보를 제공하는 국내 최대 여행포탈사이트 입니다." />
+	<link rel="stylesheet" type="text/css" href="../../../css/common_201609.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../../css/common_201609.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../../css/pages/itinerary/itinerary_201804.min.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="../../../css/pages/itinerary/itinerary_print_201804.min.css" />
+</head>
+<body>
+<div class="itinerary_pop_wrap">
+	<div class="itinerary_pop">
+		<h1>메일 발송</h1>
+		<form action="">
+		<fieldset>
+			<div class="l_container">
+				<div class="l_wrap">
+					<div class="l_sec pop_iti_mail">
+						<h2 class="blind">메일 발송</h2>
+						<table class="pop_iti_table">
+							<caption>항공사 정보</caption>
+							<colgroup>
+								<col style="width:20%;">
+								<col style="width:80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><label for="test_sender">보내는 사람 이름</label></th>
+									<td>
+										<input type="text" id="test_sender" name="test_sender" class="input" style="width:190px;">
+									</td>
+								</tr>
+								<tr>
+									<th><label for="test_sender_mail">보내는 사람 메일</label></th>
+									<td>
+										<input type="text" id="test_sender_mail" name="test_sender_mail" class="input" style="width:190px;"> @
+										<input type="text" id="" name="" class="input" style="width:190px;" title="이메일 @ 뒷자리 직접입력">
+										<select name="" id="" class="select" title="메일제공자 선택" style="width:135px;">
+											<option value="">직접 입력</option>
+											<option value="">modetour.com</option>
+											<option value="">naver.com</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th>받는 사람</th>
+									<td>
+										<div class="recev_box">
+											<span class="receiver">
+												<label for="test_name">이름</label>
+												<input type="text" id="test_name" name="test_name" class="input" style="width:200px;">
+											</span>										
+											<span class="receiver">
+												<label for="test_mail">메일</label>
+												<input type="text" id="test_mail" name="test_mail" class="input" style="width:200px;">
+											</span>
+											<a href="#" class="btn_plus">추가</a>
+										</div>
+									</td>
+								</tr>							
+								<tr>
+									<th><label for="test_title">제목</label></th>
+									<td>
+										<input type="text" id="test_title" name="test_title" class="input" style="width:100%;">
+									</td>
+								</tr>								
+								<tr>
+									<th><label for="test_con">내용</label></th>
+									<td>
+										<textarea name="test_con" id="test_con" cols="30" rows="10" class="textarea"></textarea>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- 개인정보 수집 및 이용 동의 안내 추가 -->
+						<div class="personal_info">
+							<h2>개인정보 수집 및 이용 동의 안내</h3>
+							<p class="lst_items">
+								1. 개인정보의 수집·이용 목적 : 여행상품 안내를 위한 이메일 전송<br>
+								2. 수집하려는 개인정보의 항목 : 이름, 이메일<br>
+								3. 개인정보의 보유 및 이용 기간 : 메일 전송 후 즉시 파기<br>
+								4. 고객님은 개인정보 수집 및 이용에 거부하실 수 있으며, 거부 시 여행상품 안내를 전송하실 수 없습니다
+							</p>
+							<p class="agree"> 위 개인정보 수집 및 이용에 동의하십니까? </p>
+							<div class="mcheck_area">
+								<input type="radio" name="test" id="test"><label class="label" for="test"><span class="ico_chk"></span>	동의합니다.</label>
+								<input type="radio" name="test" id="test2"><label class="label" for="test2"><span class="ico_chk"></span> 동의하지 않습니다.
+							</div>
+						</div>	
+						<!-- //개인정보 수집 및 이용 동의 안내 추가 -->
+					</div>
+					<div class="btn_iti_area">
+						<a href="#" class="btn_send">보내기</a>
+						<a href="#" class="btn_preview">미리보기</a>
+						<a href="#" class="btn_cancel">취소</a>
+					</div>
+				</div>
+			</div>
+			<div class="btn_area">
+				<a href="#" class="btn_close" title="닫기">닫기</a>
+			</div>
+		</fieldset>
+		</form>
+	</div>
+</div>
+<!-- [시작]: Common JS -->
+<script src="//js.modetour.com/jquery/ver/1.11.3.min.js"></script>
+<script src="//js.modetour.com/jquery/plugin/easing.js"></script>
+<script src="//js.modetour.com/jquery/plugin/plugins.js"></script>
+<script src="../../../js/libs/ui_plugins.min.js"></script>
+<script src="../../../js/ui_common.min.js"></script>
+<script src="../../../js/html_exclusive.min.js"></script>
+<!-- [끝]: Common JS -->
+
+<!-- [시작]: Sub Header Script -->
+<script src="../../../js/front_sub.min.js"></script>
+<!-- [끝]: Sub Header Script -->
+<script>
+var $ = jQuery.noConflict(); //$충톨방지
+$(document).ready(function() {
+	//받는사람 추가
+	$(document).on('click', '.pop_iti_mail .btn_plus', function(){
+		var addReverBox = '';
+		addReverBox += '<div class="recev_box">'
+		addReverBox += '	<span class="receiver">'
+		addReverBox += '		<label for="test_name">이름</label>'
+		addReverBox += '		<input type="text" id="test_name" name="test_     name" class="input" style="width:200px;">'
+		addReverBox += '	</span>										'
+		addReverBox += '	<span class="receiver">'
+		addReverBox += '		<label for="test_mail">메일</label>'
+		addReverBox += '		<input type="text" id="test_mail" name="test_mail" class="input" style="width:200px;">'
+		addReverBox += '	</span>'
+		addReverBox += '	<a href="#" class="btn_minus" onclick="$(this).closest(\'.recev_box\').remove();return false;">삭제</a>'
+		addReverBox += '</div>';
+
+		$(this).closest('td').append(addReverBox); 
+		return false;
+	});
+
+	//라디오버튼 스타일링
+	var $mailLabel = $('.mcheck_area .label');
+	$mailLabel.on('click', function () {
+		var _this = $(this);
+		if( $(this).prev('input').attr( "checked", "checked" ) ) { // $(this).prev('input').prop('checked') ie9 이상
+			$mailLabel.removeClass('on');
+			$(this).addClass('on');
+		}
+	});
+	
+});
+</script>
+</body>
+</html>

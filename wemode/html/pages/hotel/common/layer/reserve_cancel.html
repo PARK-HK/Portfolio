@@ -1,0 +1,21 @@
+<div class="reserve_cancel_layer no_reserve_area" id="reserve_cancel">
+    <div class="no_reserve_box">
+        <div class="confirm">예약 취소 하시겠습니까?</div>
+        <div class="no_reserve_btn_box">
+            <a href="#" class="cancel"><span>취소</span></a>
+            <a href="#reserve_ok" class="ok"><span>확인</span></a>
+        </div>
+    </div> <!-- // no_cont_box -->
+</div> <!-- // no_refund_layer -->
+<script type="text/javascript">
+    // 예약취소확인
+    var $body=jQuery('body');
+
+    $body.on("click",'.ok',function(){
+        var txt=jQuery(this).attr("href");
+        $body.find(txt).show();
+        $body.css({"overflow-y":"hidden"});
+        $body.css({"overflow-x":"hidden"});
+        jQuery(".reserve_cancel_layer").hide(); // 예약취소안내레이어 닫힘
+    }); 
+</script>

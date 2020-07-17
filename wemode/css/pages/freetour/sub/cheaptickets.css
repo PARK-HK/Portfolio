@@ -1,0 +1,597 @@
+@charset "UTF-8";
+
+/* common */
+div,p { margin:0px; padding:0px; }
+img { border:0; vertical-align:middle; }
+table { width:100%; margin:0px; padding:0px; border-collapse:collapse; border-spacing:0; }
+table td { margin:0px; padding:0px; font-size:12px; font-family:dotum, Arial, sans-serif; color:#464646; }
+ul {list-style-type:none; margin:0px; padding:0px; font-size:12px;}
+legend, caption { display:none; }
+hr { border:0 none; background:none; }
+select { vertical-align:middle; }
+
+
+.blind{ position:absolute; top:0; left:0; width:0; height:0; font-size:0; line-height:0; visibility:hidden; overflow:hidden; }
+.ui-helper-hidden-accessible { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.ui-slider{position:relative; text-align:left;}
+.ui-slider-horizontal .ui-slider-range{top:0; height:100%;}
+.ui-slider .ui-slider-range{position: absolute; z-index: 1; display: block; }
+.ui-slider .ui-slider-handle { position: absolute; z-index: 2; cursor: default;}
+
+/* Margin Style */
+.mt00 { margin-top:0 !important; }
+.mt10 { margin-top:10px !important; }
+.mt15 { margin-top:15px !important; }
+.mt20 { margin-top:20px !important; }
+.mb00 { margin-bottom:0 !important; }
+.mb05 { margin-bottom:5px !important; }
+.mb10 { margin-bottom:10px !important; }
+.mb15 { margin-bottom:15px !important; }
+.mb20 { margin-bottom:20px !important; }
+
+.clear{ display:block; float:none; clear:both; overflow:hidden; margin:0 !important; padding:0 !important; width:100%; height:0; font-size:0 !important; line-height:0 !important; }
+.hide { display:none; }
+
+/* padding style */
+.pt10 { padding-top:10px }
+.pt20 { padding-top:20px }
+
+/* float */
+.float_l { float:left !important; }
+.float_r { float:right !important; }
+
+/* height style */
+.h17 { height:17px; }
+.h19 { height:19px; }
+.h20 { height:20px; }
+.h30 { height:20px; }
+.h35 { height:35px; }
+
+/* selectbox - heapBox */
+.heapBox { display:inline-block; position:relative; }
+.heapBox *  { margin:0; padding:0; }
+.heapBox a { text-decoration:none; color:#666; }
+.heapBox .holder { overflow:hidden; width:143px; height:20px; border:1px solid #bebfc2; border-right:none; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/bg_sel_starcity.gif) repeat-x; text-align:left; text-indent:10px; }
+.heapBox .handler { width:17px; height:20px; line-height:21px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/bg_select_arr.png) no-repeat; border:1px solid #bebfc2; border-left:none; }
+.heapBox .holder, .heapBox .handler { float:left; position:relative; z-index:10; }
+.heapBox div.heap { position:absolute; top:23px; left:0; display:none; overflow:hidden; width:160px; border:1px solid #bebfc2; border-top:none; background:#fff; list-style-type: none; }
+.heapBox .heap .heapOptions { display:block; overflow:hidden; z-index:20; position:relative; }
+.heapBox .heap .heapOptions .heapOption { height:20px; line-height:21px; z-index:20; position:relative; display:block; float:none; margin:0; }
+.heapBox .heap .heapOptions .heapOption a { width:100%; display:block; background:#fff; text-indent:10px; text-align:left; }
+.heapBox .heap .heapOptions .heapOption a:hover { background:#f0f2f5; }
+/* selectbox -heapBox */
+
+/* 타이틀 */
+div.titles { margin:0 0 20px 0; padding:0; height:29px;}
+div.titles h1 { float:left; }
+div.titles ul { float:right; list-style-type:none; padding-top:5px; }
+div.titles ul li { float:left; padding-right:5px; color:#999; font-size:12px; }
+div.titles ul li.home{ padding-left:16px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/ico/ic_tit_nav_home.gif) no-repeat 0 50%; }
+div.titles ul li.current { padding-right:0; color:#666; font-weight:bold; }
+.group_area { float:left; margin-top:30px; width:930px; }
+.group_area .hgroup h2{font-size:9pt; color:#333; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/ico/ic_airplane.gif) no-repeat 0 50%; padding-left:20px;}
+.group_area .hgroup h2.sch_result_txt{font-weight:normal; color:#333;}
+.group_area .hgroup h2.sch_result_txt span{ color:#234e8a; }
+.group_area .foreign_start .sch_result_txt { float:left; font-weight:bold; }
+.group_area .foreign_start .tit_small { float:left; font-size:9pt; color:#333; padding-left:10px; position:relative; }
+.group_area .foreign_start .tit_small #star_city { min-width:160px; height:20px; }
+.group_area .foreign_start .tit_small #star_city span{display:block;background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/ico/ic_thead_arrow.gif) no-repeat right 50%;}
+.group_area .foreign_start .tit_small .customSelect .customSelectInner { width:141px !important; height:20px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/bg_sel_starcity.gif) repeat-x; padding-left:6px; }
+
+.group_area .foreign_start .ui-menu { position:absolute; background:#fff; }
+.group_area .foreign_start .ui-menu li { height:21px; line-height:21px; }
+.sch_result_wrap { width:100%; }
+.sch_result_wrap .sch_foreign { float:left; width:930px; }
+/* table setting */
+.sch_result_wrap .sch_foreign .flight { width:242px }
+.sch_result_wrap .sch_foreign .charge { width:133px }
+.sch_result_wrap .sch_foreign .tax { width:84px; }
+.sch_result_wrap .sch_foreign .adult { width:61px; }
+.sch_result_wrap .sch_foreign .itinerary { width:61px; }
+.sch_result_wrap .sch_foreign .via { width:61px; }
+.sch_result_wrap .sch_foreign .expiry_date { width:71px; }
+.sch_result_wrap .sch_foreign .start_period { width:134px; }
+.sch_result_wrap .sch_foreign .booking { width:73px; }
+.sch_result_wrap .sch_foreign .booking a.btn_book{ display:block; width:33px; height:19px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/btn_airticket.png) no-repeat -179px -55px; margin:0 auto; }
+.sch_result_wrap .sch_foreign .booking a.btn_black_close { display:block; width:33px; height:19px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/btn_airticket.png) no-repeat -277px 0px; margin:0 auto; }
+/* Title */
+.sch_result_wrap .sch_foreign .title th{border:1px solid #b8bcca; border-right:0; font-size:12px; background:#fff;}
+.sch_result_wrap .sch_foreign .title th a{display:block; height:30px; line-height:30px; margin:1px 0 0 1px; background:#f0f1f5; color:#333; text-decoration:none; vertical-align:middle; text-align:center;}
+.sch_result_wrap .sch_foreign .title th a span.txt_arr{ padding-right:8px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/ico/ic_thead_arrow.gif) no-repeat right 50%; }
+.sch_result_wrap .sch_foreign .title .flight { border-left-color:#c2c2c2;}
+.sch_result_wrap .sch_foreign .title .booking { border-right:1px solid #c2c2c2; }
+/* body */
+.sch_result_wrap .sch_foreign .body { border-bottom:1px solid #c2c2c2; }
+.sch_result_wrap .sch_foreign .body td { height:31px; border-top:1px solid #f0f0f0; border-right:0; border-bottom:0 none; text-align:center; line-height:31px; }
+.sch_result_wrap .sch_foreign .body td.flight{ width:228px; padding-left:14px; border-left:1px solid #c2c2c2; text-align:left; }
+.sch_result_wrap .sch_foreign .body td.charge{ width:120px; padding-right:13px; color:#334b81; text-align:right; font-weight:bold; }
+.sch_result_wrap .sch_foreign .body td.charge a.btn_rule{display:inline-block; width:33px; height:17px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/btn_airticket.png) no-repeat -222px -23px; vertical-align:middle; }
+.sch_result_wrap .sch_foreign .body td.tax { padding-right:15px; width:74px; text-align:right; }
+.sch_result_wrap .sch_foreign .body td.booking { border-right:1px solid #c2c2c2; }
+.sch_result_wrap .sch_foreign .body tr:first-child td { border-top:0 none; }
+.sch_result_wrap .sch_foreign .body tr.last td{ border-bottom:0; }
+.sch_result_wrap .sch_foreign .body tr:hover td { background-color:#f0f0f0; }
+.sch_result_wrap .sch_foreign .body tr.selected td { border-top:2px solid #676a72; }
+.sch_result_wrap .sch_foreign .body tr.selected .flight { width:227px; border-left:2px solid #676a72; }
+.sch_result_wrap .sch_foreign .body tr.selected .booking { width:72px; border-right:2px solid #676a72; }
+.sch_result_wrap .sch_foreign .body tr.select_box td { border:2px solid #676a72; border-top:0 none; background:#f4f4f4; width:888px; padding:20px 19px 0; }
+/* 항공권 조회 상세보기 */
+.sch_result_wrap .sch_foreign .body .booking_wrap { }
+.sch_result_wrap .sch_foreign .body .booking_wrap .box{ float:left; width:419px; border:1px solid #c2c2c2; background:#fff; padding:9px; }
+.sch_result_wrap .sch_foreign .body .booking_wrap .box .hgroup { width:100%; height:31px; font-size:11pt; }
+.sch_result_wrap .sch_foreign .body .booking_wrap .box .hgroup h3 { float:left; width:59px; height:31px; line-height:31px; border:1px solid #c0c8d8; border-bottom:0 none; background:#dae0eb; color:#334b81; text-align:center; }
+.sch_result_wrap .sch_foreign .body .booking_wrap .box .hgroup .city_date { float:left; width:357px; border-top:1px solid #ccc; border-right:1px solid #ccc; background:#e7e7e7; color:#333; text-align:left; font-weight:bold; }
+.sch_result_wrap .sch_foreign .body .booking_wrap .box .hgroup .city { float:left; padding-left:15px; width:200px;  }
+.sch_result_wrap .sch_foreign .body .booking_wrap .box .hgroup .date_read { float:left; }
+.sch_result_wrap .sch_foreign .body .booking_wrap .box .hgroup .date_read li { float:left; height:24px; padding-top:7px; }
+.sch_result_wrap .sch_foreign .body .booking_wrap .box .hgroup .date_read li a{ display:inline-block; width:17px; height:17px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/btn_airticket.png) no-repeat; margin-right:-4px; }
+.sch_result_wrap .sch_foreign .body .booking_wrap .box .hgroup .date_read li.date { padding-top:0; }
+.sch_result_wrap .sch_foreign .body .booking_wrap .box .hgroup .date_read li.date span{ display:inline-block; margin-right:-4px; width:102px; color:#333; text-align:center; font-weight:bold; font-size:17px; font-family:tahoma; }
+.sch_result_wrap .sch_foreign .body .booking_wrap .box .hgroup .date_read li.prev a{ background-position:-222px -55px; }
+.sch_result_wrap .sch_foreign .body .booking_wrap .box .hgroup .date_read li.next a{ background-position:-253px -55px; }
+.sch_result_wrap .sch_foreign .body .booking_wrap hr { width:100%; height:10px; background:#fff; border:0; padding:0; margin:0; }
+.sch_result_wrap .sch_foreign .body .booking_reference { width:100%; overflow:hidden; }
+.sch_result_wrap .sch_foreign .body .booking_reference thead th { height:29px; border-top:1px solid #ddd; border-bottom:1px solid #ddd; background:#f4f4f4; color:#666; font-weight:normal; font-size:11px; line-height:29px; }
+.sch_result_wrap .sch_foreign .body .booking_reference thead th.sun { color:#b64b4b; border-left:1px solid #ddd;}
+.sch_result_wrap .sch_foreign .body .booking_reference thead th.sat { color:#5053bf; border-right:1px solid #ddd; }
+.sch_result_wrap .sch_foreign .body .booking_reference tbody td { height:30px; color:#666; background:#fff; border:1px solid #eee; padding:5px 0; line-height:13px; }
+.sch_result_wrap .sch_foreign .body .booking_reference tbody td a{ color:#666; text-decoration:none; }
+.sch_result_wrap .sch_foreign .body .booking_reference tbody td a:hover{ text-decoration:underline; }
+.sch_result_wrap .sch_foreign .body .booking_reference tbody td span { display:block; color:#333; }
+.sch_result_wrap .sch_foreign .body .booking_reference tbody td span.date { padding-left:5px; text-align:left; }
+.sch_result_wrap .sch_foreign .body .booking_reference tbody td span.seat { color:#334b81; text-align:center; }
+.sch_result_wrap .sch_foreign .body .booking_reference tbody td.first { border-left:1px solid #ddd; }
+.sch_result_wrap .sch_foreign .body .booking_reference tbody td.last { border-right:1px solid #ddd; }
+.sch_result_wrap .sch_foreign .body .booking_reference tbody td.selected { background:#f7ebeb; color:#b64b4b; font-weight:bold; }
+.sch_result_wrap .sch_foreign .body .booking_reference tbody td.nothing  .date,
+.sch_result_wrap .sch_foreign .body .booking_reference tbody td.nothing  .seat { color:#999; }
+.sch_result_wrap .sch_foreign .body .booking_reference tbody td.nothing .seat strong { font-weight:normal; }
+.sch_result_wrap .sch_foreign .body .booking_reference tbody td.selected .date,
+.sch_result_wrap .sch_foreign .body .booking_reference tbody td.selected .seat { font-weight:bold; color:#b64b4b;}
+.sch_result_wrap .sch_foreign .body .booking_reference tbody td.last_date span { color:#ddd; }
+.sch_result_wrap .sch_foreign .body .booking_reference tbody tr.last_child td { border-bottom-color:#ddd; }
+.sch_result_wrap .sch_foreign .body .booking_reference .calender thead th { font-weight:bold; }
+.sch_result_wrap .sch_foreign .body .booking_reference .schedule_list { height:131px; border-bottom:1px solid #ddd; overflow-y:scroll; }
+.sch_result_wrap .sch_foreign .body .booking_reference .schedule_list tbody td { width:auto; height:auto; border-right:0 none; border-left:0 none; border-bottom:1px solid #ddd; padding:10px 0; }
+.sch_result_wrap .sch_foreign .body .booking_reference .schedule_list tbody tr.selected td { background:#f2f7ff; color:#334b81; }
+.sch_result_wrap .sch_foreign .body .booking_reference .schedule_list tbody tr.last td  { border-bottom:0 none; }
+
+/* 2013.10.04 수정 */
+.tab_wrap .tabs_menu { float:left; width:928px; height:31px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/bg_tab_overseas.gif) repeat-x; border-style:solid; border:1px solid #c2c2c2; border-top-width:2px; border-top-color:#676767; border-bottom-color:#fff; }
+.tab_wrap .tabs_menu li { float:left; height:27px; padding-top:4px; }
+.tab_wrap .tabs_menu li a { display:inline-block;color:#333; height:23px; line-height:23px; text-decoration:none; font-weight:bold; font-size:14px; }
+.tab_wrap .tabs_menu li a:hover span { text-decoration:underline; }
+.tab_wrap .tabs_menu li a span { display:inline-block; height:23px; vertical-align:middle;}
+.tab_wrap .tabs_menu li a b { display:none; width:4px; height:23px; vertical-align:middle; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/ticket_on.png) no-repeat; }
+.tab_wrap .tabs_menu li a b.left { background-position:0 0; }
+.tab_wrap .tabs_menu li a b.right {  background-position:0 -23px; }
+.tab_wrap .tabs_menu li.southeast { margin-left:46px; }
+.tab_wrap .tabs_menu li.usa { margin-left:45px; }
+.tab_wrap .tabs_menu li.japan { margin-left:84px; }
+.tab_wrap .tabs_menu li.china { margin-left:81px; }
+.tab_wrap .tabs_menu li.south_ocean { margin-left:68px; }
+.tab_wrap .tabs_menu li.europe { margin-left:44px; }
+.tab_wrap .tabs_menu li.africa {margin-left: 50px; }
+.tab_wrap .tabs_menu li.central { margin-left:45px; }
+.tab_wrap .tabs_menu li.ui-state-active a span { padding:0 10px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/ticket_on.gif) repeat-x; color:#fff; text-decoration:none; }
+.tab_wrap .tabs_menu li.ui-state-active a b { display:inline-block; }
+.tab_wrap .tab_content_wrap { float:left; width:930px; }
+.tab_wrap .tab_content_wrap .tab_content { clear:both; }
+.tab_wrap .tab_content_wrap .tab_content li { float:left; padding-left:15px; width:170px; height:30px; line-height:30px; border-right:1px solid #32343c; border-bottom:1px solid #32343c; background:#676a72; }
+.tab_wrap .tab_content_wrap .tab_content li:first-child { width:169px; border-left:1px solid #32343c; }
+.tab_wrap .tab_content_wrap .tab_content li a { display:block; color:#fff; text-decoration:none; }
+.tab_wrap .tab_content_wrap .tab_content li a:hover { text-decoration:underline; }
+.tab_wrap .tab_content_wrap .tab_content li.on { background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/bg_star_city.gif) repeat-x; font-weight:bold; }
+.tab_wrap .tab_content_wrap .tab_content li.on a{ background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/arr_start_city.png) no-repeat 153px 50%; }
+.tab_wrap .tab_content_wrap .tab_content li.on a:hover { text-decoration:none; }
+.foreign_tabmenu_wrap {width:928px; height:31px; border:1px solid #474b4e; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/bg_reserv.gif) repeat-x; }
+.foreign_tabmenu_wrap .tabs li { float:left; width:80px; height:31px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/ico/ic_tabmenu_bar.gif) no-repeat right 50%; text-align:center; line-height:31px; }
+.foreign_tabmenu_wrap .tabs li a { padding-right:10px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/ico/ic_tabmenu_arrow.gif) no-repeat right 50%; color:#cdced4; text-decoration:none; font-weight:bold; font-size:11pt; }
+.foreign_tabmenu_wrap .tabs li a:hover { color:#fff; text-decoration:underline; }
+.foreign_tabmenu_wrap .tabs li.on { width:79px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/bg_tabmenu_on.gif) repeat-x 0 0; border-right:1px solid #2f3033;}
+.foreign_tabmenu_wrap .tabs li.on a { color:#fff; }
+.foreign_tabmenu_wrap .tabs li.last_child { background:0 none; }
+.foreign_tabmenu_wrap .search_selectbox { float:right; padding:4px 5px 0 0; }
+.foreign_tabmenu_wrap  .flight_all {margin-right:5px;}
+
+.last_choice { float:left; margin-top:7px; border-top:1px solid #c2c2c2; }
+.last_choice p.total_select{ height:41px; border-right:1px solid #c2c2c2; border-left:1px solid #c2c2c2; background:#fafafa; text-align:center; line-height:41px; #width:886px; }
+.last_choice p.total_select span{font-size:12pt; color:#333; font-weight:bold; text-decoration:none; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/ico/ico_big_downarrow.gif) no-repeat right 50%; padding-right:21px;}
+.last_choice .btn_close_booking { display:block; width:77px; height:23px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/btn_airticket.png) no-repeat -179px -83px; margin:5px auto 0; }
+.last_list table{ width:100%; }
+.last_list thead th{ height:31px; line-height:31px; font-size:9pt; background:#fff; text-align:center; color:#333; font-weight:bold; border-top:1px solid #b5bece; border-right:1px solid #b5bece; border-bottom:1px solid #bbbfcc;}
+.last_list thead th:first-child{border-left:1px solid #bbbfcc;}
+.last_list thead th span{display:block; height:30px; line-height:30px; margin:1px 0 0 1px; background:#f0f1f5; color:#333; text-decoration:none; vertical-align:middle; text-align:center;}
+.last_list tbody td{ color:#666; text-align:center; border-bottom:1px solid #f0f0f0; height:31px; line-height:31px; padding:0; }
+.last_list tbody td .btn_cview{display:inline-block; width:103px; height:33px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/btn_airticket.png) no-repeat 0 -119px; vertical-align:middle; }
+.last_list tbody td.air{text-align:left; border-left:1px solid #c2c2c2;}
+.last_list tbody td.air span{padding-left:19px;}
+.last_list tbody td.detail{border-left:1px solid #f0f0f0; border-right:1px solid #c2c2c2;}
+.last_list tbody tr.last td{border-bottom:0;}
+.total_buy { padding:10px 0; background:#f5f8ff; border:1px solid #22428a; }
+.total_buy table{ width:100%; }
+.total_buy table td { padding-left:19px; }
+.total_buy table td .air_price, .total_buy table td .tax_price{color:#1a55d9;}
+.total_buy table td p { height:24px; line-height:24px; background-color:#f5f8ff; border:0; text-align:right; }
+.total_buy table td p.total_p{ font-size:12pt; color:#333; font-weight:bold; }
+.total_buy table td p.total_p span.num{ font-size:18pt; font-family:tahoma; color:#1a55d9; }
+.total_buy table td p.inclusion{ color:#666; font-size:9pt; }
+.total_buy table td p span{ background:none; padding-right:0; }
+.total_buy table td ul.total_adult li { height:23px; line-height:23px; text-align:left; padding-left:19px; margin-top:1px; }
+.total_buy table td ul.total_adult li:first-child { margin-top:0; }
+.total_buy table td ul.total_adult li.alarm { color:#666; font-size:11px; }
+.total_buy table td a.total_rsvt{ display:inline-block; width:165px; height:54px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/btn_airticket.png) 0 -55px; vertical-align:middle; }
+.total_buy table td a.total_standby{ display:inline-block; width:165px; height:54px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/btn_airticket.png) 0 -241px; vertical-align:middle; }
+.total_buy table td a.total_complete{ display:inline-block; width:165px; height:54px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/btn_airticket.png) -175px -241px; vertical-align:middle; }
+.air_alram { height:38px; line-height:38px; text-align:right; font-size:9pt; color:#666; }
+.air_alram span.alram { background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/ico/ic_alram.gif) no-repeat 0 50%; padding-left:21px; }
+
+.sch_result_wrap .sch_foreign .body tr.select_box td .last_list td,
+.sch_result_wrap .sch_foreign .body tr.select_box td .total_buy td { width:auto; padding:0; background-color:#fff; border:0; }
+.sch_result_wrap .sch_foreign .body tr.select_box td .last_list td { border-bottom:1px solid #f0f0f0; }
+.sch_result_wrap .sch_foreign .body tr.select_box td .last_list td.detail { border-left:1px solid #f0f0f0; border-right:1px solid #c2c2c2; }
+.sch_result_wrap .sch_foreign .body tr.select_box td .total_buy td { background:transparent; }
+.sch_result_wrap .sch_foreign .body tr.select_box td .last_list td.air { text-align:left; border-left:1px solid #c2c2c2; }
+.sch_result_wrap .sch_foreign .body tr.select_box td .last_list td.time { border-right:1px solid #c2c2c2; }
+
+
+/* Selectbox Plugin Style */
+.foreign_start .start_seleect { width:30px; height:22px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/btn_airticket.png) no-repeat -226px -119px; border:0 none; cursor:pointer;  margin-left:2px;}
+.foreign_tabmenu_wrap .flight_all .heapBox,
+.foreign_tabmenu_wrap .adult_all .heapBox {  border-color:#1b1c1f; background-image:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/bg_sch_selbox.png); }
+.foreign_tabmenu_wrap .flight_all .heapBox a,
+.foreign_tabmenu_wrap .adult_all .heapBox a  { color:#d1d6e3; }
+.foreign_tabmenu_wrap .flight_all .heapBox .holder,
+.foreign_tabmenu_wrap .adult_all .heapBox .holder { width:116px; border-color:#1b1c1f;  background-image:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/bg_sch_selbox.png) }
+.foreign_tabmenu_wrap .flight_all .heapBox .handler,
+.foreign_tabmenu_wrap .adult_all .heapBox .handler { border-color:#1b1c1f; background-image:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/ico/ic_sch_sel_arr.gif) }
+.foreign_tabmenu_wrap .flight_all .heapBox div.heap,
+.foreign_tabmenu_wrap .adult_all .heapBox div.heap { width:133px; background:#484b52; border-color:#0f0f11; }
+.foreign_tabmenu_wrap .flight_all .heapBox .heap .heapOptions  .heapOption a,
+.foreign_tabmenu_wrap .adult_all .heapBox .heap .heapOptions  .heapOption a { background:#484b52; }
+.foreign_tabmenu_wrap .flight_all .heapBox .heap .heapOptions  .heapOption a:hover,
+.foreign_tabmenu_wrap .adult_all .heapBox .heap .heapOptions  .heapOption a:hover { background:#25272b; }
+
+.total_buy table td ul.total_adult .heapBox .holder { width:31px; }
+.total_buy table td ul.total_adult .heapBox .handler { width:19px; }
+.total_buy ul.total_adult .heapBox div.heap { width:50px; }
+.total_buy ul.total_adult .heapBox .heap .heapOption { padding:0; }
+
+
+
+/* 오늘의 추천 */
+.today_deals_wrap { width:925px; height:35px; background:#c5c9d0; padding:3px 3px 3px 0; border:1px solid #9ba1ad; margin-bottom:20px;}
+.today_deals_wrap .today_slide_wrap { position:relative; padding-left:185px; height:35px; background:#f0f2f5 url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/bg_today_recom.png) no-repeat left top; overflow:hidden; }
+.today_deals_wrap .today_slide_wrap ul { float:left; width:100%; height:35px; position:relative; }
+.today_deals_wrap .today_slide_wrap li { width:100%; height:35px; line-height:35px; }
+.today_deals_wrap .today_slide_wrap li b { display:inline-block; width:40px; height:18px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/ico/ic_today_recom.png) no-repeat; vertical-align:middle; margin-right:-4px; margin-left:20px; }
+.today_deals_wrap .today_slide_wrap li b:first-child { margin-left:0; }
+.today_deals_wrap .today_slide_wrap li b.flight { background-position:0 0; margin-right:2px; }
+.today_deals_wrap .today_slide_wrap li b.city { background-position:0 -28px; }
+.today_deals_wrap .today_slide_wrap li b.period { background-position:0 -56px; }
+.today_deals_wrap .today_slide_wrap li b.charge { background-position:0 -84px; }
+.today_deals_wrap .today_slide_wrap li span { display:inline-block; font-weight:bold; margin:0 -4px 0 6px; }
+.today_deals_wrap .today_slide_wrap li span:first-child { margin-left:0; }
+.today_deals_wrap .today_slide_wrap li .left { float:left; }
+.today_deals_wrap .today_slide_wrap li .right { float:right; margin-right:27px; }
+.today_deals_wrap .today_slide_wrap li .right span { color:#234ba3; }
+.today_deals_wrap .today_slide_wrap .button { width:11px; height:21px; position:absolute; top:7px; right:9px; z-index:10; }
+.today_deals_wrap .today_slide_wrap .button a { display:block; width:11px; height:10px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/btn_airticket.png) no-repeat; }
+.today_deals_wrap .today_slide_wrap .button a.btn_up { background-position:-266px -83px; }
+.today_deals_wrap .today_slide_wrap .button a.btn_down { background-position:-287px -83px; }
+
+.quick_search { width:930px; height:69px;}
+.quick_search ul.date { display:inline-block; width:452px; height:69px; vertical-align:middle; border-right:1px solid #c2c2c2; margin-right:-4px; zoom:1; *display:inline; *margin-right:0; }
+.quick_search ul.date li { display:inline-block; height:50px; vertical-align:middle; margin:0 -4px 0 7px; padding-top:12px; position:relative; zoom:1; *display:inline; }
+.quick_search ul.date li:first-child { margin-left:10px; }
+.quick_search ul.date li input[type=text] { width:77px; height:21px; padding:0; border:1px solid #d7d7d7; color:#666; text-align:center; }
+.quick_search ul.date button { display:inline-block; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/btn_airticket.png) no-repeat; border:0 none; vertical-align:middle; cursor:pointer; }
+.quick_search ul.date strong { color:#333; }
+.quick_search ul.date .calendar { width:24px; height:23px; background-position:-261px -23px; vertical-align:middle; }
+.quick_search ul.date .period { width:36px; height:16px; margin-top:22px; }
+.quick_search ul.date .today { background-position:-130px -162px; }
+.quick_search ul.date .day3 { background-position:-175px -162px; }
+.quick_search ul.date .week { background-position:-220px -162px; }
+.quick_search ul.date .day15 { background-position:-130px -188px; }
+.quick_search ul.date .month { background-position: -175px -188px; }
+.quick_search fieldset .qs_input { display:inline-block; margin-right:-4px; width:809px; height:67px; border:1px solid #c2c2c2; border-right:0; vertical-align:top; #float:left; }
+.quick_search fieldset .qs_input .price { display:inline-block; width:216px; color:#333; font-weight:bold; padding-left:20px; vertical-align:middle; zoom:1; *display:inline; }
+.quick_search fieldset .qs_input .price li { display:inline-block; zoom:1; *display:inline; }
+.quick_search fieldset .qs_input .price input[type="text"] { width:68px; height:21px; text-align:right; color:#666; padding-right:8px; border:1px solid #d7d7d7; }
+.quick_search fieldset .qs_button { display:inline-block; width:120px; height:69px; vertical-align:top; }
+.quick_search fieldset .qs_button .btn_qs { width:120px; height:69px; border:0 none; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/btn_airticket.png) no-repeat 0 -162px; cursor:pointer; }
+*+html .quick_search fieldset .qs_input img.title_sch { display:block; float:left; vertical-align:top; }
+
+/* 공동구매 */
+.sch_result_wrap .group_purchase .flight { width:189px; }
+.sch_result_wrap .group_purchase .sa_city { width:140px; }
+.sch_result_wrap .group_purchase .sa_date { width:150px; }
+.sch_result_wrap .group_purchase .charge { width:180px; }
+.sch_result_wrap .group_purchase .tax { width:80px; }
+.sch_result_wrap .group_purchase .period { width:60px; }
+.sch_result_wrap .group_purchase .seat { width:60px; }
+.sch_result_wrap .group_purchase .booking { width:70px; }
+.sch_result_wrap .group_purchase .body td { line-height:normal; padding:10px 0; color:#666; }
+.sch_result_wrap .group_purchase .body td.flight { width:189px; padding-left:0; text-align:center; }
+.sch_result_wrap .group_purchase .body tr.selected td.flight { width:188px; }
+.sch_result_wrap .group_purchase .body td.sa_date b { color:#b67714; font-weight:normal;  }
+.sch_result_wrap .group_purchase .body td.charge { width:166px;  }
+.sch_result_wrap .group_purchase .body td.charge span { display:inline-block; margin:0 -4px 0 5px; vertical-align:middle; }
+.sch_result_wrap .group_purchase .body td.charge span.buy { color:#f62020; font-size:13px; font-weight:bold; }
+.sch_result_wrap .group_purchase .body td.charge span b.sale { text-decoration:line-through; color:#999; font-weight:normal; }
+.sch_result_wrap .group_purchase .body td.charge span.percent { width:36px; height:15px; border:1px solid #b5b5b5; background:#f0f0f0; color:#666; text-align:center; font-weight:normal; font-size:12px; font-family:tahoma; }
+.sch_result_wrap .group_purchase .body td.charge span.percent.best { background-color:#ffe7ec; border-color:#ff83b5; color:#ff2d68; }
+.sch_result_wrap .group_purchase .body td.charge a.btn_rule{ display:inline-block; width:29px; height:17px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/btn_airticket.png) no-repeat -222px -23px; }
+.sch_result_wrap .group_purchase .body td.tax { width:64px; }
+.sch_result_wrap .group_purchase .body td.booking { border-right-color:#c2c2c2; }
+.sch_result_wrap .group_purchase .body tr.select_box td { border-right:2px solid #676a72;}
+
+
+
+/* 달력 2013.10.15 */
+.ui-datepicker { width:218px; padding:.2em .2em 0; display:none; font-size:1.1em; border:1px solid #323437; color:#333; background:#fff; }
+.ui-datepicker-trigger { cursor:pointer; vertical-align:top; }
+.ui-datepicker .ui-widget-header { margin:15px auto; font-size:13px; height:15px; font-weight:bold; position:relative; text-align:center;}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next  { display:block; width:15px; height:15px; position:absolute; top:0; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/btn_airticket.png) no-repeat; cursor:pointer; }
+.ui-datepicker .ui-datepicker-prev { left:10%; background-position:-266px -119px; }
+.ui-datepicker .ui-datepicker-next { right:10%; background-position:-291px -119px; }
+.ui-datepicker .ui-datepicker-title { display:block; width:60%; position:absolute; left:20%;  }
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span { position:absolute; top:0; left:0; width:0; height:0; font-size:0; line-height:0; visibility:hidden; overflow:hidden; }
+.ui-datepicker table { width:100%; border-collapse:collapse; font-size:11px;margin:0 0 .4em; }
+.ui-datepicker th { padding:.7em .3em; border:0; background:#f4f4f4; color:#323437; text-align:center; font-weight:bold; font-size:11px; }
+.ui-datepicker td a { color:#333; display:block; padding:.4em .2em; text-align:center; text-decoration:none; border:1px solid transparent; }
+.ui-datepicker td a:hover { text-decoration:underline; }
+.ui-datepicker td a.ui-priority-secondary { color:#aaa; }
+.ui-datepicker td a.ui-state-active { background:#6e727a; color:#fff; border:1px solid #6e727a; }
+.ui-datepicker td a.ui-state-highlight { border:1px solid #323437;}
+.ui-datepicker .ui-datepicker-week-end { color:#5053bf; }
+.ui-datepicker .ui-datepicker-week-end:first-child { color:#b64b4b; }
+.ui-helper-clearfix { min-height:0; /* support: IE7; */ }
+
+
+/* 2013.10.16 */
+.airinfo_selected { width:890px; border:1px solid #c2c2c2; border-top:0; padding:20px 19px 19px; }
+	.airinfo_selected .airinfo_conts { width:890px; }
+	.airinfo_selected .airinfo_conts .line_clear { width:100%; height:1px; background:#dfdfdf; margin:20px 0; }
+
+.group_area .iti_table_wrap { border:1px solid #b8bcca; }
+.group_area table.intine_table thead th { font-size:9pt; border-bottom:1px solid #b8bcca; border-left:1px solid #b8bcca; text-align:center; color:#333; }
+.group_area table.intine_table thead th span { display:block; height:30px; line-height:29px; margin:1px 0 0 1px; background:#ebedf0; }
+.group_area table.intine_table thead th:first-child { border-left:0;}
+.group_area table.intine_table thead th:first-child span { margin-left:0; }
+.group_area table.intine_table td { color:#666; border-bottom:1px solid #dfdfdf; border-left:1px solid #dfdfdf; padding:8px 0 9px; }
+.group_area table.intine_table td:first-child { border-left:0; }
+.group_area table.intine_table tr.last_child td { border-bottom:0; }
+.group_area table.intine_table .flight { width:260px; }
+.group_area table.intine_table .start { width:261px; }
+.group_area table.intine_table .arrive { width:260px; }
+.group_area table.intine_table .flight_time { width:104px; }
+.group_area table.intine_table tbody td { padding-left:10px; }
+.group_area table.intine_table tbody td.flight { width:237px; }
+.group_area table.intine_table tbody td.start { width:222px; }
+.group_area table.intine_table tbody td.arrive { width:222px; }
+.group_area table.intine_table tbody td.flight_time { padding-left:0; text-align:center; }
+.group_area table.intine_table tbody td.stopover { color:#334b81; }
+.group_area table.intine_table tbody.flight_charge td { text-align:center; }
+.group_area .joint_service { color:#666; padding-top:10px; font-size:11px; }
+.group_area .itinerary { color:#334b81; font-weight:bold; margin-bottom:8px; }
+.group_area .itinerary .icon { display:inline-block; width:38px; height:15px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/ico/ic_airline.png) no-repeat 0 0; vertical-align:middle; margin-right:5px; }
+.group_area .itinerary .icon2 { background-position:-48px 0; }
+.group_area .itinerary .bar { font-weight:normal; }
+.group_area .itinerary .stopover { color:#ff558d; }
+.group_area .iti_table_wrap { border:1px solid #b8bcca; }
+
+.group_area .hgroup { position:relative; }
+.group_area .hgroup h1 { height:18px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/ico/ic_airline.png) no-repeat; }
+.group_area .hgroup h1.subscriber { width:288px; background-position:0 -25px; }
+.group_area .hgroup h1.passenger { width:454px; background-position:0 -53px; }
+.group_area .hgroup h1.booking_rule { width:66px; background-position:0 -81px; }
+.group_area .hgroup h2 { font-size:9pt; color:#333; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/ico/ic_airplane.gif) no-repeat 0 50%; padding-left:20px;}
+.group_area .hgroup .same_person { position:absolute; right:0; bottom:0; }
+.group_area .hgroup .same_person .ui-state-default { display:inline-block; height:13px; line-height:13px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/bg_checkbox.png) no-repeat 0 0; padding-left:19px; cursor:pointer; }
+.group_area .hgroup .same_person .ui-state-focus { outline:1px dotted #000; }
+.group_area .hgroup .same_person .ui-state-active { background-position:0 -37px; }
+
+.total_amount_wrap { width:100%; text-align:right; color:#333; font-size:12pt; font-weight:bold; padding-top:18px; }
+.total_amount strong { color:#ff2d68; font-size:18pt; font-family:tahoma; line-height:normal; }
+.total_amount_wrap .alram { height:14px; line-height:14px; font-size:12px; color:#666; font-weight:normal; }
+.total_amount_wrap .alram span.alram { background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/ico/ic_alram.gif) no-repeat 0 50%; padding-left:21px; }
+
+.booking_table { margin-top:10px; }
+.booking_table .flight_reserv th,
+.booking_table .flight_reserv td { padding:4px 0; height:23px; color:#666; }
+.booking_table .flight_reserv tr.last_child th,
+.booking_table .flight_reserv tr.last_child td { border-bottom:1px solid #c5c5c5;}
+.booking_table .flight_reserv th { border-top:1px solid #c2c2c2; border-right:1px solid #c5c5c5; border-left:1px solid #c3c3c3; background-color:#f4f4f4; color:#333; font-weight:bold; text-align:left;}
+.booking_table .flight_reserv th span { padding-left:14px; }
+.booking_table .flight_reserv thead th { text-align:center; padding-left:0; }
+.booking_table .flight_reserv tbody td { border-right-color:#c2c2c2; }
+.booking_table .flight_reserv tbody td:first-child { border-left:1px solid #c2c2c2; }
+.booking_table .flight_reserv tbody td.contact span.number { padding-left:10px; }
+.booking_table .flight_reserv tbody td.contact span.number .text { width:52px; padding-left:6px; vertical-align:middle; }
+.booking_table .flight_reserv tbody tr:first-child td { border-top-color:#c2c2c2; }
+.booking_table .flight_reserv td { border-top:1px solid #dfdfdf; border-right:1px solid #c2c2c2; padding-left:15px; }
+.booking_table .flight_reserv td input[type=text] { padding-left:9px; width:129px; height:21px; border:1px solid #d7d7d7; color:#666; line-height:21px; }
+.booking_table .flight_reserv td input[type=text]::-ms-clear{display: none; } /* IE10 clear */
+.booking_table .flight_reserv td.sex .heapBox .holder, .booking_table .flight_reserv td.contact .heapBox .holder { width:46px; }
+.booking_table .flight_reserv td.sex .heapBox div.heap, .booking_table .flight_reserv td.contact .heapBox div.heap { width:63px; }
+.booking_table .flight_reserv td.contact .heapBox { vertical-align:middle; }
+.booking_table .flight_reserv td .booking_name li.email_address .holder{ width:108px; }
+.booking_table .flight_reserv td .booking_name li.email_address .heapBox div.heap { width:125px; }
+.booking_table .flight_reserv td.tour_mileage { padding:15px;}
+.booking_table .flight_reserv td.tour_mileage p { text-align:right; }
+.booking_table .flight_reserv td.tour_mileage p:first-child { font-weight:bold; color:#333; }
+.booking_table .flight_reserv td.tour_mileage p:first-child strong { color:#ff2d68; }
+.booking_table .flight_reserv tbody.passenger td { text-align:center; padding-left:0; }
+.booking_table .flight_reserv tbody.passenger tr:first-child td { border-color:#c2c2c2; }
+.booking_table .flight_reserv tbody.passenger td.name1 input { width:100px; }
+.booking_table .flight_reserv tbody.passenger td.name2 input { width:190px; }
+.booking_table .flight_reserv tbody.passenger td.contact { text-align:left; padding-left:15px; }
+.booking_table .flight_reserv .booking_name li { float:left; margin-right:5px; }
+.booking_table .flight_reserv .booking_name label,
+.booking_table .flight_reserv .booking_name .input_box { display:inline-block; *zoom:1; *display:inline; }
+.booking_table .flight_reserv .booking_name .input_box { width:88px; position:relative; height:21px; border:1px solid #d7d7d7; line-height:21; }
+.booking_table .flight_reserv .booking_name .input_box input.text { width:60px; border:0; text-transform:uppercase; padding-right:17px; }
+.booking_table .flight_reserv .booking_name .input_box .btn_delete { position:absolute; display:block; width:11px; height:11px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/btn_airticket.png) no-repeat -248px 0; top:5px; right:6px; display:none; border:0; cursor:pointer; }
+.booking_table .flight_reserv .booking_name .e_name .input_box { width:164px; }
+.booking_table .flight_reserv .booking_name .e_name .input_box input.text { width:136px; }
+.booking_table .flight_reserv .booking_name .birth .input_box { width:138px; }
+.booking_table .flight_reserv .booking_name .birth .input_box input.text { width:90px; }
+/* S: 2013.10.23 */
+.booking_table .flight_reserv .booking_name textarea.adder { width:747px; height:61px; border:1px solid #d7d7d7; }
+.booking_table .flight_reserv .booking_name p.byte { color:#999; font-size:11px; text-align:right; padding-right:15px; }
+/* E: 2013.10.23 */
+.booking_table .flight_reserv td .person .ui-state-default { background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/bg_radio.png) no-repeat 0 0; padding-left:19px; margin-right:20px; cursor:pointer; }
+.booking_table .flight_reserv td .person .ui-state-active { background-position:0 -38px; }
+.booking_table .flight_reserv td .person .ui-state-focus { outline:1px dotted #000; }
+
+
+.booking_rule_tabs { width:928px; border:1px solid #c2c2c2; margin-top:10px; }
+.booking_rule_tabs ul li {float:left; width:463px; height:31px; line-height:31px; border-bottom:1px solid #c2c2c2; border-left:1px solid #c2c2c2;}
+.booking_rule_tabs ul li:first-child { border-left:0; }
+.booking_rule_tabs ul li.center { width:464px; }
+.booking_rule_tabs ul li a { display:block; background-color:#f4f4f4; color:#333; text-align:center; text-decoration:none; font-weight:bold; }
+.booking_rule_tabs ul li.ui-state-active { border-bottom-color:#fff; }
+.booking_rule_tabs ul li.ui-state-active a { background-color:#fff; }
+.booking_rule_tabs .ruletab_box { width:928px; height:307px; overflow-y:scroll; border-bottom:1px solid #c2c2c2; }
+.booking_rule_tabs .ruletab_content { width:871px; padding:20px 20px 0 19px; }
+.booking_rule_tabs .rule_sub_tabs { width:871px; font-size:11px; color:#666; }
+.booking_rule_tabs .rule_sub_tabs ul li { height:24px; line-height:24px; border:1px solid #c2c2c2; border-left:0 none; }
+.booking_rule_tabs .rule_sub_tabs ul li:first-child {border-left:1px solid #c2c2c2;}
+.booking_rule_tabs .rule_sub_tabs ul li.ui-state-active a { color:#334b81; background-color:#eceef1; }
+.booking_rule_tabs .rule_sub_tabs ul li a { background-color:#fff; }
+.booking_rule_tabs .rule_sub_tabs .sub_tabs_conts { float:left; width:100%; padding-top:18px; font-size:11px; line-height:13pt; color:#666; }
+.booking_rule_tabs .rule_sub_tabs .sub_tabs_conts p.title { font-weight:bold; }
+.booking_rule_tabs .agreement { width:100%; height:21px; line-height:21px; text-align:center; vertical-align:middle; padding-top:8px; }
+.booking_rule_tabs .agreement .ui-state-default { display:inline-block; height:13px; line-height:13px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/bg_checkbox.png) no-repeat 0 0; padding-left:19px; cursor:pointer; vertical-align:middle; }
+.booking_rule_tabs .agreement .ui-state-active { background-position:0 -37px;}
+.booking_rule_tabs .rule_sub_tabs table { border:1px solid #c3c3c3; color:#666; font-size:11px; }
+.booking_rule_tabs .rule_sub_tabs table th,
+.booking_rule_tabs .rule_sub_tabs table td {padding:10px 0 8px 15px; }
+.booking_rule_tabs .rule_sub_tabs table th { border:1px solid #c2c2c2; border-top:0 none; background-color:#eceef1; font-weight:bold; font-size:11px; }
+.booking_rule_tabs .rule_sub_tabs table th:first-child { border-left:0 none; }
+.booking_rule_tabs .rule_sub_tabs table td { border-bottom:1px solid #dfdfdf; font-size:11px; }
+.booking_rule_tabs .rule_sub_tabs table.share thead th { text-align:center; }
+.booking_rule_tabs .rule_sub_tabs table.share td { border-left:1px solid #dfdfdf; color:#666; }
+.booking_rule_tabs .rule_sub_tabs table.share td:first-child { border-left:0; }
+
+.atten_point { clear:both; margin-top:10px; padding:18px 0; width:928px; border:1px solid #c2c2c2; background-color:#f4f4f4; }
+.atten_point table th { text-align:center; }
+.atten_point table th span.atten_tit { display:inline-block; width:113px; height:18px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/ico/ic_airline.png) no-repeat -76px -81px; vertical-align:middle; }
+.atten_point table td { padding-left:12px; }
+.atten_point table td li { padding-left:8px; font-size:11px; line-height:21px; color:#666; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/ico/bu_gray_dot.gif) no-repeat left center; }
+.atten_point table td li.care { color:#ba4e6c; }
+
+.receipt { clear:both; margin-top:10px; width:930px; }
+.receipt dt, .receipt dd { float:left; height:43px; line-height:43px; border:1px solid #c2c2c2; border-right:0 none; }
+.receipt dt { width:189px; font-size:14px; color:#333; font-weight:bold; background:#f4f4f4 url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/bg_receipt_arrow.png) no-repeat right center; padding-left:25px; }
+.receipt dd { width:714px; color:#666; font-size:12px; border:1px solid #c2c2c2; border-left:0 none; }
+.receipt dd div { line-height:normal; margin-top:10px; font-size:11px; }
+
+
+a.btn_total_booking { display:block; width:165px; height:54px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/btn_airticket.png) 0 -55px no-repeat; margin:0 auto; }
+
+
+
+/* S: 2014.05.28 */
+.sch_result_wrap .sch_foreign .body td.tax { padding:0; text-align:center; }
+.sch_result_wrap .sch_foreign .body td.tax a.btn_rule{display:inline-block; width:33px; height:17px; background:url("http://img.modetour.co.kr/ModeLiveBooking/130913_air/btn_airticket.png") no-repeat -222px -23px; vertical-align:middle; }
+.sch_result_wrap .sch_foreign .body td.charge_total { padding:0; }
+.sch_result_wrap .sch_foreign .body td.charge_total > div { padding-right:25px; }
+.sch_result_wrap .sch_foreign .body td.charge_total > div > span { display:inline-block; color:#1642a4; vertical-align:middle; font-weight:bold; }
+.sch_result_wrap .sch_foreign .body td.charge_total > div > a.btn_charge_detail { display:inline-block; width:14px; height:14px; background:url("http://img.modetour.co.kr/ModeLiveBooking/130913_air/ico/ico_symbol.png") no-repeat 0 0; vertical-align:middle; }
+.sch_result_wrap .sch_foreign .body td.charge_total > div.joint div.layer_popup { position:absolute; top:31px; right:-1px; display:none; padding:20px 5px 5px; width:203px; border:1px solid #000; border-radius:4px; background:#fff; font-size:10px; }
+.sch_result_wrap .sch_foreign .body td.charge_total > div.joint > div.price { display:inline-block; margin-right:5px; }
+.sch_result_wrap .sch_foreign .body td.charge_total > div.joint > div.price > span { display:inline-block; margin:0 -4px 0 5px; vertical-align:middle; }
+.sch_result_wrap .sch_foreign .body td.charge_total > div.joint > div.price > span.buy { color:#f62020; font-weight:bold; font-size:13px; line-height:16px; }
+.sch_result_wrap .sch_foreign .body td.charge_total > div.joint > div.price > span.buy { color:#f62020; font-size:13px; font-weight:bold; }
+.sch_result_wrap .sch_foreign .body td.charge_total > div.joint > div.price > span.buy b.sale { text-decoration: line-through; color:#999; font-weight:normal; }
+.sch_result_wrap .sch_foreign .body td.charge_total > div.joint > div.price > span.percent { width:36px; height:15px; border:1px solid #b5b5b5; background:#f0f0f0; color:#666; text-align:center; font-weight:normal; font-size:12px; line-height:15px; font-family:tahoma; }
+.sch_result_wrap .sch_foreign .body td.charge_total > div.joint > div.price > span.percent.best { background-color:#ffe7ec; border-color:#ff83b5; color:#ff2d68; }
+.sch_result_wrap .sch_foreign .body tr.select  td.charge_total > div { position:relative; }
+
+.sch_result_wrap .sch_foreign .body td.charge_total div.layer_popup { position:absolute; top:31px; right:-1px; display:none; padding:20px 5px 5px; width:203px; border:1px solid #000; border-radius:4px; background:#fff; font-size:10px; }
+.sch_result_wrap .sch_foreign .body td.charge_total div.layer_popup b.bullet { position:absolute; top:-5px; right:28px; display:block; width:9px; height:5px; background:url("http://img.modetour.co.kr/ModeLiveBooking/130913_air/ball_arrow.png") no-repeat; }
+.sch_result_wrap .sch_foreign .body td.charge_total div.layer_popup a.btn_lay_close { display:block; position:absolute; top:6px; right:6px; width:9px; height:8px; background:url("http://img.modetour.co.kr/ModeLiveBooking/130913_air/btn_layer_close.png") no-repeat; }
+.sch_result_wrap .sch_foreign .body td.charge_total div.layer_popup table { width:183px; margin:0 auto; }
+.sch_result_wrap .sch_foreign .body td.charge_total div.layer_popup table th,
+.sch_result_wrap .sch_foreign .body td.charge_total div.layer_popup table td { padding:0; height:16px; border:0 none; color:#333; font-size:11px; line-height:16px; }
+.sch_result_wrap .sch_foreign .body tr:hover td.charge_total div.layer_popup table th,
+.sch_result_wrap .sch_foreign .body tr:hover td.charge_total div.layer_popup table td { background-color:#fff; }
+.sch_result_wrap .sch_foreign .body td.charge_total div.layer_popup table th { text-align:left; }
+.sch_result_wrap .sch_foreign .body td.charge_total div.layer_popup table td { text-align:right; }
+.sch_result_wrap .sch_foreign .body td.charge_total div.layer_popup table tbody th,
+.sch_result_wrap .sch_foreign .body td.charge_total div.layer_popup table tbody td { font-weight:normal; }
+.sch_result_wrap .sch_foreign .body td.charge_total div.layer_popup table tbody tr.last th,
+.sch_result_wrap .sch_foreign .body td.charge_total div.layer_popup table tbody tr.last td { padding-bottom:10px; }
+.sch_result_wrap .sch_foreign .body td.charge_total div.layer_popup table tfoot th,
+.sch_result_wrap .sch_foreign .body td.charge_total div.layer_popup table tfoot td { border-top:1px solid #c2c2c2; height:30px; line-height:30px; }
+.sch_result_wrap .sch_foreign .body td.charge_total div.layer_popup table tfoot td { font-weight:bold; color:#1642a4; }
+.sch_result_wrap .sch_foreign .body td.charge_total > div.none { text-align:center; padding:0; }
+.sch_result_wrap .sch_foreign .body td.charge_total > div.none > a.btn_charge_detail { background-position:0 -24px; }
+.sch_result_wrap .sch_foreign .body td.charge_total > div.none div.layer_popup { top:22px; }
+.sch_result_wrap .sch_foreign .body td.charge_total > div.none div.layer_popup b.bullet { right:64px; }
+
+.sch_result_wrap .sch_foreign .body td.charge_total div.layer_popup p.guideline { padding:10px; font-weight:normal; font-size:11px; line-height:16px; background-color:#f1f1f1; color:#666; text-align:left; }
+
+.total_buy table td .fuel_sale { position:relative; display:inline-block; }
+.ie7 .total_buy table td .fuel_sale { display:inline; zoom:1; }
+.total_buy table td .fuel_sale a.btn_charge_summary { display:inline-block; width:14px; height:14px; background:url("http://img.modetour.co.kr/ModeLiveBooking/130913_air/ico/ico_symbol.png") no-repeat 0 0; vertical-align:middle; }
+.total_buy table td .fuel_sale div.layer_popup { position:absolute; top:20px; right:-27px; display:none; padding:20px 5px 5px; width:143px; border:1px solid #000; border-radius:4px; background:#fff; }
+.total_buy table td .fuel_sale div.layer_popup b.bullet { position:absolute; top:-5px; right:28px; display:block; width:9px; height:5px; background:url("http://img.modetour.co.kr/ModeLiveBooking/130913_air/ball_arrow.png") no-repeat; }
+.total_buy table td .fuel_sale div.layer_popup table { width:123px; margin:0 auto; }
+.total_buy table td .fuel_sale div.layer_popup table th { text-align:left; font-weight:normal; }
+.total_buy table td .fuel_sale div.layer_popup table td { text-align:right; }
+.total_buy table td .fuel_sale div.layer_popup table th,
+.total_buy table td .fuel_sale div.layer_popup table td { padding:0; height:16px; border:0 none; color:#333; font-size:11px; line-height:16px; }
+.total_buy table td .fuel_sale div.layer_popup a.btn_lay_close { display:block; position:absolute; top:6px; right:6px; width:9px; height:8px; background:url("http://img.modetour.co.kr/ModeLiveBooking/130913_air/btn_layer_close.png") no-repeat; }
+/* E: 2014.05.28 */
+
+
+/* 2014.12.22 투어마일리지 */
+.booking_table .flight_reserv tr.tour_mileage td { padding-left:15px; text-align:left; border-left:1px solid #dfdfdf; }
+.booking_table .flight_reserv tr.tour_mileage td strong { color:#ff2d68; font-family:tahoma; }
+.booking_table .flight_reserv tr.tour_mileage .btn_mem_certify { width:56px; height:19px; background:url("http://img.modetour.co.kr/ModeLiveBooking/130913_air/btn_airticket.png") no-repeat -300px -752px; border:0; vertical-align:middle; }
+.booking_table .flight_reserv tr.tour_mileage .btn_mem_certify.change { width:34px; background-position:-300px -774px; }
+.booking_table .flight_reserv tr.tour_mileage td .point{ font-weight:bold; font-family:tahoma; color:#ff2d68; }
+.tour_mileage_guide { padding:19px; border:1px solid #c2c2c2; }
+.tour_mileage_guide li{ padding-left:8px; font-size:11px; background:url("http://img.modetour.co.kr/ModeLiveBooking/130913_air/ico/bu_gray_dot.gif") no-repeat 1px 50%; color:#666; }
+.tour_mileage_guide li.strong { color:#ba4e6c; }
+.tour_mileage_guide li .btn_saving_guide { display:inline-block; width:56px; height:18px; background:url("http://img.modetour.co.kr/ModeLiveBooking/130913_air/btn_airticket.png") no-repeat -366px -752px; vertical-align:middle; }
+
+
+/* 수정 */
+/* S:2013.11.20 수정 */
+.tab_wrap .tabs_menu { width:929px; height:32px; line-height:32px; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/bg_tabs_menu.gif) repeat-x; border:0 none; border-right:1px solid #e5e5e5; }
+.tab_wrap .tabs_menu li { float:left; padding:0; height:30px; border:1px solid #e5e5e5; border-left:0 none; margin-left:0; }
+.tab_wrap .tabs_menu li:first-child { border-left:1px solid #e5e5e5; }
+.tab_wrap .tabs_menu li:first-child a { width:131px; }
+.tab_wrap .tabs_menu li a { display:block; width:132px; height:30px; line-height:30px; color:#666; text-align:center; }
+.tab_wrap .tabs_menu li.ui-state-active { border-color:#1971d6; }
+.tab_wrap .tabs_menu li.ui-state-active a b { display:none; }
+.tab_wrap .tabs_menu li.ui-state-active a { background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/bg_tabs_active.gif) repeat-x; color:#fff; }
+.tab_wrap .tabs_menu li.last,
+.tab_wrap .tabs_menu li.not { border-right:0 none; }
+.tab_wrap .tabs_menu li.not span { display:block; float:left; width:131px; height:30px; }
+.tab_wrap .tabs_menu li.last a,
+.tab_wrap .tabs_menu li.last span { width:131px; }
+/* E:2013.11.20 수정 */
+.tab_wrap .tab_content_wrap .tab_content { float:left; width:928px; border:1px solid #c2c2c2; border-top:0 none; }
+.tab_wrap .tab_content_wrap .tab_content li { background:#fff; border:0 none; border-top:1px solid #f0f0f0; border-right:1px solid #f0f0f0; }
+.tab_wrap .tab_content_wrap .tab_content ul:first-child li { border-top:0 none; }
+.tab_wrap .tab_content_wrap .tab_content li:first-child { border-left:0 none }
+.tab_wrap .tab_content_wrap .tab_content li.on { background:#cfe4f7 url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/arr_start_city.png) no-repeat 165px 50%; }
+.tab_wrap .tab_content_wrap .tab_content li.last { border-right:0; }
+.tab_wrap .tab_content_wrap .tab_content li a { color:#666; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/ico/bu_tab_gray.gif) no-repeat left center; padding-left:8px; }
+.tab_wrap .tab_content_wrap .tab_content li a:hover { background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/ico/bu_tab_blue.gif) no-repeat left center; color:#1b75db; }
+.tab_wrap .tab_content_wrap .tab_content li.on a { color:#1b75db; background:url(http://img.modetour.co.kr/ModeLiveBooking/130913_air/ico/bu_tab_blue.gif) no-repeat left center; padding-left:8px; }
+
+.quick_search fieldset { font-size:0; }
+.quick_search fieldset .qs_input { background-color:#f0f1f5 }
+/* 추가 */
+.quick_search fieldset .qs_input img.title_sch { vertical-align:top; border-right:1px solid #bdbec4; }
+.quick_search ul.date li input[type=text] { border-right:0 none; }
+.quick_search fieldset .qs_button .btn_qs { padding:0; }
+

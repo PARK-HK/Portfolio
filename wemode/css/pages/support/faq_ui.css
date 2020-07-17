@@ -1,0 +1,89 @@
+.container-inner{margin-top:10px;}
+
+.snb-section{float:left;width:150px;}
+.snb-section .obj{display:block;margin-top:6px;}
+.snb-title{display:block;padding-bottom:9px;border-bottom:4px solid #4c5467;}
+.snb{border-bottom:1px solid #e3e3e3;}
+.snb .section{border-top:1px solid #e3e3e3;}
+.snb a{display:block;line-height:100%;}
+.snb h2{position:relative;}
+.snb h2 a{padding:16px 0 16px 11px;font-size:13px;font-weight:normal;color:#333;}
+.snb ul{display:none;padding:7px 0;background:#f1f1f1;border-top:1px solid #e3e3e3;}
+.snb .section.is-current ul,
+.snb .section.is-active ul{display:block;}
+.snb li a{padding:7px 0 7px 21px;color:#777;}
+.snb li a:hover span,
+.snb li a:active span,
+.snb li a:focus span,
+.snb li.is-current a span,
+.snb li.is-active a span{color:#555;text-decoration:underline;}
+.snb .section:hover h2 a,
+.snb .section:active h2 a,
+.snb .section:focus h2 a,
+.snb .section.is-current h2 a,
+.snb .section.is-active h2 a{font-weight:600;color:#3cb0a1;}
+.snb .section:hover h2 i,
+.snb .section:active h2 i,
+.snb .section:focus h2 i,
+.snb .section.is-current h2 i,
+.snb .section.is-active h2 i{display:block;position:absolute;top:50%;right:11px;margin-top:-5px;width:5px;height:9px;background:url('http://img.modetour.co.kr/modetour/2015/faq/obj_ico.png') -74px -70px no-repeat;}
+
+.sub-container{float:right;width:760px;min-height:1100px;}
+.sub-header{padding-bottom:8px;overflow:hidden;border-bottom:4px solid #029c14;}
+.sub-title{float:left;padding:3px 0 0 19px;height:18px;background:url('http://img.modetour.co.kr/mode2010/modetour/common/ico_modetour.gif') no-repeat;}
+.sub-location{float:right;}
+.sub-location a{display:inline-block;*display:inline;*zoom:1;color:#898989;line-height:100%;vertical-align:middle;}
+.sub-location .is-current{color:#464646;}
+
+.tab-section .tab-title{overflow:hidden;}
+.tab-section .tab-title.d1>a{float:left;margin-left:5px;padding-top:12px;width:122px;height:29px;font-size:17px;font-weight:600;color:#fff;line-height:18px;text-align:center;background:#888;}
+
+.tab-section .tab-title.d1>a:hover,
+.tab-section .tab-title.d1>a:active,
+.tab-section .tab-title.d1>a:focus,
+.tab-section .tab-title.d1>.is-current{background:#3cb0a1;}
+.tab-section .tab-cont.d1>.cont{padding-top:40px;}
+
+.tab-section .tab-title.d2{text-align:center;}
+.tab-section .tab-title.d2>a{display:inline-block;*display:inline;*zoom:1;margin-left:6px;font-size:15px;color:#333;vertical-align:middle;}
+/* .tab-section .tab-title.d2>a:hover,
+.tab-section .tab-title.d2>a:active,
+.tab-section .tab-title.d2>a:focus, */
+.tab-section .tab-title.d2>.is-current{color:#3cb0a1;font-weight:600;border-bottom:2px solid #3cb0a1;}
+.tab-section .tab-title.d2>a>span{display:block;padding:10px 19px 0;height:25px;line-height:16px;}
+.tab-section .tab-title>a:first-child{margin-left:0;}
+.tab-section .cont{display:none;}
+.tab-section .cont:first-child{display:block;}
+
+.faq-section .h{position:relative;padding:36px 0 40px 160px;}
+.faq-section .h>i{display:block;position:absolute;top:50px;left:51px;width:79px;height:56px;background:url('http://img.modetour.co.kr/modetour/2015/faq/obj_ico.png') no-repeat;}
+.faq-section .h .info{overflow:hidden;}
+.faq-section .h .info>*{float:left;vertical-align:middle;}
+.faq-section .h .info b{margin-top:4px;font-size:15px;color:#333;letter-spacing:-1px;}
+.faq-section .h .btn-ask{margin-left:9px;padding:9px 0 8px;width:74px;font-size:11px;color:#fff;line-height:100%;text-align:center;background:url('http://img.modetour.co.kr/modetour/2015/faq/obj_ico.png') -96px 0 no-repeat;}
+.faq-section .h .desc{margin-top:8px;}
+.faq-section .h .desc li{font-size:13px;color:#555;line-height:20px;}
+
+.faq-search{margin-bottom:40px;padding:36px 0;text-align:center;background:#fbfbfb;border:1px solid #e8e8e8;}
+.faq-search dl *{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;}
+.faq-search dt{margin-right:8px;padding-left:11px;background:url('http://img.modetour.co.kr/modetour/2015/faq/bg_dot01.gif') 0 50% no-repeat;}
+.faq-search dt label{font-size:14px;font-weight:600;color:#333;}
+.faq-search .input{padding:5px 4px;width:240px;border:1px solid #dadada;}
+.faq-search .btn-search{display:inline-block;*display:inline;*zoom:1;width:70px;height:30px;text-align:left;overflow:hidden;text-indent:-9999em;background:url('http://img.modetour.co.kr/modetour/2015/faq/obj_ico.png') -96px -38px no-repeat;}
+
+.faq-list{margin-top:-1px;border-bottom:1px solid #e3e3e3;font-size:0;}
+.faq-list li{margin:0;padding:0;}
+.faq-list dl{border-top:1px solid #e3e3e3;}
+.faq-list dl dd,
+.faq-list dt a{position:relative;padding:22px 67px 21px;}
+.faq-list dt{color:#333;font-size:14px;font-weight:600;line-height:19px;}
+.faq-list dt a{display:block;}
+.faq-list dd{display:none;font-size:13px;color:#666;line-height:22px;background:#fbfbfb;border-top:1px dashed #e3e3e3;}
+.faq-list .is-open dd{display:block;}
+.faq-list i{display:block;position:absolute;background:url('http://img.modetour.co.kr/modetour/2015/faq/obj_ico.png') no-repeat;}
+.faq-list .ico{left:30px;overflow:hidden;text-indent:-9999em;z-index:1;}
+.faq-list .q{top:24px;width:19px;height:15px;background-position:-3px -65px;}
+.faq-list .a{top:26px;width:18px;height:14px;background-position:-29px -66px;}
+.faq-list .deco{top:50%;right:30px;margin-top:-3px;width:10px;height:6px;background-position:-54px -76px;}
+.faq-list .is-open .deco{background-position:-54px -68px;}
+
