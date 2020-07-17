@@ -1,0 +1,46 @@
+@charset 'UTF-8';
+
+@font-face{font-family:'Noto Sans KR';font-style:normal;font-weight:100;src:url("http://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Thin.woff2") 
+    format("woff2"),url("http://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Thin.woff") 
+    format("woff"),url("http://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Thin.otf") 
+    format("opentype")}@font-face{font-family:'Noto Sans KR';font-style:normal;font-weight:300;src:url("http://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Light.woff2") 
+    format("woff2"),url("http://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Light.woff") 
+    format("woff"),url("http://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Light.otf")
+    format("opentype")}@font-face{font-family:'Noto Sans KR';font-style:normal;font-weight:400;src:url("http://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Regular.woff2") 
+    format("woff2"),url("http://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Regular.woff") format("woff"),url("http://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Regular.otf") 
+    format("opentype")}@font-face{font-family:'Noto Sans KR';font-style:normal;font-weight:500;src:url("http://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Medium.woff2") 
+    format("woff2"),url("http://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Medium.woff") 
+    format("woff"),url("http://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Medium.otf") 
+    format("opentype")}@font-face{font-family:'Noto Sans KR';font-style:normal;font-weight:700;src:url("http://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Bold.woff2") 
+    format("woff2"),url("http://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Bold.woff") 
+    format("woff"),url("http://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Bold.otf") 
+    format("opentype")}@font-face{font-family:'Noto Sans KR';font-style:normal;font-weight:900;src:url("http://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Black.woff2") 
+    format("woff2"),url("http://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Black.woff")
+    format("woff"),url("http://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Black.otf") format("opentype")}
+
+html,body{height: 100%;}
+body{font-family:"Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;line-height:1.5;color:#000;word-break:break-all; }
+
+.head{width: 100%; height: 100%; background: url('img/bg.jpg') center 0 no-repeat; background-size: cover; position: relative;}
+.head:after{content:''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5);}
+.head .wrap{position: relative; z-index: 1; font-weight: bold; color: #FFF; height: 100%;}
+.work_tit{font-size: 15px; text-align: center; font-size: 38px; padding-top: 10%;}
+.txt{padding-top: 35px; font-size: 25px; position: absolute; bottom: 30%; left: 10%; padding-left: 30px;}
+.txt:before{content: ''; display: block; width: 80px; height: 5px; background: #eee; position: absolute; top: 0; left: 0;}
+.move{display: block; width: 34px; height: 80px; background: url("http://img.modetour.com/modewebagent/2017/cruise/icon_sprite.png") -114px -181px no-repeat; position: absolute; left: 50%; margin-left: -17px; bottom: 60px;}
+
+.con{}
+.con ul{/*display: flex; flex-wrap: wrap; justify-content: center;*/ padding-top: 80px; overflow: hidden; position: relative;}
+.con ul:before{content: ''; display: block; width: 1px; height: 100%; position: absolute; top: 5%; left: 50%; background: #ddd; bottom: 5%;}
+.con ul li{/*display: 1;*/ text-align: center; margin-bottom: 80px; width: 50%; float: left;}
+.con ul li div.image{position: relative;}
+.con ul li span.tit{font-size: 18px; font-weight: bold;}
+.con ul li p{font-size: 14px;}
+
+
+
+
+
+
+
+https://coderap.tistory.com/499
