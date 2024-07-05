@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="keywords" content="모두투어, 해외여행, 동남아여행, 중국여행, 일본여행, 미주여행, 남태평양여행, 유럽여행, 인도여행, 아프리카 여행, 골프여행, 패키지, 에어텔, 허니문, 자유여행, 골프여행, jm프리미엄, 크루즈, 국내여행, 제주여행, 호텔, 숙박, 해외호텔, 국내숙박, 항공권 ,해외항공권 ,국내항공권, 철도 ,패스, 여행정보" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes,viewport-fit=cover">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta http-equiv="Pragma" content="no-cache">
+        <title>모두투어 출장관리 시스템</title>
+        <!--css-->
+        <link rel="stylesheet" type="text/css" href="https://m.modetour.com/Include/CSS/Common/common.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://m.modetour.com/Include/CSS/Common/reset.css" />
+        <link rel="stylesheet" type="text/css" href="../css/btms_201805.css" />
+        <!--css-->
+        
+        <!-- js -->
+        <script type="text/javascript" src="https://js.modetour.com/jquery/ver/2.1.0.min.js"></script>
+        <script type="text/javascript" src="../js/btms.js"></script>
+        <script src="../js/swiper-4.1.0.min.js"></script>
+        <!-- js -->
+
+        <!-- 로컬 작업 링크 -->
+        <link rel="stylesheet" type="text/css" href="/Include/CSS/btms_201805.css" />
+        <script type="text/javascript" src="/Include/js/btms.min.js"></script>
+        <script src="/Include/js/swiper-4.1.0.min.js"></script>
+        <!-- 로컬 작업 링크 -->
+    </head>
+    <body>
+        <header class="sub_header">
+            <a href="" class="back">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <h1>견적요청</h1>
+        </header>
+        <a href="" class="btn_side">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class="mobile_container register">
+           <div class="step_list">
+              <span class="tit">출장등록</span>
+              <!-- 
+                  on 번호 불 켜짐
+                  complete 체크 불 켜짐 
+              -->
+              <ul>
+                  <li class="complete step1"><i></i></li>
+                  <li class="off step2"><i></i></li>
+                  <li class="off step3"><i></i></li>
+              </ul>
+           </div>
+           <div class="register_in">
+              <div class="tit">신규요청</div>
+              <div class="form_wrap">
+                  <!-- form 입력 오류시 error 클래스 추가 -->
+                   <div class="form">
+                       <input type="text" placeholder="출장명">
+                       <label>출장명</label>
+                   </div>
+                   <div class="form">
+                       <input type="text" placeholder="출장기간" class="text_change">
+                       <label>출장기간</label>
+                   </div>
+              </div>
+           </div>
+           <div class="register_in">
+                <div class="tit">출장규정확인</div>
+                <!-- 에러시 error 추가 -->
+                <div class="check error">
+                    <input type="checkbox" id="businesstrip_ok">
+                    <label for="businesstrip_ok">출장규정 확인</label>
+                    <!-- 에러시 밑에 텍스트 나옴 -->
+                    <span class="txt">확인 바랍니다.</span>
+                </div>
+            </div>
+            <!-- 버튼 활성화시 active 추가 -->
+            <button class="active">다음</button>
+        </div>   
+        <div class="screen"></div>
+        <nav class="gnb">
+            <a href="" class="setting"></a>
+            <div class="profile">
+                <div class="name"><strong>공유</strong> 님</div>
+                <div class="email">
+                    <span class="mail">kongyou@hanhwalife.com</span>
+                    <span class="company">한화생명</span>
+                </div>
+            </div>
+            <ul class="list">
+                <li class="list01"><a href="">스케줄 조회</a></li>
+                <li class="list02"><a href="">출장예약(견적요청)</a></li>
+                <li class="list03"><a href="">예약내역</a></li>
+            </ul>
+            <ul class="show_reserve">
+                <li>
+                    <img src="https://img.modetour.com/modemobile/2018/btms/img/sidemenu_circle.png" alt="">
+                    <span class="num">  
+                        <strong>10</strong>건
+                    </span>
+                    <p>전체보기</p>
+                </li>
+                <li>
+                    <img src="https://img.modetour.com/modemobile/2018/btms/img/sidemenu_circle.png" alt="">
+                    <span class="num">
+                        <strong>10</strong>건
+                    </span>
+                    <p>항공</p>
+                </li>
+                <li>
+                    <img src="https://img.modetour.com/modemobile/2018/btms/img/sidemenu_circle.png" alt="">
+                    <span class="num">
+                        <strong>10</strong>건
+                    </span>
+                    <p>비자</p>
+                </li>
+                <li>
+                    <img src="https://img.modetour.com/modemobile/2018/btms/img/sidemenu_circle.png" alt="">
+                    <span class="num">
+                        <strong>10</strong>건
+                    </span>
+                    <p>호텔</p>
+                </li>
+            </ul>
+            <ul class="list2">
+                <li class="list04"><a href="">1:1문의하기/내역</a></li>
+                <li class="list05"><a href="">출장규정</a></li>
+                <li class="list06"><a href="">법인마일리지</a></li>
+                <li class="list07"><a href="">쿠폰/이벤트</a></li>
+                <li class="list08"><a href="">고객센터</a></li>
+                <li class="list09"><a href="">출장관련정보</a></li>
+            </ul>
+        </nav>
+        
+        <!-- [s]: 출장규정확인 팝업 -->
+        <div id="trip_rule" class="pop_layer">
+            <div class="tit">
+                <a href="" class="btn_cancel">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <h1>출장규정</h1>
+            </div>
+            <div class="in">
+                <div class="company_name">한화그룹 출장규정</div>
+                <dl>
+                    <dt>1. 한화그룹 출장규정</dt>
+                    <dd>회사 내 업무를 위해 해외출장 근무를 수행하게 될 경우의 효율적인 업무관리를 위하여 세부적인 기본 규정 및 행동지침 등을 정하고 
+                        근무비 지급기준과 수단이 명확하게 작성되어 해외업무에 대하여 차질이 없도록 해외근무규정을 명시하여 표준으로 삼아 적용하도록 한다.</dd>
+                </dl>
+                <dl>
+                    <dt>2. 한화그룹 출장규정</dt>
+                    <dd>
+                        인천국제공항 1터미널, 2터미널 셀프체크인 항공사 관련 정보 수정되어 공유를 공지해 드리겠습니다.<br />
+                        (KE, ZE 두 항공사 셀프체크인 추가 되었습니다.)
+                        <br />
+                        <br />
+                        ※ 전반적으로 KE, OZ, RS, TW, 7C, ZE 셀프체크인 사용 빈도가 높은 항공사 위주로 정리하였으며 업무에 참고 바랍니다.
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>3. 한화그룹 출장규정</dt>
+                    <dd>회사 내 업무를 위해 해외출장 근무를 수행하게 될 경우의 효율적인 업무관리를 위하여 세부적인 기본 규정 및 행동지침 등을 정하고 
+                        근무비 지급기준과 수단이 명확하게 작성되어 해외업무에 대하여 차질이 없도록 해외근무규정을 명시하여 표준으로 삼아 적용하도록 한다.</dd>
+                </dl>
+            </div>
+            <button>확인</button>
+        </div>  
+        <!-- [e]: 출장규정확인 팝업 -->
+        <script>
+            $(document).ready(function(){
+                function textChangein(){
+                    var t = $(this);
+                    t.attr('placeholder','YYYY-MM-DD')
+                }
+                $('.text_change').focusin(textChangein);
+
+                function textChangeout(){
+                    var t = $(this);
+                    t.attr('placeholder','출장기간')
+                }
+                $('.text_change').focusout(textChangeout);
+
+            });
+        </script>
+    </body>
+</html>

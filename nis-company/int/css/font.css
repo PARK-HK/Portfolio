@@ -1,0 +1,91 @@
+@charset "utf-8";
+/*
+Copyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Pretendard.
+https://github.com/orioncactus/pretendard
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+*/
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Prompt:wght@300;400;500;600;700;800&display=swap');
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), url('./woff2/Pretendard-ExtraBold.woff2') format('woff2'), url('./woff/Pretendard-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700; 
+	font-display: swap;
+	src: local('Pretendard Bold'), url('./woff2/Pretendard-Bold.woff2') format('woff2'), url('./woff/Pretendard-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard SemiBold'), url('./woff2/Pretendard-SemiBold.woff2') format('woff2'), url('./woff/Pretendard-SemiBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url('../../../packages/pretendard/dist/web/static/woff2/Pretendard-Medium.woff2') format('woff2'), url('../../../packages/pretendard/dist/web/static/woff/Pretendard-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url('./woff2/Pretendard-Regular.woff2') format('woff2'), url('./woff/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), url('./woff2/Pretendard-ExtraBold.woff2') format('woff2'), url('./woff/Pretendard-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Prompt';
+	font-weight: 300;
+	font-display: swap;
+	unicode-range: : U+0041-005A, U+0061-007A;
+}
+@font-face {
+	font-family: 'Prompt';
+	font-weight: 400;
+	font-display: swap;
+	unicode-range: : U+0041-005A, U+0061-007A;
+}
+@font-face {
+	font-family: 'Prompt';
+	font-weight: 500;
+	font-display: swap;
+	unicode-range: : U+0041-005A, U+0061-007A;
+}
+@font-face {
+	font-family: 'Prompt';
+	font-weight: 600;
+	font-display: swap;
+	unicode-range: : U+0041-005A, U+0061-007A;
+}
+@font-face {
+	font-family: 'Prompt';
+	font-weight: 700;
+	font-display: swap;
+	unicode-range: : U+0041-005A, U+0061-007A;
+}
+@font-face {
+	font-family: 'Prompt';
+	font-weight: 800;
+	font-display: swap;
+	unicode-range: : U+0041-005A, U+0061-007A;
+}

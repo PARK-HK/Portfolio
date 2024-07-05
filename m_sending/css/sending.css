@@ -1,0 +1,187 @@
+@charset 'UTF-8';
+
+@font-face{font-family:'Noto Sans KR';font-style:normal;font-weight:100;src:url("https://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Thin.woff2") 
+    format("woff2"),url("https://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Thin.woff") 
+    format("woff"),url("https://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Thin.otf") 
+    format("opentype")}@font-face{font-family:'Noto Sans KR';font-style:normal;font-weight:300;src:url("https://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Light.woff2") 
+    format("woff2"),url("https://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Light.woff") 
+    format("woff"),url("https://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Light.otf")
+    format("opentype")}@font-face{font-family:'Noto Sans KR';font-style:normal;font-weight:400;src:url("https://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Regular.woff2") 
+    format("woff2"),url("https://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Regular.woff") format("woff"),url("https://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Regular.otf") 
+    format("opentype")}@font-face{font-family:'Noto Sans KR';font-style:normal;font-weight:500;src:url("https://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Medium.woff2") 
+    format("woff2"),url("https://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Medium.woff") 
+    format("woff"),url("https://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Medium.otf") 
+    format("opentype")}@font-face{font-family:'Noto Sans KR';font-style:normal;font-weight:700;src:url("https://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Bold.woff2") 
+    format("woff2"),url("https://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Bold.woff") 
+    format("woff"),url("https://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Bold.otf") 
+    format("opentype")}@font-face{font-family:'Noto Sans KR';font-style:normal;font-weight:900;src:url("https://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Black.woff2") 
+    format("woff2"),url("https://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Black.woff")
+    format("woff"),url("https://m.modetour.com/Include/Css/Fonts/NotoSansKr/NotoSansKR-Black.otf") format("opentype")}
+
+body{font-family:"Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;line-height:1.5;color:#000;word-break:break-all}
+
+#body_section{padding-top: 0;}
+.container{background: #FFF;}
+.sending .text_blind{position: absolute; left: -9999px; font-size: 0;}
+.sending .head{padding: 23px 27px;}
+.sending .head a{display: block; position: relative; text-decoration: none; font-size: 20px; color: #121212; letter-spacing: -0.05em; line-height: 100%; font-weight: bold;}
+.sending .head a.back:before{content:'';display: inline-block;  background: url('https://img.modetour.com/modemobile/2019/sending/sprite.png') -60.5px 0px no-repeat; background-size: 400px auto; width: 14px; height: 24px;}
+.sending .head a.close:before{content:'';display: inline-block;  background: url('https://img.modetour.com/modemobile/2019/sending/sprite.png') -82.5px -3px no-repeat; background-size: 400px auto; width: 20px; height: 20px;}
+.sending .head.head_txt{padding: 25px 27px;}
+.sending .head.head_txt a{padding-left: 30px;}
+.sending .head.head_txt a:before{position: absolute; left: 0; top: 50%; margin-top: -12px;}
+
+.start_page.container{padding: 0; height: 100%; background: #FFF;}
+.start_page.container div{height: 100%;}
+.start_page img{width: 100%; display: flex; justify-content:center;
+            align-items:center;}
+.start_page .swiper-container-horizontal>.swiper-pagination-bullets{bottom: 15%;}
+.start_page.container .swiper-pagination{height: initial;}
+.start_page .swiper-pagination span{background: url('https://img.modetour.com/modemobile/2019/sending/sprite.png') -20.5px -6px no-repeat; background-size: 400px auto; width: 12px; height: 12px;}
+.start_page .swiper-pagination span.swiper-pagination-bullet-active{background-position: -4.5px -6px;}
+.start_page a{font-size: 20px; color: #FFF; text-decoration: none; background: #0e9bf3; display: block; position: fixed; bottom: 0; left: 0; right: 0; z-index: 1; text-align: right; padding: 15px 50px 15px 25px; border-radius: 35px 0 0 0; line-height: 100%;}
+.start_page a:after{content:''; display: block; width: 17px; height: 14px; background: url('https://img.modetour.com/modemobile/2019/sending/sprite.png') -36.5px -6px no-repeat; background-size: 400px auto; position: absolute; top: 50%; margin-top: -7px; right: 25px;}
+.start_page .slide1{background: url('../img/main_bg1.jpg') no-repeat; background-size: contain; background-position: center center;}
+.start_page .slide2{background: url('../img/main_bg2.jpg') no-repeat;  background-size: contain; background-position: center center;}
+
+.bookinginfor{background: #FFF; }
+.bookinginfor .tit{margin-bottom: 65px;}
+.bookinginfor .tit img{width: 152.5px;}
+.bookinginfor .in{padding: 20px 45px; overflow: hidden;}
+.bookinginfor ul li{margin-top: 13px;}
+.bookinginfor ul li:first-child{margin-top: 0;}
+.bookinginfor ul li label{font-size: 14px; color: #121212; letter-spacing: -0.05em; display: block; margin-bottom: 10px;}
+.bookinginfor ul li input{border: 1px #e6e6e6 solid; padding: 15px 12px; width: 100%; box-sizing: border-box; font-size: 15px; border-radius: 4px 4px; font-weight: bold; letter-spacing: 0.05em;}
+.bookinginfor ul li input::placeholder{color: #e6e6e6;}
+.bookinginfor ul li:first-child input{background: url('https://img.modetour.com/modemobile/2019/sending/input_bg.jpg') left 0 no-repeat; background-size: 51px auto; padding-left: 51px;}
+.bookinginfor a.next,.agree a.next{background: #e6e6e6; width: 57px; height: 57px; display: inline-block; border-radius: 50%; position: relative; float: right; margin-top: 35px;}
+.bookinginfor a.next:before,.agree a.next:before{content:''; display: block; width: 17px; height: 14px; background: url('https://img.modetour.com/modemobile/2019/sending/sprite.png') -36.5px -6px no-repeat; background-size: 400px auto; position: absolute; top: 50%; margin-top: -7px; left: 50%; margin-left: -8.5px;}
+.bookinginfor .error{background: #e8590c; color: #FFF; font-size: 14px; letter-spacing: -0.05em; position: absolute; left: 25px; right: 25px; top: 20px; padding: 15px 20px; border-radius: 10px 10px;}
+.bookinginfor a.next.on,.agree a.next.on{background: #0e9bf3;}
+
+.sending_select{background: #FFF; }
+.sending_select p.txt{font-size: 24px; font-weight: bold; letter-spacing: -0.05em; padding: 0 30px 30px 30px; color: #080808;}
+.sending_select .re_select{background: #f5f5f5; padding: 30px;}
+.sending_select .re_select .infor{background: #0e9bf3; border-radius: 12px 12px; padding: 20px; position: relative; overflow: hidden;}
+.sending_select .re_select .infor:after{content:''; position: absolute; display: block; width: 25px; height: 25px; background: #f5f5f5; right: -12.5px; top: 50%; margin-top: -12.5px; border-radius: 50%;}
+.sending_select .re_select .infor p{color: #FFF; letter-spacing: -0.05em;}
+.sending_select .re_select .infor p.tit{font-weight: bold; font-size: 24px;} 
+.sending_select .re_select .infor p.tt1{font-size: 14px;}
+.sending_select .re_select .infor p.tt2{color: #c5e9ff; font-size: 13px;}
+.sending_select .re_select .infor a.back_btn{text-decoration: none; font-size: 14px; color: #FFF; letter-spacing: -0.05em; float: right; margin-right: 25px; margin-top: 30px; margin-bottom: 15px;}
+.sending_select .re_select .infor a.back_btn span{color: #0e9bf3; position: relative; z-index: 1;}
+.sending_select .re_select .infor a.back_btn span:after{content:''; position: absolute; display: block; width: 40px; height: 40px; background: #FFF; right: 0; top: 50%; margin-top: -20px; border-radius: 50%; z-index: -1; right: -16px;}
+.sending_select .btn_area{padding: 30px;}
+.sending_select .btn_area a{background: #f3f3f3; color: #353535; text-decoration: none; letter-spacing: -0.05em; display: block; margin-top: 15px; padding: 15px 30px; border: 1px #eeeded solid; border-radius: 2px 2px; position: relative;}
+.sending_select .btn_area a:after{content:''; display: block; position: absolute; background: url('https://img.modetour.com/modemobile/2019/sending/sprite.png') -134.5px -7px no-repeat; background-size: 400px auto; width: 7px; height: 12px; top: 50%; margin-top: -6px; right: 30px;}
+.sending_select .btn_area a:first-child{margin-top: 0;}
+
+.esending{background: #FFF;}
+.esending .in{padding: 30px;}
+.esending .tit{font-size: 24px; font-weight: bold; letter-spacing: -0.05em; color: #080808; position: relative; z-index: 1; margin-bottom: 25px;}
+.esending .tit:after{content:''; width: 67.5px; height: 10px; display: block; position: absolute; background: #7fceff; border-radius: 10px 10px; z-index: -1; left: 115px; top: 26px;}
+.esending .infor{font-size: 16px; color: #121212; letter-spacing: -0.05em; line-height: 24px;}
+.esending .notice{margin-top: 20px;}
+.esending .notice span{font-size: 16px; color: #fd37d5; letter-spacing: -0.05em; font-weight: bold; padding-left: 7px; position: relative;}
+.esending .notice span:before{content:'*'; font-size: 16px; color: #fd37d5; font-weight: bold; position: absolute; top: 50%; left: -3px; top: 3px;}
+.esending .notice ul li{letter-spacing: -0.03em; font-size: 14px; color: #535353; margin-top: 15px; position: relative; padding-left: 8px;}
+.esending .notice ul li:before{content:''; content:''; display: block; position: absolute; background: url('https://img.modetour.com/modemobile/2019/sending/sprite.png') -171px -12px no-repeat; background-size: 400px auto; width: 4px; height: 4px; left: 0; top: 8px;}
+.esending .notice ul li strong{font-weight: bold; display: block; margin-top: 12px;}
+.esending .select_btn,.air_esending .select_btn{display: block; position: fixed; bottom: 0; left: 0; right: 0; font-size: 20px; color: #FFF; letter-spacing: -0.05em; background: #0e9bf3; line-height: 100%; text-decoration: none; padding: 15px 0; text-align: center;}
+
+.air_esending{background: #FFF;}
+.air_esending .in{padding: 30px;}
+.air_esending .tit{font-size: 24px; font-weight: bold; letter-spacing: -0.05em; color: #080808; position: relative; z-index: 1; margin-bottom: 25px;}
+.air_esending .tit:after{content:''; width: 45.5px; height: 10px; display: block; position: absolute; background: #7fceff; border-radius: 10px 10px; z-index: -1; left: 48px; top: 26px;}
+.air_esending p.infor{font-size: 16px; letter-spacing: -0.05em; color: #121212; line-height: 24px; margin-bottom: 30px; }
+.air_esending dl{margin-bottom: 30px; font-size: 15px;}
+.air_esending dl dt{position: relative; padding-left: 10px; font-weight: 500;}
+.air_esending dl dt:before{content:''; background: url('https://img.modetour.com/modemobile/2019/sending/sprite.png') -171px -12px no-repeat; background-size: 400px auto; display: block; width: 4px; height: 4px; position: absolute; left: 0; top: 10px;}
+.air_esending dl dd{padding-left: 10px;}
+.air_esending p.date{position: relative; padding-left: 10px; font-size: 15px;}
+.air_esending p.date:before{content:''; background: url('https://img.modetour.com/modemobile/2019/sending/sprite.png') -171px -12px no-repeat; background-size: 400px auto; display: block; width: 4px; height: 4px; position: absolute; left: 0; top: 10px;}
+.air_esending p.date strong{font-weight: 500;}
+
+.agree{background: #FFF;}
+.agree .in{padding: 0 30px;}
+.agree p.infor{background: #f4f4f4; font-size: 14px; color: #979797; letter-spacing: -0.03em; padding: 15px 30px; line-height: 24px;}
+.agree span.chk_wrap{padding: 15px 0; display: block; letter-spacing: -0.05em; position: relative;}
+.agree .select2 span.chk_wrap:after{content:''; background: url('https://img.modetour.com/modemobile/2019/sending/sprite.png') -134.5px -7px no-repeat; background-size: 400px auto; display: block; width: 7px; height: 12px; position: absolute; top: 50%; margin-top: -6px; right: 20%;}
+.agree span.chk_wrap input{display: none;}
+.agree span.chk_wrap label{color: #495057; font-size: 16px; display: block;}
+.agree span.chk_wrap label span{background: url('https://img.modetour.com/modemobile/2019/sending/chk_img.png') no-repeat; background-size: 48px auto; display: inline-block; width: 24px; height: 24px; vertical-align: middle; margin-right: 10px; margin-top: -3px;}
+.agree span.chk_wrap input:checked+label span{background-position: -24px 0;}
+.agree .select2 .chk_wrap{border-bottom: 1px #f5f5f5 solid;}
+
+.agree .select1 ul{border-top: 1px #f5f5f5 solid; border-bottom: 1px #f5f5f5 solid;}
+.agree .select1 ul li{position: relative; padding-left: 29px; margin-top: 15px; margin-left: 20px; letter-spacing: -0.05em;}
+.agree .select1 ul li:before{content:''; background: url('https://img.modetour.com/modemobile/2019/sending/chk_img.png') no-repeat; background-size: 36px auto; display: inline-block; width: 18px; height: 18px; vertical-align: middle; margin-right: 10px; margin-top: -3px;
+position: absolute; left: 0; top: 50%; margin-top: -9px;}
+.agree .select1 ul li.on:before{content:''; background: url('https://img.modetour.com/modemobile/2019/sending/chk_img.png') -18px 0 no-repeat; background-size: 36px auto; width: 18px; height: 18px; display: block;}
+.agree .select1 ul li a{text-decoration: none; font-size: 14px; color: #495057; display: block; padding: 5px 15px 5px 0;}
+.agree .select1 ul li:after{content:''; background: url('https://img.modetour.com/modemobile/2019/sending/sprite.png') -134.5px -7px no-repeat; background-size: 400px auto; display: block; width: 7px; height: 12px; position: absolute; top: 50%; margin-top: -6px; right: 10px;}
+.agree .select1 ul li:last-child{margin-bottom: 15px;}
+
+.agree2{background: #FFF;}
+.agree2 .in{padding: 0 30px; padding-bottom: 50px;}
+.agree2 .in p.tit{font-size: 20px; font-weight: bold; color: #121212; letter-spacing: -0.05em; padding: 20px 0;}
+.agree2 .in p.infor{font-size: 16px; color: #121212; letter-spacing: -0.05em; line-height: 22px; padding-bottom: 20px;}
+.agree2 .in dl dt{font-weight: bold; font-size: 16px; font-weight: 500; letter-spacing: -0.05em; padding-bottom: 15px;}
+.agree2 .in dl dd{font-size: 16px; color: #535353; letter-spacing: -0.05em; position: relative; padding-left: 7px; padding-bottom: 15px;}
+.agree2 .in dl dd:before{content:''; background: url('https://img.modetour.com/modemobile/2019/sending/sprite.png') -171px -12px no-repeat; background-size: 400px auto; display: block; width: 4px; height: 4px; position: absolute; left: 0; top: 10px;}
+.agree2 .in dl dd strong{display: block; padding-top: 15px;}
+.agree2 .in dl dd.infor::before{background: none;}
+.agree2 .in dl dd.infor{font-size: 16px; color: #121212; letter-spacing: -0.05em; line-height: 22px; padding-bottom: 20px;}
+.agree2 .agree_btn{display: block; position: fixed; bottom: 0; right: 0; left: 0; font-size: 20px; color: #FFF; background: #0e9bf3; padding: 15px 0; text-align: center; text-decoration: none; line-height: 100%;}
+.agree2 table{color: #6a6a6a;}
+.agree2 table th{text-align: center; font-size: 14px; padding: 10px; letter-spacing: -0.05em;}
+.agree2 table td{font-size: 14px; padding: 10px; letter-spacing: -0.05em;}
+.agree2 table a{text-decoration: none;}
+.agree2 p.infor2{padding-top: 20px;}
+
+.download{background: #FFF;}
+.download .in{padding: 0 20px;}
+.download .in .tit{font-size: 24px; color: #080808; font-weight: 500; letter-spacing: -0.05em; margin: 10px 0;}
+
+.download .in ul li{width: 48%; box-shadow: 0 0 5px 0 rgba(118,118,118,0.5); border-radius: 10px 10px; margin-top: 15px; margin-left: 4%; position: relative; float: left;}
+.download .in ul li:nth-child(odd){margin-left: 0;}
+.download .in ul li span{display: block;}
+.download .in ul li a{text-decoration: none; display: block; padding: 15%;}
+.download .in ul li i.air{background: url('https://img.modetour.com/modemobile/2019/sending/sprite.png') -182px 0px no-repeat; background-size: 400px auto; display: block; width: 45.5px; height: 40px;}
+.download .in ul li i.hotel{background: url('https://img.modetour.com/modemobile/2019/sending/sprite.png') -233.5px 0px no-repeat; background-size: 400px auto; display: block; width: 40px; height: 40px;}
+.download .in ul li i.ctt{background: url('https://img.modetour.com/modemobile/2019/sending/sprite.png') -283.5px 0px no-repeat; background-size: 400px auto; display: block; width: 34px; height: 40px;}
+.download .in ul li i.ity{background: url('https://img.modetour.com/modemobile/2019/sending/sprite.png') -325.5px 0px no-repeat; background-size: 400px auto; display: block; width: 34px; height: 40px;}
+.download .in ul li span.txt{font-size: 16px; color: #343a40; font-weight: bold; margin-bottom: 5px; margin-top: 15%;}
+.download .in ul li span.down{font-size: 12px; color: #979797; position: relative; padding-left: 17px;}
+.download .in ul li span.down:before{content: ''; background: url('https://img.modetour.com/modemobile/2019/sending/sprite.png') -4.5px -31px no-repeat; background-size: 400px auto; display: block; width: 14px; height: 14px; position: absolute; left: 0; top: 50%; margin-top: -7px;}
+.download .in ul li span.new{font-size: 14px; color: #FFF; font-weight: bold; background: #0e9bf3; border-radius: 4px 4px; display: inline-block; padding: 1px 4px; position: absolute; top: 32%; left: 15%;}
+
+.select1{background: #FFF;}
+.select1 img{width: 100%; vertical-align: middle;}
+.select1 .swiper-container-horizontal>.swiper-pagination-bullets{width: auto; top: 2%; left: 12%; }
+.select1 .swiper-pagination span{background: url('https://img.modetour.com/modemobile/2019/sending/select_pager.png') no-repeat; background-size: 12px auto; width: 6px; height: 6px; opacity: 1;}
+.select1 .swiper-pagination span.swiper-pagination-bullet-active{background-position: -6px 0;}
+.select1 .slide a,.select1 .img a{font-size: 13px; color: #121212; text-decoration: none; position: absolute; right: 10%; bottom: 10%;}
+.select1 .slide a span:first-child,.select1 .img a span:first-child{position: relative; z-index: 2; margin-right: 2px;}
+.select1 .slide a span.i,.select1 .img a span.i{color: #FFF; position: relative; z-index: 1;}n
+.select1 .slide a span.i:after,.select1 .img a span.i:after{content:''; display: block; width: 45px; height: 45px; position: absolute; background: #0e9bf3; z-index: -1; top: 50%; margin-top: -22.5px; right: -10px; border-radius: 50%;}
+.select1 .img{padding-top: 5%; background: #f5f5f5; position: relative;}
+.select1 .img a span.i:after{background: #3ac7b5;}
+
+.sending .dim{background: rgba(0,0,0,0.5); position: fixed; top: 0; left: 0; right: 0; bottom: 0; display: none; z-index: 5;}
+.sending .dim.active{display: block;}
+.sending .dim .pop{background: #FFF; border-radius: 3px 3px; width: 75%; margin: 0 auto; padding: 30px; box-sizing: border-box; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); display: none; text-align: center;}
+.sending .dim.active .pop{display: block;}
+.sending .dim .pop p{font-size: 20px; letter-spacing: -0.05em; line-height: 24px; margin-bottom: 30px; text-align: left;}
+.sending .dim .pop a{text-decoration: none; font-size: 14px; border-radius: 3px 3px; color: #FFF; width: 48%; display: inline-block; text-align: center; padding: 8px 0; margin-left: 2%;}
+.sending .dim .pop p+a{margin-left: 0;}
+.sending .dim .pop a.cancle{background: #b5b5b5;}
+.sending .dim .pop a.ok{background: #0e9bf3;}
+
+@media only all and (max-width: 320px) { 
+    .sending_select .btn_area a{padding: 15px;}
+    .sending_select .btn_area a:after{right: 15px;}
+
+    .esending .notice ul li{margin-top: 10px;}
+    .esending .notice ul li strong{margin-top: 7px;}
+}

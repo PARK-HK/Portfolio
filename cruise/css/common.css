@@ -1,0 +1,122 @@
+/** html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/) Richard Clark (http://richclarkdesign.com) http://cssreset.com */
+html, body { height: 100%; }
+
+section.slide_wrap { height: 100%; }
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; font-family: "Malgun Gothic","Apple SD Gothic Neo","Dotum",Helvetica,Sans-serif; }
+
+ol, ul { list-style: none; }
+
+img { vertical-align: middle; }
+
+caption { position: absolute; left: -10000px; top: auto; height: 1px; overflow: hidden; }
+
+address { font-style: normal; }
+
+body { line-height: 1; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+nav ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+/* change colours to suit your needs */
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+/* change colours to suit your needs */
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #cccccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+body { min-width: 1100px; }
+
+.text_blind { font-size: 0; position: absolute; left: -9999px; }
+
+.wrap { width: 1100px; margin: 0 auto; }
+
+.dim { display: none; position: fixed; top: 0; right: 0; left: 0; bottom: 0; background: url("../img/pop_bg.png") repeat; z-index: 999; }
+.dim.active { display: block; }
+
+.content { display: none; }
+
+.quick_menu { position: fixed; z-index: 999; right: 50px; top: 50%; margin-top: -50px; }
+.quick_menu ul li { text-align: right; margin-top: 10px; }
+.quick_menu ul li a { color: #FFF; font-size: 12px; text-decoration: none; position: relative; padding-right: 20px; }
+.quick_menu ul li a:before { content: ''; position: absolute; top: 5px; right: 0; display: block; width: 11px; height: 10px; background: url("../img/icon_sprite.png") -160px -153px; }
+.quick_menu ul li:first-child { margin-top: 0; }
+.quick_menu ul li.on a:before { background-position: -143px -153px; }
+
+.btn_top { position: fixed; right: 70px; bottom: 70px; z-index: 999; display: none; }
+
+header { position: fixed; top: 0; left: 0; right: 0; padding: 30px; z-index: 999; }
+header h1.logo { width: 235px; height: 89px; background: url("../img/logo_sprite.png") -219px 0 no-repeat; float: left; }
+header h1.logo a { display: block; width: 100%; height: 100%; }
+header a.btn_menu { display: block; width: 40px; height: 23px; background: url("../img/icon_sprite.png") -296px -122px no-repeat; float: right; margin: 30px 15px 0 0; }
+header .menu_wrap { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: url("../img/main_menu_bg.png") repeat; display: none; }
+header .menu_in { background: #000; position: fixed; top: 0; right: -390px; bottom: 0; padding: 45px 40px 30px; width: 310px; overflow-y: auto; }
+header .menu_in .close { position: absolute; display: block; width: 31px; height: 31px; background: url("../img/icon_sprite.png") -396px -121px; top: 50px; right: 50px; }
+header .menu_in .big_menu { padding-top: 50px; padding-bottom: 35px; border-bottom: 1px #666666 solid; }
+header .menu_in .big_menu li a { text-decoration: none; color: #666666; }
+header .menu_in .big_menu li a:hover { color: #FFF; }
+header .menu_in .big_menu > li { margin-top: 25px; overflow: hidden; }
+header .menu_in .big_menu > li > a { font-size: 20px; font-weight: bold; letter-spacing: -1px; display: block; margin-bottom: 5px; }
+header .menu_in .big_menu > li:first-child { margin-top: 0; }
+header .menu_in .big_menu > li ul li { overflow: hidden; width: 47%; float: left; position: relative; padding-left: 3%; margin-top: 8px; }
+header .menu_in .big_menu > li ul li a { font-size: 14px; line-height: 15px; letter-spacing: -2px; display: block; }
+header .menu_in .big_menu > li ul li:before { content: ''; display: block; width: 2px; height: 2px; background: #666666; position: absolute; left: 0; top: 7px; }
+header .menu_in .big_menu > li ul li:hover:before { background: #FFF; }
+header .menu_in .big_menu > li ul li:hover a { color: #FFF; }
+header .service { padding: 30px 0; border-bottom: 1px #666666 solid; }
+header .service li { margin-top: 12px; }
+header .service li span.tit { font-size: 14px; color: #FFF; display: block; position: relative; padding-left: 10px; margin-bottom: 10px; }
+header .service li span.tit:before { content: ''; display: block; width: 2px; height: 2px; background: #FFF; position: absolute; top: 6px; left: 0; }
+header .service li:first-child { margin-top: 0; }
+header .service li:first-child span.tit:after { content: ''; display: block; width: 32px; height: 29px; background: url("../img/icon_sprite.png") -180px -153px; position: absolute; left: 132px; top: -12px; }
+header .service li span.tel { display: block; padding-left: 10px; }
+header .service li a.apply_kakao { color: #ffa507; text-decoration: none; border-bottom: 1px #ffa507 solid; font-size: 12px; margin-left: 10px; position: relative; padding-right: 10px; }
+header .service li a.apply_kakao:after { content: ''; display: block; width: 4px; height: 7px; background: url("../img/icon_sprite.png") -486px -200px; position: absolute; right: 0; top: 6px; }
+header .foot { padding-top: 30px; }
+header .foot span { border-bottom: 1px #656565 solid; font-size: 12px; color: #656565; line-height: 19px; }
+header .foot address { display: block; font-style: normal; font-size: 12px; color: #656565; line-height: 16px; letter-spacing: -1px; }
+header.promotion_head { background: #FFF; }
+header.promotion_head h1.logo { background-position: -1px -212px; }
+header.promotion_head a.btn_menu { background-position: -345px -122px; }
+
+footer { border-top: 1px #ececec solid; }
+footer .bottom01 { padding: 30px 0; overflow: hidden; background: #FFF; }
+footer .bottom01 h2 { width: 192px; font-size: 25px; color: #222222; font-weight: normal; letter-spacing: -1px; float: left; margin-top: 15px; }
+footer .bottom01 .infor { float: left; padding: 18px 70px; border-right: 1px #ececec solid; }
+footer .bottom01 .infor ul li { display: inline-block; zoom: 1; *display: inline; font-size: 20px; color: #222222; letter-spacing: -1px; margin-left: 50px; }
+footer .bottom01 .infor ul li:first-child { margin-left: 0; }
+footer .bottom01 .infor ul li strong { color: #ffa507; margin-left: 10px; font-size: 25px; position: relative; top: 3px; }
+footer .bottom01 .infor ul li .email { font-size: 16px; letter-spacing: -1px; color: #898989; margin-top: 12px; }
+footer .bottom01 .sns { float: left; padding-left: 70px; }
+footer .bottom01 .sns ul li { overflow: hidden; margin-top: 5px; }
+footer .bottom01 .sns ul li a { text-decoration: none; position: relative; line-height: 42px; font-size: 14px; color: #555555; }
+footer .bottom01 .sns ul li a:before { content: ''; display: block; width: 41px; height: 42px; background: url("../img/icon_sprite.png") no-repeat; float: left; margin-right: 10px; }
+footer .bottom01 .sns ul li a:hover { text-decoration: underline; }
+footer .bottom01 .sns ul li:first-child { margin-top: 0; }
+footer .bottom01 .sns ul li.sns01 a:before { background-position: -177px -194px; }
+footer .bottom01 .sns ul li.sns02 a:before { background-position: -225px -194px; }
+footer .bottom02 { background: #333333; padding: 30px 0; overflow: hidden; }
+footer .bottom02 h1 { width: 116px; height: 44px; background: url("../img/logo_sprite.png") -95px -59px; float: left; }
+footer .bottom02 address { margin-left: 50px; font-size: 12px; color: #b2b2b2; line-height: 15px; float: left; }
+footer .bottom02 address div { color: #FFF; }
+
+@media (max-width: 1520px) { header { padding: 15px; } }
+
+/*# sourceMappingURL=common.css.map */

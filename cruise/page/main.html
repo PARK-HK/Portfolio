@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!--[if lt IE 9]>
+		<script language="javascript" type="text/javascript" src="../js/html5shiv-printshiv.js"></script>
+	<![endif]-->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/sub.css" />
+	<script src="../js/1.11.3.min.js"></script>
+	<script src="../js/active.js"></script>
+	<!-- [s]: 추가 플러그인 -->
+	<script src="../js/plugin/cycle2.js"></script>
+	<script src="../js/plugin/cycle2.carousel.js"></script>
+	<!-- [e]: 추가 플러그인 -->
+	<script type="text/javascript">
+		//카카오 팝업
+		function kakao(popHeight,popWidth){
+			var winHeight =  $( window ).height();
+			var winWidth = document.body.clientWidth;	// 현재창의 너비
+			var winX = window.screenLeft;	// 현재창의 x좌표
+			var winY = window.screenTop;	// 현재창의 y좌표
+			var popX = winX + (winWidth - popWidth)/2;
+			var popY = winY + (winHeight - popHeight)/2;
+			window.open("kakao_popup.html","popup","width="+popWidth+"px,height="+popHeight+"px,top="+popY+",left="+popX+",menubar=no, scrollbars=no, resizable=no");
+		}
+
+		$(document).ready(function(){
+			//지역별 크루즈여행
+			var $mapLi = $('.map ul li');
+			var $mapAnchor = $mapLi.find('a');
+			var inter;
+			var i = 0;
+			function rolling(){
+				inter = setTimeout(function(){
+					if(i < ($mapLi.length-1) ) {
+						i++;
+					}else {
+						i=0
+					};					
+					$mapLi.eq(i).children('a').parent().addClass('on').siblings().removeClass('on');
+					rolling(); //재귀
+				}, 2000);
+			}
+			rolling();
+			//지역별 크루즈여행 - 마우스이벤트
+			$mapAnchor.on({
+				mouseover:function(){
+					clearInterval(inter);
+					$mapAnchor.parent().removeClass('on');
+				},
+				mouseout : function (){
+					rolling();					
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<h1 class="logo"><a href="main.html"></a></h1>
+		<a href="" class="btn_menu"></a>
+		<div class="menu_wrap"></div><!-- 하얀 배경 -->
+		<div class="menu_in">
+			<a href="" class="close"></a>
+			<ul class="big_menu">
+				<li><a href="company_infor.html">회사소개</a></li>
+				<li>
+					<a href="submain.html">테마별 크루즈여행</a>
+					<ul>
+						<li><a href="thema_cruise01.html">나의 첫 크루즈</a></li>
+						<li><a href="thema_cruise02.html">크루즈 매니아</a></li>
+						<li><a href="thema_cruise03.html">6성급 럭셔리 크루즈</a></li>
+						<li><a href="thema_cruise04.html">리버크루즈</a></li>
+						<li><a href="thema_cruise05.html">탐험 크루즈</a></li>
+						<li><a href="thema_cruise06.html">크루즈&amp;현지투어</a></li>
+						<li><a href="thema_cruise07.html">세계일주</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="area01.html">지역별 크루즈여행</a>
+					<ul>
+						<li><a href="area01.html#move">지중해</a></li>
+						<li><a href="area02.html#move">알래스카</a></li>
+						<li><a href="area03.html#move">북유럽</a></li>
+						<li><a href="area04.html#move">유럽리버</a></li>
+						<li><a href="area05.html#move">미서부/멕시코</a></li>
+						<li><a href="area06.html#move">캐나다/뉴잉글랜드</a></li>
+						<li><a href="area07.html#move">아프리카/중동</a></li>
+						<li><a href="area08.html#move">중남미/파나마운하</a></li>
+						<li><a href="area09.html#move">갈라파고스</a></li>
+						<li><a href="area10.html#move">아시아</a></li>
+						<li><a href="area11.html#move">남극</a></li>
+						<li><a href="area12.html#move">카리브해</a></li>
+						<li><a href="area13.html#move">호주/뉴질랜드</a></li>
+						<li><a href="area14.html#move">남태평양</a></li>
+						<li><a href="area15.html#move">하와이</a></li>
+						<li><a href="area16.html#move">세계일주</a></li>
+					</ul>
+				</li>
+				<li><a href="recommend_page.html">프로모션</a></li>
+			</ul><!-- big_menu -->
+			<ul class="service">
+				<li>
+					<span class="tit">카카오톡 상담하기</span>
+					<span>
+						<img src="//img.modetour.com/modewebagent/2017/cruise/search_img.jpg" alt="">
+						<a href="" onclick="kakao(690,700);return false;" class="apply_kakao">신청방법</a>
+					</span>
+				</li>
+				<li>
+					<span class="tit">TEL</span>
+					<span class="tel"><img src="//img.modetour.com/modewebagent/2017/cruise/img_tel.png" alt=""></span>
+				</li>
+			</ul><!-- service -->
+			<div class="foot">
+				<span>개인정보 취급방침</span>
+				<address>
+					서울시 중구 을지로 16 백남빌딩 506호 크루즈 인터내셔널<br />
+					대표이사 유인태<br />
+					사업자등록번호 104-81-53278<br />
+					통신판매업신고번호 중구 제 03295호<br />
+					COPYRIGHT CRUISE INTERNATIONAL INC. ALL RIGHT RESERVED.
+				</address>
+			</div>
+		</div>
+	</header>
+	<div class="main_bg"></div>
+	<section class="main">
+		<div class="box_wrap">
+			<div class="top">
+				<div class="box">
+					<h2><a href="area01.html">지역별 크루즈 여행</a></h2>
+					<div class="map">
+						<ul>
+							<li class="area01 on">
+								<!-- active 상태일때 a에 class 'on' 추가 -->
+								<a href="area16.html#move" class="on">
+									<i></i>
+									<span class="area_name">
+										<span class="text_blind">세계일주</span>
+									</span>
+								</a>
+							</li>
+							<li class="area02">
+								<a href="area13.html#move">
+									<i></i>
+									<span class="area_name">
+										<span class="text_blind">호주/뉴질랜드</span>
+									</span>
+								</a>
+							</li>
+							<li class="area03">
+								<a href="area04.html#move">
+									<i></i>
+									<span class="area_name">
+										<span class="text_blind">유럽리버</span>
+									</span>
+								</a>
+							</li>
+							<li class="area04">
+								<a href="area14.html#move">
+									<i></i>
+									<span class="area_name">
+										<span class="text_blind">남태평양</span>
+									</span>
+								</a>
+							</li>
+							<li class="area05">
+								<a href="area10.html#move">
+									<i></i>
+									<span class="area_name">
+										<span class="text_blind">아시아</span>
+									</span>
+								</a>
+							</li>
+							<li class="area06">
+								<a href="area03.html#move">
+									<i></i>
+									<span class="area_name">
+										<span class="text_blind">북유럽</span>
+									</span>
+								</a>
+							</li>
+							<li class="area07">
+								<a href="area01.html#move">
+									<i></i>
+									<span class="area_name">
+										<span class="text_blind"지중해></span>
+									</span>
+								</a>
+							</li>
+							<li class="area08">
+								<a href="area07.html#move">
+									<i></i>
+									<span class="area_name">
+										<span class="text_blind">아프리카/중동</span>
+									</span>
+								</a>
+							</li>
+							<li class="area09">
+								<a href="area11.html#move">
+									<i></i>
+									<span class="area_name">
+										<span class="text_blind">남극</span>
+									</span>
+								</a>
+							</li>
+							<li class="area10">
+								<a href="area12.html#move">
+									<i></i>
+									<span class="area_name">
+										<span class="text_blind">카리브해</span>
+									</span>
+								</a>
+							</li>
+							<li class="area11">
+								<a href="area08.html#move">
+									<i></i>
+									<span class="area_name">
+										<span class="text_blind">중남미/파나마운하</span>
+									</span>
+								</a>
+							</li>
+							<li class="area12">
+								<a href="area09.html#move">
+									<i></i>
+									<span class="area_name">
+										<span class="text_blind">갈라파고스</span>
+									</span>
+								</a>
+							</li>
+							<li class="area13">
+								<a href="area15.html#move">
+									<i></i>
+									<span class="area_name">
+										<span class="text_blind">하와이</span>
+									</span>
+								</a>
+							</li>
+							<li class="area14">
+								<a href="area02.html#move">
+									<i></i>
+									<span class="area_name">
+										<span class="text_blind">알래스카</span>
+									</span>
+								</a>
+							</li>
+							<li class="area15">
+								<a href="area06.html#move">
+									<i></i>
+									<span class="area_name">
+										<span class="text_blind">캐나다/뉴잉글랜드</span>
+									</span>
+								</a>
+							</li>
+							<li class="area16">
+								<a href="area05.html#move">
+									<i></i>
+									<span class="area_name">
+										<span class="text_blind">미서부/멕시코</span>
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="box">
+					<h2><a href="submain.html">테마별 크루즈 여행</a></h2>
+					<!-- [s]:19-04-16 수정 -->
+					<div class="slide">
+						<ul class="cycle-slideshow" 
+							data-cycle-slides=">li" 
+							data-cycle-fx="scrollHorz" 
+							data-cycle-timeout="4000" 
+							data-cycle-pager=".boxslide-pager"
+							data-cycle-pager-event="mouseover"
+							data-cycle-pause-on-hover="true"
+						>
+							<li class="slide01">
+								<div class="tit"><i></i>나의 첫 크루즈</div>
+								<a href="thema_cruise01.html" class="go">
+									<span class="txt">바로가기</span>
+									<span class="bg"></span>
+								</a>
+							</li>
+							<li class="slide02">
+								<div class="tit"><i></i>크루즈 매니아</div>
+								<a href="thema_cruise02.html" class="go">
+									<span class="txt">바로가기</span>
+									<span class="bg"></span>
+								</a>
+							</li>
+							<li class="slide03">
+								<div class="tit"><i></i>6성급 럭셔리 크루즈</div>
+								<a href="thema_cruise03.html" class="go">
+									<span class="txt">바로가기</span>
+									<span class="bg"></span>
+								</a>
+							</li>
+							<li class="slide04">
+								<div class="tit"><i></i>리버크루즈</div>
+								<a href="thema_cruise04.html" class="go">
+									<span class="txt">바로가기</span>
+									<span class="bg"></span>
+								</a>
+							</li>
+							<li class="slide05">
+								<div class="tit"><i></i>탐험 크루즈</div>
+								<a href="thema_cruise05.html" class="go">
+									<span class="txt">바로가기</span>
+									<span class="bg"></span>
+								</a>
+							</li>
+							<li class="slide06">
+								<div class="tit"><i></i>크루즈&amp;현지투어</div>
+								<a href="thema_cruise06.html" class="go">
+									<span class="txt">바로가기</span>
+									<span class="bg"></span>
+								</a>
+							</li>
+							<li class="slide07">
+								<div class="tit"><i></i>세계일주</div>
+								<a href="thema_cruise07.html" class="go">
+									<span class="txt">바로가기</span>
+									<span class="bg"></span>
+								</a>
+							</li>
+							<li class="slide08">
+								<div class="tit"><i></i>연합크루즈</div>
+								<a href="promotion_190416.html" class="go">
+									<span class="txt">바로가기</span>
+									<span class="bg"></span>
+								</a>
+							</li>
+						</ul>
+						<div class="boxslide-pager"></div>
+					</div>
+					<!-- [e]]:19-04-16 수정 -->
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="box">
+					<div class="in">
+						<img src="//img.modetour.com/modewebagent/2017/cruise/main/kakao.jpg" alt="" usemap="#company_go">
+						<map name="company_go" id="company_go">
+						    <area shape="rect" coords="18,15,173,40" href="company_infor.html" target="" alt="크루즈 인터내셔널 회사소개 사이트로 이동" />
+						</map>
+						<a href="" onclick="kakao(690,700);return false;" class="apply_kakao">신청방법</a>
+						<a href="company_infor.html" class="go_infor">About</a>
+					</div>
+				</div>
+				<div class="box">				
+					<div class="promotion_slide">
+						<!-- [s]: 20-01-10 수정 -->
+						<ul class="cycle-slideshow" 
+							data-cycle-slides=">li" 
+							data-cycle-fx="scrollHorz" 
+							data-cycle-timeout="4000" 
+							data-cycle-pager=".pro-pager"
+							data-cycle-pager-event="mouseover"
+							data-cycle-pause-on-hover="true"
+						>
+							<li>
+								<img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190304/main_banner.jpg" alt="">
+								<a href="promotion_190228.html">바로가기</a>
+							</li>
+							<li>
+								<img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190819/main_banner.jpg" alt="">
+								<a href="promotion_190819.html">바로가기</a>
+							</li>
+							<li>
+								<img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190521/main_banner.jpg" alt="">
+								<a href="promotion_190521.html">바로가기</a>
+							</li>
+							<li>
+								<img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_180719/main_banner.jpg" alt="">
+								<a href="promotion_180719.html">바로가기</a>
+							</li>
+							<li>
+								<img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_191016/main_banner.jpg" alt="">
+								<a href="promotion_191016.html">바로가기</a>
+							</li>
+						</ul>
+						<!-- [e]: 20-01-10 수정 -->
+						<div class="pro-pager"></div>
+						<a href="recommend_page.aspx" class="btn_more">더보기</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="logo_list">
+			<div class="cycle-slideshow" 
+			 	data-cycle-slides="> div"
+			 	data-cycle-fx="scrollHorz" 
+				data-cycle-timeout="0" 
+				data-cycle-prev=".prev"
+				data-cycle-next=".next"
+			>
+				<div class="slide01">
+					<a href="https://www.rssc.com/" class="logo01" target="_blank"><span class="text_blind">리젠트 세븐시즈 크루즈</span></a>
+					<a href="https://www.silversea.com/" class="logo02" target="_blank"><span class="text_blind">실버시 크루즈</span></a>
+					<a href="http://www.crystalcruises.com/" class="logo03" target="_blank"><span class="text_blind">크리스탈 크루즈</span></a>
+					<a href="http://www.oceaniacruises.com/" class="logo04" target="_blank"><span class="text_blind">오세아니아 크루즈</span></a>
+					<a href="https://www.pgcruises.com/" class="logo05" target="_blank"><span class="text_blind">폴고갱 크루즈</span></a>
+				</div>
+				<div class="slide02">
+					<a href="http://www.amawaterways.com/" class="logo06" target="_blank"><span class="text_blind">아마워터웨이즈</span></a>
+					<a href=" www.belmond.com" class="logo07" target="_blank"><span class="text_blind">벨몬드</span></a>
+					<a href="http://www.aquaexpeditions.com/" class="logo08" target="_blank"><span class="text_blind">아쿠아익스페디션</span></a>
+				</div>
+			</div>
+			<div class="control">
+			    <span class="prev"><span class="text_blind">이전</span></span>
+			    <span class="next"><span class="text_blind">다음</span></span>
+			</div>
+		</div>
+	</section><!-- main -->
+</body>
+</html>

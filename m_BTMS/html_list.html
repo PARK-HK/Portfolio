@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<title>HTML LIST</title>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="../js/jquery-treeview/lib/jquery.js"></script>
+<script>
+$(document).ready(function(){
+ //탭
+// $('.air_tab li').on('click','>a, >label', function(){
+//  var i = $(this).parent().index();
+//  $(this).closest('.air_tab').siblings('.air_tab_wrap').children('.tab_content').eq(i).show().siblings().hide();
+//  $(this).parent('li').addClass('current').siblings().removeClass('current');
+//}).parent().eq(2).trigger('click');
+//});
+</script>
+<style>
+*{margin:0;padding:0;font-size:12px;}
+h1{min-width:600px;padding:30px 20px;font-size:20px;background: #fceabb;background: linear-gradient(to right, #4a89dc, #967adc);color:#fff;letter-spacing:-0.05em;}
+img {margin-right:20px;vertical-align: middle;}
+table {min-width:600px;width:100%;max-width:800px;border-collapse: collapse;border-top:2px solid #666;}
+p{margin:10px 0;}
+table th, table td{padding:3px 2px 3px 5px;border-left:1px solid #ccc;border-bottom:1px solid #aaa;}
+table td:first-child, th:first-child {border-left:none;}
+table th{padding:6px;font-size:13px;background:#f0f0f0;vertical-align: middle;}
+table td {height:17px;letter-spacing: -0.01em; }
+table .line {height:auto;padding:0;background: #ccc;}
+a {text-decoration: none;color:blue}
+a:hover {text-decoration: underline;}
+.page {color:#2c2c2c;font-weight:bold; }
+.pop {color:#4c4c4c;font-weight:bold; }
+.pop_dimed {color:#adadad;font-weight:bold; }
+.outside {color:#adadad;font-weight:bold;text-decoration-line:line-through;}
+.air_tab { display:flex;min-width:700px;max-width:800px;min-width:250px;height:40px; padding:10px 20px 0px 20px; line-height: 40px; list-style: none; }
+.air_tab:after { content: ""; display: block; clear: both; }
+.air_tab li { flex:1;height: 100%; }
+.air_tab li a { display: block; width: 100%; height: 100%; padding: 0 10px; box-sizing: border-box; color: #999999; font-size: 16px; text-align: center; overflow: hidden; white-space: nowrap; border:1px solid #fff; border-bottom-color: #4a89dc;}
+.air_tab li.current a { color: #4a89dc; background: #fff; font-weight: bold; border:1px solid #4a89dc;  }
+.tab_content { display:none; width:800px; padding:10px 20px; }
+/* 가이드 */
+.list {padding:0 0 0 30px;}
+.list li{padding:5px 0;}
+.terminal {padding:20px;background:#000;color:#fff;}
+.path{padding: 20px;}
+.path dt{padding-bottom: 5px; font-weight: bold;}
+</style>
+</head>
+
+
+<h1>모바일 BTMS 퍼블리싱 작업 현황</h1>
+<ul class="air_tab">
+<li class="current"><a href="#">모바일 BTMS</a></li>
+</ul>
+<dl class="path">
+	<dt>파일경로</dt>
+	<dd>T:\Mode2009\ModeMobileSite\_code\2018\ModeWebAgent\btms</dd>
+</dl>
+<div class="air_tab_wrap">
+<!-- 호텔예약 -->
+<div class="tab_content" style="display: block;">
+    <table>
+        <colgroup>
+            <col style="width:30%" />
+            <col style="width:35%" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th>작업내역</th>
+                <th>경로</th>
+            </tr>
+        </thead>
+        <tbody>
+			<tr>
+                <td rowspan="1" class="page">로딩</td>
+                <td><a href="page/loading.html" target="ifrhowl">loading.html</a></td>
+            </tr>
+            <tr>
+                <td rowspan="1" class="page">메인</td>
+                <td><a href="page/main.html" target="ifrhowl">main.html</a></td>
+            </tr>
+			<tr>
+				<td class="line"></td>
+				<td class="line"></td>
+			</tr>
+            <tr>
+                <td rowspan="1" class="page">로그인</td>
+                <td><a href="page/login.html" target="ifrhowl">login.html</a></td>
+            </tr>
+            <tr>
+                <td rowspan="1" class="page">로그인 오류</td>
+                <td><a href="page/login_error.html" target="ifrhowl">login_error.html</a></td>
+            </tr>
+			<tr>
+				<td class="line"></td>
+				<td class="line"></td>
+			</tr>
+			<tr>
+                <td rowspan="1" class="page">견적요청 - 신규요청 추가요청</td>
+                <td><a href="page/businesstrip_step1_choice.html" target="ifrhowl">businesstrip_step1_choice.html</a></td>
+            </tr>
+			<tr>
+                <td rowspan="1" class="page">견적요청 서비스선택 페이지</td>
+                <td><a href="page/businesstrip_step2.html" target="ifrhowl">businesstrip_step2.html</a></td>
+            </tr>
+			<tr>
+                <td rowspan="1" class="page">견적요청 신규요청</td>
+                <td><a href="page/businesstrip_register_new.html" target="ifrhowl">businesstrip_register_new.html</a></td>
+            </tr>
+            <tr>
+                <td rowspan="1" class="page">견적요청 추가요청</td>
+                <td><a href="page/businesstrip_register_add.html" target="ifrhowl">businesstrip_register_add.html</a></td>
+            </tr>
+			<tr>
+                <td rowspan="1" class="page">견적요청 항공예약(왕복,편도,다구간)</td>
+                <td><a href="page/businesstrip_step3_flight.html" target="ifrhowl">businesstrip_step3_flight.html</a></td>
+            </tr>
+			<tr>
+                <td rowspan="1" class="page">견적요청 호텔예약</td>
+                <td><a href="page/businesstrip_step3_hotel.html" target="ifrhowl">businesstrip_step3_hotel.html</a></td>
+            </tr>
+			<tr>
+                <td rowspan="1" class="page">견적요청 비자예약</td>
+                <td><a href="page/businesstrip_step3_visa.html" target="ifrhowl">businesstrip_step3_visa.html</a></td>
+            </tr>
+			<tr>
+				<td class="line"></td>
+				<td class="line"></td>
+			</tr>
+			<tr>
+                <td rowspan="1" class="page">예약자 정보 - 항공</td>
+                <td><a href="page/person_infor_flight.html" target="ifrhowl">person_infor_flight.html</a></td>
+            </tr>
+			<tr>
+                <td rowspan="1" class="page">예약자 정보 - 호텔</td>
+                <td><a href="page/person_infor_hotel.html" target="ifrhowl">person_infor_hotel.html</a></td>
+            </tr>
+			<tr>
+                <td rowspan="1" class="page">예약자 정보 - 비자</td>
+                <td><a href="page/person_infor_visa.html" target="ifrhowl">person_infor_visa.html</a></td>
+            </tr>
+			<tr>
+				<td class="line"></td>
+				<td class="line"></td>
+			</tr>
+			<tr>
+                <td rowspan="1" class="page">예약내역</td>
+                <td><a href="page/detail.html" target="ifrhowl">detail.html</a></td>
+            </tr>
+			<tr>
+                <td rowspan="1" class="page">예약내역 - 견적요청확인중</td>
+                <td><a href="page/detail_ask.html" target="ifrhowl">detail_ask.html</a></td>
+            </tr>
+			<tr>
+                <td rowspan="1" class="page">예약내역 - 견적진행 항공</td>
+                <td><a href="page/detail_flight.html" target="ifrhowl">detail_flight.html</a></td>
+            </tr>
+			<tr>
+                <td rowspan="1" class="page">예약내역 - 견적진행 비자</td>
+                <td><a href="page/detail_visa.html" target="ifrhowl">detail_visa.html</a></td>
+            </tr>
+			<tr>
+                <td rowspan="1" class="page">예약내역 - 견적진행 호텔</td>
+                <td><a href="page/detail_hotel.html" target="ifrhowl">detail_hotel.html</a></td>
+            </tr>
+			<tr>
+				<td class="line"></td>
+				<td class="line"></td>
+			</tr>
+			<tr>
+                <td rowspan="1" class="page">요청내역상세보기 - 항공</td>
+                <td><a href="page/reserve_flight.html" target="ifrhowl">reserve_flight.html</a></td>
+            </tr>
+			<tr>
+                <td rowspan="1" class="page">요청내역상세보기 - 비자</td>
+                <td><a href="page/reserve_visa.html" target="ifrhowl">reserve_visa.html</a></td>
+            </tr>
+			<tr>
+                <td rowspan="1" class="page">요청내역상세보기 - 호텔</td>
+                <td><a href="page/reserve_hotel.html" target="ifrhowl">reserve_hotel.html</a></td>
+            </tr>
+			<tr>
+				<td class="line"></td>
+				<td class="line"></td>
+			</tr>
+			<tr>
+                <td rowspan="1" class="page">1:1 문의</td>
+                <td><a href="page/personal_qa.html" target="ifrhowl">personal_qa.html</a></td>
+            </tr>
+			<tr>
+                <td rowspan="1" class="page">1:1 문의 작성</td>
+                <td><a href="page/qa_write.html" target="ifrhowl">qa_write.html</a></td>
+            </tr>
+			<tr>
+                <td rowspan="1" class="page">1:1 답변+미답변</td>
+                <td><a href="page/qa_detail.html" target="ifrhowl">qa_detail.html</a></td>
+            </tr>
+			<tr>
+				<td class="line"></td>
+				<td class="line"></td>
+			</tr>
+            <tr>
+                <td rowspan="1" class="page">공지사항</td>
+                <td><a href="page/notice.html" target="ifrhowl">notice.html</a></td>
+            </tr>
+            <tr>
+                <td rowspan="1" class="page">알림메세지</td>
+                <td><a href="page/message.html" target="ifrhowl">message.html</a></td>
+            </tr>
+            <tr>
+                <td rowspan="1" class="page">자주하는질문</td>
+                <td><a href="page/qa.html" target="ifrhowl">qa.html</a></td>
+            </tr>
+			<tr>
+                <td rowspan="1" class="page">고객센터</td>
+                <td><a href="page/customer_center.html" target="ifrhowl">customer_center.html</a></td>
+            </tr>
+			<tr>
+				<td class="line"></td>
+				<td class="line"></td>
+			</tr>
+            <tr>
+                <td rowspan="1" class="page">설정</td>
+                <td><a href="page/setting.html" target="ifrhowl">setting.html</a></td>
+            </tr>
+			<tr>
+				<td class="line"></td>
+				<td class="line"></td>
+			</tr>
+			<tr>
+                <td rowspan="1" class="page">사원검색 팝업</td>
+                <td><a href="page/worker_search.html" target="ifrhowl">worker_search.html</a></td>
+            </tr>
+			<tr>
+                <td rowspan="1" class="page">바우처전송 팝업</td>
+                <td><a href="page/voucher.html" target="ifrhowl">voucher.html</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- //호텔예약 -->
+
+

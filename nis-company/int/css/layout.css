@@ -1,0 +1,652 @@
+@charset "utf-8";
+
+@import url(../css/default.css);
+@import url(../css/font.css);
+
+html,body{overflow-x: hidden;}
+.-break{display: block;}
+.swiper-button-next:after,.swiper-button-prev:after{opacity: 0;}
+
+/*header*/
+header{padding: 0 35px; position: fixed; z-index: 10; left: 0; right: 0; border-bottom: 1px rgba(255,255,255,0.1) solid;}
+header .wrap{display: flex; align-items: center;  justify-content: space-between; height: 80px; padding: 0 25px;}
+header .gnb{margin-left: auto;}
+header .gnb li{display: inline-block; margin-left: 95px;}
+header .gnb li:first-child{margin-left: 0;}
+header .gnb li a{font-size: 20px; color: #FFF; font-weight: 600;}
+header .menu-grp{width: 28px; height: 18px;}
+header .menu-grp .menu{display: none; width: 100%; height: 100%; background: url('../img/ico-menu.png') no-repeat;}
+header .gnb li a img{margin-right: 10px; position: relative; top: -2px;}
+
+header.on{background: #FFF; z-index: 10;}
+header.on .gnb li a{color: #222;}
+
+.page{}
+.wrap{width: 1410px; margin: 0 auto; height: 100%;}
+
+.main{height: 960px; position: relative;}
+.main .txt-grp{color: #FFF; position: absolute; z-index: 9; font-weight: 600; top: 0; left: 0; right: 0; bottom: 0; display: flex; flex-wrap: wrap; align-content: center;
+justify-content: center; text-align: center;}
+.main .txt-grp > span{display: inline-block; width: 100%;}
+.main .big-txt{font-size: 90px;}
+.main .s-txt{font-size: 30px; margin-top: 40px;}
+.main .mainSwiper{height: 100%;}
+.main .slide1{background: url('../img/main-slide.jpg') center 0 no-repeat;}
+.main .swiper-button-next{background: url('../img/main-right-arrow.png') no-repeat; width: 26px; height: 50px;}
+.main .swiper-button-prev{background: url('../img/main-left-arrow.png') no-repeat; width: 26px; height: 50px;}
+.main .control{position: absolute; top: 0; left: 0; right: 0; bottom: 0;}
+.main .control .wrap{position: relative;}
+.main .swiper-pagination{bottom: 60px !important;}
+.main .swiper-pagination-bullet{background: #FFF !important; opacity: 1; position: relative; margin: 0 17px !important;}
+.main .swiper-pagination-bullet:before{content: ''; display: block; width: 8px; height: 8px;
+position: absolute; top: 50%; left: 50%; transition: all 0.3s;}
+.main .swiper-pagination-bullet.swiper-pagination-bullet-active:before{content: ''; border-radius: 50%; border: 1px #FFF solid; width: 30px; height: 30px; margin-left: -15px; margin-top: -15px;}
+
+.con1{background: linear-gradient(to right, #397fb2, #5ab8b8 95%); text-align: center;position: relative; padding: 160px 0; overflow: hidden;}
+.con1 .tit{color: #FFF; font-size: 60px; font-weight: 800;}
+.con1 .s-txt{color: #FFF; font-size: 26px; line-height: 38px; margin-top: 35px;}
+.con1 .left-snow{width: 30%; top: 0; left: 0; bottom: 0; position: absolute;}
+ .snowflake {
+	 --size: 1vw;
+	 width: var(--size);
+	 height: var(--size);
+	 background: white;
+	 border-radius: 50%;
+	 position: absolute;
+	 top: -5vh;
+	 opacity: 0.1;
+}
+ @keyframes snowfall {
+	 0% {
+		 transform: translate3d(var(--left-ini), 0, 0);
+	}
+	 100% {
+		 transform: translate3d(var(--left-end), 110vh, 0);
+	}
+}
+ .snowflake:nth-child(1) {
+	 --size: 1vw;
+	 --left-ini: -8vw;
+	 --left-end: 3vw;
+	 left: 21vw;
+	 animation: snowfall 12s linear infinite;
+	 animation-delay: -10s;
+}
+ .snowflake:nth-child(2) {
+	 --size: 0.6vw;
+	 --left-ini: 2vw;
+	 --left-end: 10vw;
+	 left: 17vw;
+	 animation: snowfall 9s linear infinite;
+	 animation-delay: -9s;
+}
+ .snowflake:nth-child(3) {
+	 --size: 0.8vw;
+	 --left-ini: -5vw;
+	 --left-end: -7vw;
+	 left: 78vw;
+	 animation: snowfall 12s linear infinite;
+	 animation-delay: -1s;
+}
+ .snowflake:nth-child(4) {
+	 --size: 0.2vw;
+	 --left-ini: -1vw;
+	 --left-end: -9vw;
+	 left: 57vw;
+	 animation: snowfall 6s linear infinite;
+	 animation-delay: -9s;
+}
+ .snowflake:nth-child(5) {
+	 --size: 0.2vw;
+	 --left-ini: 9vw;
+	 --left-end: -1vw;
+	 left: 39vw;
+	 animation: snowfall 10s linear infinite;
+	 animation-delay: -3s;
+}
+ .snowflake:nth-child(6) {
+	 --size: 0.8vw;
+	 --left-ini: 3vw;
+	 --left-end: -6vw;
+	 left: 60vw;
+	 animation: snowfall 10s linear infinite;
+	 animation-delay: -1s;
+}
+ .snowflake:nth-child(7) {
+	 --size: 1vw;
+	 --left-ini: -1vw;
+	 --left-end: -4vw;
+	 left: 89vw;
+	 animation: snowfall 6s linear infinite;
+	 animation-delay: -8s;
+}
+ .snowflake:nth-child(8) {
+	 --size: 1vw;
+	 --left-ini: -4vw;
+	 --left-end: -7vw;
+	 left: 33vw;
+	 animation: snowfall 11s linear infinite;
+	 animation-delay: -2s;
+}
+ .snowflake:nth-child(9) {
+	 --size: 1vw;
+	 --left-ini: -4vw;
+	 --left-end: -4vw;
+	 left: 78vw;
+	 animation: snowfall 10s linear infinite;
+	 animation-delay: -5s;
+}
+ .snowflake:nth-child(10) {
+	 --size: 0.6vw;
+	 --left-ini: -3vw;
+	 --left-end: 1vw;
+	 left: 73vw;
+	 animation: snowfall 15s linear infinite;
+	 animation-delay: -7s;
+}
+ .snowflake:nth-child(11) {
+	 --size: 0.4vw;
+	 --left-ini: 6vw;
+	 --left-end: -1vw;
+	 left: 62vw;
+	 animation: snowfall 8s linear infinite;
+	 animation-delay: -8s;
+}
+ .snowflake:nth-child(12) {
+	 --size: 0.4vw;
+	 --left-ini: -1vw;
+	 --left-end: 1vw;
+	 left: 46vw;
+	 animation: snowfall 14s linear infinite;
+	 animation-delay: -10s;
+}
+ .snowflake:nth-child(13) {
+	 --size: 0.8vw;
+	 --left-ini: 5vw;
+	 --left-end: 0vw;
+	 left: 28vw;
+	 animation: snowfall 9s linear infinite;
+	 animation-delay: -5s;
+}
+ .snowflake:nth-child(14) {
+	 --size: 0.8vw;
+	 --left-ini: 0vw;
+	 --left-end: -8vw;
+	 left: 96vw;
+	 animation: snowfall 9s linear infinite;
+	 animation-delay: -5s;
+}
+ .snowflake:nth-child(15) {
+	 --size: 1vw;
+	 --left-ini: 9vw;
+	 --left-end: 4vw;
+	 left: 48vw;
+	 animation: snowfall 8s linear infinite;
+	 animation-delay: -5s;
+}
+ .snowflake:nth-child(16) {
+	 --size: 0.6vw;
+	 --left-ini: -2vw;
+	 --left-end: 6vw;
+	 left: 42vw;
+	 animation: snowfall 11s linear infinite;
+	 animation-delay: -3s;
+}
+ .snowflake:nth-child(17) {
+	 --size: 0.8vw;
+	 --left-ini: -5vw;
+	 --left-end: -5vw;
+	 left: 11vw;
+	 animation: snowfall 15s linear infinite;
+	 animation-delay: -4s;
+}
+ .snowflake:nth-child(18) {
+	 --size: 1vw;
+	 --left-ini: -5vw;
+	 --left-end: 2vw;
+	 left: 21vw;
+	 animation: snowfall 6s linear infinite;
+	 animation-delay: -5s;
+}
+ .snowflake:nth-child(19) {
+	 --size: 0.6vw;
+	 --left-ini: -6vw;
+	 --left-end: 0vw;
+	 left: 66vw;
+	 animation: snowfall 14s linear infinite;
+	 animation-delay: -5s;
+}
+ .snowflake:nth-child(20) {
+	 --size: 0.8vw;
+	 --left-ini: 7vw;
+	 --left-end: -5vw;
+	 left: 20vw;
+	 animation: snowfall 9s linear infinite;
+	 animation-delay: -4s;
+}
+ .snowflake:nth-child(21) {
+	 --size: 1vw;
+	 --left-ini: 5vw;
+	 --left-end: -9vw;
+	 left: 50vw;
+	 animation: snowfall 13s linear infinite;
+	 animation-delay: -2s;
+}
+ .snowflake:nth-child(22) {
+	 --size: 0.8vw;
+	 --left-ini: 3vw;
+	 --left-end: 5vw;
+	 left: 16vw;
+	 animation: snowfall 12s linear infinite;
+	 animation-delay: -8s;
+}
+ .snowflake:nth-child(23) {
+	 --size: 0.2vw;
+	 --left-ini: -1vw;
+	 --left-end: 5vw;
+	 left: 89vw;
+	 animation: snowfall 15s linear infinite;
+	 animation-delay: -2s;
+}
+ .snowflake:nth-child(24) {
+	 --size: 0.2vw;
+	 --left-ini: -8vw;
+	 --left-end: -9vw;
+	 left: 36vw;
+	 animation: snowfall 13s linear infinite;
+	 animation-delay: -9s;
+}
+ .snowflake:nth-child(25) {
+	 --size: 0.2vw;
+	 --left-ini: -6vw;
+	 --left-end: 0vw;
+	 left: 100vw;
+	 animation: snowfall 8s linear infinite;
+	 animation-delay: -3s;
+}
+ .snowflake:nth-child(26) {
+	 --size: 1vw;
+	 --left-ini: -4vw;
+	 --left-end: 3vw;
+	 left: 72vw;
+	 animation: snowfall 9s linear infinite;
+	 animation-delay: -3s;
+}
+ .snowflake:nth-child(27) {
+	 --size: 0.8vw;
+	 --left-ini: -1vw;
+	 --left-end: 0vw;
+	 left: 23vw;
+	 animation: snowfall 14s linear infinite;
+	 animation-delay: -1s;
+}
+ .snowflake:nth-child(28) {
+	 --size: 0.2vw;
+	 --left-ini: 8vw;
+	 --left-end: -5vw;
+	 left: 37vw;
+	 animation: snowfall 13s linear infinite;
+	 animation-delay: -5s;
+}
+ .snowflake:nth-child(29) {
+	 --size: 1vw;
+	 --left-ini: 9vw;
+	 --left-end: 8vw;
+	 left: 61vw;
+	 animation: snowfall 12s linear infinite;
+	 animation-delay: -1s;
+}
+ .snowflake:nth-child(30) {
+	 --size: 1vw;
+	 --left-ini: -4vw;
+	 --left-end: -1vw;
+	 left: 59vw;
+	 animation: snowfall 11s linear infinite;
+	 animation-delay: -10s;
+}
+ .snowflake:nth-child(31) {
+	 --size: 1vw;
+	 --left-ini: 2vw;
+	 --left-end: -3vw;
+	 left: 54vw;
+	 animation: snowfall 15s linear infinite;
+	 animation-delay: -7s;
+}
+ .snowflake:nth-child(32) {
+	 --size: 1vw;
+	 --left-ini: -4vw;
+	 --left-end: -2vw;
+	 left: 82vw;
+	 animation: snowfall 6s linear infinite;
+	 animation-delay: -6s;
+}
+ .snowflake:nth-child(33) {
+	 --size: 0.8vw;
+	 --left-ini: 8vw;
+	 --left-end: 4vw;
+	 left: 16vw;
+	 animation: snowfall 7s linear infinite;
+	 animation-delay: -2s;
+}
+ .snowflake:nth-child(34) {
+	 --size: 0.8vw;
+	 --left-ini: -8vw;
+	 --left-end: -4vw;
+	 left: 39vw;
+	 animation: snowfall 15s linear infinite;
+	 animation-delay: -10s;
+}
+ .snowflake:nth-child(35) {
+	 --size: 1vw;
+	 --left-ini: -9vw;
+	 --left-end: 6vw;
+	 left: 40vw;
+	 animation: snowfall 13s linear infinite;
+	 animation-delay: -1s;
+}
+ .snowflake:nth-child(36) {
+	 --size: 0.4vw;
+	 --left-ini: -6vw;
+	 --left-end: -6vw;
+	 left: 36vw;
+	 animation: snowfall 15s linear infinite;
+	 animation-delay: -7s;
+}
+ .snowflake:nth-child(37) {
+	 --size: 0.4vw;
+	 --left-ini: -5vw;
+	 --left-end: -6vw;
+	 left: 90vw;
+	 animation: snowfall 7s linear infinite;
+	 animation-delay: -9s;
+}
+ .snowflake:nth-child(38) {
+	 --size: 1vw;
+	 --left-ini: -8vw;
+	 --left-end: -8vw;
+	 left: 9vw;
+	 animation: snowfall 7s linear infinite;
+	 animation-delay: -6s;
+}
+ .snowflake:nth-child(39) {
+	 --size: 0.6vw;
+	 --left-ini: 5vw;
+	 --left-end: 3vw;
+	 left: 83vw;
+	 animation: snowfall 7s linear infinite;
+	 animation-delay: -3s;
+}
+ .snowflake:nth-child(40) {
+	 --size: 0.6vw;
+	 --left-ini: -2vw;
+	 --left-end: 1vw;
+	 left: 84vw;
+	 animation: snowfall 9s linear infinite;
+	 animation-delay: -3s;
+}
+ .snowflake:nth-child(41) {
+	 --size: 0.6vw;
+	 --left-ini: -1vw;
+	 --left-end: -8vw;
+	 left: 73vw;
+	 animation: snowfall 13s linear infinite;
+	 animation-delay: -9s;
+}
+ .snowflake:nth-child(42) {
+	 --size: 0.2vw;
+	 --left-ini: -4vw;
+	 --left-end: 3vw;
+	 left: 19vw;
+	 animation: snowfall 13s linear infinite;
+	 animation-delay: -10s;
+}
+ .snowflake:nth-child(43) {
+	 --size: 0.4vw;
+	 --left-ini: -2vw;
+	 --left-end: 4vw;
+	 left: 80vw;
+	 animation: snowfall 13s linear infinite;
+	 animation-delay: -3s;
+}
+ .snowflake:nth-child(44) {
+	 --size: 0.8vw;
+	 --left-ini: 6vw;
+	 --left-end: -3vw;
+	 left: 7vw;
+	 animation: snowfall 8s linear infinite;
+	 animation-delay: -9s;
+}
+ .snowflake:nth-child(45) {
+	 --size: 0.6vw;
+	 --left-ini: -5vw;
+	 --left-end: -7vw;
+	 left: 60vw;
+	 animation: snowfall 8s linear infinite;
+	 animation-delay: -7s;
+}
+ .snowflake:nth-child(46) {
+	 --size: 0.2vw;
+	 --left-ini: -4vw;
+	 --left-end: -9vw;
+	 left: 82vw;
+	 animation: snowfall 12s linear infinite;
+	 animation-delay: -7s;
+}
+ .snowflake:nth-child(47) {
+	 --size: 0.2vw;
+	 --left-ini: -4vw;
+	 --left-end: -2vw;
+	 left: 56vw;
+	 animation: snowfall 15s linear infinite;
+	 animation-delay: -8s;
+}
+ .snowflake:nth-child(48) {
+	 --size: 0.6vw;
+	 --left-ini: 8vw;
+	 --left-end: -8vw;
+	 left: 11vw;
+	 animation: snowfall 15s linear infinite;
+	 animation-delay: -10s;
+}
+ .snowflake:nth-child(49) {
+	 --size: 1vw;
+	 --left-ini: 3vw;
+	 --left-end: 8vw;
+	 left: 24vw;
+	 animation: snowfall 12s linear infinite;
+	 animation-delay: -9s;
+}
+ .snowflake:nth-child(50) {
+	 --size: 1vw;
+	 --left-ini: 7vw;
+	 --left-end: -8vw;
+	 left: 69vw;
+	 animation: snowfall 12s linear infinite;
+	 animation-delay: -3s;
+}
+
+/* added small blur every 6 snowflakes*/
+ .snowflake:nth-child(6n) {
+	 filter: blur(1px);
+}
+
+.con2{position: relative; padding: 175px 0}
+.con2 .wrap{position: relative;}
+.con2 .tit{font-size: 60px; font-weight: bold; color: #397FB2; margin-bottom: 230px;}
+.con2 .Swiper{margin-top: 235px;}
+.con2 .Swiper .slide-top{top: -580px;}
+.con2_slide_area .con2_slider{position: relative; height: 100%; display: flex; justify-content: space-between; z-index: 1;}
+.con2_slide_area .con2_slider p{position: absolute;width:380px;left:200px;top:60px;line-height: 1.8;font-size: 20px;font-style: normal;font-weight: normal;letter-spacing: -1px;}
+.con2_slide_area ul{width:670px;height:600px;overflow:hidden;display: inline-block;position: relative;}
+.con2_slide_area ul:after{content: ''; display: block; clear: both;}
+.con2_slide_area ul.slider02{width:555px;height:640px; transition: all 0.2s; top: -580px;}
+.con2_slide_area ul li{box-sizing:border-box;float:left;position: absolute;color:#fff;z-index:0;cursor:pointer; height: 100%;}
+.con2_slide_area .slider_nav{position: absolute; z-index: 9; left: 0; top: 170px;}
+.con2_slide_area .slider_nav a{font-size:0;  width: 50px; height: 50px; z-index: 99; display: inline-block; cursor: pointer; border-radius: 50%;}
+.con2_slide_area .slider_nav a.slider_prev{background: rgba(105,105,105,0.2) url('../img/con2-arrow-left.png') center no-repeat; }
+.con2_slide_area .slider_nav a.slider_prev:hover{background: rgba(68,68,68,0.8) url('../img/con2-arrow-left-on.png') no-repeat;}
+.con2_slide_area .slider_nav a.slider_next{background: rgba(105,105,105,0.2) url('../img/con2-arrow-right.png') center no-repeat; margin-left: 20px;}
+.con2_slide_area .slider_nav a.slider_next:hover{background: rgba(68,68,68,0.8) url('../img/con2-arrow-right-on.png') center no-repeat;}
+.con2 .big-txt{font-size: 120px; font-weight: 800; color: #eee; white-space: nowrap; position: absolute; bottom: 110px; left: 460px;}
+
+.con3{background: linear-gradient(to bottom, #0c436c, #358095 95%); padding-top: 150px; padding-bottom: 80px;}
+.con3 .wrap{position: relative;}
+.con3 .tit{color: #FFF; font-size: 60px; font-weight: bold;  padding-bottom: 65px;}
+.con3 .Swiper{padding-bottom: 100px; overflow-x: hidden;}
+.con3 .swiper-scrollbar-drag{background: #FFF;}
+.con3 .swiper-scrollbar{background: rgba(255,255,255,0.5);}
+.con3 .swiper-horizontal>.swiper-scrollbar{height: 8px;}
+.con3 .swiper-slide{color: #FFF; padding: 45px 30px 30px; border: 1px #FFF solid; border-radius: 20px; word-break: keep-all; transition: all 0.5s;}
+.con3 .swiper-slide.swiper-slide-active,.con3 .swiper-slide:hover{background: rgba(255,255,255,0.2); padding-bottom: 45px; box-shadow: 10px 10px 20px rgba(7,41,68,0.3);}
+.con3 .date{font-size: 18px;}
+.con3 .slide-tit{font-size: 26px; font-weight: 600; margin-top: 20px; margin-bottom: 40px; line-height: 33px;}
+.con3 .swiper-slide p{font-size: 16px; line-height: 24px;}
+
+.con4{padding: 140px 0;}
+.con4 .tit{font-size: 60px; color: #444; font-weight: bold; margin-bottom: 95px;}
+.con4 ul{display: flex;}
+.con4 ul li{flex: 1; border: 1px #E3E3E3 solid; padding: 50px 35px 100px; margin-left: 30px;}
+.con4 ul li:first-child{margin-left: 0;}
+.con4 .spot{font-size: 22px; font-weight: 500; color: #387EB1; margin-bottom: 20px;}
+.con4 p{color: #aaa; font-size: 16px; line-height: 26px; word-break: keep-all;}
+.con4 .lt-01{background: url('../img/con3-ico1.png') no-repeat; background-position-x: calc(100% - 30px); background-position-y: calc(100% - 30px);}
+.con4 .lt-02{background: url('../img/con3-ico2.png') no-repeat; background-position-x: calc(100% - 30px); background-position-y: calc(100% - 30px);}
+.con4 .lt-03{background: url('../img/con3-ico3.png') no-repeat; background-position-x: calc(100% - 30px); background-position-y: calc(100% - 30px);}
+
+.con5{background: #F6F6F6; padding: 95px 0;}
+.con5 .tit{font-size: 50px; font-weight: bold; color: #444; text-align: center; margin-bottom: 60px;}
+.con5 ul{display: flex; flex-wrap: wrap;}
+.con5 ul li{width: 49%; margin-bottom: 30px;}
+.con5 ul li:nth-child(odd){margin-right: 2%;}
+.con5 ul li:last-child{width: 100%; margin-right: 0;}
+.con5 .form-tit{display: block; color: #666; font-size: 18px; font-weight: 500; margin-bottom: 10px;}
+.con5 input[type="text"]{width: 100%; border: 1px #E3E3E3 solid; padding: 20px 10px;}
+.con5 textarea{resize: none; width: 100%; border: 1px #E3E3E3 solid;}
+.con5 .agree{text-align: center;}
+.con5 .agree input+label{position: relative; padding-left: 30px; font-size: 18px; font-weight: 500; color: #888;}
+.con5 .agree input+label:before{content: '';display: inline-block; width: 20px; height: 20px; border: 1px solid #E3E3E3; cursor: pointer; border-radius: 2px; background: #FFF;
+position: absolute; left: 0; top: 5px;}
+.con5 .agree input:checked+label:after{content:'✔'; font-size: 13px; width: 20px; height: 20px; text-align: center; position: absolute; left: 0; top:9px; color: #222;}
+.con5 a{background: #1B5B8D; color: #FFF; width: 440px; height: 70px; font-size: 18px; font-weight: 600; display: block; text-align: center; line-height: 70px;
+border-radius: 5px; margin: 45px auto 0;}
+
+.con6{background: #2E85AD; padding: 50px 0;}
+.con6 .tit{font-size: 38px; font-weight: 600; color: #FFF; margin-bottom: 20px;}
+.con6 .infor{display: flex;}
+.con6 .infor > div{flex: 1;}
+.con6 .time{color: #FCFFFF; opacity: 0.6; font-size: 18px; font-weight: 400; display: block; margin-bottom: 20px;}
+.con6 .box:first-child p{color: #FFF; font-size: 18px; line-height: 35px;}
+.con6 .box:last-child{display: flex;}
+.con6 .box:last-child p{font-size: 26px; font-weight: 500; color: #FFF;}
+.con6 .box p.phone{padding-left: 81px; position: relative; margin-left: 45px;}
+.con6 .box p.phone:first-child{margin-left: 0;}
+.con6 .box p.phone:first-child:before{background: url('../img/ico-phone.png') left top no-repeat; content: ''; position: absolute; display: block; width: 70px; height: 70px;
+left: 0; top: -23px;}
+.con6 .box p.phone:last-child:before{background: url('../img/ico-chat.png') left top no-repeat; content: ''; position: absolute; display: block; width: 70px; height: 70px;
+left: 0; top: -23px;}
+
+footer{padding: 60px 0 160px;}
+footer .wrap{display: flex;}
+footer .logo{margin-right: 160px;}
+footer ul li{display: inline-block; position: relative; padding-left: 15px; margin-right: 8px; color: #aaa; font-size: 16px;}
+footer ul li:before{content: ''; position: absolute; display: block; width: 1px; height: 12px; background: #bfbfbf; left: 0; top: 50%; margin-top: -6px;}
+footer ul li:first-child:before{background: none;}
+footer ul li:first-child{padding-left: 0; color: #666;}
+footer p{font-size: 16px; color: #666666; margin-top: 15px;}
+
+@media only screen and (max-width:1410px){
+	header{padding: 0;}
+    .wrap{width: 100%; padding: 0 20px;}
+    .con2_slide_area .slider_nav{left: 20px;}
+}
+
+@media only screen and (max-width:1300px){
+	.con2_slide_area .con2_slider .slider02{margin-left: 20px;}
+}
+
+@media only screen and (max-width:1120px){
+	header .gnb{display: none;}
+	header .menu-grp .menu{display: block;}
+	header.on .menu-grp .menu{width: 100%; height: 100%; background: url('../img/ico-menu-on.png') no-repeat;}
+
+	.main{height: 529px;}
+	.main .big-txt{font-size: 40px;}
+	.main .s-txt{font-size: 14px; word-break: keep-all; line-height: 22px;}
+	.main .swiper-button-prev{margin-top: 0; bottom: 56px; top: initial; width: 11px; height: 21px ;background-size: 11px auto; left: 50%; margin-left: -100px;}
+	.main .swiper-button-next{margin-top: 0; bottom: 56px; top: initial; width: 11px; height: 21px ;background-size: 11px auto; right: 50%; margin-right: -100px;}
+	.main .swiper-pagination-bullet{width: 4px; height: 4px;}
+	.main .swiper-pagination-bullet.swiper-pagination-bullet-active:before{width: 16px; height: 16px; margin-top: -8px; margin-left: -8px;}
+
+	.con1{padding: 35px 0;}
+	.con1 .tit{font-size: 24px;}
+	.con1 .s-txt{font-size: 14px; line-height: 23px; margin-top: 15px;}
+
+	.con2{padding: 65px 0;}
+	.con2 .tit{font-size: 30px; margin-bottom: 110px;}
+	.con2_slide_area .con2_slider{display: block;}
+	/*.con2_slide_area .con2_slider ul{width: 100%;}*/
+	.con2_slide_area .con2_slider .slider02{top: 0; margin-left: auto; margin-top: 104px; width: 285px; height: 300px;}
+	.con2_slide_area ul{display: block;}
+	.con2_slide_area ul.slider01{width: 265px; height: 263px;}
+	.con2_slide_area ul li,.con2_slide_area ul li img{width: 100%; height: 100%;}
+	.con2_slide_area .slider_nav{top: 75px;}
+	.con2_slide_area .slider_nav a.slider_next{margin-left: 5px;}
+	.con2_slide_area .slider_nav a{width: 36px; height: 36px; background-size: 36px auto;}
+	.con2 .big-txt{font-size: 40px; left: 0px; bottom: 333px; right: 0;}
+
+	.con3{padding: 70px 0;}
+	.con3 .tit{font-size: 30px; padding-bottom: 40px;}
+	.con3 .date{font-size: 14px;}
+	.con3 .Swiper{padding-bottom: 40px;}
+	.con3 .slide-tit{font-size: 18px; line-height: 23px; margin-bottom: 20px;}
+	.con3 .swiper-slide p{font-size: 12px; line-height: 20px;}
+	.con3 .swiper-slide{padding: 30px;}
+	.con3 .swiper-horizontal>.swiper-scrollbar{left: 20px; width: auto; right: 20px;}
+
+	.con4{padding: 70px 0;}
+	.con4 .tit{font-size: 30px; line-height: 40px; margin-bottom: 40px;}
+	.con4 ul{flex-wrap: wrap;}
+	.con4 ul li{flex: none; width: 100%; margin-left: 0; margin-top: 20px; padding: 30px 25px 60px; 
+		background-position-x: calc(100% - 25px) !important; background-position-y: calc(100% - 20px) !important; background-size: 40px auto !important;}
+	.con4 ul li:first-child{margin-top: 0;}
+	.con4 .spot{font-size: 18px;}
+	.con4 p{font-size: 14px; line-height: 20px;}
+
+	.con5{padding: 60px 0;}
+	.con5 .tit{font-size: 30px; margin-bottom: 40px;}
+	.con5 .form-tit{font-size: 14px;}
+	.con5 input[type="text"]{padding: 10px;}
+	.con5 .agree input+label{font-size: 13px;}
+	.con5 a{font-size: 14px; height: 50px; line-height: 50px; width: 100%;}
+	.con5 .agree input+label:before{top: 0;}
+	.con5 .agree input:checked+label:after{top: 4px;}
+
+	.con6 .tit{font-size: 30px;}
+	.con6 .infor{flex-wrap: wrap;}
+	.con6 .infor > div{flex: none; width: 100%;}
+	.con6 .time{font-size: 14px;}
+	.con6 .box:first-child p{font-size: 14px; line-height: 28px;}
+	.con6 .box:last-child p{font-size: 20px;}
+	.con6 .box:last-child{margin-top: 30px;}
+	.con6 .box p.phone{padding-left: 60px;}
+	.con6 .box p:before{width: 50px !important; height: 50px !important; background-size: 50px auto !important; top: -13px !important;}
+
+	footer{padding: 40px 0;}
+	footer .logo{margin-right: 10%;}
+	footer ul li{font-size: 14px;}
+	footer p{font-size: 14px; line-height: 18px;}
+}
+
+@media only screen and (max-width:600px){
+	.con6 .box:last-child{flex-wrap: wrap; margin-top: 0;}
+	.con6 .box p.phone{width: 100%; margin-left: 0; margin-top: 50px;}
+
+	footer .wrap{flex-wrap: wrap;}
+	footer .infor{margin-top: 40px;}
+}
+
+@media only screen and (max-width:400px){
+	.main .txt-grp{text-align: left;justify-content: left; padding-left: 20px;}
+
+	.con5 ul li{width: 100%;}
+}

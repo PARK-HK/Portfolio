@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/sub.css" />
+	<script src="../js/1.11.3.min.js"></script>
+	<script src="../js/active.js"></script>
+	<!-- [s]: 추가 플러그인 -->
+	<script src="../js/plugin/cycle2.js"></script>
+	<script src="../js/plugin/cycle2.carousel.js"></script>
+	<!-- [e]: 추가 플러그인 -->
+	<script type="text/javascript">
+		//카카오 팝업
+		function kakao(popHeight,popWidth){
+			var winHeight =  $( window ).height();
+			var winWidth = document.body.clientWidth;	// 현재창의 너비
+			var winX = window.screenLeft;	// 현재창의 x좌표
+			var winY = window.screenTop;	// 현재창의 y좌표
+			var popX = winX + (winWidth - popWidth)/2;
+			var popY = winY + (winHeight - popHeight)/2;
+			window.open("kakao_popup.html","popup","width="+popWidth+"px,height="+popHeight+"px,top="+popY+",left="+popX+",menubar=no, scrollbars=no, resizable=no");
+		}
+	</script>
+</head>
+<body>
+	<header class="promotion_head">
+		<h1 class="logo"><a href="main.html"></a></h1>
+		<a href="" class="btn_menu"></a>
+		<div class="menu_wrap"></div><!-- 하얀 배경 -->
+		<div class="menu_in">
+			<a href="" class="close"></a>
+			<ul class="big_menu">
+				<li><a href="company_infor.html">회사소개</a></li>
+				<li>
+					<a href="submain.html">테마별 크루즈여행</a>
+					<ul>
+						<li><a href="thema_cruise01.html">나의 첫 크루즈</a></li>
+						<li><a href="thema_cruise02.html">크루즈 매니아</a></li>
+						<li><a href="thema_cruise03.html">6성급 럭셔리 크루즈</a></li>
+						<li><a href="thema_cruise04.html">리버크루즈</a></li>
+						<li><a href="thema_cruise05.html">탐험 크루즈</a></li>
+						<li><a href="thema_cruise06.html">크루즈&amp;현지투어</a></li>
+						<li><a href="thema_cruise07.html">세계일주</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="area01.html">지역별 크루즈여행</a>
+					<ul>
+						<li><a href="area01.html#move">지중해</a></li>
+						<li><a href="area02.html#move">알래스카</a></li>
+						<li><a href="area03.html#move">북유럽</a></li>
+						<li><a href="area04.html#move">유럽리버</a></li>
+						<li><a href="area05.html#move">미서부/멕시코</a></li>
+						<li><a href="area06.html#move">캐나다/뉴잉글랜드</a></li>
+						<li><a href="area07.html#move">아프리카/중동</a></li>
+						<li><a href="area08.html#move">중남미/파나마운하</a></li>
+						<li><a href="area09.html#move">갈라파고스</a></li>
+						<li><a href="area10.html#move">아시아</a></li>
+						<li><a href="area11.html#move">남극</a></li>
+						<li><a href="area12.html#move">카리브해</a></li>
+						<li><a href="area13.html#move">호주/뉴질랜드</a></li>
+						<li><a href="area14.html#move">남태평양</a></li>
+						<li><a href="area15.html#move">하와이</a></li>
+						<li><a href="area16.html#move">세계일주</a></li>
+					</ul>
+				</li>
+				<li><a href="recommend_page.html">프로모션</a></li>
+			</ul><!-- big_menu -->
+			<ul class="service">
+				<li>
+					<span class="tit">카카오톡 상담하기</span>
+					<span>
+						<img src="//img.modetour.com/modewebagent/2017/cruise/search_img.jpg" alt="">
+						<a href="" onclick="kakao(690,700);return false;" class="apply_kakao">신청방법</a>
+					</span>
+				</li>
+				<li>
+					<span class="tit">TEL</span>
+					<span class="tel"><img src="//img.modetour.com/modewebagent/2017/cruise/img_tel.png" alt=""></span>
+				</li>
+			</ul><!-- service -->
+			<div class="foot">
+				<span>개인정보 취급방침</span>
+				<address>
+					서울시 중구 을지로 16 백남빌딩 506호 크루즈 인터내셔널<br />
+					대표이사 유인태<br />
+					사업자등록번호 104-81-53278<br />
+					통신판매업신고번호 중구 제 03295호<br />
+					COPYRIGHT CRUISE INTERNATIONAL INC. ALL RIGHT RESERVED.
+				</address>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="eventwrapper">
+			<!-- [시작]: 기획전 전체 -->
+			<style type="text/css">
+				.event_wrap .layout_wrap{width: 1000px; margin: 0 auto; text-align: center; position: relative;}
+				.event_wrap .text_blind{font-size: 0; position: absolute; left: -9999px;}
+
+				.event_wrap .main_top{width: 100%; height: 1839px; background: url('http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_180326/main_bg.jpg') center 0 no-repeat;}
+				.event_wrap .con1{width: 100%; height: 786px; background: url('http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_180326/con1_bg.jpg') center 0 no-repeat;}
+				.event_wrap .con1 .slide .txt{position: absolute; top: 155px; right: 0;}
+				.event_wrap .con1 .slide{position: relative;}
+				.event_wrap .con1 .slide ul{height: 86px; position: absolute; left: 475px; top: 588px;}
+				.event_wrap .con1 .slide ul li{float: left; width: 86px; height: 86px; margin-left: 6px;}
+				.event_wrap .con1 .slide ul li:first-child{margin-left: 0;}
+				.event_wrap .con1 .slide ul li a{display: block; width: 100%; height: 100%; background: url('http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_180326/con1_tab.png') no-repeat;}
+				.event_wrap .con1 .slide ul li a:hover,.event_wrap .con1 .slide ul li.cycle-pager-active a{background: url('http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_180326/con1_tab_on.png') no-repeat;}
+				.event_wrap .con1 .slide ul li a.tab02{background-position: -93px 0;}
+				.event_wrap .con1 .slide ul li a.tab03{background-position: -186px 0;}
+				.event_wrap .con1 .slide ul li a.tab04{background-position: -279px 0;}
+                .event_wrap .con1 .slide ul li a.tab05{background-position: -372px 0;}
+                .event_wrap .con1 .slide .con_wrap{position: absolute; top: 0; left: -50px;}
+
+				.event_wrap .con2{width: 100%; background: #2d1e28 url('http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_180326/con2_bg.jpg') center 0 no-repeat;}
+				.event_wrap .con2 .tab{width: 775px; margin: 0 auto; height: 419px;}
+				.event_wrap .con2 .tab li{float: left; margin-left: -39px;}
+				.event_wrap .con2 .tab li:first-child{margin-left: 0;}				
+                .event_wrap .con2 .tab li a{display: block; width: 283px; height: 419px;}
+
+                .event_wrap .con2 .tab li a.tab01{background: url('http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_180326/con2_tab1.png') -15px -419px no-repeat;}
+                .event_wrap .con2 .tab li a.tab02{background: url('http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_180326/con2_tab2.png') -15px -419px no-repeat;}
+                .event_wrap .con2 .tab li a.tab03{background: url('http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_180326/con2_tab3.png') -15px -419px no-repeat;}
+                .event_wrap .con2 .tab li a:hover,.event_wrap .con2 .tab li.on a{background-position: -15px 0;  height: 419px; position: relative; z-index: 9; top: -20px; }
+                .event_wrap .con2 .con_wrap{padding: 50px 0 100px;}
+
+
+			</style>
+			<!-- [시작]: markup -->
+			<div class="event_wrap">
+				<div class="main_top"></div>
+				<div class="con1">
+					<div class="layout_wrap">
+						<div class="slide">
+							<div class="con_wrap cycle-slideshow" 
+								data-cycle-slides=">div"
+								data-cycle-fx=scrollHorz
+							    data-cycle-timeout=3000
+							    data-cycle-pager="#template-pager"
+    							data-cycle-pager-template=""
+							    >
+								<div class="content" id="con1_in01"><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_180326/con1_slide1.jpg" alt=""></div>
+								<div class="content" id="con1_in02"><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_180326/con1_slide2.jpg" alt=""></div>
+								<div class="content" id="con1_in03"><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_180326/con1_slide3.jpg" alt=""></div>
+								<div class="content" id="con1_in04"><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_180326/con1_slide4.jpg" alt=""></div>
+								<div class="content" id="con1_in05"><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_180326/con1_slide5.jpg" alt=""></div>
+							</div>	
+							<ul id="template-pager">
+								<li class="on"><a href="#con1_in01" class="tab01"></a></li>
+								<li><a href="#con1_in02" class="tab02"></a></li>
+								<li><a href="#con1_in03" class="tab03"></a></li>
+								<li><a href="#con1_in04" class="tab04"></a></li>
+								<li><a href="#con1_in05" class="tab05"></a></li>
+							</ul>
+							<div class="txt"><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_180326/con1_txt.png" alt=""></div>
+						</div>
+					</div>
+				</div><!-- con1 -->
+				<div class="con2">
+					<div class="layout_wrap">
+						<ul class="tab">
+							<li class="on"><a href="#con3_in01" class="tab01"><span class="text_blind">유럽지역 출발 일정 한눈에 보기</span></a></li>
+							<li><a href="#con3_in02" class="tab02"><span class="text_blind">남태평양 지역 출발 일정 한눈에 보기</span></a></li>
+							<li><a href="#con3_in03" class="tab03"><span class="text_blind">미주지역 출발 일정 한눈에 보기</span></a></li>
+						</ul>
+						<div class="con_wrap">
+							<div class="content" id="con3_in01">
+								<img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_180326/con3_in01.jpg" alt="" usemap="#con3_in01_img">
+								<map name="con3_in01_img" id="con3_in01_img">
+									<area shape="rect" coords="841,188,976,236" href="https://www.silversea.com/destinations/mediterranean-cruise/barcelona-to-monte-carlo-3925.html#menu-cruise2018suites" target="_blank" alt="지중해 실버시/쉐도우호" />
+								    <area shape="rect" coords="841,298,978,347" href="https://www.silversea.com/destinations/northern-europe-british-isles-cruise/london-to-lisbon-5927a.html" target="_blank" alt="북유럽 실버시/스피릿호" />
+								    <area shape="rect" coords="841,405,977,455" href="https://www.rssc.com/cruises/VOY190908/summary" target="_blank" alt="지중해 리젠트 세븐시즈/보이저호" />
+								    <area shape="rect" coords="841,517,976,564" href="https://www.oceaniacruises.com/Mediterranean-cruises/monte-carlo-to-barcelona-SIR190912/?sr=%2Fcruise-finder%2F%23sailDates%3D2019%7C09%23destinations%3Dmediterranean" target="_blank" alt="지중해 오세아니아/시레나호" />
+								    <area shape="rect" coords="840,625,977,672" href="https://www.crystalcruises.com/voyage/rome-to-venice-ocy190907-07" target="_blank" alt="지중해 크리스탈/세레니티호" />
+								    <area shape="rect" coords="841,735,977,781" href="https://www.crystalcruises.com/voyage/round-trip-vienna-rrv190908-07" target="_blank" alt="동유럽 크리스탈 리버크루즈/라벨호" />
+								    <area shape="rect" coords="840,842,976,890" href="https://www.ncl.com/in/en/cruises/7-day-western-mediterranean-from-barcelona-EPIC7BCNNAPCIVLIVCEQPMIBCN/schedule?destinations=4294960640&numberOfGuests=4294953449&state=null&sailmonths=4294942320&&itineraryCode=EPIC7BCNNAPCIVLIVCEQPMIBCN&customerStoriesCurrentPage=1&customerStoriesPageSize=3" target="_blank" alt="지중해 NCL/에픽호" />
+								    <area shape="rect" coords="841,952,976,1000" href="https://www.amawaterways.com/destination/europe-river-cruises/2019/romantic-danube/itinerary" target="_blank" alt="다뉴브 아마워터웨이즈/아마 마그나호" />
+								    <area shape="rect" coords="840,1060,976,1109" href="https://www.amawaterways.com/destination/europe-river-cruises/2019/melodies-of-the-danube/itinerary" target="_blank" alt="다뉴브 아마워터웨이즈/아마스텔라호" />
+								    <area shape="rect" coords="841,1168,976,1218" href="https://www.amawaterways.com/destination/europe-river-cruises/2019/captivating-rhine" target="_blank" alt="라인강 아마워터웨이즈/아마비올라호" />
+								</map>
+							</div>
+							<div class="content" id="con3_in02">
+								<img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_180326/con3_in02.jpg" alt="" usemap="#con3_in02_img">
+								<map name="con3_in02_img" id="con3_in02_img">
+									<area shape="rect" coords="840,186,979,239" href="https://www.pgcruises.com/destinations/society-islands-cook-islands-tonga-fiji/2019-09-07" target="_blank" alt="남태평양 폴고갱/폴고갱" />
+								</map>
+							</div>
+							<div class="content" id="con3_in03">
+								<img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_180326/con3_in03.jpg" alt="" usemap="#con3_in03_img">
+								<map name="con3_in03_img" id="con3_in03_img">
+									<area shape="rect" coords="841,186,978,236" href="https://www.silversea.com/destinations/alaska-cruise/vancouver-to-seward-6924.html#menu-cruise2018suites" target="_blank" alt="알래스카 실버시/뮤즈호" />
+								    <area shape="rect" coords="841,297,977,345" href="https://www.rssc.com/cruises/MAR190911/summary" target="_blank" alt="알래스카 리젠트/마리너호" />
+								    <area shape="rect" coords="841,406,978,453" href="https://www.oceaniacruises.com/new-england-cruises/reykjavik-to-new-york-RVA190911/?sr=%2Fcruise-finder%2F%23sailDates%3D2019%7C09%23destinations%3Dcanadanewengland" target="_blank" alt="캐나다/뉴잉글랜드 오세아니아/리비에라호" />
+								    <area shape="rect" coords="841,515,977,563" href="https://www.ncl.com/in/en/cruises/7-day-alaska-highlights-inside-passage-from-seattle-JOY7SEAKTNJNUSGYVICSEA?numberOfGuests=4294953449&state=null&sailmonths=4294942320&destinations=4294961386&&itineraryCode=JOY7SEAKTNJNUSGYVICSEA" target="_blank" alt="알래스카 NCL/조이호" />
+								    <area shape="rect" coords="840,622,978,671" href="https://www.ncl.com/in/en/cruises/7-day-alaska-with-glacier-bay-from-vancouver-northbound-JEWEL7VANKTNJNUSGYSWD/schedule?destinations=4294961386&numberOfGuests=4294953449&state=null&sailmonths=4294942320&&itineraryCode=JEWEL7VANKTNJNUSGYSWD&customerStoriesCurrentPage=1&customerStoriesPageSize=3" target="_blank" alt="알래스카 NCL/쥬얼호" />
+								    <area shape="rect" coords="841,734,978,781" href="https://www.ncl.com/in/en/cruises/7-day-eastern-caribbean-from-miami-BREAKAWAY7MIASTTTOVNASMIA?cruiseTour=1&autoPopulate=f&destinations=4294961647&cruiseHotel=1&numberOfGuests=4294953449&pageSize=20&cruise=1&sortBy=Featured&from=resultPage&state=undefined&sailmonths=4294942320&currentPage=1&cruiseHotelAir=1&&itineraryCode=BREAKAWAY7MIASTTTOVNASMIA" target="_blank" alt="캐리비안 NCL/브레이크어웨이호" />
+								    <area shape="rect" coords="840,841,975,890" href="https://www.ncl.com/in/en/cruises/7-day-canada-and-new-england-from-boston-GEM7BOSBHBHALSYNCHALBIQUE?cruiseTour=1&autoPopulate=f&destinations=4294961648&cruiseHotel=1&numberOfGuests=4294953449&pageSize=20&cruise=1&sortBy=Featured&from=resultPage&state=undefined&sailmonths=4294942320&currentPage=1&cruiseHotelAir=1&itineraryCode=GEM7BOSBHBHALSYNCHALBIQUE" target="_blank" alt="캐나다/뉴잉글랜드 NCL/젬호" />
+								    <area shape="rect" coords="841,951,978,999" href="https://www.ncl.com/in/en/cruises/7-day-hawaii-round-trip-honolulu-PRIDE_AMER7HNLOGGITOKOANWKHNL?cruiseTour=1&autoPopulate=f&destinations=4294960042&cruiseHotel=1&numberOfGuests=4294953449&pageSize=20&cruise=1&sortBy=Featured&from=resultPage&state=undefined&sailmonths=4294942320&currentPage=1&cruiseHotelAir=1&itineraryCode=PRIDE_AMER7HNLOGGITOKOANWKHNL" target="_blank" alt="하와이 NCL/프라이드 오브 아메리카호" />
+								</map>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<!-- [끝]: markup -->
+			<script type="text/javascript">
+					(function($){
+						$(document).ready(function(){
+
+							function dpBlock(){
+								var t = $(this);
+								t.find('div.content:first').css('display','block');
+							}
+							$('.con_wrap').each(dpBlock);
+
+							function Tabs(){
+								var t = $(this);
+								if(!t.parent().hasClass('on')){
+									t.parent().addClass('on').siblings().removeClass('on');
+									$(t.attr('href')).css('display','block').siblings().css('display','none');
+								}
+								return false;
+							}
+							$('.event_wrap .tab li a').click(Tabs);
+						});
+					})(jQuery);
+				</script><script type="text/javascript">
+					(function($){
+						$(document).ready(function(){
+
+							function dpBlock(){
+								var t = $(this);
+								t.find('div.content:first').css('display','block');
+							}
+							$('.con_wrap').each(dpBlock);
+
+							function Tabs(){
+								var t = $(this);
+								if(!t.parent().hasClass('on')){
+									t.parent().addClass('on').siblings().removeClass('on');
+									$(t.attr('href')).css('display','block').siblings().css('display','none');
+								}
+								return false;
+							}
+							$('.con2 .tab li a').click(Tabs);
+						});
+					})(jQuery);
+				</script>
+			<!-- [끝]: 기획전 전체 -->
+		</div>
+	</section>
+	<footer>
+		<div class="bottom01">
+			<div class="wrap">
+				<h2>크루즈인터내셔널고객센터</h2>
+				<div class="infor">
+					<ul>
+						<li>
+							예약문의<strong>02-775-0100</strong>
+							<div class="email">cruise@cruise.co.kr</div>
+						</li>
+						<li>
+							제휴문의<strong>02-775-0240</strong>
+							<div class="email">sales@cruise.co.kr</div>
+						</li>
+					</ul>
+				</div><!-- infor -->
+				<div class="sns">
+					<ul>
+						<li class="sns01"><a href="" onclick="kakao(690,700);return false;">카카오</a></li>
+						<li class="sns02"><a href="http://www.modetour.com/main/" target="_blank">모두투어</a></li>
+					</ul>
+				</div>
+			</div>
+		</div><!-- bottom01 -->
+		<div class="bottom02">
+				<div class="wrap">
+					<h1><span class="text_blind">CRUISE</span></h1>
+					<address>
+						<div>개인정보 취급방침</div>
+						서울시 중구 을지로 1 백남빌딩 506호 크루즈 인터내셔널 | 대표이사 : 유인태 | 사업자등록번호 : 104-81-53278 | 통신판매업신고번호 : 중구 제 03295호<br />COPYRIGHT CRUISE INTERNATIONAL INC. ALL RIGHTS RESERVED 
+					</address>
+				</div>
+			</div>
+	</footer>
+</body>
+</html>

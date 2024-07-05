@@ -1,0 +1,670 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="keywords" content="모두투어, 해외여행, 동남아여행, 중국여행, 일본여행, 미주여행, 남태평양여행, 유럽여행, 인도여행, 아프리카 여행, 골프여행, 패키지, 에어텔, 허니문, 자유여행, 골프여행, jm프리미엄, 크루즈, 국내여행, 제주여행, 호텔, 숙박, 해외호텔, 국내숙박, 항공권 ,해외항공권 ,국내항공권, 철도 ,패스, 여행정보" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes,viewport-fit=cover">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta http-equiv="Pragma" content="no-cache">
+        <title>모두투어 출장관리 시스템</title>
+        <!--css-->
+        <link rel="stylesheet" type="text/css" href="https://m.modetour.com/Include/CSS/Common/common.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://m.modetour.com/Include/CSS/Common/reset.css" />
+        <link rel="stylesheet" type="text/css" href="../css/btms_201805.css" />
+        <!--css-->
+        
+        <!-- js -->
+        <script type="text/javascript" src="https://js.modetour.com/jquery/ver/2.1.0.min.js"></script>
+        <script type="text/javascript" src="../js/btms.js"></script>
+        <script src="../js/swiper-4.1.0.min.js"></script>
+        <!-- js -->
+
+        <!-- 로컬 작업 링크 -->
+        <link rel="stylesheet" type="text/css" href="/Include/CSS/btms_201805.css" />
+        <script type="text/javascript" src="/Include/js/btms.min.js"></script>
+        <script src="/Include/js/swiper-4.1.0.min.js"></script>
+        <!-- 로컬 작업 링크 -->
+    </head>
+    <body>
+        <header class="sub_header">
+            <a href="" class="back">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <h1>견적요청</h1>
+        </header>
+        <a href="" class="btn_side">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class="mobile_container register">
+           <div class="step_list">
+              <span class="tit">견적정보 입력</span>
+              <!-- 
+                  on 번호 불 켜짐
+                  complete 체크 불 켜짐 
+              -->
+              <ul>
+                  <li class="complete step1"><i></i></li>
+                  <li class="complete step2"><i></i></li>
+                  <li class="on step3"><i></i></li>
+              </ul>
+           </div>       
+           <div class="hotel_in">
+              <div class="tit">호텔예약</div>
+               <div class="city_choice">
+                   <!-- 선택했을시 active 추가 -->
+                   <!-- 에러시 error 추가 -->
+                    <a href="#city_search" class="btn_comstyle error">
+                        <span class="txt">출장지</span>
+                        <span class="date"></span>
+                        <span class="er_txt">확인 바랍니다.</span>
+                    </a>
+               </div>
+               <div class="checkin_choice">
+                   <!-- 선택했을시 active 추가 -->
+                   <a href="#pop_calendar" class="btn_comstyle">
+                        <span class="txt">체크인</span>
+                        <span class="date"></span>
+                    </a>
+                    <a href="#pop_calendar" class="btn_comstyle">
+                        <span class="txt">체크아웃</span>
+                        <span class="date"></span>
+                    </a>
+                </div>
+                <div class="room_choice">
+                     <!-- 선택했을시 active 추가 -->
+                     <a href="#room_choice" class="btn_comstyle">
+                        <span class="txt">객실수</span>
+                        <span class="date"></span>
+                    </a>
+                </div>
+                <!-- [s]: 추가사항 -->
+                <a href="" class="btn_moreadd"><strong>추가사항</strong>(선택사항)<i></i></a>
+                <div class="more_in">
+                    <div class="class_choice">
+                        <!-- 선택했을시 active 추가 -->
+                        <a href="#hotel_grade" class="btn_comstyle">
+                            <span class="txt">호텔등급</span>
+                            <span class="date"></span>
+                        </a>
+                        <a href="#meal_choice" class="btn_comstyle">
+                            <span class="txt">식사여부</span>
+                            <span class="date"></span>
+                        </a>
+                    </div>
+                    <div class="etc_choice">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="기타요청사항"></textarea>
+                    </div>
+                </div>
+                <!-- [e]: 추가사항 -->
+                <div class="notice">
+                    <div class="tit">유의사항</div>
+                    <ul>
+                        <li>호텔지정, 얼리체크인/레이트체크아웃 등의 문의는 요청사항에 기재부탁드립니다.</li>
+                        <li>요청하신 내용은확정사항이 아니며, 호텔사정에 따라 달라질 수 있습니다.</li>
+                    </ul>
+                </div>
+           </div>
+           <!-- 버튼 활성화시 active 추가 -->
+           <button class="active">다음</button>
+        </div>   
+        <div class="screen"></div>
+        <nav class="gnb">
+            <a href="" class="setting"></a>
+            <div class="profile">
+                <div class="name"><strong>공유</strong> 님</div>
+                <div class="email">
+                    <span class="mail">kongyou@hanhwalife.com</span>
+                    <span class="company">한화생명</span>
+                </div>
+            </div>
+            <ul class="list">
+                <li class="list01"><a href="">스케줄 조회</a></li>
+                <li class="list02"><a href="">출장예약(견적요청)</a></li>
+                <li class="list03"><a href="">예약내역</a></li>
+            </ul>
+            <ul class="show_reserve">
+                <li>
+                    <img src="https://img.modetour.com/modemobile/2018/btms/img/sidemenu_circle.png" alt="">
+                    <span class="num">  
+                        <strong>10</strong>건
+                    </span>
+                    <p>전체보기</p>
+                </li>
+                <li>
+                    <img src="https://img.modetour.com/modemobile/2018/btms/img/sidemenu_circle.png" alt="">
+                    <span class="num">
+                        <strong>10</strong>건
+                    </span>
+                    <p>항공</p>
+                </li>
+                <li>
+                    <img src="https://img.modetour.com/modemobile/2018/btms/img/sidemenu_circle.png" alt="">
+                    <span class="num">
+                        <strong>10</strong>건
+                    </span>
+                    <p>비자</p>
+                </li>
+                <li>
+                    <img src="https://img.modetour.com/modemobile/2018/btms/img/sidemenu_circle.png" alt="">
+                    <span class="num">
+                        <strong>10</strong>건
+                    </span>
+                    <p>호텔</p>
+                </li>
+            </ul>
+            <ul class="list2">
+                <li class="list04"><a href="">1:1문의하기/내역</a></li>
+                <li class="list05"><a href="">출장규정</a></li>
+                <li class="list06"><a href="">법인마일리지</a></li>
+                <li class="list07"><a href="">쿠폰/이벤트</a></li>
+                <li class="list08"><a href="">고객센터</a></li>
+                <li class="list09"><a href="">출장관련정보</a></li>
+            </ul>
+        </nav>
+
+        <!-- [s]: 도시검색 팝업 -->
+        <div id="city_search" class="pop_layer">
+            <div class="tit">
+                <a href="" class="btn_cancel">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <h1>도시검색</h1>
+            </div>
+            <p class="notice">
+                <i></i>해외 도시(공항)를 선택할 수 있습니다.
+            </p>
+            <div class="in">
+                <div class="search_area form">
+                    <input type="text" id="city" name="city" placeholder="국가 또는 도시(국문,영문)검색">
+                    <label>도착지</label>
+                    <p>국가 또는 도시(국문,영문) 입력 후 검색하시면 검색결과가 확인됩니다.</p>
+                    <button type="button" class="search" title="검색">검색</button>
+                </div>
+                <ul class="search_result">
+                    <li>
+                        <a href="">
+                            <p><strong>오사카</strong><span>, 일본</span> OSAKA, JAPAN</p>
+                            <p>KIX ｜ 간사이 ｜ Kansaiintl</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="no_result">
+                    <li>
+                        입력하신 결과가 없습니다.
+                    </li>
+                </ul>
+                <div class="city_wrap">
+                    <ul class="city_select">
+                        <li class="on"><a href="#country01">동남아</a></li>
+                        <li><a href="#country02">미주</a></li>
+                        <li><a href="#country03">일본</a></li>
+                        <li><a href="#country04">중국<br />홍콩/대만</a></li>
+                        <li><a href="#country05">남태평양<br />괌/사이판</a></li>
+                        <li><a href="#country06">유럽</a></li>
+                        <li><a href="#country07">아프리카</a></li>
+                        <li><a href="#country08">중동</a></li>
+                    </ul>
+                    <div class="con_wrap">
+                        <!-- [s]: 동남아 -->
+                        <div class="content" id="country01">
+                            <span class="city_text">주요도시</span>
+                            <label for="a_1">
+                                <span>다낭</span>
+                                <abbr>DAD</abbr>
+                            </label>
+                            <input type="radio" name="a" id="a_1">
+                            <label for="a_2">
+                                <span>마닐라</span>
+                                <abbr>MNL</abbr>
+                            </label>
+                            <input type="radio" name="a" id="a_2">
+                            <label for="a_3">
+                                <span>발리</span>
+                                <abbr>DPS</abbr>
+                            </label>
+                            <input type="radio" name="a" id="a_3">
+                            <label for="a_4">
+                                <span>방콕</span>
+                                <abbr>BKK</abbr>
+                            </label>
+                            <input type="radio" name="a" id="a_4">
+                            <label for="a_5">
+                                <span>보라카이</span>
+                                <abbr>KLO</abbr>
+                            </label>
+                            <input type="radio" name="a" id="a_5">
+                            <label for="a_6">
+                                <span>세부</span>
+                                <abbr>CEB</abbr>
+                            </label>
+                            <input type="radio" name="a" id="a_6">
+                            <label for="a_7">
+                                <span>싱가포르</span>
+                                <abbr>DAD</abbr>
+                            </label>
+                            <input type="radio" name="a" id="a_7">
+                            <label for="a_8">
+                                <span>씨엠립</span>
+                                <abbr>DAD</abbr>
+                            </label>
+                            <input type="radio" name="a" id="a_8">
+                            <label for="a_9">
+                                <span>자카르타</span>
+                                <abbr>DAD</abbr>
+                            </label>
+                            <input type="radio" name="a" id="a_9">
+                            <label for="a_10">
+                                <span>코타키나발루</span>
+                                <abbr>DAD</abbr>
+                            </label>
+                            <input type="radio" name="a" id="a_10">
+                            <label for="a_11">
+                                <span>쿠알라룸푸르</span>
+                                <abbr>DAD</abbr>
+                            </label>
+                            <input type="radio" name="a" id="a_11">
+                            <label for="a_12">
+                                <span>클락</span>
+                                <abbr>DAD</abbr>
+                            </label>
+                            <input type="radio" name="a" id="a_12">
+                            <label for="a_13">
+                                <span>푸켓</span>
+                                <abbr>DAD</abbr>
+                            </label>
+                            <input type="radio" name="a" id="a_13">
+                            <label for="a_14">
+                                <span>하노이</span>
+                                <abbr>DAD</abbr>
+                            </label>
+                            <input type="radio" name="a" id="a_14">
+                            <label for="a_15">
+                                <span>호치민</span>
+                                <abbr>DAD</abbr>
+                            </label>
+                            <input type="radio" name="a" id="a_15">
+                        </div>
+                        <!-- [e]: 동남아 -->
+                        <!-- [s]: 미주 -->
+                        <div class="content" id="country02">
+                            <span class="city_text">주요도시</span>
+                            <label for="b_1">
+                                <span>다낭</span>
+                                <abbr>DAD</abbr>
+                            </label>
+                            <input type="radio" name="b" id="b_1">
+                        </div>
+                        <!-- [e]: 미주 -->
+                        <!-- [s]: 일본 -->
+                        <div class="content" id="country02">
+                            <span class="city_text">주요도시</span>
+                            <label for="b_1">
+                                <span>다낭</span>
+                                <abbr>DAD</abbr>
+                            </label>
+                            <input type="radio" name="b" id="b_1">
+                        </div>
+                        <!-- [e]: 일본 -->
+                        <!-- [s]: 중국 홍콩 대만 -->
+                        <div class="content" id="country03">
+                            <span class="city_text">주요도시</span>
+                            <label for="c_1">
+                                <span>다낭</span>
+                                <abbr>DAD</abbr>
+                            </label>
+                            <input type="radio" name="c" id="c_1">
+                        </div>
+                        <!-- [e]: 중국 홍콩 대만 -->   
+                        <!-- [s]: 남태평앙 괌 사이판 -->
+                        <div class="content" id="country04">
+                            <span class="city_text">주요도시</span>
+                            <label for="d_1">
+                                <span>다낭</span>
+                                <abbr>DAD</abbr>
+                            </label>
+                            <input type="radio" name="d" id="d_1">
+                        </div>
+                        <!-- [e]: 남태평앙 괌 사이판 -->
+                        <!-- [s]: 유럽 -->
+                        <div class="content" id="country05">
+                            <span class="city_text">주요도시</span>
+                            <label for="e_1">
+                                <span>다낭</span>
+                                <abbr>DAD</abbr>
+                            </label>
+                            <input type="radio" name="e" id="e_1">
+                        </div>
+                        <!-- [e]: 유럽 -->
+                        <!-- [s]: 아프리카 -->
+                        <div class="content" id="country06">
+                            <span class="city_text">주요도시</span>
+                            <label for="f_1">
+                                <span>다낭</span>
+                                <abbr>DAD</abbr>
+                            </label>
+                            <input type="radio" name="f" id="f_1">
+                        </div>
+                        <!-- [e]: 아프리카 -->
+                        <!-- [s]: 중동 -->
+                        <div class="content" id="country07">
+                            <span class="city_text">주요도시</span>
+                            <label for="g_1">
+                                <span>다낭</span>
+                                <abbr>DAD</abbr>
+                            </label>
+                            <input type="radio" name="g" id="g_1">
+                        </div>
+                        <!-- [e]: 중동 -->
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <!-- [e]: 도시검색 팝업 -->
+
+        <!-- [s]: 달력 팝업 -->
+        <div id="pop_calendar" class="pop_layer">
+            <div class="tit">
+                <a href="" class="btn_cancel">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <h1>날짜 선택</h1>
+            </div>
+            <div class="in">
+                <table class="calendar">
+                    <caption>2018.09</caption>
+                    <colgroup>
+                        <col style="width:14.28%">
+                        <col style="width:14.28%">
+                        <col style="width:14.28%">
+                        <col style="width:14.28%">
+                        <col style="width:14.28%">
+                        <col style="width:14.28%">
+                        <col style="width:14.28%">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">일</th>
+                        <th scope="col">월</th>
+                        <th scope="col">화</th>
+                        <th scope="col">수</th>
+                        <th scope="col">목</th>
+                        <th scope="col">금</th>
+                        <th scope="col">토</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <!-- 
+                            disabled 클릭 안될때
+                            holiday 공휴일일때
+                            deapart 출발일 지정
+                            arrive 도착일 지정 
+                        -->
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="disabled"><a href="#">1</a></td>
+                    </tr>
+                    <tr>
+                        <td class="disabled"><a href="#">2</a></td>
+                        <td class="disabled"><a href="#">3</a></td>
+                        <td class="disabled"><a href="#">4</a></td>
+                        <td class="disabled"><a href="#">5</a></td>
+                        <td class="disabled"><a href="#">6</a></td>
+                        <td class="disabled"><a href="#">7</a></td>
+                        <td class="disabled"><a href="#">8</a></td>
+                    </tr>
+                    <tr>
+                        <td class="disabled"><a href="#">9</a></td>
+                        <td class="disabled"><a href="#">10</a></td>
+                        <td class="disabled"><a href="#">11</a></td>
+                        <td class="disabled"><a href="#">12</a></td>
+                        <td class="disabled"><a href="#">13</a></td>
+                        <td class="disabled"><a href="#">14</a></td>
+                        <td class="disabled"><a href="#">15</a></td>
+                    </tr>
+                    <tr>
+                        <td class="disabled"><a href="#">16</a></td>
+                        <td class="holiday"><a href="#">17</a></td>
+                        <td class="holiday"><a href="#">18</a></td>
+                        <td class="depart"><a href="#">19</a></td>
+                        <td class="during"><a href="#">20</a></td>
+                        <td class="during"><a href="#">21</a></td>
+                        <td class="arrive"><a href="#">22</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">23</a></td>
+                        <td><a href="#" class="day_today">24</a></td>
+                        <td><a href="#">25</a></td>
+                        <td><a href="#">26</a></td>
+                        <td><a href="#">27</a></td>
+                        <td><a href="#">28</a></td>
+                        <td><a href="#">29</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">30</a></td>
+                        <td><a href="#">31</a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="calendar">
+                    <caption>2018.10</caption>
+                    <colgroup>
+                        <col style="width:14.28%">
+                        <col style="width:14.28%">
+                        <col style="width:14.28%">
+                        <col style="width:14.28%">
+                        <col style="width:14.28%">
+                        <col style="width:14.28%">
+                        <col style="width:14.28%">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">일</th>
+                        <th scope="col">월</th>
+                        <th scope="col">화</th>
+                        <th scope="col">수</th>
+                        <th scope="col">목</th>
+                        <th scope="col">금</th>
+                        <th scope="col">토</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <!-- 
+                            disabled 클릭 안될때
+                            holiday 공휴일일때
+                            deapart 출발일 지정
+                            arrive 도착일 지정 
+                        -->
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="disabled"><a href="#">1</a></td>
+                    </tr>
+                    <tr>
+                        <td class="disabled"><a href="#">2</a></td>
+                        <td class="disabled"><a href="#">3</a></td>
+                        <td class="disabled"><a href="#">4</a></td>
+                        <td class="disabled"><a href="#">5</a></td>
+                        <td class="disabled"><a href="#">6</a></td>
+                        <td class="disabled"><a href="#">7</a></td>
+                        <td class="disabled"><a href="#">8</a></td>
+                    </tr>
+                    <tr>
+                        <td class="disabled"><a href="#">9</a></td>
+                        <td class="disabled"><a href="#">10</a></td>
+                        <td class="disabled"><a href="#">11</a></td>
+                        <td class="disabled"><a href="#">12</a></td>
+                        <td class="disabled"><a href="#">13</a></td>
+                        <td class="disabled"><a href="#">14</a></td>
+                        <td class="disabled"><a href="#">15</a></td>
+                    </tr>
+                    <tr>
+                        <td class="disabled"><a href="#">16</a></td>
+                        <td class="holiday"><a href="#">17</a></td>
+                        <td class="holiday"><a href="#">18</a></td>
+                        <td class="depart"><a href="#">19</a></td>
+                        <td class="during"><a href="#">20</a></td>
+                        <td class="during"><a href="#">21</a></td>
+                        <td class="arrive"><a href="#">22</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">23</a></td>
+                        <td><a href="#" class="day_today">24</a></td>
+                        <td><a href="#">25</a></td>
+                        <td><a href="#">26</a></td>
+                        <td><a href="#">27</a></td>
+                        <td><a href="#">28</a></td>
+                        <td><a href="#">29</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">30</a></td>
+                        <td><a href="#">31</a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="select">
+                <div>
+                    <!-- 선택했을시 active 추가 -->
+                    <a href="" class="active">
+                        <span class="txt">출발일</span>
+                        <span class="date">2018-05-17(목)</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="" class="btn_comstyle">
+                        <span class="txt">도착일</span>
+                        <span class="date"></span>
+                    </a>
+                </div>
+                <button>완료</button>
+            </div>
+        </div>  
+        <!-- [e]: 달력 팝업 -->
+
+        <!-- [s]: 객실수 팝업 -->
+        <div id="room_choice" class="pop_layer">
+            <span class="tit">객실수</span>
+            <div class="room">
+                <dl>
+                    <dt>사용객실개수</dt>
+                    <dd>
+                        <a href="" class="minus off"></a>
+                        <span class="num">1</span>
+                        <a href="" class="plus"></a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="btn_wrap">
+                <button class="btn_cancel">취소</button>
+                <button class="check">완료</button>
+            </div>
+        </div>  
+        <!-- [e]: 객실수 팝업 -->
+
+        <!-- [s]: 호텔등급 팝업 -->
+        <div id="hotel_grade" class="pop_layer">
+            <button>완료</button>
+            <ul>
+                <li>
+                    <input type="radio" name="hotel" id="hotel1">
+                    <label for="hotel1">상관없음</label>
+                </li>
+                <li>
+                    <input type="radio" name="hotel" id="hotel2">
+                    <label for="hotel2">5성급</label>
+                </li>
+                <li>
+                    <input type="radio" name="hotel" id="hotel3">
+                    <label for="hotel3">4성급</label>
+                </li>
+                <li>
+                    <input type="radio" name="hotel" id="hotel4">
+                    <label for="hotel4">3성급</label>
+                </li>
+            </ul>
+        </div>  
+        <!-- [e]: 호텔등급 팝업 -->
+
+        <!-- [s]: 식사여부 팝업 -->
+        <div id="meal_choice" class="pop_layer">
+            <button>완료</button>
+            <ul>
+                <li>
+                    <input type="radio" name="meal" id="meal1">
+                    <label for="meal1">조식포함</label>
+                </li>
+                <li>
+                    <input type="radio" name="meal" id="meal2">
+                    <label for="meal2">조식불포함</label>
+                </li>
+            </ul>
+        </div>  
+        <!-- [e]: 식사여부 팝업 -->
+
+        <script>
+            $(document).ready(function(){
+                function listToggle(){
+                    var t = $(this);
+                    if(!t.hasClass('on')){
+                        t.addClass('on');
+                        t.next().slideDown(200);
+                    }else{
+                        t.removeClass('on').next().slideUp(200);
+                    }
+                     return false;
+                }
+                $('.btn_moreadd').click(listToggle);
+
+                //객실 수 선택
+                function adultChoice(){
+                    var _this =  $(this);
+                    var currntNum = Number(_this.siblings('.num').text());
+                    if(_this.hasClass('plus')){ //+ 눌렀을때
+                            currntNum ++;
+                            _this.parent().find('a.minus').removeClass('off');
+                    }else{
+                        if(currntNum <= 2){ //- 눌렀을때
+                            _this.parent().find('a.minus').addClass('off');
+                            _this.siblings('.num').text(1);
+                            return false;
+                        }else {
+                            currntNum --;
+                        }
+                    }
+                    _this.siblings('.num').text(currntNum);
+                    return false;
+                }
+                
+                $('#room_choice .room a').click(adultChoice);
+            });
+        </script>
+    </body>
+</html>

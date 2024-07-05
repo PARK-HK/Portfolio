@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie8 ie no-js" lang="ko"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9 ie no-js" lang="ko"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="ko"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>모두투어 - 예약확인/결제</title>
+	<meta name="keywords" content="모두투어, 여행사, 해외여행, 해외항공, 동남아여행, 중국여행, 일본여행, 미주여행, 남태평양여행, 유럽여행, 인도여행, 아프리카 여행, 골프여행, 패키지, 에어텔, 허니문, 자유여행, 골프여행, jm프리미엄, 크루즈, 국내여행, 제주여행, 호텔, 숙박, 해외호텔, 국내숙박, 항공권 ,해외항공권 ,국내항공권, 철도 ,패스, 여행정보, 추천여행사, 최저가항공권" />
+	<meta name="description" content="대한민국 여행의 기준이 되다! 모두투어는 해외여행, 국내여행, 패키지여행, 에어텔, 항공권, 호텔 등 각종 여행정보를 제공하는 국내 최대 여행포탈사이트 입니다." />
+	<link rel="stylesheet" type="text/css" href="../css/common_201609.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/wemode_201907.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/ie.min.css" />
+        <!-- [시작]: Common JS -->
+    <script src="https://js.modetour.com/jquery/ver/1.11.3.min.js"></script>
+    <script src="https://js.modetour.com/jquery/plugin/easing.js"></script>
+    <script src="https://js.modetour.com/jquery/plugin/plugins.js"></script>
+    <!-- <script src="../../../js/libs/ui_plugins.min.js"></script>
+    <script src="../../../js/ui_common.min.js"></script>
+    <script src="../../../js/html_exclusive.min.js"></script>
+    <script src="../../../js/swiper-4.1.0.min.js"></script> -->
+    <!-- [끝]: Common JS -->
+</head>
+<body role="document">
+	<div id="a11y-skip">
+		<a href="#btnTravelSch" rel="bookmark">통합검색 바로가기</a>
+		<a href="#btnSiteMap" rel="bookmark"><span>전체 메뉴 바로가기</span></a>
+		<a href="#container">마이페이지 바로가기</a>
+	</div>
+	<div id="wrap">
+    				
+		<div id="container">
+			<div class="primary-content">
+                <!-- [시작]: 위모두 -->
+                <div class="wemode">
+                    <div class="main">
+                        <h2><img src="http://img.modetour.com/modetour/2019/wemode/bg/main_tit.png" alt=""></h2>
+                       <!-- [s]: 검색창 -->
+                       <div class="search_area">
+                            <div class="write">
+                                <input type="text" value="관광도시 또는 국가 입력" onfocus="this.value=''" onfocusout="this.value='관광도시 또는 국가 입력'"/>
+                                <button><span class="text_blind">찾기</span></button>
+                                <ul class="search_box">
+                                    <li>
+                                        <a href="">
+                                           <strong>오</strong>사카
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <strong>오</strong>스트리아
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="date_choice">
+								<input type="text" placeholder="출발일 선택" />
+								<button class="show_cal">달력보기</button>
+								<!-- calendar에 active 추가시 활성화 -->
+								<div class="calendar box-size">
+                                    <div class="year-month">
+                                        <a href="" class="prev_month"><span class="text_blind">이전달</span></a>
+                                        <select name="selectDay" id="selectDay">
+                                            <option>2019.06</option>
+                                            <option>2019.07</option>
+                                            <option>2019.08</option>
+                                        </select>
+                                        <a href="" class="next_month"><span class="text_blind">다음달</span></a>
+                                    </div>
+                                    <table date-month="2016.06">
+                                        <thead>
+                                            <tr>
+                                                <th class="sun" scope="col">일</th>
+                                                <th scope="col">월</th>
+                                                <th scope="col">화</th>
+                                                <th scope="col">수</th>
+                                                <th scope="col">목</th>
+                                                <th scope="col">금</th>
+                                                <th class="sat" scope="col">토</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="sun past"><a href="#">29</a></td>
+                                                <td class="past"><a href="#">30</a></td>
+                                                <td class="past"><a href="#">31</a></td>
+                                                <td class="past"><a href="#">1</a></td>
+                                                <td class="past"><a href="#">2</a></td>
+                                                <td class="past"><a href="#">3</a></td>
+                                                <td class="sat past"><a href="#" >4</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun selected"><a href="#">5</a></td>
+                                                <td><a href="#">6</a></td>
+                                                <td><a href="#">7</a></td>
+                                                <td><a href="#">8</a></td>
+                                                <td><a href="#">9</a></td>
+                                                <td><a href="#">10</a></td>
+                                                <td class="sat"><a href="#">11</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun"><a href="#">12</a></td>
+                                                <td><a href="#">13</a></td>
+                                                <td><a href="#">14</a></td>
+                                                <td><a href="#">15</a></td>
+                                                <td><a href="#">16</a></td>
+                                                <td><a href="#">17</a></td>
+                                                <td class="sat"><a href="#">18</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun"><a href="#">19</a></td>
+                                                <td><a href="#">20</a></td>
+                                                <td><a href="#">21</a></td>
+                                                <td><a href="#">22</a></td>
+                                                <td><a href="#">23</a></td>
+                                                <td><a href="#">24</a></td>
+                                                <td class="sat"><a href="#">25</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun"><a href="#">26</a></td>
+                                                <td><a href="#">27</a></td>
+                                                <td><a href="#">28</a></td>
+                                                <td><a href="#">29</a></td>
+                                                <td><a href="#">30</a></td>
+                                                <td class="past"><a href="#">1</a></td>
+                                                <td class="sat past"><a href="#">2</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <a href="" class="btn_cancle"><img src="http://img.modetour.com/modetour/2019/wemode/bg/btn_c_cancle.jpg" alt="취소하기"></a>
+                                    <a href="" class="btn_ok"><img src="http://img.modetour.com/modetour/2019/wemode/bg/btn_c_complete.jpg" alt="선택완료"></a>
+								</div><!-- calendar -->
+                            </div><!-- date_choice -->
+                            <a href="" class="search_btn"><img src="http://img.modetour.com/modetour/2019/wemode/bg/btn_find.jpg" alt="찾기"></a>
+                            <ul class="radio_list">
+                                <li>
+                                    <input type="radio" id="trip1" checked="checked" name="tripType" />
+                                    <label for="trip1"><span></span>패키지</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="trip2" name="tripType" />
+                                    <label for="trip2"><span></span>에어텔 (항공+호텔)</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="trip3" name="tripType" />
+                                    <label for="trip3"><span></span>골프</label>
+                                </li>
+                            </ul>
+                       </div><!-- search_area -->
+                       <!-- [e]: 검색창 -->
+                    </div>
+                   <div class="select_list">
+                        <!-- [s]: 플라이배너 -->
+                        <div class="btn_fly">
+                            <img src="http://img.modetour.com/modetour/2019/wemode/bg/btn_fly.jpg" alt="" usemap="#fly_link">
+                            <map name="fly_link" id="fly_link">
+                                <area shape="rect" coords="0,0,49,49" href="" target="" alt="위로올라가기" class="link_top" />
+                                <area shape="rect" coords="0,50,49,98" href="javascript:history.back()" target="" alt="이전페이지" />
+                            </map>
+                        </div>
+                        <!-- [e]: 플라이배너 -->
+                       <div class="con1 sub_list">
+                           <h3>선택상품</h3>
+                           <!-- [s]: 19-10-01 수정 이미지 없을시  -->
+                           <ul>
+                                <li>
+                                    <a href="">
+                                        <!-- 
+                                        airtel = 에어텔
+                                        package = 패키지 
+                                        -->
+                                        <span class="package"></span>
+                                        <div class="img">
+                                            <img src="http://img.modetour.com/modetour/2019/wemode/bg/item_ex2.jpg" alt=""> 
+                                        </div>
+                                        <dl>
+                                            <dt>보라카이 최저가 총집합 4/5일</dt>
+                                            <dd><strong>249,000</strong>원~</dd>
+                                        </dl>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- [e]: 19-10-01 수정 이미지 없을시  -->
+                       </div>
+                       <div class="con2">
+                            <h3>조건선택</h3>
+                            <ul class="tab">
+                                <li class="on"><a href="">호텔등급</a></li>
+                                <li><a href="">박수</a></li>
+                                <li><a href="">쇼핑횟수</a></li>
+                                <li><a href="">출발시간대</a></li>
+                                <li><a href="">도착시간대</a></li>
+                                <li><a href="">가격대 선택</a></li>
+                                <li><a href="">항공사 선택</a></li>
+                            </ul>
+                            <div class="con_wrap">
+                                <!-- [s]: 호텔등급 -->
+                                <div class="content">
+                                    <ul class="radio_list">
+                                        <li>
+                                            <input type="radio" id="hotel5" name="hotelType">
+                                            <label for="hotel5"><span></span><img src="http://img.modetour.com/modetour/2019/wemode/bg/hotel_5.png" alt="5성급 호텔"></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="hotel4" name="hotelType">
+                                            <label for="hotel4"><span></span><img src="http://img.modetour.com/modetour/2019/wemode/bg/hotel_4.png" alt="4성급 호텔"></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="hotel3" name="hotelType">
+                                            <label for="hotel3"><span></span><img src="http://img.modetour.com/modetour/2019/wemode/bg/hotel_3.png" alt="3성급 호텔"></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="hotel2" name="hotelType">
+                                            <label for="hotel2"><span></span><img src="http://img.modetour.com/modetour/2019/wemode/bg/hotel_2.png" alt="2성급 호텔"></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="hotel1" name="hotelType">
+                                            <label for="hotel1"><span></span><img src="http://img.modetour.com/modetour/2019/wemode/bg/hotel_1.png" alt="1성급 호텔"></label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- [e]: 호텔등급 -->
+                                <!-- [s]: 박수 -->
+                                <div class="content">
+                                    <ul class="chk_list">
+                                        <li><a href="">2박3일</a></li>
+                                        <li><a href="">3박4일</a></li>
+                                        <li><a href="">4박5일</a></li>
+                                        <li><a href="">5박6일</a></li>
+                                        <li><a href="">6박7일</a></li>
+                                        <li><a href="">7박8일</a></li>
+                                        <li><a href="">8박9일</a></li>
+                                    </ul>
+                                </div>
+                                <!-- [e]: 박수 -->
+                                <!-- [s]: 쇼핑횟수 -->
+                                <div class="content">
+                                    <ul class="chk_list">
+                                        <li><a href="">없음</a></li>
+                                        <li><a href="">1회</a></li>
+                                        <li><a href="">2회</a></li>
+                                    </ul>
+                                </div>
+                                <!-- [e]: 쇼핑횟수 -->
+                                <!-- [s]: 출발시간대 -->
+                                <div class="content">
+                                    <ul class="radio_list">
+                                        <li>
+                                            <input type="radio" id="d_time1" name="dTime">
+                                            <label for="d_time1"><span></span>오전 (06~12)</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="d_time2" name="dTime">
+                                            <label for="d_time2"><span></span>오후 (12~18)</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="d_time3" name="dTime">
+                                            <label for="d_time3"><span></span>저녁 (18~00)</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="d_time4" name="dTime">
+                                            <label for="d_time4"><span></span>심야 (00~06)</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- [e]: 출발시간대 -->
+                                <!-- [s]: 도착시간대 -->
+                                <div class="content">
+                                    <ul class="radio_list">
+                                        <li>
+                                            <input type="radio" id="a_time1" name="aTime">
+                                            <label for="a_time1"><span></span>오전 (06~12)</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="a_time2" name="aTime">
+                                            <label for="a_time2"><span></span>오후 (12~18)</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="a_time3" name="aTime">
+                                            <label for="a_time3"><span></span>저녁 (18~00)</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="a_time4" name="aTime">
+                                            <label for="a_time4"><span></span>심야 (00~06)</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- [e]: 도착시간대 -->
+                                <!-- [s]: 가격대선택 -->
+                                <div class="content">
+                                    <div class="fare_slider">
+                                        <p class="min_txt">130,000 원</p>
+                                        <p class="fareAmount_txt">
+                                            <span id="fareAmount" title="여행요금 가격 최소값">130,000</span>
+                                            <span id="fareAmount02" title="여행요금 가격 최대값">5,130,000</span>
+                                        </p>
+                                        <p class="max_txt">5,130,000 원</p>
+                                        <div id="fareRange"></div>	
+                                    </div>
+                                </div>
+                                <!-- [e]: 가격대선택 -->
+                                <!-- [s]: 항공사선택 -->
+                                <div class="content">
+                                    <ul class="radio_list">
+                                        <li>
+                                            <input type="radio" id="air1" name="airType">
+                                            <label for="air1"><span></span>전체</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="air2" name="airType">
+                                            <label for="air2"><span></span><img src="http://img.modetour.com/air/ci/ke.gif" width="20">대한 항공</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="air3" name="airType">
+                                            <label for="air3"><span></span><img src="http://img.modetour.com/air/ci/oz.gif" alt="" width="20" />아시아나 항공</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="air4" name="airType">
+                                            <label for="air4"><span></span><img src="http://img.modetour.com/air/ci/ze.gif" width="20">이스타젯 항공</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- [e]: 항공사선택 -->
+                            </div>
+                       </div>
+                       <div class="con3">
+                            <h3>날짜변경</h3>
+                            <div class="calendar box-size">
+                                <div class="year-month">
+                                    <a href="" class="prev_month"><span class="text_blind">이전달</span></a>
+                                    <select name="selectDay2" id="selectDay2">
+                                        <option>2019.06</option>
+                                        <option>2019.07</option>
+                                        <option>2019.08</option>
+                                    </select>
+                                    <a href="" class="next_month"><span class="text_blind">다음달</span></a>
+                                </div>
+                                <table date-month="2016.06">
+                                    <thead>
+                                        <tr>
+                                            <th class="sun" scope="col">일</th>
+                                            <th scope="col">월</th>
+                                            <th scope="col">화</th>
+                                            <th scope="col">수</th>
+                                            <th scope="col">목</th>
+                                            <th scope="col">금</th>
+                                            <th class="sat" scope="col">토</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="sun past"><a href="#">29</a></td>
+                                            <td class="past"><a href="#">30</a></td>
+                                            <td class="past"><a href="#">31</a></td>
+                                            <td class="past"><a href="#">1</a></td>
+                                            <td class="past"><a href="#">2</a></td>
+                                            <td class="past"><a href="#">3</a></td>
+                                            <td class="sat past"><a href="#" >4</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sun selected"><a href="#">5</a></td>
+                                            <td><a href="#">6</a></td>
+                                            <td><a href="#">7</a></td>
+                                            <td><a href="#">8</a></td>
+                                            <td><a href="#">9</a></td>
+                                            <td><a href="#">10</a></td>
+                                            <td class="sat"><a href="#">11</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sun"><a href="#">12</a></td>
+                                            <td><a href="#">13</a></td>
+                                            <td><a href="#">14</a></td>
+                                            <td><a href="#">15</a></td>
+                                            <td><a href="#">16</a></td>
+                                            <td><a href="#">17</a></td>
+                                            <td class="sat"><a href="#">18</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sun"><a href="#">19</a></td>
+                                            <td><a href="#">20</a></td>
+                                            <td><a href="#">21</a></td>
+                                            <td><a href="#">22</a></td>
+                                            <td><a href="#">23</a></td>
+                                            <td><a href="#">24</a></td>
+                                            <td class="sat"><a href="#">25</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sun"><a href="#">26</a></td>
+                                            <td><a href="#">27</a></td>
+                                            <td><a href="#">28</a></td>
+                                            <td><a href="#">29</a></td>
+                                            <td><a href="#">30</a></td>
+                                            <td class="past"><a href="#">1</a></td>
+                                            <td class="sat past"><a href="#">2</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div><!-- calendar -->
+                       </div>
+                       <div class="choice">
+                           <span>5성급 호텔<a href=""><span class="text_blind">닫기</span></a></span>
+                           <span>5박6일<a href=""><span class="text_blind">닫기</span></a></span>
+                           <span>쇼핑없음<a href=""><span class="text_blind">닫기</span></a></span>
+                           <span>오후출발<a href=""><span class="text_blind">닫기</span></a></span>
+                           <span>300,000 원~2,400,000 원<a href=""><span class="text_blind">닫기</span></a></span>
+                           <span>대한항공<a href=""><span class="text_blind">닫기</span></a></span>
+                           <span>5성급 호텔<a href=""><span class="text_blind">닫기</span></a></span>
+                           <span>5박6일<a href=""><span class="text_blind">닫기</span></a></span>
+                           <span>쇼핑없음<a href=""><span class="text_blind">닫기</span></a></span>
+                           <span>오후출발<a href=""><span class="text_blind">닫기</span></a></span>
+                           <span>300,000 원~2,400,000 원<a href=""><span class="text_blind">닫기</span></a></span>
+                           <span>대한항공<a href=""><span class="text_blind">닫기</span></a></span>
+                       </div>
+                   </div>
+                   <div class="item_wrap">
+                       <ul class="list_tab">
+                           <li class="on"><a href="">가격 낮은 순</a></li>
+                           <li><a href="">가격 높은 순</a></li>
+                           <li><a href="">인기도 순</a></li>
+                       </ul>
+                       <a href="" class="btn_show"><span class="text_blind">예약가능상품만 보기</span></a>
+                       <ul class="item_list">
+                           <li>
+                                <div class="tit">
+                                        <p><strong>[프리한 패키지][비치근접/위치최강] 보라카이 / 페닌슐라 5일</strong></p>
+                                        <ul>
+                                            <li><strong>출발</strong> 2019.06.28 (금) 11:20</li>
+                                            <li><strong>도착</strong> 2019.07.01 (월) 09:40</li>
+                                            <li><strong>4박5일</strong></li>
+                                            <li><img src="http://img.modetour.com/air/ci/ke.gif" width="20"><strong>대한항공</strong></li>
+                                        </ul>
+                                    </div>
+                                <div class="price">301,000원</div>
+                                <div class="btn_area">
+                                    <!-- 
+                                    btn_ok 예약가능
+                                    btn_wait 대기예약
+                                    btn_go 출발확정
+                                    btn_cart 장바구니 
+                                    -->
+                                    <a href="" class="btn_ok">예약가능</a>
+                                </div>
+                           </li>
+                           <li>
+                                <div class="tit">
+                                        <p><strong>[프리한 패키지][비치근접/위치최강] 보라카이 / 페닌슐라 5일</strong></p>
+                                        <ul>
+                                            <li><strong>출발</strong> 2019.06.28 (금) 11:20</li>
+                                            <li><strong>도착</strong> 2019.07.01 (월) 09:40</li>
+                                            <li><strong>4박5일</strong></li>
+                                            <li><img src="http://img.modetour.com/air/ci/vn.gif" width="20"><strong>베트남항공</strong></li>
+                                        </ul>
+                                    </div>
+                                <div class="price">301,000원</div>
+                                <div class="btn_area">
+                                    <!-- 
+                                    btn_ok 예약가능
+                                    btn_wait 대기예약
+                                    btn_go 출발확정
+                                    btn_cart 장바구니 
+                                    -->
+                                    <a href="" class="btn_wait">대기예약</a>
+                                    <a href="" class="btn_cart"><span class="text_blind">장바구니</span></a>
+                                </div>
+                           </li>
+                           <li>
+                                <div class="tit">
+                                        <p><strong>[프리한 패키지][비치근접/위치최강] 보라카이 / 페닌슐라 5일</strong></p>
+                                        <ul>
+                                            <li><strong>출발</strong> 2019.06.28 (금) 11:20</li>
+                                            <li><strong>도착</strong> 2019.07.01 (월) 09:40</li>
+                                            <li><strong>4박5일</strong></li>
+                                            <li><img src="http://img.modetour.com/air/ci/oz.gif" width="20"><strong>아시아나항공</strong></li>
+                                        </ul>
+                                    </div>
+                                <div class="price">301,000원</div>
+                                <div class="btn_area">
+                                    <!-- 
+                                    btn_ok 예약가능
+                                    btn_wait 대기예약
+                                    btn_go 출발확정
+                                    btn_cart 장바구니 
+                                    -->
+                                    <a href="" class="btn_go">출발확정</a>
+                                </div>
+                           </li>
+                       </ul>
+                       <div class="item_slide sub_list">
+                            <ul class="cycle-slideshow"
+                            data-cycle-fx=carousel 
+                            data-cycle-slides=">li" 
+                            data-cycle-timeout="0" 
+                            data-cycle-carousel-visible=3 
+                            data-cycle-carousel-fluid=true 
+                            data-cycle-log=false 
+                            data-cycle-next="#item_next"
+                            data-cycle-prev="#item_prev"
+                            >
+                                <li>
+                                    <a href="">
+                                        <!-- 
+                                        airtel = 에어텔
+                                        package = 패키지 
+                                        -->
+                                        <span class="package"></span>
+                                        <div class="img">
+                                            <img src="http://img.modetour.com/modetour/2019/wemode/bg/item_ex1.jpg" alt="">
+                                        </div>
+                                        <dl>
+                                            <dt>보라카이 최저가 총집합 4/5일</dt>
+                                            <dd><strong>249,000</strong>원~</dd>
+                                        </dl>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <!-- 
+                                        airtel = 에어텔
+                                        package = 패키지 
+                                        -->
+                                        <span class="package"></span>
+                                        <div class="img">
+                                            <img src="http://img.modetour.com/modetour/2019/wemode/bg/item_ex2.jpg" alt="">
+                                        </div>
+                                        <dl>
+                                            <dt>보라카이 최저가 총집합 4/5일</dt>
+                                            <dd><strong>249,000</strong>원~</dd>
+                                        </dl>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <!-- 
+                                        airtel = 에어텔
+                                        package = 패키지 
+                                        -->
+                                        <span class="package"></span>
+                                        <div class="img">
+                                            <img src="http://img.modetour.com/modetour/2019/wemode/bg/item_ex3.jpg" alt="">
+                                        </div>
+                                        <dl>
+                                            <dt>보라카이 최저가 총집합 4/5일</dt>
+                                            <dd><strong>249,000</strong>원~</dd>
+                                        </dl>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href=# id="item_prev"><img src="http://img.modetour.com/modetour/2019/wemode/bg/ico_left_arrow.png" alt="이전" /></a>
+                            <a href=# id="item_next"><img src="http://img.modetour.com/modetour/2019/wemode/bg/ico_right_arrow.png" alt="다음" /></a>
+                       </div>
+                   </div>
+                </div>
+                <!-- [끝]: 위모두 -->
+            </div>
+        </div>
+        <div id="footer">
+        	<div class="footer_ban_top" id="FooterBanTop"></div>
+        	<div class="footer_section01">
+        		<div class="content-section">
+        			<a href="#">회사소개</a>
+        			<a href="#"><strong>개인정보처리방침</strong></a>
+        			<a href="#">여행약관</a>
+        			<a href="#">이용약관</a>
+        			<a href="#">여행보험</a>
+        			<a href="#">온라인제휴안내</a>
+        			<a href="#">여행플래너</a>
+        			<a href="#">대리점개설문의</a>
+        		</div>
+        	</div>
+        	<div class="footer_section02">
+        		<div class="content-section">
+        			<h1><img src="http://img.modetour.com/modetour/2016/common/footer_logo.png" alt="" /></h1>
+        			<address>대표 : 우종웅 | 개인정보관리 책임자 : 김현준 (주)모두투어네트워크<br />
+        			사업자 등록번호 : 202-81-45295 | 통신판매업신고번호 : 중구 제03500호 | 호스팅 업체 : (주)모두투어네트워크<br />
+        			관광사업자 등록번호 : 1989-04(서울특별시 중구) | 영업여행업보증 : 15억 1천만원 | 기획여행업보증 : 7억원<br />
+        			고객센터 : 1544-5252 | FAX : 02-2021-7800 | 주소 : 서울특별시 중구 을지로 16 백남빌딩 5층<br />
+        			※ 부득이한 사정에 의해 확정된 여행일정이 변경되는 경우 여행자의 사전 동의를 받습니다.<br />
+        			COPYRIGHT 1988-2015 MODETOUR ALL RIGHTS RESERVED.</address>
+        			<a href="http://www.smartoutbound.or.kr/guide/html/guideInfo4.do?menu_code=0000000016" class="link_standard" target="_blank" title="국외여행상품 정보제공 표준안 바로가기">
+        				<img src="http://img.modetour.com/modetour/2016/common/img_standard.png" alt="국외여행상품 정보제공 표준안 참여여행사">
+        			</a>
+        			<div class="sns-link">
+        				<a class="facebook" href="https://www.facebook.com/modetournetwork" target="_blank" title="페이스북"><span class="blind">페이스북</span></a>
+        				<a class="blog" href="//blog.modetour.com/" target="_blank" title="블로그"><span class="blind">블로그</span></a>
+        				<a class="kakaotalk" href="//www.modetour.com/event/event_17/0201_kakao/mode.aspx?mloc=110101&amp;eidx2=1607&amp;gubun=" target="_blank" title="카카오톡"><span class="blind">카카오톡</span></a>
+        				<a class="kakaostory" href="https://story.kakao.com/ch/modetour" target="_blank" title="카카오스토리"><span class="blind">카카오스토리</span></a>
+        				<a class="post" href="http://naver.me/F1JoETyi" target="_blank" title="포스트"><span class="blind">포스트</span></a>
+        				<a class="instagram" href="//instagram.com/modetournetwork/" target="_blank" title="인스타그램"><span class="blind">인스타그램</span></a>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        <div class="dimmed"></div>
+        <div class="loading-layer" style="background-image:url('http://img.modetour.com/modetour/2016/dotcom/sample/bg_loading.jpg?output-quality=80');">
+        	<p><img src="http://img.modetour.com/modetour/2016/common/loading.gif" alt="" /></p>
+        	<p class="txt">Loading...</p>
+        	<p class="desc">다시 만나고 싶은 여행</p>
+        </div>
+    </div>
+
+	<script>
+        var $ = jQuery.noConflict();
+
+        window.onload = function() {
+            setTimeout (function () {
+                $(window).scrollTop(500); 
+            }, 0); 
+        }
+        $(document).ready(function(){
+            //[s]: 공통
+
+            //검색단 셀렉트박스 ui
+            $( "#selectDay" ).selectmenu();
+
+            //검색 input 클릭시 팝업
+            function searchArea(){
+                var ph = $('.search_area input[type="text"]').val();
+                var t = $(this);
+                if(!t.val() ==''){
+                    t.parent('.write').find('ul.search_box').addClass('active');
+                }else{
+                    t.parent('.write').find('ul.search_box').removeClass('active');
+                }
+            }
+            $('.search_area input').keyup(searchArea);
+
+            //달력 input시 팝업
+            function calShow(){
+                var t = $(this);
+                t.parent('.date_choice').find('.calendar').addClass('active');
+            }
+            $('.date_choice input,.date_choice .show_cal').click(calShow);
+
+            //달력 취소,완료버튼 클릭시 닫힘
+            function calBtn(){
+                var t = $(this);
+                t.parent('.calendar').removeClass('active');
+                return false;
+            }
+            $('.date_choice .btn_cancle,.date_choice .btn_ok').click(calBtn);
+            //[e]: 공통
+
+            $( "#selectDay2" ).selectmenu();
+
+            function dpBlock(){
+                var t = $(this);
+                t.find('div.content:first').css('display','block');
+            }
+            $('div.con_wrap').each(dpBlock);
+
+            function Tabs(){
+                var t = $(this);
+                var idx = t.parent().index();
+                t.parent().addClass('on').siblings().removeClass('on');
+                t.parents('.con2').find('div.content').eq(idx).css('display','block').siblings().css('display','none');
+                return false;
+            }
+            $('.con2 .tab li a').click(Tabs);
+
+            //여행요금 설정
+		   // var text = $('.fareAmount_won').text();
+		 	$('#fareRange').slider( {
+				range: true,
+				min: 130000,
+				max: 5130000,
+				values: [13000, 5130000],
+				slide: function(event, ui) {
+					$('#fareAmount').text(  ui.values[ 0 ].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") );
+					$('#fareAmount02').text(  ui.values[ 1 ].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") );
+				}
+			});
+            $( "#fareRange" ).draggable();
+            $( "#fareAmount" ).val( "$" + $( "#fareRange" ).slider( "values", 0 ) + " - $" + $( "#fareRange" ).slider( "values", 1 ) );
+
+            //체크박스
+            function chkList(){
+                var t = $(this);
+                if(t.parent().hasClass('on')){
+                    t.parent().removeClass('on');
+                }else{
+                    t.parent().addClass('on').siblings().removeClass('on');
+                }
+                return false;
+            }
+            $('.select_list .chk_list li a').click(chkList);
+
+            function showActive(){
+                var t = $(this);
+                t.toggleClass('on');
+                return false;
+            }
+            $('.item_wrap .btn_show').click(showActive);
+
+            //위로올라가기
+            function moveTop(){
+                $('html,body').stop().animate({'scrollTop':0});
+                return false;
+            }
+            $('.btn_fly .link_top').click(moveTop);
+
+            //플라잉배너 따라다니기
+            var btnTop = $('.btn_fly').offset().top;
+            function screenS(){
+                var scTop = $(window).scrollTop();
+                if(scTop >= btnTop){
+                    $('.btn_fly').css({'top':scTop-btnTop+50});
+                }else{
+                    $('.btn_fly').removeAttr('style');
+                }
+            }
+            $(window).scroll(screenS);  
+
+        });
+        </script>
+    </body>
+                

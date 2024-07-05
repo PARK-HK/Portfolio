@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/sub.css" />
+	<script src="../js/1.11.3.min.js"></script>
+	<script src="../js/active.js"></script>
+	<!-- [s]: 추가 플러그인 -->
+	<script src="../js/plugin/cycle2.js"></script>
+	<script src="../js/plugin/cycle2.carousel.js"></script>
+	<!-- [e]: 추가 플러그인 -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//스크롤 특정 위치시 배경과 컬러바뀜
+			var moveT = $('#move').offset().top + 450;
+			function bgChange(){
+				var sct = $(window).scrollTop();
+				if(sct>moveT){
+					$('header h1.logo').css('background-position','-1px -212px');
+					$('header a.btn_menu').css('background-position','-345px -122px');
+				}else{
+					$('header h1.logo').css('background-position','-219px 0px');
+					$('header a.btn_menu').css('background-position','-296px -122px');
+				}
+			}
+			//스크롤 특정 위치시 컬러바뀜
+			var moveTxt = $('#move').offset().top + 100;
+			function txtChange(){
+				var sct = $(window).scrollTop();
+				if(sct>moveTxt){
+					$('.quick_menu a').css('color','#000');
+				}else{
+					$('.quick_menu a').css('color','#FFF');
+				}
+			}
+
+			//스크롤이 처음 올라갔을때 top 버튼 안보임
+			function dpnoneTop(){
+				var t = $(this);
+				if(t.scrollTop()>200){
+					$('.btn_top').fadeIn();
+				}else{
+					$('.btn_top').fadeOut();
+				}
+			}
+
+			//스크롤 이동시 메뉴 on
+			var con1T = $('#con1').offset().top+525;
+			var con2T = $('#con2').offset().top+700;
+			var con3T = $('#con3').offset().top+525;
+			var con4T = $('#con4').offset().top+100;
+			var con5T = $('#con5').offset().top;
+
+			function menuOn(){
+				var sct = $(window).scrollTop();
+				var select = $('.quick_menu ul li');
+				function add(){
+					$('.quick_menu ul').addClass('on');
+				}
+				if(sct<con1T){
+					add();
+					select.eq(0).addClass('on').siblings().removeClass('on');
+				}else if(sct>=con1T && sct<con2T){
+					add();
+					select.eq(1).addClass('on').siblings().removeClass('on');
+				}else if(sct>=con2T && sct<con3T){
+					add();
+					select.eq(2).addClass('on').siblings().removeClass('on');
+				}else if(sct>=con3T && sct<con4T){
+					add();
+					select.eq(3).addClass('on').siblings().removeClass('on');
+				}else if(sct>=con4T && sct<con5T){
+					add();
+					select.eq(4).addClass('on').siblings().removeClass('on');
+				}else{
+					add();
+					select.eq(5).addClass('on').siblings().removeClass('on');
+				}
+			}
+
+			$(window).scroll(function(){
+				bgChange();
+				txtChange();
+				dpnoneTop();
+				menuOn();
+			});
+		});
+
+		//카카오 팝업
+		function kakao(popHeight,popWidth){
+			var winHeight =  $( window ).height();
+			var winWidth = document.body.clientWidth;	// 현재창의 너비
+			var winX = window.screenLeft;	// 현재창의 x좌표
+			var winY = window.screenTop;	// 현재창의 y좌표
+			var popX = winX + (winWidth - popWidth)/2;
+			var popY = winY + (winHeight - popHeight)/2;
+			window.open("kakao_popup.html","popup","width="+popWidth+"px,height="+popHeight+"px,top="+popY+",left="+popX+",menubar=no, scrollbars=no, resizable=no");
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<h1 class="logo"><a href="main.html"></a></h1>
+		<a href="" class="btn_menu"></a>
+		<div class="menu_wrap"></div><!-- 하얀 배경 -->
+		<div class="menu_in">
+			<a href="" class="close"></a>
+			<ul class="big_menu">
+				<li><a href="company_infor.html">회사소개</a></li>
+				<li>
+					<a href="submain.html">테마별 크루즈여행</a>
+					<ul>
+						<li><a href="thema_cruise01.html">나의 첫 크루즈</a></li>
+						<li><a href="thema_cruise02.html">크루즈 매니아</a></li>
+						<li><a href="thema_cruise03.html">6성급 럭셔리 크루즈</a></li>
+						<li><a href="thema_cruise04.html">리버크루즈</a></li>
+						<li><a href="thema_cruise05.html">탐험 크루즈</a></li>
+						<li><a href="thema_cruise06.html">크루즈&amp;현지투어</a></li>
+						<li><a href="thema_cruise07.html">세계일주</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="area01.html">지역별 크루즈여행</a>
+					<ul>
+						<li><a href="area01.html#move">지중해</a></li>
+						<li><a href="area02.html#move">알래스카</a></li>
+						<li><a href="area03.html#move">북유럽</a></li>
+						<li><a href="area04.html#move">유럽리버</a></li>
+						<li><a href="area05.html#move">미서부/멕시코</a></li>
+						<li><a href="area06.html#move">캐나다/뉴잉글랜드</a></li>
+						<li><a href="area07.html#move">아프리카/중동</a></li>
+						<li><a href="area08.html#move">중남미/파나마운하</a></li>
+						<li><a href="area09.html#move">갈라파고스</a></li>
+						<li><a href="area10.html#move">아시아</a></li>
+						<li><a href="area11.html#move">남극</a></li>
+						<li><a href="area12.html#move">카리브해</a></li>
+						<li><a href="area13.html#move">호주/뉴질랜드</a></li>
+						<li><a href="area14.html#move">남태평양</a></li>
+						<li><a href="area15.html#move">하와이</a></li>
+						<li><a href="area16.html#move">세계일주</a></li>
+					</ul>
+				</li>
+				<li><a href="recommend_page.html">프로모션</a></li>
+			</ul><!-- big_menu -->
+			<ul class="service">
+				<li>
+					<span class="tit">카카오톡 상담하기</span>
+					<span>
+						<img src="//img.modetour.com/modewebagent/2017/cruise/search_img.jpg" alt="">
+						<a href="" onclick="kakao(690,700);return false;" class="apply_kakao">신청방법</a>
+					</span>
+				</li>
+				<li>
+					<span class="tit">TEL</span>
+					<span class="tel"><img src="//img.modetour.com/modewebagent/2017/cruise/img_tel.png" alt=""></span>
+				</li>
+			</ul><!-- service -->
+			<div class="foot">
+				<span>개인정보 취급방침</span>
+				<address>
+					서울시 중구 을지로 16 백남빌딩 506호 크루즈 인터내셔널<br />
+					대표이사 유인태<br />
+					사업자등록번호 104-81-53278<br />
+					통신판매업신고번호 중구 제 03295호<br />
+					COPYRIGHT CRUISE INTERNATIONAL INC. ALL RIGHT RESERVED.
+				</address>
+			</div>
+		</div>
+	</header>
+	<section class="slide_wrap area_cruise">
+		<div class="bg"></div>
+		<div class="map" id="con1">
+			<div class="wrap">
+				<h2>지역별로 보는<br />크루즈 여행</h2>
+				<ul>
+					<li class="area01">
+						<a href="area01.html#move"><span class="text_blind">지중해</span></a>
+					</li>
+					<li class="area02">
+						<a href="area02.html#move"><span class="text_blind">알래스카</span></a>
+					</li>
+					<li class="area03">
+						<a href="area03.html#move"><span class="text_blind">북유럽</span></a>
+					</li>
+					<li class="area04">
+						<a href="area04.html#move"><span class="text_blind">유럽리버</span></a>
+					</li>
+					<li class="area05">
+						<a href="area05.html#move"><span class="text_blind">미서부,메시코</span></a>
+					</li>
+					<li class="area06">
+						<a href="area06.html#move"><span class="text_blind">캐나다,뉴잉글랜드</span></a>
+					</li>
+					<li class="area07">
+						<a href="area07.html#move"><span class="text_blind">아프리카,중동</span></a>
+					</li>
+					<li class="area08">
+						<a href="area08.html#move"><span class="text_blind">중남미,파나마운하</span></a>
+					</li>
+					<li class="area09">
+						<a href="area09.html#move"><span class="text_blind">갈라파고스</span></a>
+					</li>
+					<li class="area10">
+						<a href="area10.html#move"><span class="text_blind">아시아</span></a>
+					</li>
+					<li class="area11">
+						<a href="area11.html#move"><span class="text_blind">남극</span></a>
+					</li>
+					<li class="area12">
+						<a href="area12.html#move"><span class="text_blind">카리브해</span></a>
+					</li>
+					<li class="area13">
+						<a href="area13.html#move"><span class="text_blind">호주,뉴질랜드</span></a>
+					</li>
+					<li class="area14">
+						<a href="area14.html#move"><span class="text_blind">남태평양</span></a>
+					</li>
+					<li class="area15">
+						<a href="area15.html#move"><span class="text_blind">하와이</span></a>
+					</li>
+					<li class="area16 on">
+						<a href="#move"><span class="text_blind">세계일주</span></a>
+					</li>
+				</ul>
+			</div>
+		</div><!-- map -->
+	</section>
+	<section class="area_cruise_page">
+		<div class="area_main">
+			<div id="move"></div>
+			<div class="com_tit tit16" id="con2">
+				<h2>세계일주</h2>
+				<div class="infor">
+					<div class="wrap">
+						<dl class="season">
+							<dt>크루즈시즌</dt>
+							<dd>1월출발</dd>
+						</dl>
+						<dl class="period">
+							<dt>여행기간</dt>
+							<dd>90일~180일</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content_wrap">
+			<div class="wrap">
+				<p class="area_txt">집을 떠나지 않고 5대양 6대주 전세계 곳곳의 문명과 문화를 맛볼 수 있는 유일한 방법!<br />바로 세계일주 크루즈가 그 꿈을 실현시켜 드립니다.<br />세계일주 크루즈는 통상 매년 1월부터 시작하여 90~180일동안 여행을 하게 되며,<br />대중적인 선사부터 럭셔리 선사까지 다양한 등급에서 예산에 맞춰 고를 수 있습니다.</p>
+				<p class="notice area16_notice"><i></i>세계일주 일정은 대개 출발 3년 전부터 예약이 가능하며, 매년 조금씩 다른 일정을 선보이므로<br />원하는 일정이 나왔을 때 바로 예약하는 것이 좋습니다.</p>
+				<div class="slide">
+					<ul
+						class="cycle-slideshow"
+						data-cycle-slides=">li"
+						data-cycle-fx="scrollHorz" 
+						data-cycle-timeout="3000" 
+						data-cycle-prev=".area_prev"
+						data-cycle-next=".area_next"
+					>
+						<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/area16/slide01.jpg" alt=""></li>
+						<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/area16/slide02.jpg" alt=""></li>
+						<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/area16/slide03.jpg" alt=""></li>
+						<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/area16/slide04.jpg" alt=""></li>
+						<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/area16/slide05.jpg" alt=""></li>
+						<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/area16/slide06.jpg" alt=""></li>
+						<li><img src="//img.modetour.com/modewebagent/2017/cruise/submain/area16/slide07.jpg" alt=""></li>
+					</ul>
+					<div class="control">	
+						<span class="area_prev"></span>
+						<span class="area_next"></span>
+					</div>
+				</div><!-- slide -->
+				<div class="ex_schedule" id="con3">
+					<h3>예시일정<span>세계일주 115일</span></h3>
+					<img src="//img.modetour.com/modewebagent/2017/cruise/submain/area16/area16_map.jpg" alt="">
+					<dl class="simple_schedule">
+						<dt>간략일정</dt>
+						<dd>
+							<ul>
+								<li>승선 : 남아프리카공화국 케이프타운</li>
+								<li>하선 : 미국 플로리다주 포트로더데일</li>
+								<li>주요구간 : 남아공 출발-아프리카-모리셔스-인도양-호주-뉴질랜드-남태평양-중남이-파나마운하통과-카리브해-미국도착</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="service">
+						<dt>특전<span>*특전은 선사와 일정별로 상이 할 수 있습니다.</span></dt>
+						<dd>
+							<ul>
+								<li>1. 2 for 1 (정상요금  기준, 1인당 50% 할인)</li>
+								<li>2. 조기예약시 1인당 $10,000 이상 추가 할인</li>
+								<li>3. 예약 후 조기 완납시 추가 2.5% 할인</li>
+								<li>4. 멤버쉽 할인 혹은 신규 고객 할인</li>
+								<li>5. 객실당 $2,000 선상 크레딧 제공</li>
+								<li>6. 공항-항구 교통편 제공</li>
+								<li>7. 세계일주 기념 호텔 갈라 디너 (승선 전 혹은 중간 기항지)</li>
+								<li>8. 세계일주 승객만을 위한 기항지 이벤트</li>
+								<li>9. 세계일주 승객만을 위한 선내 이벤트</li>
+								<li>10. 항공 수하물 추가 요금 지원 1인당 최대 $500</li>
+							</ul>
+						</dd>
+					</dl>
+				</div><!-- ex_schedule -->
+				<div class="more_schedule" id="con4">
+					<h3>세계일주 일정 더보기</h3>
+					<ul>
+						<li class="menu01">
+							<a href="https://www.silversea.com/destinations/world-cruise.html" target="_blank">
+								<span class="left"><i></i></span>
+								<span class="right">
+									실버시 크루즈 세계일주 일정
+									<span class="more">일정보기</span> 
+								</span>
+							</a>
+						</li>
+						<li class="menu02">
+							<a href="https://www.rssc.com/destinations/grand-voyages" target="_blank">
+								<span class="left"><i></i></span>
+								<span class="right">
+									리젠트 세븐시즈 크루즈 세계일주 일정
+									<span class="more">일정보기</span> 
+								</span>
+							</a>
+						</li>
+						<li class="menu03">
+							<a href="http://www.crystalcruises.com/voyage-finder/results?region=WC&year=all&" target="_blank">
+								<span class="left"><i></i></span>
+								<span class="right">
+									크리스탈 크루즈 세계일주 일정
+									<span class="more">일정보기</span> 
+								</span>
+							</a>
+						</li>
+						<li class="menu04">
+							<a href="https://www.oceaniacruises.com/cruise-finder/#destinations=180dayworld " target="_blank">
+								<span class="left"><i></i></span>
+								<span class="right">
+									오세아니아 크루즈 세계일주 일정
+									<span class="more">일정보기</span> 
+								</span>
+							</a>
+						</li>
+						<li class="menu05">
+							<a href="https://www.costacruisesasia.com/pao/cruises_list/pacific_ocean-201901_201901.html?afDurs=&afPRanges=" target="_blank">
+								<span class="left"><i></i></span>
+								<span class="right">
+									코스타 크루즈 세계일주 일정
+									<span class="more">일정보기</span> 
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div><!-- more_schedule -->
+				<div class="promotion_area" id="con5">
+					<h3>추천일정</h3>
+					<ul>
+						<li>
+							<img src="//img.modetour.com/modewebagent/2017/cruise/submain/promotion_img03.jpg" alt="">
+							<a href="promotion01.html">바로가기</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="bottom01">
+			<div class="wrap">
+				<h2>크루즈인터내셔널고객센터</h2>
+				<div class="infor">
+					<ul>
+						<li>
+							예약문의<strong>02-775-0100</strong>
+							<div class="email">cruise@cruise.co.kr</div>
+						</li>
+						<li>
+							제휴문의<strong>02-775-0240</strong>
+							<div class="email">sales@cruise.co.kr</div>
+						</li>
+					</ul>
+				</div><!-- infor -->
+				<div class="sns">
+					<ul>
+						<li class="sns01"><a href="" onclick="kakao(690,700);return false;">카카오</a></li>
+						<li class="sns02"><a href="http://www.modetour.com/main/" target="_blank">모두투어</a></li>
+					</ul>
+				</div>
+			</div>
+		</div><!-- bottom01 -->
+		<div class="bottom02">
+				<div class="wrap">
+					<h1><span class="text_blind">CRUISE</span></h1>
+					<address>
+						<div>개인정보 취급방침</div>
+						서울시 중구 을지로 1 백남빌딩 506호 크루즈 인터내셔널 | 대표이사 : 유인태 | 사업자등록번호 : 104-81-53278 | 통신판매업신고번호 : 중구 제 03295호<br />COPYRIGHT CRUISE INTERNATIONAL INC. ALL RIGHTS RESERVED 
+					</address>
+				</div>
+			</div>
+	</footer>
+	
+	<!-- [s]: 퀵메뉴 --> 
+	<div class="quick_menu">
+		<ul>
+			<li class="on"><a href="#con1">지역</a></li>
+			<li><a href="#con2">소개</a></li>
+			<li><a href="#con3">예시일정</a></li>
+			<li><a href="#con4">일정 더보기</a></li>
+			<li><a href="#con5">추천일정</a></li>
+		</ul>
+	</div>
+	<!-- [e]: 퀵메뉴 -->
+	
+	<!-- [s] top 버튼 -->
+	<a href="#" class="btn_top"><img src="//img.modetour.com/modewebagent/2017/cruise/btn_top.png" alt="위로올라가기"></a>
+	<!-- [e] top 버튼 -->
+</body>
+</html>

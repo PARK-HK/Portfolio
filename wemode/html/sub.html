@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie8 ie no-js" lang="ko"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9 ie no-js" lang="ko"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="ko"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>모두투어 - 예약확인/결제</title>
+	<meta name="keywords" content="모두투어, 여행사, 해외여행, 해외항공, 동남아여행, 중국여행, 일본여행, 미주여행, 남태평양여행, 유럽여행, 인도여행, 아프리카 여행, 골프여행, 패키지, 에어텔, 허니문, 자유여행, 골프여행, jm프리미엄, 크루즈, 국내여행, 제주여행, 호텔, 숙박, 해외호텔, 국내숙박, 항공권 ,해외항공권 ,국내항공권, 철도 ,패스, 여행정보, 추천여행사, 최저가항공권" />
+	<meta name="description" content="대한민국 여행의 기준이 되다! 모두투어는 해외여행, 국내여행, 패키지여행, 에어텔, 항공권, 호텔 등 각종 여행정보를 제공하는 국내 최대 여행포탈사이트 입니다." />
+	<link rel="stylesheet" type="text/css" href="../css/common_201609.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/wemode_201907.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/ie.min.css" />
+        <!-- [시작]: Common JS -->
+    <script src="https://js.modetour.com/jquery/ver/1.11.3.min.js"></script>
+    <script src="https://js.modetour.com/jquery/plugin/easing.js"></script>
+    <script src="https://js.modetour.com/jquery/plugin/plugins.js"></script>
+    <!-- <script src="../../../js/libs/ui_plugins.min.js"></script>
+    <script src="../../../js/ui_common.min.js"></script>
+    <script src="../../../js/html_exclusive.min.js"></script>
+    <script src="../js/swiper-4.1.0.min.js"></script> -->
+    <!-- [끝]: Common JS -->
+</head>
+<body role="document">
+	<div id="a11y-skip">
+		<a href="#btnTravelSch" rel="bookmark">통합검색 바로가기</a>
+		<a href="#btnSiteMap" rel="bookmark"><span>전체 메뉴 바로가기</span></a>
+		<a href="#container">마이페이지 바로가기</a>
+	</div>
+	<div id="wrap">
+    				
+		<div id="container">
+			<div class="primary-content">
+                <!-- [시작]: 위모두 -->
+                <div class="wemode">
+                    <div class="main">
+                        <h2><img src="http://img.modetour.com/modetour/2019/wemode/bg/main_tit.png" alt=""></h2>
+                       <!-- [s]: 검색창 -->
+                       <div class="search_area">
+                            <div class="write">
+                                <input type="text" value="관광도시 또는 국가 입력" onfocus="this.value=''" onfocusout="this.value='관광도시 또는 국가 입력'"/>
+                                <button><span class="text_blind">찾기</span></button>
+                                <ul class="search_box">
+                                    <li>
+                                        <a href="">
+                                           <strong>오</strong>사카
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <strong>오</strong>스트리아
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="date_choice">
+								<input type="text" placeholder="출발일 선택" />
+								<button class="show_cal">달력보기</button>
+								<!-- calendar에 active 추가시 활성화 -->
+								<div class="calendar">
+                                    <div class="year-month">
+                                        <a href="" class="prev_month"><span class="text_blind">이전달</span></a>
+                                        <select name="selectDay" id="selectDay">
+                                            <option>2019.06</option>
+                                            <option>2019.07</option>
+                                            <option>2019.08</option>
+                                        </select>
+                                        <a href="" class="next_month"><span class="text_blind">다음달</span></a>
+                                    </div>
+                                    <table date-month="2016.06">
+                                        <thead>
+                                            <tr>
+                                                <th class="sun" scope="col">일</th>
+                                                <th scope="col">월</th>
+                                                <th scope="col">화</th>
+                                                <th scope="col">수</th>
+                                                <th scope="col">목</th>
+                                                <th scope="col">금</th>
+                                                <th class="sat" scope="col">토</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="sun past"><a href="#">29</a></td>
+                                                <td class="past"><a href="#">30</a></td>
+                                                <td class="past"><a href="#">31</a></td>
+                                                <td class="past"><a href="#">1</a></td>
+                                                <td class="past"><a href="#">2</a></td>
+                                                <td class="past"><a href="#">3</a></td>
+                                                <td class="sat past"><a href="#" >4</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun selected"><a href="#">5</a></td>
+                                                <td><a href="#">6</a></td>
+                                                <td><a href="#">7</a></td>
+                                                <td><a href="#">8</a></td>
+                                                <td><a href="#">9</a></td>
+                                                <td><a href="#">10</a></td>
+                                                <td class="sat"><a href="#">11</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun"><a href="#">12</a></td>
+                                                <td><a href="#">13</a></td>
+                                                <td><a href="#">14</a></td>
+                                                <td><a href="#">15</a></td>
+                                                <td><a href="#">16</a></td>
+                                                <td><a href="#">17</a></td>
+                                                <td class="sat"><a href="#">18</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun"><a href="#">19</a></td>
+                                                <td><a href="#">20</a></td>
+                                                <td><a href="#">21</a></td>
+                                                <td><a href="#">22</a></td>
+                                                <td><a href="#">23</a></td>
+                                                <td><a href="#">24</a></td>
+                                                <td class="sat"><a href="#">25</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun"><a href="#">26</a></td>
+                                                <td><a href="#">27</a></td>
+                                                <td><a href="#">28</a></td>
+                                                <td><a href="#">29</a></td>
+                                                <td><a href="#">30</a></td>
+                                                <td class="past"><a href="#">1</a></td>
+                                                <td class="sat past"><a href="#">2</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <a href="" class="btn_cancle"><img src="http://img.modetour.com/modetour/2019/wemode/bg/btn_c_cancle.jpg" alt="취소하기"></a>
+                                    <a href="" class="btn_ok"><img src="http://img.modetour.com/modetour/2019/wemode/bg/btn_c_complete.jpg" alt="선택완료"></a>
+								</div><!-- calendar -->
+                            </div><!-- date_choice -->
+                            <a href="" class="search_btn"><img src="http://img.modetour.com/modetour/2019/wemode/bg/btn_find.jpg" alt="찾기"></a>
+                            <ul class="radio_list">
+                                <li>
+                                    <input type="radio" id="trip1" checked="checked" name="tripType" />
+                                    <label for="trip1"><span></span>패키지</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="trip2" name="tripType" />
+                                    <label for="trip2"><span></span>에어텔 (항공+호텔)</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="trip3" name="tripType" />
+                                    <label for="trip3"><span></span>골프</label>
+                                </li>
+                            </ul>
+                       </div><!-- search_area -->
+                       <!-- [e]: 검색창 -->
+                    </div>
+                   <div class="sub_list">
+                       <!-- [s]: 플라이배너 -->
+                        <div class="btn_fly">
+                            <img src="http://img.modetour.com/modetour/2019/wemode/bg/btn_fly.jpg" alt="" usemap="#fly_link">
+                            <map name="fly_link" id="fly_link">
+                                <area shape="rect" coords="0,0,49,49" href="" target="" alt="위로올라가기" class="link_top" />
+                                <area shape="rect" coords="0,50,49,98" href="javascript:history.back()" target="" alt="이전페이지" />
+                            </map>
+                        </div>
+                        <!-- [e]: 플라이배너 -->
+                        <select name="selectArea" id="selectArea">
+                            <option>출발공항 (지역)</option>
+                            <option>김포공항</option>
+                            <option>인천공항</option>
+                            <option>청주공항</option>
+                            <option>김해공항</option>
+                            <option>여수공항</option>
+                        </select>
+                        <ul>
+                            <!-- [s]: 19-10-01 수정 이미지 없을시  -->
+                            <li>
+                                <a href="">
+                                    <!-- 
+                                    airtel = 에어텔
+                                    package = 패키지 
+                                    golf = 골프
+                                    -->
+                                    <span class="golf"></span>
+                                    <div class="img">
+                                        <img src="http://img.modetour.com/modetour/2019/wemode/bg/item_ex2.jpg" alt="">
+                                        <div class="hide">
+                                            <p>'다낭'과 '호이안' 및 '후에' 관광과준특급 및 특급 리조트로 구성된실속형 블루 상품!'다낭'과 '호이안' 및 '후에' 관광과 준특급 및 특급 리조트로 구성된 실속형 블루 상품!</p>
+                                        </div>
+                                    </div>
+                                    <dl>
+                                        <dt>보라카이 최저가 총집합 4/5일보라카이 최저가 총집합 4/5일보라카이 최저가 총집합 4/5일보라카이 최저가 총집합 4/5일보라카이 최저가 총집합 4/5일</dt>
+                                        <dd><strong>249,000</strong>원~</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <!-- [e]: 19-10-01 수정 이미지 없을시  -->
+                            <li>
+                                <a href="">
+                                    <!-- 
+                                    airtel = 에어텔
+                                    package = 패키지 
+                                    -->
+                                    <span class="airtel"></span>
+                                    <div class="img">
+                                        <img src="http://img.modetour.com/modetour/2019/wemode/bg/item_ex2.jpg" alt="">
+                                        <div class="hide">
+                                            <p>'다낭'과 '호이안' 및 '후에' 관광과<br />준특급 및 특급 리조트로 구성된<br />실속형 블루 상품!</p>
+                                        </div>
+                                    </div>
+                                    <dl>
+                                        <dt>보라카이 최저가 총집합 4/5일</dt>
+                                        <dd><strong>249,000</strong>원~</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <!-- 
+                                    airtel = 에어텔
+                                    package = 패키지 
+                                    -->
+                                    <span class="airtel"></span>
+                                    <div class="img">
+                                        <img src="http://img.modetour.com/modetour/2019/wemode/bg/item_ex3.jpg" alt="">
+                                        <div class="hide">
+                                            <p>'다낭'과 '호이안' 및 '후에' 관광과<br />준특급 및 특급 리조트로 구성된<br />실속형 블루 상품!</p>
+                                        </div>
+                                    </div>
+                                    <dl>
+                                        <dt>싱가포르 특급/초특급 또는 마리나베이샌즈 1박 포함 상품 5일, 6일</dt>
+                                        <dd><strong>249,000</strong>원~</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <!-- 
+                                    airtel = 에어텔
+                                    package = 패키지 
+                                    -->
+                                    <span class="package"></span>
+                                    <div class="img">
+                                        <img src="http://img.modetour.com/modetour/2019/wemode/bg/item_ex1.jpg" alt="">
+                                        <div class="hide">
+                                            <p>'다낭'과 '호이안' 및 '후에' 관광과<br />준특급 및 특급 리조트로 구성된<br />실속형 블루 상품!</p>
+                                        </div>
+                                    </div>
+                                    <dl>
+                                        <dt>보라카이 최저가 총집합 4/5일</dt>
+                                        <dd><strong>249,000</strong>원~</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <!-- 
+                                    airtel = 에어텔
+                                    package = 패키지 
+                                    -->
+                                    <span class="package"></span>
+                                    <div class="img">
+                                        <img src="http://img.modetour.com/modetour/2019/wemode/bg/item_ex2.jpg" alt="">
+                                        <div class="hide">
+                                            <p>'다낭'과 '호이안' 및 '후에' 관광과<br />준특급 및 특급 리조트로 구성된<br />실속형 블루 상품!</p>
+                                        </div>
+                                    </div>
+                                    <dl>
+                                        <dt>보라카이 최저가 총집합 4/5일</dt>
+                                        <dd><strong>249,000</strong>원~</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <!-- 
+                                    airtel = 에어텔
+                                    package = 패키지 
+                                    -->
+                                    <span class="airtel"></span>
+                                    <div class="img">
+                                        <img src="http://img.modetour.com/modetour/2019/wemode/bg/item_ex3.jpg" alt="">
+                                        <div class="hide">
+                                            <p>'다낭'과 '호이안' 및 '후에' 관광과<br />준특급 및 특급 리조트로 구성된<br />실속형 블루 상품!</p>
+                                        </div>
+                                    </div>
+                                    <dl>
+                                        <dt>싱가포르 특급/초특급 또는 마리나베이샌즈 1박 포함 상품 5일, 6일</dt>
+                                        <dd><strong>249,000</strong>원~</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- [s]: 검색 결과 없을때 -->
+                        <div class="no_item">
+                            <p><strong>검색결과가 없습니다.</strong></p>
+                            <p>다른 조건으로 재검색 하여 주시기 바랍니다.</p>
+                        </div>
+                        <!-- [e]: 검색 결과 없을때 -->
+
+                        <!-- [s]: 로딩중 -->
+                        <div class="loading_item">
+                            <p><img src="http://img.modetour.com/modetour/2019/wemode/bg/loading.gif" alt=""></p>
+                            <p><strong>검색 중 입니다.</strong></p>
+                        </div>
+                        <!-- [e]: 로딩중 -->
+                   </div>
+                </div>
+                <!-- [끝]: 위모두 -->
+            </div>
+        </div>
+        <div class="dimmed"></div>
+        <div class="loading-layer" style="background-image:url('http://img.modetour.com/modetour/2016/dotcom/sample/bg_loading.jpg?output-quality=80');">
+        	<p><img src="http://img.modetour.com/modetour/2016/common/loading.gif" alt="" /></p>
+        	<p class="txt">Loading...</p>
+        	<p class="desc">다시 만나고 싶은 여행</p>
+        </div>
+    </div>
+
+	<script>
+        var $ = jQuery.noConflict();
+        window.onload = function() {
+            setTimeout (function () {
+                $(window).scrollTop(500); 
+            }, 0); 
+        }
+        $(document).ready(function(){
+
+           //[s]: 공통
+
+            //검색단 셀렉트박스 ui
+            $( "#selectDay" ).selectmenu();
+
+            //검색 input 클릭시 팝업
+            function searchArea(){
+                var ph = $('.search_area input[type="text"]').val();
+                var t = $(this);
+                if(!t.val() ==''){
+                    t.parent('.write').find('ul.search_box').addClass('active');
+                }else{
+                    t.parent('.write').find('ul.search_box').removeClass('active');
+                }
+            }
+            $('.search_area input').keyup(searchArea);
+
+            //달력 input시 팝업
+            function calShow(){
+                var t = $(this);
+                t.parent('.date_choice').find('.calendar').addClass('active');
+            }
+            $('.date_choice input,.date_choice .show_cal').click(calShow);
+
+            //달력 취소,완료버튼 클릭시 닫힘
+            function calBtn(){
+                var t = $(this);
+                t.parent('.calendar').removeClass('active');
+                return false;
+            }
+            $('.date_choice .btn_cancle,.date_choice .btn_ok').click(calBtn);
+            //[e]: 공통
+
+            $( "#selectArea" ).selectmenu();
+
+            //위로올라가기
+            function moveTop(){
+                $('html,body').stop().animate({'scrollTop':0});
+                return false;
+            }
+            $('.btn_fly .link_top').click(moveTop);
+
+            //플라잉배너 따라다니기
+            var btnTop = $('.btn_fly').offset().top;
+            function screenS(){
+                var scTop = $(window).scrollTop();
+                if(scTop >= btnTop){
+                    $('.btn_fly').css({'top':scTop-btnTop+50});
+                }else{
+                    $('.btn_fly').removeAttr('style');
+                }
+            }
+            $(window).scroll(screenS);
+        
+        });
+        </script>
+    </body>
+                

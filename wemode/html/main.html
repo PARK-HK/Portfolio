@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie8 ie no-js" lang="ko"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9 ie no-js" lang="ko"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="ko"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>모두투어 - 예약확인/결제</title>
+	<meta name="keywords" content="모두투어, 여행사, 해외여행, 해외항공, 동남아여행, 중국여행, 일본여행, 미주여행, 남태평양여행, 유럽여행, 인도여행, 아프리카 여행, 골프여행, 패키지, 에어텔, 허니문, 자유여행, 골프여행, jm프리미엄, 크루즈, 국내여행, 제주여행, 호텔, 숙박, 해외호텔, 국내숙박, 항공권 ,해외항공권 ,국내항공권, 철도 ,패스, 여행정보, 추천여행사, 최저가항공권" />
+	<meta name="description" content="대한민국 여행의 기준이 되다! 모두투어는 해외여행, 국내여행, 패키지여행, 에어텔, 항공권, 호텔 등 각종 여행정보를 제공하는 국내 최대 여행포탈사이트 입니다." />
+	<link rel="stylesheet" type="text/css" href="../css/common_201609.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/wemode_201907.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/ie.min.css" />
+    <script type="text/javascript" src="https://js.modetour.com/jquery/ver/2.1.0.min.js"></script>
+    <script type="text/javascript" src="https://js.modetour.com/jquery/plugin/easing.js"></script>
+    <script type="text/javascript" src="https://js.modetour.com/jquery/plugin/plugins.js"></script>
+</head>
+<body role="document">
+	<div id="a11y-skip">
+		<a href="#btnTravelSch" rel="bookmark">통합검색 바로가기</a>
+		<a href="#btnSiteMap" rel="bookmark"><span>전체 메뉴 바로가기</span></a>
+		<a href="#container">마이페이지 바로가기</a>
+	</div>
+	<div id="wrap">
+    				
+		<div id="container">
+			<div class="primary-content">
+                <!-- [시작]: 위모두 -->
+                <div class="wemode">
+                    <div class="main">
+                        <h2><img src="http://img.modetour.com/modetour/2019/wemode/bg/main_tit.png" alt=""></h2>
+                       <!-- [s]: 검색창 -->
+                       <div class="search_area">
+                            <div class="write">
+                                <input type="text" value="관광도시 또는 국가 입력" onfocus="this.value=''" onfocusout="this.value='관광도시 또는 국가 입력'"/>
+                                <button><span class="text_blind">찾기</span></button>
+                                <ul class="search_box">
+                                    <li>
+                                        <a href="">
+                                           <strong>오</strong>사카
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <strong>오</strong>스트리아
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <strong>검색결과가 없습니다.</strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="date_choice">
+								<input type="text"  placeholder="출발일 선택" />
+								<button class="show_cal">달력보기</button>
+								<!-- calendar에 active 추가시 활성화 -->
+								<div class="calendar">
+                                    <div class="year-month">
+                                        <a href="" class="prev_month"><span class="text_blind">이전달</span></a>
+                                        <select name="selectDay" id="selectDay">
+                                            <option>2019.06</option>
+                                            <option>2019.07</option>
+                                            <option>2019.08</option>
+                                        </select>
+                                        <a href="" class="next_month"><span class="text_blind">다음달</span></a>
+                                    </div>
+                                    <table date-month="2016.06">
+                                        <thead>
+                                            <tr>
+                                                <th class="sun" scope="col">일</th>
+                                                <th scope="col">월</th>
+                                                <th scope="col">화</th>
+                                                <th scope="col">수</th>
+                                                <th scope="col">목</th>
+                                                <th scope="col">금</th>
+                                                <th class="sat" scope="col">토</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="sun past"><a href="#">29</a></td>
+                                                <td class="past"><a href="#">30</a></td>
+                                                <td class="past"><a href="#">31</a></td>
+                                                <td class="past"><a href="#">1</a></td>
+                                                <td class="past"><a href="#">2</a></td>
+                                                <td class="past"><a href="#">3</a></td>
+                                                <td class="sat past"><a href="#" >4</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun selected"><a href="#">5</a></td>
+                                                <td><a href="#">6</a></td>
+                                                <td><a href="#">7</a></td>
+                                                <td><a href="#">8</a></td>
+                                                <td><a href="#">9</a></td>
+                                                <td><a href="#">10</a></td>
+                                                <td class="sat"><a href="#">11</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun"><a href="#">12</a></td>
+                                                <td><a href="#">13</a></td>
+                                                <td><a href="#">14</a></td>
+                                                <td><a href="#">15</a></td>
+                                                <td><a href="#">16</a></td>
+                                                <td><a href="#">17</a></td>
+                                                <td class="sat"><a href="#">18</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun"><a href="#">19</a></td>
+                                                <td><a href="#">20</a></td>
+                                                <td><a href="#">21</a></td>
+                                                <td><a href="#">22</a></td>
+                                                <td><a href="#">23</a></td>
+                                                <td><a href="#">24</a></td>
+                                                <td class="sat"><a href="#">25</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sun"><a href="#">26</a></td>
+                                                <td><a href="#">27</a></td>
+                                                <td><a href="#">28</a></td>
+                                                <td><a href="#">29</a></td>
+                                                <td><a href="#">30</a></td>
+                                                <td class="past"><a href="#">1</a></td>
+                                                <td class="sat past"><a href="#">2</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <a href="" class="btn_cancle"><img src="http://img.modetour.com/modetour/2019/wemode/bg/btn_c_cancle.jpg" alt="취소하기"></a>
+                                    <a href="" class="btn_ok"><img src="http://img.modetour.com/modetour/2019/wemode/bg/btn_c_complete.jpg" alt="선택완료"></a>
+								</div><!-- calendar -->
+                            </div><!-- date_choice -->
+                            <a href="" class="search_btn"><img src="http://img.modetour.com/modetour/2019/wemode/bg/btn_find.jpg" alt="찾기"></a>
+                            <ul class="radio_list">
+                                <li>
+                                    <input type="radio" id="trip1" checked="checked" name="tripType" />
+                                    <label for="trip1"><span></span>패키지</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="trip2" name="tripType" />
+                                    <label for="trip2"><span></span>에어텔 (항공+호텔)</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="trip3" name="tripType" />
+                                    <label for="trip3"><span></span>골프</label>
+                                </li>
+                            </ul>
+                       </div><!-- search_area -->
+                       <!-- [e]: 검색창 -->
+                    </div>
+                    <div class="tour_qa">
+                        <img src="http://img.modetour.com/modetour/2019/wemode/bg/tour_qa.jpg" alt="" usemap="#qa_link">
+                        <map id="qa_link" name="qa_link">
+                            <area shape="rect" coords="59,332,360,412" href="" target="" alt="나만의 프라이빗 투어 견적요청하기" />
+                            <area shape="rect" coords="738,333,1039,412" href="" target="" alt="항공예약하기" />
+                        </map>
+                    </div>
+                    <div class="bottom">
+                        <div class="s_infor">
+                            <img src="http://img.modetour.com/modetour/2019/wemode/bg/service_infor.png" alt="">
+                        </div>
+                        <div class="con2 bigTab">
+                            <h3><img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_tit.png" alt="최근 3개월간 프라이빗 투어 인기지역"></h3>
+                            <ul class="tab">
+                                <li class="tab01 on"><a href=""><span class="text_blind">동남아</span></a></li>
+                                <li class="tab02"><a href=""><span class="text_blind">일본</span></a></li>
+                                <li class="tab03"><a href=""><span class="text_blind">중국</span></a></li>
+                                <li class="tab04"><a href=""><span class="text_blind">유럽</span></a></li>
+                                <li class="tab05"><a href=""><span class="text_blind">미주</span></a></li>
+                                <li class="tab06"><a href=""><span class="text_blind">남태평양</span></a></li>
+                            </ul>
+                            <div class="con_wrap">
+                                <!-- [s]:동남아 -->
+                                <div class="content">
+                                    <i><img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in1_ico.png" alt=""></i>
+                                    <img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in1_img1.jpg" alt="">
+                                    <img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in1_img2.jpg" alt="">
+                                    <img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in1_img3.jpg" alt="">
+                                    <div class="list">
+                                        <p>동남아 인기지역</p>
+                                        <ol>
+                                            <li class="one">싱가포르</li>
+                                            <li class="two">치앙마이</li>
+                                            <li class="three">말레이시아</li>
+                                            <li class="four">다낭</li>
+                                            <li class="five">캄보디아</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <!-- [e]:동남아 -->
+                                <!-- [s]:일본 -->
+                                <div class="content">
+                                    <i><img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in2_ico.png" alt=""></i>
+                                    <img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in2_img1.jpg" alt="">
+                                    <img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in2_img2.jpg" alt="">
+                                    <img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in2_img3.jpg" alt="">
+                                    <div class="list">
+                                        <p>일본 인기지역</p>
+                                        <ol>
+                                            <li class="one">오사카</li>
+                                            <li class="two">북해도</li>
+                                            <li class="three">규슈</li>
+                                            <li class="four">오키나와</li>
+                                            <li class="five">도쿄</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <!-- [e]:일본 -->
+                                <!-- [s]:중국 -->
+                                <div class="content">
+                                    <i><img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in3_ico.png" alt=""></i>
+                                    <img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in3_img1.jpg" alt="">
+                                    <img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in3_img2.jpg" alt="">
+                                    <img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in3_img3.jpg" alt="">
+                                    <div class="list">
+                                        <p>중국 인기지역</p>
+                                        <ol>
+                                            <li class="one">북경</li>
+                                            <li class="two">장가계</li>
+                                            <li class="three">상해</li>
+                                            <li class="four">곤명</li>
+                                            <li class="five">계림</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <!-- [e]:중국 -->
+                                <!-- [s]:유럽 -->
+                                <div class="content">
+                                    <i><img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in4_ico.png" alt=""></i>
+                                    <img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in4_img1.jpg" alt="">
+                                    <img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in4_img2.jpg" alt="">
+                                    <img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in4_img3.jpg" alt="">
+                                    <div class="list">
+                                        <p>유럽 인기지역</p>
+                                        <ol>
+                                            <li class="one">스페인</li>
+                                            <li class="two">이태리</li>
+                                            <li class="three">스위스</li>
+                                            <li class="four">러시아</li>
+                                            <li class="five">아프리카</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <!-- [e]:유럽 -->
+                                <!-- [s]:미주 -->
+                                <div class="content">
+                                    <i><img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in5_ico.png" alt=""></i>
+                                    <img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in5_img1.jpg" alt="">
+                                    <img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in5_img2.jpg" alt="">
+                                    <img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in5_img3.jpg" alt="">
+                                    <div class="list">
+                                        <p>미주 인기지역</p>
+                                        <ol>
+                                            <li class="one">라스베가스</li>
+                                            <li class="two">하와이</li>
+                                            <li class="three">캐나다</li>
+                                            <li class="four">샌프란시스코</li>
+                                            <li class="five">뉴욕</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <!-- [e]:미주 -->
+                                <!-- [s]:남태평양 -->
+                                <div class="content">
+                                    <i><img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in6_ico.png" alt=""></i>
+                                    <img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in6_img1.jpg" alt="">
+                                    <img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in6_img2.jpg" alt="">
+                                    <img src="http://img.modetour.com/modetour/2019/wemode/bg/con2_in6_img3.jpg" alt="">
+                                    <div class="list">
+                                        <p>남태평양 인기지역</p>
+                                        <ol>
+                                            <li class="one">괌</li>
+                                            <li class="two">사이판</li>
+                                            <li class="three">팔라우</li>
+                                            <li class="four">호주</li>
+                                            <li class="five">뉴질랜드</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <!-- [e]:남태평양 -->
+                            </div>
+                        </div><!-- con2 -->
+                        <div class="con1 bigTab">
+                            <h3><img src="http://img.modetour.com/modetour/2019/wemode/bg/con1_tit.png" alt="우리끼리 여행가기 딱 좋은 단체별 추천지역"></h3>
+                            <div class="con1_in">
+                                <ul class="tab">
+                                    <li class="tab01 on"><a href=""><span class="text_blind">할아버지,할머니와 함께</span></a></li>
+                                    <li class="tab02"><a href=""><span class="text_blind">아빠,엄마와 함께</span></a></li>
+                                    <li class="tab03"><a href=""><span class="text_blind">부부동반 지인들과 함께</span></a></li>
+                                    <li class="tab04"><a href=""><span class="text_blind">여중,여고 친구들과 함께</span></a></li>
+                                    <li class="tab05"><a href=""><span class="text_blind">엄마들,아이들과 함께</span></a></li>
+                                </ul>
+                                <!-- [s]: 19-10-01 수정 -->
+                                <div class="con_wrap">
+                                    <div class="content" id="con1_in1">
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <div class="img">
+                                                        <div style="background: url('http://img.modetour.com/promotion/10857/in1_img1.jpg') center no-repeat;"></div>
+                                                    </div>
+                                                    <div class="hide">
+                                                        <div class="wrap">
+                                                            <p class="tit">나트랑 패키지 4/5일</p>
+                                                            <p class="txt">아동반값 휴향형 패키지, 아동반값 휴향형 패키지</p>
+                                                            <p class="price">825,200원~</p>
+                                                        </div>
+                                                    </div>
+                                                    <span>사이판</span>  
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <div class="img">
+                                                        <div style="background: url('http://img.modetour.com/promotion/10857/in1_img1.jpg') center no-repeat;"></div>
+                                                    </div>
+                                                    <div class="hide">
+                                                        <div class="wrap">
+                                                            <p class="tit">나트랑 패키지 4/5일</p>
+                                                            <p class="txt">아동반값 휴향형 패키지, 아동반값 휴향형 패키지</p>
+                                                            <p class="price">825,200원~</p>
+                                                        </div>
+                                                    </div>
+                                                    <span>나트랑</span>  
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <div class="img">
+                                                        <div style="background: url('http://img.modetour.com/promotion/10857/in1_img1.jpg') center no-repeat;"></div>
+                                                    </div>
+                                                    <div class="hide">
+                                                        <div class="wrap">
+                                                            <p class="tit">나트랑 패키지 4/5일</p>
+                                                            <p class="txt">아동반값 휴향형 패키지, 아동반값 휴향형 패키지</p>
+                                                            <p class="price">825,200원~</p>
+                                                        </div>
+                                                    </div>
+                                                    <span>싱가포르 (센토사/레고랜드)</span>  
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="content" id="con1_in2">
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <div class="img">
+                                                        <div style="background: url('http://img.modetour.com/promotion/10857/in1_img1.jpg') center no-repeat;"></div>
+                                                    </div>
+                                                    <div class="hide">
+                                                        <div class="wrap">
+                                                            <p class="tit">나트랑 패키지 4/5일</p>
+                                                            <p class="txt">아동반값 휴향형 패키지, 아동반값 휴향형 패키지</p>
+                                                            <p class="price">825,200원~</p>
+                                                        </div>
+                                                    </div>
+                                                    <span>사이판</span>  
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <div class="img">
+                                                        <div style="background: url('http://img.modetour.com/promotion/10857/in1_img1.jpg') center no-repeat;"></div>
+                                                    </div>
+                                                    <div class="hide">
+                                                        <div class="wrap">
+                                                            <p class="tit">나트랑 패키지 4/5일</p>
+                                                            <p class="txt">아동반값 휴향형 패키지, 아동반값 휴향형 패키지</p>
+                                                            <p class="price">825,200원~</p>
+                                                        </div>
+                                                    </div>
+                                                    <span>나트랑</span>  
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <div class="img">
+                                                        <div style="background: url('http://img.modetour.com/promotion/10857/in1_img1.jpg') center no-repeat;"></div>
+                                                    </div>
+                                                    <div class="hide">
+                                                        <div class="wrap">
+                                                            <p class="tit">나트랑 패키지 4/5일</p>
+                                                            <p class="txt">아동반값 휴향형 패키지, 아동반값 휴향형 패키지</p>
+                                                            <p class="price">825,200원~</p>
+                                                        </div>
+                                                    </div>
+                                                    <span>싱가포르 (센토사/레고랜드)</span>  
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="content" id="con1_in3">
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <div class="img">
+                                                        <div style="background: url('http://img.modetour.com/promotion/10857/in1_img1.jpg') center no-repeat;"></div>
+                                                    </div>
+                                                    <div class="hide">
+                                                        <div class="wrap">
+                                                            <p class="tit">나트랑 패키지 4/5일</p>
+                                                            <p class="txt">아동반값 휴향형 패키지, 아동반값 휴향형 패키지</p>
+                                                            <p class="price">825,200원~</p>
+                                                        </div>
+                                                    </div>
+                                                    <span>나트랑</span>  
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <div class="img">
+                                                        <div style="background: url('http://img.modetour.com/promotion/10857/in1_img1.jpg') center no-repeat;"></div>
+                                                    </div>
+                                                    <div class="hide">
+                                                        <div class="wrap">
+                                                            <p class="tit">나트랑 패키지 4/5일</p>
+                                                            <p class="txt">아동반값 휴향형 패키지, 아동반값 휴향형 패키지</p>
+                                                            <p class="price">825,200원~</p>
+                                                        </div>
+                                                    </div>
+                                                    <span>싱가포르 (센토사/레고랜드)</span>  
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <div class="img">
+                                                        <div style="background: url('http://img.modetour.com/promotion/10857/in1_img1.jpg') center no-repeat;"></div>
+                                                    </div>
+                                                    <div class="hide">
+                                                        <div class="wrap">
+                                                            <p class="tit">나트랑 패키지 4/5일</p>
+                                                            <p class="txt">아동반값 휴향형 패키지, 아동반값 휴향형 패키지</p>
+                                                            <p class="price">825,200원~</p>
+                                                        </div>
+                                                    </div>
+                                                    <span>나트랑</span>  
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="content" id="con1_in4">
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <div class="img">
+                                                        <div style="background: url('http://img.modetour.com/promotion/10857/in1_img1.jpg') center no-repeat;"></div>
+                                                    </div>
+                                                    <div class="hide">
+                                                        <div class="wrap">
+                                                            <p class="tit">나트랑 패키지 4/5일</p>
+                                                            <p class="txt">아동반값 휴향형 패키지, 아동반값 휴향형 패키지</p>
+                                                            <p class="price">825,200원~</p>
+                                                        </div>
+                                                    </div>
+                                                    <span>사이판</span>  
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <div class="img">
+                                                        <div style="background: url('http://img.modetour.com/promotion/10857/in1_img1.jpg') center no-repeat;"></div>
+                                                    </div>
+                                                    <div class="hide">
+                                                        <div class="wrap">
+                                                            <p class="tit">나트랑 패키지 4/5일</p>
+                                                            <p class="txt">아동반값 휴향형 패키지, 아동반값 휴향형 패키지</p>
+                                                            <p class="price">825,200원~</p>
+                                                        </div>
+                                                    </div>
+                                                    <span>나트랑</span>  
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <div class="img">
+                                                        <div style="background: url('http://img.modetour.com/promotion/10857/in1_img1.jpg') center no-repeat;"></div>
+                                                    </div>
+                                                    <div class="hide">
+                                                        <div class="wrap">
+                                                            <p class="tit">나트랑 패키지 4/5일</p>
+                                                            <p class="txt">아동반값 휴향형 패키지, 아동반값 휴향형 패키지</p>
+                                                            <p class="price">825,200원~</p>
+                                                        </div>
+                                                    </div>
+                                                    <span>싱가포르 (센토사/레고랜드)</span>  
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="content" id="con1_in5">
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <div class="img">
+                                                        <div style="background: url('http://img.modetour.com/promotion/10857/in1_img1.jpg') center no-repeat;"></div>
+                                                    </div>
+                                                    <div class="hide">
+                                                        <div class="wrap">
+                                                            <p class="tit">나트랑 패키지 4/5일</p>
+                                                            <p class="txt">아동반값 휴향형 패키지, 아동반값 휴향형 패키지</p>
+                                                            <p class="price">825,200원~</p>
+                                                        </div>
+                                                    </div>
+                                                    <span>사이판</span>  
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <div class="img">
+                                                        <div style="background: url('http://img.modetour.com/promotion/10857/in1_img1.jpg') center no-repeat;"></div>
+                                                    </div>
+                                                    <div class="hide">
+                                                        <div class="wrap">
+                                                            <p class="tit">나트랑 패키지 4/5일</p>
+                                                            <p class="txt">아동반값 휴향형 패키지, 아동반값 휴향형 패키지</p>
+                                                            <p class="price">825,200원~</p>
+                                                        </div>
+                                                    </div>
+                                                    <span>나트랑</span>  
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <div class="img">
+                                                        <div style="background: url('http://img.modetour.com/promotion/10857/in1_img1.jpg') center no-repeat;"></div>
+                                                    </div>
+                                                    <div class="hide">
+                                                        <div class="wrap">
+                                                            <p class="tit">나트랑 패키지 4/5일</p>
+                                                            <p class="txt">아동반값 휴향형 패키지, 아동반값 휴향형 패키지</p>
+                                                            <p class="price">825,200원~</p>
+                                                        </div>
+                                                    </div>
+                                                    <span>싱가포르 (센토사/레고랜드)</span>  
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- [e]: 19-10-01 수정 -->
+                            </div>
+                        </div>
+                         <!-- [s]: 19-11-01 수정 -->
+                        <div class="con3">
+                            <h3><img src="http://img.modetour.com/modetour/2019/wemode/bg/con3_tit.png" alt=""></h3>
+                            <div class="slide_wrap">
+                                <ul class="cycle-slideshow" 
+                                    data-cycle-fx=scrollHorz
+                                    data-cycle-slides=">li" 
+                                    data-cycle-timeout="0"
+                                    data-cycle-prev="#con3_prev"
+                                    data-cycle-next="#con3_next"
+                                    data-cycle-pager="#con3_pager"
+                                >
+                                    <li>
+                                        <img src="http://img.modetour.com/modetour/2019/wemode/bg/event_slide1.jpg" alt="">
+                                        <div class="infor">
+                                            <dl>
+                                                <dt>[다이어트특가] 계림 양삭 5일&lt;계림호텔 준 5성 up&gt;</dt>
+                                                <dd>
+                                                    한폭의 산수화 같은 풍경의 계림과 계림에서도 가장 빼어난 절경을 지닌 양삭지역 및 계단식 논과 온천지로 유명한 용승지역을 둘러보는 코스입니다. 한폭의 산수화 같은 풍경의 계림과 계림에서도 가장
+                                                    빼어난 절경을 지닌 양삭지역 및 계단식 논과 온천지로 유명한 용승지역을 둘러보는 코스입니다. 한폭의 산수화 같은 풍경의 계림과 계림에서도 가장 빼어난 절경을 지닌 
+                                                    양삭지역 및 계단식 논과 온천지로 유명한 용승지역을 둘러보는 코스입니다.한폭의 산수화 같은 풍경의 계림과 계림에서도 가장 빼어난 절경을 지닌 
+                                                    양삭지역 및 계단식 논과 온천지로 유명한 용승지역을 둘러보는 코스입니다.
+                                                </dd>
+                                            </dl>
+                                            <p class="price">29,926,000원~</p>
+                                            <a href=""><img src="http://img.modetour.com/modetour/2019/wemode/bg/btn_qa.jpg" alt=""></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="http://img.modetour.com/modetour/2019/wemode/bg/event_slide1.jpg" alt="">
+                                        <div class="infor">
+                                            <dl>
+                                                <dt>[다이어트특가] 계림 양삭 5일&lt;계림호텔 준 5성 up&gt;</dt>
+                                                <dd>
+                                                    한폭의 산수화 같은 풍경의 계림과 계림에서도 가장 빼어난 절경을 지닌 양삭지역 및 계단식 논과 온천지로 유명한 용승지역을 둘러보는 코스입니다. 한폭의 산수화 같은 풍경의 계림과 계림에서도 가장
+                                                    빼어난 절경을 지닌 양삭지역 및 계단식 논과 온천지로 유명한 용승지역을 둘러보는 코스입니다. 한폭의 산수화 같은 풍경의 계림과 계림에서도 가장 빼어난 절경을 지닌 
+                                                    양삭지역 및 계단식 논과 온천지로 유명한 용승지역을 둘러보는 코스입니다.
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="http://img.modetour.com/modetour/2019/wemode/bg/event_slide1.jpg" alt="">
+                                        <div class="infor">
+                                            <dl>
+                                                <dt>[다이어트특가] 계림 양삭 5일&lt;계림호텔 준 5성 up&gt;</dt>
+                                                <dd>
+                                                    한폭의 산수화 같은 풍경의 계림과 계림에서도 가장 빼어난 절경을 지닌 양삭지역 및 계단식 논과 온천지로 유명한 용승지역을 둘러보는 코스입니다. 한폭의 산수화 같은 풍경의 계림과 계림에서도 가장
+                                                    빼어난 절경을 지닌 양삭지역 및 계단식 논과 온천지로 유명한 용승지역을 둘러보는 코스입니다. 한폭의 산수화 같은 풍경의 계림과 계림에서도 가장 빼어난 절경을 지닌 
+                                                    양삭지역 및 계단식 논과 온천지로 유명한 용승지역을 둘러보는 코스입니다.
+                                                </dd>
+                                            </dl>
+                                        </div>    
+                                    </li>
+                                    <li>
+                                        <img src="http://img.modetour.com/modetour/2019/wemode/bg/event_slide1.jpg" alt="">
+                                        <div class="infor">
+                                            <dl>
+                                                <dt>[다이어트특가] 계림 양삭 5일&lt;계림호텔 준 5성 up&gt;</dt>
+                                                <dd>
+                                                    한폭의 산수화 같은 풍경의 계림과 계림에서도 가장 빼어난 절경을 지닌 양삭지역 및 계단식 논과 온천지로 유명한 용승지역을 둘러보는 코스입니다. 한폭의 산수화 같은 풍경의 계림과 계림에서도 가장
+                                                    빼어난 절경을 지닌 양삭지역 및 계단식 논과 온천지로 유명한 용승지역을 둘러보는 코스입니다. 한폭의 산수화 같은 풍경의 계림과 계림에서도 가장 빼어난 절경을 지닌 
+                                                    양삭지역 및 계단식 논과 온천지로 유명한 용승지역을 둘러보는 코스입니다.
+                                                </dd>
+                                            </dl>
+                                        </div>    
+                                    </li>
+                                </ul>
+                                <div class="cycle-pager" id=con3_pager></div>
+                                <span id="con3_prev"><span class="text_blind">이전</span></span>
+                                <span id="con3_next"><span class="text_blind">다음</span></span>
+                            </div>
+                        </div><!-- con3 -->
+                        <!-- [e]: 19-11-01 수정 -->
+                        <div class="con4">
+                            <h2><img src="http://img.modetour.com/modetour/2019/wemode/bg/con4_tit.png" alt=""></h2>
+                            <div class="tab_wrap">
+                                <img src="http://img.modetour.com/modetour/2019/wemode/bg/reveiw_bg0-min.jpg" alt="" usemap="#honey" class="review_bg">
+                                <map name="honey" id="honey">
+                                    <area shape="poly" coords="79,44,154,0,228,44,228,134,154,178,79,134" href="" alt="">
+                                    <area shape="poly" coords="1,186,73,142,148,186,148,273,73,318,1,273" href="" alt="">
+                                    <area shape="poly" coords="160,186,234,142,308,186,234,318,160,275" href="" alt="">
+                                    <area shape="poly" coords="79,329,154,283,227,329,227,415,154,459,81,415" href="" alt="">
+                                    <area shape="poly" coords="160,468,234,424,309,468,309,555,234,599,161,555" href="" alt="">
+                                    <area shape="poly" coords="850,45,924,0,997,45,998,131,923,177,850,134" href="" alt="">
+                                    <area shape="poly" coords="1010,45,1084,0,1158,45,1158,132,1084,177,1010,132" href="" alt="">
+                                    <area shape="poly" coords="929,186,1003,141,1075,187,1075,273,1003,318,930,273" href="" alt="">
+                                    <area shape="poly" coords="1010,328,1084,282,1159,327,1159,414,1085,458,1012,415" href="" alt="">
+                                    <area shape="poly" coords="930,467,1003,423,1077,467,1077,556,1003,598,931,556" href="" alt="">
+                                </map>
+                                <ul class="list">
+                                    <li class="list1 on">
+                                        <p class="area">태국｜파타야</p>
+                                        <p><img src="http://img.modetour.com/modetour/2019/wemode/bg/star_5.png" alt=""></p>
+                                        <p class="txt">방콕.파타야 3박 5일 추천후기~(장성준 가이드님★)</p>
+                                    </li>
+                                    <li class="list2">
+                                        <p class="area">일본｜오사카</p>
+                                        <p><img src="http://img.modetour.com/modetour/2019/wemode/bg/star_5.png" alt=""></p>
+                                        <p class="txt">여고동창들과의 추억여행</p>
+                                    </li>
+                                    <li class="list3">
+                                        <p class="area">중국｜마카오</p>
+                                        <p><img src="http://img.modetour.com/modetour/2019/wemode/bg/star_4.png" alt=""></p>
+                                        <p class="txt">방콕.파타야 3박 5일 추천후기~(장성준 가이드님★)</p>
+                                    </li>
+                                    <li class="list4">
+                                        <p class="area">중국｜계림</p>
+                                        <p><img src="http://img.modetour.com/modetour/2019/wemode/bg/star_5.png" alt=""></p>
+                                        <p class="txt">방콕.파타야 3박 5일 추천후기~(장성준 가이드님★)</p>
+                                    </li>
+                                    <li class="list5">
+                                        <p class="area">태국｜파타야</p>
+                                        <p><img src="http://img.modetour.com/modetour/2019/wemode/bg/star_5.png" alt=""></p>
+                                        <p class="txt">방콕.파타야 3박 5일 추천후기~(장성준 가이드님★)</p>
+                                    </li>
+                                    <li class="list6">
+                                        <p class="area">필리핀｜보라카이</p>
+                                        <p><img src="http://img.modetour.com/modetour/2019/wemode/bg/star_5.png" alt=""></p>
+                                        <p class="txt">방콕.파타야 3박 5일 추천후기~(장성준 가이드님★)</p>
+                                    </li>
+                                    <li class="list7">
+                                        <p class="area">영국｜런던</p>
+                                        <p><img src="http://img.modetour.com/modetour/2019/wemode/bg/star_4.png" alt=""></p>
+                                        <p class="txt">방콕.파타야 3박 5일 추천후기~(장성준 가이드님★)</p>
+                                    </li>
+                                    <li class="list8">
+                                        <p class="area">호주｜시드니</p>
+                                        <p><img src="http://img.modetour.com/modetour/2019/wemode/bg/star_5.png" alt=""></p>
+                                        <p class="txt">방콕.파타야 3박 5일 추천후기~(장성준 가이드님★)</p>
+                                    </li>
+                                    <li class="list9">
+                                        <p class="area">태국｜파타야</p>
+                                        <p><img src="http://img.modetour.com/modetour/2019/wemode/bg/star_5.png" alt=""></p>
+                                        <p class="txt">방콕.파타야 3박 5일 추천후기~(장성준 가이드님★)</p>
+                                    </li>
+                                    <li class="list10">
+                                        <p class="area">일본｜나고야</p>
+                                        <p><img src="http://img.modetour.com/modetour/2019/wemode/bg/star_4.png" alt=""></p>
+                                        <p class="txt">방콕.파타야 3박 5일 추천후기~(장성준 가이드님★)</p>
+                                    </li>
+                                </ul>
+                                <div class="con_wrap">
+                                    <div class="content">
+                                        <p class="area">태국<span>｜</span>파타야</p>
+                                        <p class="star"><img src="http://img.modetour.com/modetour/2019/wemode/bg/star_5.png" alt=""></p>
+                                        <p class="tit">방콕.파타야 3박 5일 추천후기~(장성준 가이드님★)</p>
+                                        <ul>
+                                            <li class="user">송강호</li>
+                                            <li class="date">2019.04.16</li>
+                                        </ul>
+                                        <p class="txt">
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                        </p>
+                                        <a href=""><span class="text_blind">리뷰 자세히 보기</span></a>
+                                    </div>
+                                    <div class="content">
+                                        <p class="area">일본<span>｜</span>오사카</p>
+                                        <p class="star"><img src="http://img.modetour.com/modetour/2019/wemode/bg/star_5.png" alt=""></p>
+                                        <p class="tit">여고 동창들과의 추억여행</p>
+                                        <ul>
+                                            <li class="user">송강호</li>
+                                            <li class="date">2019.04.16</li>
+                                        </ul>
+                                        <p class="txt">
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                        </p>
+                                        <a href=""><span class="text_blind">리뷰 자세히 보기</span></a>
+                                    </div>
+                                    <div class="content">
+                                        <p class="area">중국<span>｜</span>장가계</p>
+                                        <p class="star"><img src="http://img.modetour.com/modetour/2019/wemode/bg/star_4.png" alt=""></p>
+                                        <p class="tit">진솔후기) 갈성투어 김광철 가이드님 덕분에 시어머님과 며느리가 행복한 추억을 만들었습니다.</p>
+                                        <ul>
+                                            <li class="user">송강호</li>
+                                            <li class="date">2019.04.16</li>
+                                        </ul>
+                                        <p class="txt">
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                        </p>
+                                        <a href=""><span class="text_blind">리뷰 자세히 보기</span></a>
+                                    </div>
+                                    <div class="content">
+                                        <p class="area">중국<span>｜</span>계림</p>
+                                        <p class="star"><img src="http://img.modetour.com/modetour/2019/wemode/bg/star_4.png" alt=""></p>
+                                        <p class="tit">진솔후기) 갈성투어 김광철 가이드님 덕분에 시어머님과 며느리가 행복한 추억을 만들었습니다.</p>
+                                        <ul>
+                                            <li class="user">송강호</li>
+                                            <li class="date">2019.04.16</li>
+                                        </ul>
+                                        <p class="txt">
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                        </p>
+                                        <a href=""><span class="text_blind">리뷰 자세히 보기</span></a>
+                                    </div>
+                                    <div class="content">
+                                        <p class="area">태국<span>｜</span>파타야</p>
+                                        <p class="star"><img src="http://img.modetour.com/modetour/2019/wemode/bg/star_4.png" alt=""></p>
+                                        <p class="tit">진솔후기) 갈성투어 김광철 가이드님 덕분에 시어머님과 며느리가 행복한 추억을 만들었습니다.</p>
+                                        <ul>
+                                            <li class="user">송강호</li>
+                                            <li class="date">2019.04.16</li>
+                                        </ul>
+                                        <p class="txt">
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                        </p>
+                                        <a href=""><span class="text_blind">리뷰 자세히 보기</span></a>
+                                    </div>
+                                    <div class="content">
+                                        <p class="area">필리핀<span>｜</span>보라카이</p>
+                                        <p class="star"><img src="http://img.modetour.com/modetour/2019/wemode/bg/star_5.png" alt=""></p>
+                                        <p class="tit">진솔후기) 갈성투어 김광철 가이드님 덕분에 시어머님과 며느리가 행복한 추억을 만들었습니다.</p>
+                                        <ul>
+                                            <li class="user">송강호</li>
+                                            <li class="date">2019.04.16</li>
+                                        </ul>
+                                        <p class="txt">
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                        </p>
+                                        <a href=""><span class="text_blind">리뷰 자세히 보기</span></a>
+                                    </div>
+                                    <div class="content">
+                                        <p class="area">영국<span>｜</span>런던</p>
+                                        <p class="star"><img src="http://img.modetour.com/modetour/2019/wemode/bg/star_4.png" alt=""></p>
+                                        <p class="tit">진솔후기) 갈성투어 김광철 가이드님 덕분에 시어머님과 며느리가 행복한 추억을 만들었습니다.</p>
+                                        <ul>
+                                            <li class="user">송강호</li>
+                                            <li class="date">2019.04.16</li>
+                                        </ul>
+                                        <p class="txt">
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                        </p>
+                                        <a href=""><span class="text_blind">리뷰 자세히 보기</span></a>
+                                    </div>
+                                    <div class="content">
+                                        <p class="area">호주<span>｜</span>시드니</p>
+                                        <p class="star"><img src="http://img.modetour.com/modetour/2019/wemode/bg/star_4.png" alt=""></p>
+                                        <p class="tit">진솔후기) 갈성투어 김광철 가이드님 덕분에 시어머님과 며느리가 행복한 추억을 만들었습니다.</p>
+                                        <ul>
+                                            <li class="user">송강호</li>
+                                            <li class="date">2019.04.16</li>
+                                        </ul>
+                                        <p class="txt">
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                        </p>
+                                        <a href=""><span class="text_blind">리뷰 자세히 보기</span></a>
+                                    </div>
+                                    <div class="content">
+                                        <p class="area">태국<span>｜</span>파타야</p>
+                                        <p class="star"><img src="http://img.modetour.com/modetour/2019/wemode/bg/star_5.png" alt=""></p>
+                                        <p class="tit">진솔후기) 갈성투어 김광철 가이드님 덕분에 시어머님과 며느리가 행복한 추억을 만들었습니다.</p>
+                                        <ul>
+                                            <li class="user">송강호</li>
+                                            <li class="date">2019.04.16</li>
+                                        </ul>
+                                        <p class="txt">
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                        </p>
+                                        <a href=""><span class="text_blind">리뷰 자세히 보기</span></a>
+                                    </div>
+                                    <div class="content">
+                                        <p class="area">일본<span>｜</span>나고야</p>
+                                        <p class="star"><img src="http://img.modetour.com/modetour/2019/wemode/bg/star_4.png" alt=""></p>
+                                        <p class="tit">진솔후기) 갈성투어 김광철 가이드님 덕분에 시어머님과 며느리가 행복한 추억을 만들었습니다.</p>
+                                        <ul>
+                                            <li class="user">송강호</li>
+                                            <li class="date">2019.04.16</li>
+                                        </ul>
+                                        <p class="txt">
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                            열정패이 김광철 가이드님 덕분에 너무 즐겁고 행복한 장가계 여행이였습니다. 가이드님 무릎도 살과 뼈로 이뤄져있는데..ㅜㅜ<br />
+                                            여기서 믿을 사람은 본인밖에 없지 않냐며.. 본인의 무릎은 아끼지 않으시고, 모든 코스코스 함께 해주셔서 너무 든든하고 감사했습니다.
+                                        </p>
+                                        <a href=""><span class="text_blind">리뷰 자세히 보기</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- con4 -->
+                    </div>
+                </div>
+                <!-- [끝]: 위모두 -->
+            </div>
+        </div>
+        <div id="footer">
+        	<div class="footer_ban_top" id="FooterBanTop"></div>
+        	<div class="footer_section01">
+        		<div class="content-section">
+        			<a href="#">회사소개</a>
+        			<a href="#"><strong>개인정보처리방침</strong></a>
+        			<a href="#">여행약관</a>
+        			<a href="#">이용약관</a>
+        			<a href="#">여행보험</a>
+        			<a href="#">온라인제휴안내</a>
+        			<a href="#">여행플래너</a>
+        			<a href="#">대리점개설문의</a>
+        		</div>
+        	</div>
+        	<div class="footer_section02">
+        		<div class="content-section">
+        			<h1><img src="http://img.modetour.com/modetour/2016/common/footer_logo.png" alt="" /></h1>
+        			<address>대표 : 우종웅 | 개인정보관리 책임자 : 김현준 (주)모두투어네트워크<br />
+        			사업자 등록번호 : 202-81-45295 | 통신판매업신고번호 : 중구 제03500호 | 호스팅 업체 : (주)모두투어네트워크<br />
+        			관광사업자 등록번호 : 1989-04(서울특별시 중구) | 영업여행업보증 : 15억 1천만원 | 기획여행업보증 : 7억원<br />
+        			고객센터 : 1544-5252 | FAX : 02-2021-7800 | 주소 : 서울특별시 중구 을지로 16 백남빌딩 5층<br />
+        			※ 부득이한 사정에 의해 확정된 여행일정이 변경되는 경우 여행자의 사전 동의를 받습니다.<br />
+        			COPYRIGHT 1988-2015 MODETOUR ALL RIGHTS RESERVED.</address>
+        			<a href="http://www.smartoutbound.or.kr/guide/html/guideInfo4.do?menu_code=0000000016" class="link_standard" target="_blank" title="국외여행상품 정보제공 표준안 바로가기">
+        				<img src="http://img.modetour.com/modetour/2016/common/img_standard.png" alt="국외여행상품 정보제공 표준안 참여여행사">
+        			</a>
+        			<div class="sns-link">
+        				<a class="facebook" href="https://www.facebook.com/modetournetwork" target="_blank" title="페이스북"><span class="blind">페이스북</span></a>
+        				<a class="blog" href="//blog.modetour.com/" target="_blank" title="블로그"><span class="blind">블로그</span></a>
+        				<a class="kakaotalk" href="//www.modetour.com/event/event_17/0201_kakao/mode.aspx?mloc=110101&amp;eidx2=1607&amp;gubun=" target="_blank" title="카카오톡"><span class="blind">카카오톡</span></a>
+        				<a class="kakaostory" href="https://story.kakao.com/ch/modetour" target="_blank" title="카카오스토리"><span class="blind">카카오스토리</span></a>
+        				<a class="post" href="http://naver.me/F1JoETyi" target="_blank" title="포스트"><span class="blind">포스트</span></a>
+        				<a class="instagram" href="//instagram.com/modetournetwork/" target="_blank" title="인스타그램"><span class="blind">인스타그램</span></a>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        <div class="dimmed"></div>
+        <div class="loading-layer" style="background-image:url('http://img.modetour.com/modetour/2016/dotcom/sample/bg_loading.jpg?output-quality=80');">
+        	<p><img src="http://img.modetour.com/modetour/2016/common/loading.gif" alt="" /></p>
+        	<p class="txt">Loading...</p>
+        	<p class="desc">다시 만나고 싶은 여행</p>
+        </div>
+        
+        <!-- 벌집 배경 이미지 미리 로드합니다. 깜빡임을 줄이기위해.. -->
+        <img src="http://img.modetour.com/modetour/2019/wemode/bg/reveiw_bg0-min.jpg" alt="" style="display: none;">
+        <img src="http://img.modetour.com/modetour/2019/wemode/bg/reveiw_bg1-min.jpg" alt="" style="display: none;">
+        <img src="http://img.modetour.com/modetour/2019/wemode/bg/reveiw_bg2-min.jpg" alt="" style="display: none;">
+        <img src="http://img.modetour.com/modetour/2019/wemode/bg/reveiw_bg3-min.jpg" alt="" style="display: none;">
+        <img src="http://img.modetour.com/modetour/2019/wemode/bg/reveiw_bg4-min.jpg" alt="" style="display: none;">
+        <img src="http://img.modetour.com/modetour/2019/wemode/bg/reveiw_bg5-min.jpg" alt="" style="display: none;">
+        <img src="http://img.modetour.com/modetour/2019/wemode/bg/reveiw_bg6-min.jpg" alt="" style="display: none;">
+        <img src="http://img.modetour.com/modetour/2019/wemode/bg/reveiw_bg7-min.jpg" alt="" style="display: none;">
+        <img src="http://img.modetour.com/modetour/2019/wemode/bg/reveiw_bg8-min.jpg" alt="" style="display: none;">
+        <img src="http://img.modetour.com/modetour/2019/wemode/bg/reveiw_bg9-min.jpg" alt="" style="display: none;">
+        <!-- 벌집 배경 이미지 미리 로드합니다. 깜빡임을 줄이기위해.. -->
+    </div>
+    <!-- [시작]: Common JS -->
+	
+<!-- 	<script src="../../../js/libs/ui_plugins.min.js"></script>
+	<script src="../../../js/ui_common.min.js"></script>
+    <script src="../../../js/html_exclusive.min.js"></script>
+    <script src="../../../js/swiper-4.1.0.min.js"></script> -->
+	<!-- [끝]: Common JS -->
+	<script>
+        //var $ = jQuery.noConflict();
+        $(document).ready(function(){
+
+            //[s]: 공통
+
+            //검색단 셀렉트박스 ui
+            $( "#selectDay" ).selectmenu();
+
+            //검색 input 클릭시 팝업
+            function searchArea(){
+                var ph = $('.search_area input[type="text"]').val();
+                var t = $(this);
+                if(!t.val() ==''){
+                    t.parent('.write').find('ul.search_box').addClass('active');
+                }else{
+                    t.parent('.write').find('ul.search_box').removeClass('active');
+                }
+            }
+            $('.search_area input').keyup(searchArea);
+
+            //달력 input시 팝업
+            function calShow(){
+                var t = $(this);
+                t.parent('.date_choice').find('.calendar').addClass('active');
+            }
+            $('.date_choice input,.date_choice .show_cal').click(calShow);
+
+            //달력 취소,완료버튼 클릭시 닫힘
+            function calBtn(){
+                var t = $(this);
+                t.parent('.calendar').removeClass('active');
+                return false;
+            }
+            $('.date_choice .btn_cancle,.date_choice .btn_ok').click(calBtn);
+            //[e]: 공통
+
+            function dpBlock(){
+                var t = $(this);
+                t.find('div.content:first').css('display','block');
+            }
+            $('div.con_wrap').each(dpBlock);
+
+            function Tabs(){
+                var t = $(this);
+                var idx = t.parent().index();
+                t.parent().addClass('on').siblings().removeClass('on');
+                t.closest('.bigTab').find('div.content').eq(idx).css('display','block').siblings().css('display','none');
+                return false;
+            }
+            $('.con2 .tab li a').click(Tabs);
+            $('.con1 .tab li a').click(Tabs);
+
+            //con3 이전,다음버튼 나타남
+            function mouseOver(){
+                $('span#con3_prev').stop().animate({'opacity':1,'left':0});
+                $('span#con3_next').stop().animate({'opacity':1,'right':0});
+            }
+            $('.con3 .slide_wrap').mouseenter(mouseOver);
+            
+            //con3 이전,다음버튼 없어짐
+            function mouseOut(){
+                $('span#con3_prev').stop().animate({'opacity':0,'left':'-30px'});
+                $('span#con3_next').stop().animate({'opacity':0,'right':'-30px'});
+            }
+            $('.con3 .slide_wrap').mouseleave(mouseOut);
+
+            //프라이빗투어 후기 탭
+            function reTabs(){
+                var t = $(this);
+                var idx = t.index();
+                t.parents('.con4').find('.tab_wrap').css({'background':'url(http://img.modetour.com/modetour/2019/wemode/bg/reveiw_bg'+idx+'-min.jpg) no-repeat'});
+                t.parents('.con4').find('ul.list li').eq(idx).addClass('on').siblings().removeClass('on');
+                t.parents('.con4').find('.con_wrap .content').eq(idx).css('display','block').siblings().css('display','none');
+                return false;
+            }
+            $('.con4 map area').click(reTabs);
+
+             //19.10.07 - 롤링 수정사항
+			var $mapLi = $('.con2 .tab li');
+			var $mapAnchor = $mapLi.find('a');
+			var inter;
+			var i = 0;
+			function rolling(){                
+				inter = setTimeout(function(){
+					if(i < ($mapLi.length-1) ) {
+						i++;
+					}else {
+						i=0
+					};					
+                    $mapLi.eq(i).addClass('on').siblings().removeClass('on');
+                    $('.con2 .con_wrap').find('.content').eq(i).show().siblings().hide();
+					rolling(); //재귀
+				}, 2000);
+			}
+			rolling();
+            $mapAnchor.on('click', function(){
+                var thisIndex = $(this).parent('li').index();
+                i = thisIndex ;
+                clearTimeout(inter);
+                rolling();
+            });
+
+        
+
+        });
+
+        </script>
+    </body>
+                

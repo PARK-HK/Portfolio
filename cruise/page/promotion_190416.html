@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/sub.css" />
+	<script src="../js/1.11.3.min.js"></script>
+	<script src="../js/active.js"></script>
+	<!-- [s]: 추가 플러그인 -->
+	<script src="../js/plugin/cycle2.js"></script>
+	<script src="../js/plugin/cycle2.carousel.js"></script>
+	<!-- [e]: 추가 플러그인 -->
+	<script type="text/javascript">
+		//카카오 팝업
+		function kakao(popHeight,popWidth){
+			var winHeight =  $( window ).height();
+			var winWidth = document.body.clientWidth;	// 현재창의 너비
+			var winX = window.screenLeft;	// 현재창의 x좌표
+			var winY = window.screenTop;	// 현재창의 y좌표
+			var popX = winX + (winWidth - popWidth)/2;
+			var popY = winY + (winHeight - popHeight)/2;
+			window.open("kakao_popup.html","popup","width="+popWidth+"px,height="+popHeight+"px,top="+popY+",left="+popX+",menubar=no, scrollbars=no, resizable=no");
+		}
+	</script>
+</head>
+<body>
+	<header class="promotion_head">
+		<h1 class="logo"><a href="main.html"></a></h1>
+		<a href="" class="btn_menu"></a>
+		<div class="menu_wrap"></div><!-- 하얀 배경 -->
+		<div class="menu_in">
+			<a href="" class="close"></a>
+			<ul class="big_menu">
+				<li><a href="company_infor.html">회사소개</a></li>
+				<li>
+					<a href="submain.html">테마별 크루즈여행</a>
+					<ul>
+						<li><a href="thema_cruise01.html">나의 첫 크루즈</a></li>
+						<li><a href="thema_cruise02.html">크루즈 매니아</a></li>
+						<li><a href="thema_cruise03.html">6성급 럭셔리 크루즈</a></li>
+						<li><a href="thema_cruise04.html">리버크루즈</a></li>
+						<li><a href="thema_cruise05.html">탐험 크루즈</a></li>
+						<li><a href="thema_cruise06.html">크루즈&amp;현지투어</a></li>
+						<li><a href="thema_cruise07.html">세계일주</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="area01.html">지역별 크루즈여행</a>
+					<ul>
+						<li><a href="area01.html#move">지중해</a></li>
+						<li><a href="area02.html#move">알래스카</a></li>
+						<li><a href="area03.html#move">북유럽</a></li>
+						<li><a href="area04.html#move">유럽리버</a></li>
+						<li><a href="area05.html#move">미서부/멕시코</a></li>
+						<li><a href="area06.html#move">캐나다/뉴잉글랜드</a></li>
+						<li><a href="area07.html#move">아프리카/중동</a></li>
+						<li><a href="area08.html#move">중남미/파나마운하</a></li>
+						<li><a href="area09.html#move">갈라파고스</a></li>
+						<li><a href="area10.html#move">아시아</a></li>
+						<li><a href="area11.html#move">남극</a></li>
+						<li><a href="area12.html#move">카리브해</a></li>
+						<li><a href="area13.html#move">호주/뉴질랜드</a></li>
+						<li><a href="area14.html#move">남태평양</a></li>
+						<li><a href="area15.html#move">하와이</a></li>
+						<li><a href="area16.html#move">세계일주</a></li>
+					</ul>
+				</li>
+				<li><a href="recommend_page.html">프로모션</a></li>
+			</ul><!-- big_menu -->
+			<ul class="service">
+				<li>
+					<span class="tit">카카오톡 상담하기</span>
+					<span>
+						<img src="http://img.modetour.com/modewebagent/2017/cruise/search_img.jpg" alt="">
+						<a href="" onclick="kakao(690,700);return false;" class="apply_kakao">신청방법</a>
+					</span>
+				</li>
+				<li>
+					<span class="tit">TEL</span>
+					<span class="tel"><img src="http://img.modetour.com/modewebagent/2017/cruise/img_tel.png" alt=""></span>
+				</li>
+			</ul><!-- service -->
+			<div class="foot">
+				<span>개인정보 취급방침</span>
+				<address>
+					서울시 중구 을지로 16 백남빌딩 506호 크루즈 인터내셔널<br />
+					대표이사 유인태<br />
+					사업자등록번호 104-81-53278<br />
+					통신판매업신고번호 중구 제 03295호<br />
+					COPYRIGHT CRUISE INTERNATIONAL INC. ALL RIGHT RESERVED.
+				</address>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="eventwrapper">
+			<!-- [시작]: 기획전 전체 -->
+			<style type="text/css">
+				.event_wrap{min-width: 1100px; text-align: center;}
+				.event_wrap .text_blind{position: absolute; left: -9999px; font-size: 0;}
+				.event_wrap .layout_wrap{width: 1100px;	margin: 0 auto; position: relative;}
+				.event_wrap .content{display: none; position: relative;}
+				
+				.event_wrap .main{background: url('http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/main_bg.jpg') center 0 no-repeat; padding: 0; height: 1588px;}
+
+				.event_wrap .content h2{position: absolute; top: 0; left: 0; right: 0; text-align: center; z-index: 1;}
+				.event_wrap .bg_slide{position: absolute; width: 571px; height: 458px; top: 260px; right: 52px; padding-right: 15px; padding-right: 30px;}
+				.event_wrap .swiper-container-horizontal>.swiper-pagination-bullets{position: absolute; right: 0; width: 18px; left: auto; bottom: auto; top: 175px;}
+				.event_wrap .swiper-pagination span.swiper-pagination-bullet{background: url('http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/slide_btn.png') 0 -39px no-repeat; width: 18px; height: 18px; opacity: 1; border-radius: 0; display: block; margin: 0 0 10px 0;}
+				.event_wrap .swiper-pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active{height: 39px; background-position: 0 0;}
+
+				.event_wrap #in01{background: url('http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in1_bg.jpg') center 0 no-repeat;}
+				.event_wrap #in02{background: url('http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in2_bg.jpg') center 0 no-repeat;}
+				.event_wrap #in03{background: url('http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in3_bg.jpg') center 0 no-repeat;}
+				.event_wrap #in04{background: url('http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in4_bg.jpg') center 0 no-repeat;}
+
+				.event_wrap .tab{position: absolute; z-index: 2; right: -206px; top: 0;}
+				.event_wrap .tab ul{width: 206px; height: 450px;}
+				.event_wrap .tab ul li{background: url('http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_tab_off.png') no-repeat; width: 171px; height: 100px;}
+				.event_wrap .tab ul li.tab_list:hover,.event_wrap .tab ul li.tab_list.on{background: url('http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_tab_on.png') no-repeat;}
+				.event_wrap .tab ul li.tab_list.tab01{background-position: -13px -10px;}
+				.event_wrap .tab ul li.tab_list.tab02{background-position: -13px -110px;}
+				.event_wrap .tab ul li.tab_list.tab03{background-position: -13px -210px;}
+				.event_wrap .tab ul li.tab_list.tab04{background-position: -13px -310px;}
+				.event_wrap .tab ul li.tab05{background-position: -13px -410px; height: 43px;}
+				.event_wrap .tab ul li a{display: block; width: 100%; height: 100%; position: relative;}
+				.event_wrap .tab ul li.tab_list:hover a:before,.event_wrap .tab ul li.tab_list.on a:before{content: ''; display: block; width: 89px; height: 45px; background: url('http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/tab_obj.png') no-repeat; position: absolute; left: 50%; margin-left: -42px; top: -17px;}
+			</style>
+			
+			<!-- [S]: HTML -->
+			<div class="event_wrap">
+				<div class="main"><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/main_in.jpg" alt=""></div>
+				<div class="con1">
+					<div class="layout_wrap">
+						<div class="tab">
+							<ul>
+								<li class="tab01 tab_list on"><a href="#in01"><span class="text_blind"></span></a></li>
+								<li class="tab02 tab_list"><a href="#in02"><span class="text_blind"></span></a></li>
+								<li class="tab03 tab_list"><a href="#in03"><span class="text_blind"></span></a></li>
+								<li class="tab04 tab_list"><a href="#in04"><span class="text_blind"></span></a></li>
+								<li class="tab05"><a href=""><span class="text_blind"></span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="con_wrap">
+						<div class="content" id="in01">
+							<h2><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in1_tit.png" alt=""></h2>
+							<div class="layout_wrap">
+								<img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in1.jpg" alt="" usemap="#in01_link">
+								<map name="in01_link" id="in01_link">
+									<area shape="rect" coords="80,636,320,696" href="http://www.modetour.com/event/plan/detail.aspx?mloc=07&eidx=10283" target="_blank" alt="NCL 프라이드 오브 아메리카호 자세히보기" />
+								</map>
+								<div class="swiper-container bg_slide">
+								    <div class="swiper-wrapper">
+									    <div class="swiper-slide">
+											<img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in1_slide1.png" alt="" >
+										</div>
+									    <div class="swiper-slide"><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in1_slide2.png" alt=""></div>
+									    <div class="swiper-slide"><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in1_slide3.png" alt=""></div>
+									    <div class="swiper-slide"><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in1_slide4.png" alt=""></div>
+								    </div>
+								    <!-- Add Pagination -->
+								    <div class="swiper-pagination"></div>
+								</div>
+							</div>
+						</div>
+						<div class="content" id="in02">
+							<h2><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in2_tit.png" alt=""></h2>
+							<div class="layout_wrap">
+								<img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in2.jpg" alt="" usemap="#in02_link">
+								<map name="in02_link" id="in02_link">
+									<area shape="rect" coords="79,636,320,696" href="http://www.modetour.com/pkg/item.aspx?Idx=485559&PCode=" target="_blank" alt="프린세스루비호 자세히보기" />
+								</map>
+								<div class="swiper-container bg_slide">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in2_slide1.png" alt="">
+										</div>
+										<div class="swiper-slide"><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in2_slide2.png" alt=""></div>
+										<div class="swiper-slide"><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in2_slide3.png" alt=""></div>
+										<div class="swiper-slide"><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in2_slide4.png" alt=""></div>
+									</div>
+									<!-- Add Pagination -->
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+						</div>
+						<div class="content" id="in03">
+							<h2><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in3_tit.png" alt=""></h2>
+							<div class="layout_wrap">
+								<img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in3.jpg" alt="" usemap="#in03_link">
+								<map name="in03_link" id="in03_link">
+									<area shape="rect" coords="80,637,320,696" href="http://www.modetour.com/pkg/item.aspx?Idx=469550&PCode=" target="_blank" alt="코스타 델리지오사호 코스타 디아데마호 자세히보기" />
+								</map>
+								<div class="swiper-container bg_slide">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in3_slide1.png" alt="">
+										</div>
+										<div class="swiper-slide"><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in3_slide2.png" alt=""></div>
+										<div class="swiper-slide"><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in3_slide3.png" alt=""></div>
+										<div class="swiper-slide"><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in3_slide4.png" alt=""></div>
+									</div>
+									<!-- Add Pagination -->
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+						</div>
+						<div class="content" id="in04">
+							<h2><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in4_tit.png" alt=""></h2>
+							<div class="layout_wrap">
+								<img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in4.jpg" alt="" usemap="#in04_link">
+								<map name="in04_link" id="in04_link">
+									<area shape="rect" coords="80,636,320,696" href="http://www.modetour.com/pkg/item.aspx?Idx=496124&PCode=" target="_blank" alt="NCL 프라이드 오브 아메리카호 자세히보기" />
+								</map>
+								<div class="swiper-container bg_slide">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in4_slide1.png" alt="">
+										</div>
+										<div class="swiper-slide"><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in4_slide2.png" alt=""></div>
+										<div class="swiper-slide"><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in4_slide3.png" alt=""></div>
+										<div class="swiper-slide"><img src="http://img.modetour.com/modewebagent/2017/cruise/submain/promotion_190416/con1_in4_slide4.png" alt=""></div>
+									</div>
+									<!-- Add Pagination -->
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- [E]: HTML -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+			<script type="text/javascript">
+				(function($){
+					$(document).ready(function(){
+
+						function dpBlock(){
+							var t = $(this);
+							t.find('div.content:first').css('display','block');
+						}
+						$('.con_wrap').each(dpBlock);
+
+						var con1Top = $('.con1').offset().top;
+						function Tabs(){
+							var t = $(this);
+							if(!t.parent().hasClass('on')){
+								t.parent().addClass('on').siblings().removeClass('on');
+								$(t.attr('href')).css('display','block').siblings().css('display','none');
+							}
+							$('window,html').stop().animate({scrollTop : con1Top - 170});
+							return false;
+						}
+						$('.tab ul li.tab_list a').click(Tabs);
+
+						var swiper = new Swiper('.swiper-container', {
+							direction: 'vertical',
+						 	loop: true,
+							pagination: {
+						        el: '.swiper-pagination',
+						        clickable: true,
+							},
+							observer: true,
+							observeParents: true,
+					    });
+
+						var tabTop = $('.event_wrap .tab').offset().top;
+						function screenS(){
+							var scTop = $(window).scrollTop() + 200;
+							if(scTop >= tabTop){
+								$('.event_wrap .tab').css({'top':scTop - tabTop});
+							}else{
+								$('.event_wrap .tab').removeAttr('style');
+							}
+						}
+						$(window).scroll(screenS);
+
+						function topGo(){
+							$('window,html').stop().animate({scrollTop : 0});
+							return false;
+						}
+						$('.event_wrap .tab li.tab05 a').click(topGo)
+						
+					});
+				})(jQuery);
+			</script>
+			<!-- [끝]: 기획전 전체 -->
+		</div>
+	</section>
+	<footer>
+		<div class="bottom01">
+			<div class="wrap">
+				<h2>크루즈인터내셔널고객센터</h2>
+				<div class="infor">
+					<ul>
+						<li>
+							예약문의<strong>02-775-0100</strong>
+							<div class="email">cruise@cruise.co.kr</div>
+						</li>
+						<li>
+							제휴문의<strong>02-775-0240</strong>
+							<div class="email">sales@cruise.co.kr</div>
+						</li>
+					</ul>
+				</div><!-- infor -->
+				<div class="sns">
+					<ul>
+						<li class="sns01"><a href="" onclick="kakao(690,700);return false;">카카오</a></li>
+						<li class="sns02"><a href="http://www.modetour.com/main/" target="_blank">모두투어</a></li>
+					</ul>
+				</div>
+			</div>
+		</div><!-- bottom01 -->
+		<div class="bottom02">
+				<div class="wrap">
+					<h1><span class="text_blind">CRUISE</span></h1>
+					<address>
+						<div>개인정보 취급방침</div>
+						서울시 중구 을지로 1 백남빌딩 506호 크루즈 인터내셔널 | 대표이사 : 유인태 | 사업자등록번호 : 104-81-53278 | 통신판매업신고번호 : 중구 제 03295호<br />COPYRIGHT CRUISE INTERNATIONAL INC. ALL RIGHTS RESERVED 
+					</address>
+				</div>
+			</div>
+	</footer>
+</body>
+</html>
