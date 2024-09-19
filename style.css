@@ -15,7 +15,7 @@
   }
 
 html,body{height: 100%;}
-body{font-family:"Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;line-height:1.5;color:#000;word-break:break-all; min-width: 719px;}
+body{font-family:"Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;line-height:1.5;color:#000;word-break:break-all; }
 
 .main {
     height: 100vh;
@@ -228,6 +228,7 @@ body{font-family:"Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;line-h
     top: 50%;
     margin-top: -1px;
   }
+  .con4{padding-bottom: 100px;}
   .con4 ul{
     width: 1200px;
     margin: 0 auto;
@@ -272,6 +273,19 @@ body{font-family:"Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;line-h
   .con4 ul li div.tit{
     font-size: 20px;
     margin-top: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .con4 ul li div.tit span.new{background: #ff890a;}
+  .con4 ul li div.tit span.ing{background: #03d7a7;}
+  .con4 ul li div.tit span{
+    font-size: 14px;
+    border-radius: 5px;
+    color: #FFF;
+    display: inline-block;
+    padding: 4px 5px 0px 5px;
+    margin-left: 7px;
+    margin-top: -5px;
   }
   .con4 ul li .link{
     display: flex; 
@@ -343,6 +357,13 @@ body{font-family:"Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;line-h
 .con ul li a{font-size: 13px; color: #759fdd;}
 .con .m_infor{margin-top: 20px;}
 
+@media only screen and (max-width: 1220px){
+  .con4{padding-left: 20px; padding-right: 20px;}
+  .con4 ul{width: 100%;}
+  .con4 ul li{
+    width: calc((100% - 15px) / 2);
+  }
+}
 @media only screen and (max-width: 1150px){
 
     .con ul li{
@@ -351,9 +372,38 @@ body{font-family:"Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;line-h
     .con ul:before{
         display: none;
     }
-
+    .main h1{
+      font-size: 25px;
+    }
+    .con1 .img{width: 60%; margin-right: 30px; margin-bottom: 30px;}
+    .con1, .con2{padding-left: 20px; padding-right: 20px;}
 }
-
+@media only screen and (max-width: 900px){
+  h2{margin-bottom: 50px;}
+  .con1, .con2{padding: 100px 0;}
+  .con1 .in{flex-direction: column;}
+  .con1 .big{font-size: 25px;}
+  .con1 p{font-size: 15px; line-height: 22px;}
+  .con1 .img{width: 100%; margin-right: 0;}
+  .con1 .img img{object-fit: contain; width: 100%;}
+  .con1 .txt-wrap{width: 100%;}
+  .aboutme{width: 100%;}
+  .aboutme span{font-size: 18px;}
+  .aboutme .s_tit{width: 100%; float: none; border-bottom: 1px #111 dashed; margin-bottom: 10px;}
+  .aboutme .s_tit:after{display: none;}
+  .aboutme .s_txt{word-break: keep-all; float: none; display: block; width: 100%; padding-left: 0;}
+  .con2{padding-left: 20px; padding-right: 20px;}
+  .con2 ul{width: 100%;}
+  .con2 ul li{padding-left: 0; padding-right: 0; font-size: 18px;}
+  .con2 ul li .tit{flex-direction: column; align-items: flex-start;}
+  .con2 ul li span{font-size: 13px; display: block; margin-left: 0;}
+  .con3 ul{width: 100%;}
+  .con3 ul li{font-size: 18px;}
+  .con3 ul li .tit span{font-size: 13px; margin-left: 0;}
+  .con4 ul li div.tit{font-size: 16px;}
+  .con4 ul li div.tit span{font-size: 12px;}
+  .con4 ul li div.txt{font-size: 14px;}
+}
 @media only screen and (max-width: 720px){
     .work_tit{
         font-size: 30px;
@@ -361,4 +411,11 @@ body{font-family:"Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;line-h
     .txt{
         font-size: 20px
     }
+    .con4 ul li{width: 100%;}
+}
+@media only screen and (max-width: 500px){
+  .con3 ul li{flex-direction: column;}
+  .con3 ul li .tit{display: flex; align-items: center;}
+  .con3 ul li .tit span{margin-left: 10px;}
+  .con3 ul li .time{margin-top: 15px; }
 }
