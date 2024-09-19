@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- <meta http-equiv="page-enter" content="blendTrans(duration=0.3)"> -->
+        <title>Profit</title>
+        <link type="text/css" rel="stylesheet" href="../css/layout.css">
+        <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css">
+        <link type="text/css" rel="stylesheet" href="../css/aos.css">
+        <link type="text/css" rel="stylesheet" href="../css/layout_1360.css">
+        <link type="text/css" rel="stylesheet" href="../css/layout_780.css">
+        <link type="text/css" rel="stylesheet" href="../css/mCustomScrollbar.css">
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="../js/aos.js"></script>
+        <script type="text/javascript" src="../js/publish.js"></script>
+        <script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+        <script>
+            $(document).ready(function(){
+                 $('.header_html').load('header.html');
+                 $('.footer_html').load('footer.html');
+            });
+        </script>
+    </head>
+    <body>
+        <!-- [s]: header -->
+        <div class="header_html">
+            
+        </div>
+        <!-- [e]: header -->
+        <div class="sub bg-gray min-100">
+            <div class="sub-wrap start">
+                <ul class="step" data-aos="fade-up" data-aos-once="true">
+                    <li class="ing">01</li>
+                    <li class="dot">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li>02</li>
+                    <li class="dot">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li>03</li>
+                </ul>
+                <div class="start-wrap mo-pt0" data-aos="fade-up" data-aos-once="true">
+                    <h2>휴대폰 인증</h2>
+                    <ul class="input-style">
+                        <li>
+                            <span>이름</span>
+                            <input type="text" value="이지원">
+                        </li>
+                        <li>
+                            <span>생년월일(8자리)</span>
+                            <input type="text" value="19990808">
+                        </li>
+                        <li>
+                            <span>휴대폰 번호</span>
+                            <input type="text" placeholder="010-1234-5678">
+                        </li>
+                    </ul>
+                    <div class="btn-area w-block mt30">
+                        <a href="teen-idphone-step2.html" class="border-green">인증하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [s]: footer -->
+        <div class="footer_html">
+            
+        </div>
+        <!-- [s]: footer -->
+        <script>  
+            //전체선택 및 해제
+            $('#all').on('click', function(){
+                var checked = $(this).is(':checked');
+                
+                if(checked) {
+                    $(this).parent().next('ul').find('input[type="checkbox"]').prop('checked', true);
+                } else {
+                    $(this).parent().next('ul').find('input[type="checkbox"]').prop('checked', false);
+                }
+            });
+
+            //하나 선택했을시 전체선택 풀림
+            $('.agree-area ul li input[type="checkbox"]').on('click', function(){
+                var checked = $(this).is(':checked');
+                if (!checked) {
+                    $("#all").prop("checked", false);
+                  }
+            });
+
+            // 체크박스 개별 선택
+                $(".agree-area ul li").on("click", "input", function() {
+                    var is_checked = true;
+                    $(".agree-area ul li input").each(function(){
+                        is_checked = is_checked && $(this).is(":checked");
+                    });
+                    $("#all").prop("checked", is_checked);
+                });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Hyundai-ITC</title>
+        <link type="text/css" rel="stylesheet" href="../css/layout.css">
+        <link type="text/css" rel="stylesheet" href="../css/layout_1440.css">
+        <link type="text/css" rel="stylesheet" href="../css/layout_780.css">
+
+        <script type="text/javascript" src="../js/libs/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/libs/jquery-ui.min.js"></script>
+    </head>
+    <body>
+        
+        <!--내용시작 -->
+        <div class="adminsub">
+            <!-- [s]: lnb -->
+            <div class="lnb">
+                <div class="in">
+                    <h1><img src="../img/common/logo.svg" alt=""><span>Admin</span></h1>
+                    <ul class="menu-list">
+                        <li>
+                            <a href="">메인페이지</a>
+                            <ul>
+                                <li><a href="a01-2-1.html">팝업 관리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">투자정보</a>
+                            <ul>
+                                <li><a href="a02-1-1.html">전자공고</a></li>
+                                <li><a href="a02-2-1.html">IR 정기보고서</a></li>
+                            </ul>
+                        </li>
+                        <li class="on">
+                            <a href="">홍보센터</a>
+                            <ul>
+                                <li class="on"><a href="a03-1-1.html">ITC News</a></li>
+                                <li><a href="a03-2-1.html">with ITC</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">관리자 권한</a>
+                            <ul>
+                                <li><a href="a04-1-1.html">전체 관리자 목록</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="user-area">
+                    <div class="in">
+                        <p>안녕하세요.</p>
+                        <p><b>Admin</b>님<span>(admin)</span></p>
+                        <ul>
+                            <li><a href=""><img src="../img/admin/ico-logout.svg" alt="">로그아웃</a></li>
+                            <li><a href=""><img src="../img/admin/ico-home.svg" alt="">홈페이지 바로가기</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- [e]: lnb -->
+            <div class="a-content a03">
+                <h2>ITC News<span>총 5건</span></h2>
+                <div class="ban-register mt60">
+                    <div class="btn-area position">
+                        <button class="btn btn-darkgray btn-102">취소</button>
+                        <button class="btn btn-blue btn-102">등록</button>
+                    </div>
+                    <span class="s-tit">ITC News 등록</span>
+                    <input type="text" class="news-tit" placeholder="제목을 입력해주세요.">
+                    <div class="write-area">
+                        
+                    </div>
+                    <div class="file-area mt30">
+                        <span class="s-tit">첨부파일</span>
+                        <div class="mt20">
+                            <label for="choice01" class="file-choice"><input type="file" id="choice01" class="file">파일선택</label><span class="upload-name">선택된 파일 없음</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 내용끝 -->
+
+        <script>  
+            $('.adminsub .lnb ul.menu-list>li>a').click(function(){
+                var t = $(this);
+                if(!t.parent().hasClass('on')){
+                    t.parent().addClass('on');
+                    t.parent().siblings().removeClass('on')
+                }else{
+                    t.parent().removeClass('on');
+                }
+                return false;
+            });
+
+            $(".file").on('change',function(e){
+              var fileName = $(".file").val();
+              $(this).parent().next('.upload-name').text(e.target.files[0].name);
+            });
+        </script>
+    </body>
+</html>

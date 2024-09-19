@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- <meta http-equiv="page-enter" content="blendTrans(duration=0.3)"> -->
+        <title>Profit</title>
+        <link type="text/css" rel="stylesheet" href="../css/layout.css">
+        <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css">
+        <link type="text/css" rel="stylesheet" href="../css/aos.css">
+        <link type="text/css" rel="stylesheet" href="../css/layout_1360.css">
+        <link type="text/css" rel="stylesheet" href="../css/layout_780.css">
+        <link type="text/css" rel="stylesheet" href="../css/mCustomScrollbar.css">
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="../js/aos.js"></script>
+        <script type="text/javascript" src="../js/publish.js"></script>
+        <script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+        <script>
+            $(document).ready(function(){
+                 $('.header_html').load('header.html');
+                 $('.footer_html').load('footer.html');
+            });
+        </script>
+    </head>
+    <body>
+        <!-- [s]: header -->
+        <div class="header_html">
+            
+        </div>
+        <!-- [e]: header -->
+        <div class="sub bg-gray">
+            <div class="sub-wrap mypage mo-ver">
+                <div class="layout">
+                    <ul class="link-tab">
+                        <li><a href="mypage1-loan.html">대출요약</a></li>
+                        <li><a href="mypage2-1-loan.html">대출내역</a></li>
+                        <li><a href="mypage3-loan.html">입출금계좌</a></li>
+                        <li class="on"><a href="mypage4-myinfor-loan.html">내 정보</a></li>
+                    </ul>
+                    <div class="meminfor-wrap">
+                        <ul class="my-tab">
+                            <li><a href="mypage4-myinfor.html">내 회원정보</a></li>
+                        </ul>
+                        <div class="meminfor">
+                            <h2>이지원님의 회원정보</h2>
+                            <div class="wrap">
+                                <div class="infor-update">
+                                    <a href="pw-change-loan.html"><img src="../img/mypage/ico-key.svg" alt="">비밀번호 변경</a>
+                                    <a href="self-aut-loan.html"><img src="../img/mypage/ico-person.svg" alt="">본인인증 정보</a>
+                                </div>
+                                <ul class="input-style">
+                                    <li>
+                                        <span>아이디</span>
+                                        <input type="text" value="leejiwon2000" disabled>
+                                    </li>
+                                    <li>
+                                        <span>이메일 주소</span>
+                                        <input type="text" placeholder="이메일을 입력해주세요.">
+                                    </li>
+                                    <li>
+                                        <span>휴대전화번호</span>
+                                        <input type="text" placeholder="010-1234-5678">
+                                        <button class="border-green">번호변경</button>
+                                    </li>
+                                    <li>
+                                        <span>주소</span>
+                                        <input type="text" placeholder="서울 강남구 봉은사로 207">
+                                        <button class="border-green">우편번호 찾기</button>
+                                    </li>
+                                    <li>
+                                        <span>상세주소</span>
+                                        <input type="text" placeholder="7층">
+                                    </li>
+                                    <li>
+                                        <span>사업자 유형</span>
+                                        <input type="text" value="개인사업자" disabled>
+                                    </li>
+                                </ul>
+                                <div class="agree-area">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" id="email-agree">
+                                            <label for="email-agree">이메일 수신 동의</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="sms-agree">
+                                            <label for="sms-agree">SMS(문자) 수신 동의</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="kakao-agree">
+                                            <label for="kakao-agree">카카오톡 수신 동의</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-area">
+                                    <a href="" class="border-green mem-out">회원탈퇴</a>
+                                    <a href="" class="border-green">저장</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dim">
+            <div class="dim-wrap">
+                <!-- [s]: 회원탈퇴 -->
+                <div id="member-out" class="pop">
+                    <h2>회원탈퇴</h2>
+                    <a href="" class="close"><img src="../img/common/ico-close.svg" alt="닫기"></a>
+                    <div class="in">
+                        <p>회원탈퇴 후 로그인 및 서비스 이용이 불가능합니다. 정말 탈퇴하시겠습니까?</p>
+                        <ul class="input-style">
+                            <li>
+                                <input type="radio" id="s-out1" name="businessman">
+                                <label for="s-out1">이용이 불편하고 장애가 많음</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="s-out2" name="businessman">
+                                <label for="s-out2">상품이 마음에 들지 않음</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="s-out3" name="businessman">
+                                <label for="s-out3">다른사이트가 더 좋음</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="s-out4" name="businessman">
+                                <label for="s-out4">이벤트 참여를 위한 목적</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="s-out5" name="businessman">
+                                <label for="s-out5">자주 이용하지 않음</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="s-out6" name="businessman">
+                                <label for="s-out6">기타</label>
+                                <textarea name="" id="" cols="10" rows="10"></textarea>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="notice">
+                        <li>※ 탈퇴 신청일을 기준으로, 탈퇴 상태로 전환되어 신청 시 취소가 불가능합니다. </li>
+                        <li>※ 탈퇴한 아이디로는 사이트 재가입이 불가능합니다.</li>
+                    </ul>
+                    <div class="btn-area">
+                        <a href="" class="border-green">확인</a>
+                    </div>
+                </div>
+                <!-- [e]: 회원탈퇴 -->
+            </div>
+        </div>
+        <!-- [s]: footer -->
+        <div class="footer_html">
+            
+        </div>
+        <!-- [s]: footer -->
+        <script>  
+            $('.mem-out').click(function(){
+                $('.dim,#member-out').addClass('active');
+                $('html,body').css('overflow','hidden');
+                return false;
+            });
+
+            $('#member-out .close,#member-out .btn-area a').click(function(){
+                $('.dim,#member-out').removeClass('active');
+                $('html,body').removeAttr('style');
+                return false;
+            });
+        </script>
+    </body>
+</html>

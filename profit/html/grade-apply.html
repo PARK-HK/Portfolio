@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- <meta http-equiv="page-enter" content="blendTrans(duration=0.3)"> -->
+        <title>Profit</title>
+        <link type="text/css" rel="stylesheet" href="../css/layout.css">
+        <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css">
+        <link type="text/css" rel="stylesheet" href="../css/aos.css">
+        <link type="text/css" rel="stylesheet" href="../css/layout_1360.css">
+        <link type="text/css" rel="stylesheet" href="../css/layout_780.css">
+        <link type="text/css" rel="stylesheet" href="../css/mCustomScrollbar.css">
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="../js/aos.js"></script>
+        <script type="text/javascript" src="../js/publish.js"></script>
+        <script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+        <script>
+            $(document).ready(function(){
+                 $('.header_html').load('header.html');
+                 $('.footer_html').load('footer.html');
+            });
+        </script>
+    </head>
+    <body>
+        <!-- [s]: header -->
+        <div class="header_html">
+            
+        </div>
+        <!-- [e]: header -->
+        <div class="sub bg-gray">
+            <div class="sub-wrap mypage mo-ver">
+                <div class="layout">
+                    <ul class="link-tab">
+                        <li><a href="mypage1.html">투자요약</a></li>
+                        <li><a href="mypage2-1.html">투자내역</a></li>
+                        <li><a href="mypage3.html">입출금계좌</a></li>
+                        <li class="on"><a href="mypage4-myinfor.html">내 정보</a></li>
+                    </ul>
+                    <div class="meminfor-wrap">
+                        <ul class="my-tab">
+                            <li><a href="mypage4-myinfor.htm">내 회원정보</a></li>
+                            <li class="on"><a href="">내 등급 정보</a></li>
+                        </ul>
+                        <div class="meminfor">
+                            <h2 class="grade-tit"><span>등급신청<a href="">?</a></span></h2>
+                            <div class="wrap grade-apply">
+                                <ul class="input-style">
+                                    <li>
+                                        <span>신청 등급</span>
+                                        <select name="" id=""><option value="">전문투자자</option></select>
+                                    </li>
+                                   <li>
+                                        <span>종합소득세 과세표준 확정신고서</span>
+                                        <span class="upload-name"></span>
+                                        <label for="choice01" class="file-choice border-green"><input type="file" id="choice01" class="file-paper">파일선택</label>
+                                    </li>
+                                    <li>
+                                        <span>종합소득세 신고서 접수증</span>
+                                        <span class="upload-name"></span>
+                                        <label for="choice02" class="file-choice border-green"><input type="file" id="choice02" class="file-paper">파일선택</label>
+                                    </li>
+                                    <li>
+                                        <span>현재등급</span>
+                                        <input type="text" value="일반 투자자" disabled>
+                                    </li>
+                                </ul>
+                                <div class="btn-area">
+                                    <a href="" class="border-green">저장</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dim">
+            <div class="dim-wrap">
+                <div id="qualift" class="pop">
+                    <div class="tit">자격요건</div>
+                    <a href="" class="close"><img src="../img/common/ico-close.svg" alt="닫기"></a>
+                    <div class="in">
+                        <span>소득적격 투자자</span>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>자격요건</th>
+                                    <td>
+                                        <ul>
+                                            <li>근로소득(총급여 · 근로소득공제) <b>1억원 초과</b></li>
+                                            <li>금융소득(이자+배당) <b>2천만원 초과</b></li>
+                                        </ul>
+                                        <p>* 위 2개 조건 중, 1개 해당이면 가능</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>동일차입자한도</th>
+                                    <td>
+                                        <ul>
+                                            <li>전년도 종합소득 과세표준 확정신고서</li>
+                                            <li>전년도 종합소득세 신고서 접수증</li>
+                                            <li>근로소득 원천징수영수증</li>
+                                        </ul>
+                                        <p>* 위 3가지 서류 중, 1개 제출</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <span>전문투자자</span>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>자격요건</th>
+                                    <td>최근 5년 중, 1년 이상 투자계좌를 유지하고, 금융위가 고시하는 금융투자상품 잔고를 5천만원 이상(월말 평균 잔고기준) 보유</td>
+                                </tr>
+                                <tr>
+                                    <th>선택조건</th>
+                                    <td>
+                                        <ul>
+                                            <li>연소득 1억 이상(부부 합산 1.5억)</li>
+                                            <li>순자산(거주주택 제외) 5억원 이상</li>
+                                            <li>금융 관련 전문 직무 종사자</li>
+                                        </ul>
+                                        <p>* 위 3가지 서류 중, 1개 해당이면 가능</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>자격요건</th>
+                                    <td>전문 투자자 확인증<br>(각 증권사에서 신청 및 발급이 가능합니다.)</td>
+                                </tr>
+                                <tr>
+                                    <th>서류접수 안내</th>
+                                    <td>마이페이지 &#62; 내 등급 정보 메뉴에서 신청가능</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [s]: footer -->
+        <div class="footer_html">
+            
+        </div>
+        <!-- [s]: footer -->
+        <script>  
+          $(".file-paper").on('change',function(e){
+              var fileName = $(".file-paper").val();
+              $(this).parent().prev('.upload-name').text(e.target.files[0].name);
+            });
+
+           $('.grade-tit a').click(function(){
+                $('.dim,#qualift').addClass('active');
+                $('html,body').css('overflow','hidden');
+                return false;
+            });
+
+            $('#qualift .close').click(function(){
+                $('.dim,#qualift').removeClass('active');
+                $('html,body').removeAttr('style');
+                return false;
+            });
+        </script>
+    </body>
+</html>

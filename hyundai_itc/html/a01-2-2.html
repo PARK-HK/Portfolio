@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Hyundai-ITC</title>
+        <link type="text/css" rel="stylesheet" href="../css/layout.css">
+        <link type="text/css" rel="stylesheet" href="../css/layout_1440.css">
+        <link type="text/css" rel="stylesheet" href="../css/layout_780.css">
+
+        <script type="text/javascript" src="../js/libs/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/libs/jquery-ui.min.js"></script>
+    </head>
+    <body>
+        
+        <!--내용시작 -->
+        <div class="adminsub">
+            <!-- [s]: lnb -->
+            <div class="lnb">
+                <div class="in">
+                    <h1><img src="../img/common/logo.svg" alt=""><span>Admin</span></h1>
+                    <ul class="menu-list">
+                        <li class="on">
+                            <a href="">메인페이지</a>
+                            <ul>
+                                <li class="on"><a href="a01-2-1.html">팝업 관리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">투자정보</a>
+                            <ul>
+                                <li><a href="a02-1-1.html">전자공고</a></li>
+                                <li><a href="a02-2-1.html">IR 정기보고서</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">홍보센터</a>
+                            <ul>
+                                <li><a href="a03-1-1.html">ITC News</a></li>
+                                <li><a href="a03-2-1.html">with ITC</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">관리자 권한</a>
+                            <ul>
+                                <li><a href="a04-1-1.html">전체 관리자 목록</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="user-area">
+                    <div class="in">
+                        <p>안녕하세요.</p>
+                        <p><b>Admin</b>님<span>(admin)</span></p>
+                        <ul>
+                            <li><a href=""><img src="../img/admin/ico-logout.svg" alt="">로그아웃</a></li>
+                            <li><a href=""><img src="../img/admin/ico-home.svg" alt="">홈페이지 바로가기</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- [e]: lnb -->
+            <div class="a-content a01">
+                <h2>팝업 등록</h2>
+                <div class="ban-list mt60">
+                    <div class="btn-area position">
+                        <button class="btn btn-gray btn-102">취소</button>
+                        <button class="btn btn-blue btn-102">등록</button>
+                    </div>
+                    <p class="notice">※ PC 배너 권장 사이즈 : 1920 X 980 / MOBILE 배너 권장 사이즈 : 360 X 640</p>
+                    <div class="pop-tit">
+                        <div class="s-tit">관리 타이틀</div>
+                        <input type="text" placeholder="파일명을 입력해주세요." class="write-input">
+                        <div class="s-tit">관리 타이틀</div>
+                        <table>
+                            <colgroup>
+                                <col width="40%" />
+                                <col width="20%" />
+                                <col width="45%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>팝업 이미지 첨부</th>
+                                    <th>미리보기</th>
+                                    <th>링크</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th><label for="pop-choice01" class="file-choice"><input type="file" id="pop-choice01" class="file">파일찾기</label><span class="upload-name"></span></th>
+                                    <td><div class="shape-pop"></div></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pop-close">
+                        <div class="s-tit">닫기 영역</div>
+                        <input type="text" placeholder="오늘 하루 이 창을 열지 않습니다." class="input01">
+                        <input type="text" placeholder="닫기" class="input02">
+                    </div>
+                    <div class="pop-where">
+                        <div class="s-tit">팝업 위치</div>
+                        <span>
+                            좌측위치 : <input type="text"> px
+                        </span>
+                        <span>
+                            상단위치 : <input type="text"> px
+                        </span>
+                    </div>
+                    <div class="pop-show">
+                        <div class="s-tit">팝업 게시기간</div>
+                        <span>
+                            <input type="text">
+                            <a href=""><i><img src="../img/admin/ico-calendar.svg" alt=""></i></a>
+                        </span>
+                        ~
+                        <span>
+                            <input type="text">
+                            <a href=""><i><img src="../img/admin/ico-calendar.svg" alt=""></i></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 내용끝 -->
+
+        <script>  
+            $('.adminsub .lnb ul.menu-list>li>a').click(function(){
+                var t = $(this);
+                if(!t.parent().hasClass('on')){
+                    t.parent().addClass('on');
+                    t.parent().siblings().removeClass('on')
+                }else{
+                    t.parent().removeClass('on');
+                }
+                return false;
+            });
+
+            $(".file").on('change',function(e){
+              var fileName = $(".file").val();
+              $(this).parent().next('.upload-name').text(e.target.files[0].name);
+            });
+        </script>
+    </body>
+</html>

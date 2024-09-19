@@ -1,0 +1,472 @@
+@media only screen and (max-width:1360px){
+	.layout{width: 100%; padding: 0 20px;}
+
+	.main .con1 a{right: 20px;}
+	.main .con2{position: relative; padding-bottom: 160px;}
+	.main .con2 .layout{flex-wrap: wrap;}
+	.main .con2 .right{width: 100%;}
+	.main .con2 .right .item{width: 33%; margin-left: 1%;}
+	.main .con2 .right .item:first-child{margin-left: 0;}
+	.main .con2 .left{width: 100%;}
+	.main .con2 .left a{position: absolute; bottom: 60px; left: 50%; margin-left: -70px;}
+	.main .con2 .left p{margin-bottom: 40px;}
+
+	.main .con4 .inforuse .s-tit,.main .con4 .kakao .s-tit{font-size: 15px;}
+	.main .con4 .inforuse p,.main .con4 .kakao p{font-size: 20px; line-height: 33px;}
+	.main .con4 .kakao .notice{font-size: 15px;}
+	.main .con4 .personal-qa span, .main .con4 .consulting span{font-size: 13px;}
+	.main .con4 .personal-qa p, .main .con4 .consulting p{font-size: 18px;}
+	.main .con4 .service-center .tit{font-size: 26px;}
+	.main .con4 .service-center p.time{font-size: 16px;}
+	.main .con4 .service-center p{font-size: 13px;}
+	.main .con4 .kakao .notice{padding-left: 25px; word-break: keep-all; line-height: 20px;}
+	.main .con4 .kakao .notice i{width: 42px; height: 42px; background-size: 13px auto;}
+
+	footer p.bottom{padding-right: 20px; padding-left: 20px; width: 100%;}
+	footer .top .layout{flex-wrap: wrap;}
+	footer .top ul{width: 100%; flex-wrap: wrap; margin-top: 15px;}
+	footer .top ul li{margin-top: 20px;}
+
+	.sub{display: block;}
+	.mypage .myinfor{padding: 30px;}
+	.mypage .myinfor .type{font-size: 13px; padding: 10px 0;}
+	.mypage .myinfor .name{font-size: 22px; padding-bottom: 15px; padding-top: 30px;}
+	.mypage .myinfor a.correct{font-size: 12px;}
+	.mypage .myinfor p.account{font-size: 13px; line-height: 25px;}
+	.mypage .myinfor p.mon:before{font-size: 13px;}
+	.mypage .myinfor p.mon{font-size: 20px;}
+	.mypage .myinfor p.mon b{font-size: 26px;}
+	.mypage .my-allmoney{padding: 30px 30px 0;}
+	.mypage .my-allmoney .tit{font-size: 14px;}
+	.mypage .my-allmoney .tit span{font-size: 11px;}
+	.mypage .my-allmoney .mon{font-size: 22px;}
+	.mypage .my-allmoney .mon b{font-size: 32px;}
+	.mypage .my-allmoney p{font-size: 13px;}
+	.mypage .my-allmoney dl dt{font-size: 13px;}
+	.mypage .my-allmoney dl dd{font-size: 16px;}
+	.mypage .middle .today-item{padding: 30px 20px 25px;}
+	.mypage .middle .today-item .tit{font-size: 16px;}
+	.mypage .middle .today-item ul li{font-size: 13px;}
+	.mypage .middle .today-item span{font-size: 12px;}
+	.mypage .kakao{padding: 30px 25px;}
+	.mypage .kakao .tit{font-size: 16px;}
+	.mypage .kakao p{font-size: 13px;}
+	.mypage .kakao{background-size: 40%; background-position-x: 100%;}
+	.mypage .middle .invest-limit .tit{font-size: 14px;}
+	.mypage .middle .invest-limit .tit a{font-size: 13px; width: 18px; height: 18px; line-height: 14px; margin-left: 5px;}
+	.mypage .middle .invest-limit p{font-size: 18px; margin-top: 30px;}
+	.mypage .middle .invest-limit p b{font-size: 26px;}
+	.mypage .middle .invest-limit .limit{height: 10px;}
+	.mypage .middle .invest-limit .list li{font-size: 12px;}
+	.mypage .middle .invest-limit .list span{font-size: 13px; margin-top: 5px;}
+	.mypage .bottom p.period{font-size: 14px;}
+	.mypage .bottom .tit{font-size: 22px;}
+	.mypage .bottom ul li p{font-size: 13px;}
+	.mypage .bottom ul li p b{font-size: 18px;}
+	.mypage .bottom ul li p span{font-size: 12px; margin-top: 10px;}
+
+	.mypage .history-con .all-invest{padding: 0;}
+	.mypage .detail{padding: 0;}
+	.mypage .history-con .schedule{padding: 0;}
+	.mypage .certificate{padding: 0;}
+	.mypage .history-con .schedule .btn-list{padding-left: 20px; font-size: 13px; margin-bottom: 15px;}
+	.mypage .history-con .schedule .sch-infor span{padding-left: 20px;}
+	.mypage .history-con .schedule .sch-infor th{font-size: 12px;}
+	.mypage .history-con .schedule .sch-infor td{font-size: 13px; word-break: keep-all; padding: 10px;}
+
+	.mypage .certificate h3{padding-left: 20px;}
+	.mypage .confirm{padding: 0 20px;}
+	.mypage .certificate .confirm select{right: 20px;}
+
+	.mypage .account .connect{margin: 20px 20px 0;}
+	.mypage .account .virtual{margin-right: 20px; margin-left: 20px;}
+	.mypage .account .dpwd{border-radius: 0 0 30px 30px;}
+	.mypage .account .dpwd .file{right: 20px; top: 35px;}
+
+	.mypage.mypage-loan .my-allmoney{padding-top: 50px;}
+	.mypage.mypage-loan .my-allmoney .mon{margin-top: 25px; margin-bottom: 50px;}
+	.mypage.mypage-loan .repay .tit{font-size: 20px; margin-bottom: 30px;}
+	.mypage.mypage-loan .repay table th{font-size: 12px; padding: 15px 0;}
+	.mypage.mypage-loan .repay table td{font-size: 13px; padding: 25px 0;}
+	.mypage.mypage-loan .repay table td a{font-size: 13px;}
+
+	.invest-page .ban{width: 100%; background-position-x: calc(100% - 20%);}
+	.invest-page .item-wrap{width: 103%;}
+	.invest-page .item-wrap .item{width: 31%; margin-right: 2%;}
+	.invest-page .item-wrap a.more-btn{margin-right: 3%; margin-top: 20px;}
+
+	.invest-infor .top h2{font-size: 25px; margin-top: 25px;}
+	.invest-infor .top .time{font-size: 13px;}
+	.invest-infor .top dl{font-size: 14px;}
+	.invest-infor .top .progress label, .invest-infor .top .progress p{font-size: 14px;}
+	.invest-infor .item-infor{padding: 25px 0;}
+	.invest-infor .item-infor ul li span{font-size: 13px;}
+	.invest-infor .item-infor ul li p{font-size: 14px; margin-top: 10px;}
+	.invest-infor .item-infor ul li b{font-size: 25px;}
+	.invest-infor .item-infor ul li{margin-left: 100px;}
+	.invest-infor .item-infor ul li:last-child b{font-size: 18px; line-height: 30px;}
+	.invest-infor .top .progress{margin-top: 40px; width: 100%;}
+	.invest-infor .point{padding-top: 45px; margin-bottom: 55px;}
+	.invest-infor .point h3{font-size: 22px; margin-bottom: 20px;}
+	.invest-infor .point ol{width: 100%;}
+	.invest-infor .point ol li span{font-size: 15px;}
+	.invest-infor .point ol li{font-size: 14px; padding: 25px 0;}
+	.invest-infor .detail-infor{width: 100%;}
+	.invest-infor .detail-infor ul li a{font-size: 14px; padding-bottom: 20px;}
+	.invest-infor .detail-infor .tit{font-size: 16px; margin-top: 40px; margin-bottom: 20px;}
+	.invest-infor .detail-infor .content .row .th,.invest-infor .detail-infor .content table th{font-size: 12px !important; padding: 15px 10px; line-height: 18px; word-break: keep-all;}
+	.invest-infor .detail-infor .content .row .td,.invest-infor .detail-infor .content table td{font-size: 13px !important; padding: 15px 10px; line-height: 18px;}
+
+	.invest-mobile-btn{display: block; bottom: 0px;}
+	.invest-infor .top{padding: 40px 0;}
+	.quick-invest{left: 0; right: 0;bottom: 0; width: 100%; top: initial; display: none; position: fixed;}
+	.quick-invest:after{content: ''; background: rgba(0, 0, 0, 0.5); position: fixed; top: 0; left: 0; right: 0!important; bottom: 0; z-index: -1;}
+	.quick-invest .wrap{border-radius: 20px 20px 0 0 ; background: #FFF;}
+	.quick-invest button.go-invest{border-radius: 0;}
+	.quick-invest .tit{font-size: 15px; padding: 20px 0;}
+	.quick-invest .in ul li span,.quick-invest .in ul li .mon-area span{font-size: 14px;}
+	.quick-invest .in ul li .num{font-size: 20px;}
+	.quick-invest .in ul li a{font-size: 12px; display: block; width: 100%;}
+	.quick-invest .in ul li{justify-content: space-between; margin-bottom: 25px;}
+	.quick-invest .mymoney{padding-top: 25px;}
+	.quick-invest button.go-invest{font-size: 14px;}
+	.invest-infor .top.store{background-size: cover;}
+	.quick-invest .close{display: block; position: absolute; right: 15px; top: 18px;}
+
+	.loan-page h2{font-size: 30px; margin-bottom: 45px; padding-top: 65px;}
+	.loan-page .top{padding-bottom: 35px;}
+	.loan-page .top ul li{padding: 35px 0;}
+	.loan-page .top ul li .tit{font-size: 15px; margin-top: 35px; margin-bottom: 15px;}
+	.loan-page .top ul li p{font-size: 12px; line-height: 20px;}
+	.loan-page .top a{font-size: 15px;}
+
+	.loan-page .middle{padding-bottom: 60px;}
+	.loan-page .middle h2{font-size: 26px;}
+	.loan-page .middle ul li .in{height: 200px; padding: 25px;}
+	.loan-page .middle ul li .in .tit{font-size: 16px; margin-bottom: 15px;}
+	.loan-page .middle ul li .in p{font-size: 13px;}
+
+	.loan-page .bottom{padding-bottom: 60px;}
+	.loan-page .bottom h2{font-size: 26px; margin-bottom: 15px;}
+	.loan-page .bottom .notice{font-size: 14px; margin-bottom: 40px;}
+	.loan-page .bottom ul li .step{font-size: 13px;}
+	.loan-page .bottom ul li .tit{font-size: 18px; margin-top: 13px; margin-bottom: 15px;}
+	.loan-page .bottom ul li p{font-size: 13px;}
+	.loan-page .bottom ul li{padding: 25px 25px 25px 100px;}
+	.loan-page .bottom ul li.process1{background-size: 40px auto; background-position: 25px 25px;}
+	.loan-page .bottom ul li.process2{background-size: 40px auto; background-position: 25px 25px;}
+	.loan-page .bottom ul li.process3{background-size: 65px auto; background-position: 15px 15px;}
+
+	.invest-complete h2{font-size: 25px; margin-top: 60px; margin-bottom: 50px;}
+	.invest-complete .tit{font-size: 18px;}
+	.invest-complete .in{padding: 40px 0;}
+	.invest-complete .table .row .th{font-size: 12px; padding: 18px 0;}
+	.invest-complete .table .row .td{font-size: 13px; padding: 18px 0;}
+	.invest-complete .mon-area span.mon-tit{font-size: 13px;}
+	.invest-complete .mon-area span.num{font-size: 15px;}
+	.invest-complete .mon-area > div{padding: 15px 0;}
+	.invest-complete .mon-area{margin-top: 20px;}
+	.invest-complete .btn-area a:first-child{font-size: 15px;}
+	.invest-complete .btn-area .other-btn{font-size: 12px;}
+	.go-invest .top{padding: 75px 0;}
+	.go-invest .top h2{margin-bottom: 35px; margin-top: 0;}
+	.go-invest .top p{font-size: 14px;}
+	.go-invest p.chk label{font-size: 14px;}
+	.go-invest p.chk{padding: 30px 0;}
+	.go-invest p.chk label:before{margin-top: -14px;}
+	.go-invest .infor .tit{font-size: 18px; margin-top: 30px; margin-bottom: 20px;}
+	.go-invest .table .row .th{font-size: 12px; padding: 15px 0;}
+	.go-invest .table .row .td{font-size: 13px; padding: 15px 0;}
+	.go-invest .content .tit{font-size: 18px; padding: 35px 0;}
+	.go-invest .content .wrap .mon-tit{font-size: 13px;}
+	.go-invest .content .wrap .num{font-size: 13px;}
+	.go-invest .content .wrap .num b{font-size: 14px;}
+	.go-invest .content .wrap input[type="text"]{font-size: 15px;}
+	.go-invest .content .wrap input[type="text"]{padding-right: 45px;}
+	.go-invest .content .wrap li:first-child+li:after{font-size: 13px; height: 41px; line-height: 42px;}
+	.go-invest .content .wrap li p{font-size: 12px;}
+	.go-invest .content .wrap p.use{margin-top: 20px;font-size: 13px; margin-bottom: 30px;}
+	.go-invest .content .notice{padding: 25px;}
+	.go-invest .content .notice span{font-size: 13px;}
+	.go-invest .content .notice p{font-size: 12px;}
+	.go-invest a{font-size: 15px; margin-top: 30px;}
+}
+
+@media only screen and (max-width:1200px){
+	.main .main-top p.s-tit{font-size: 16px;}
+	.main .main-top p.b-tit{font-size: 30px; line-height: 42px;}
+	.main .main-top ul li a{font-size: 13px;}
+
+	.main .gradient{font-size: 13px;}
+	.main .con1{padding-bottom: 60px;}
+	.main .con1 .s-tit{font-size: 15px;}
+	.main .con1 .b-tit{font-size: 26px; margin-top: 25px; margin-bottom: 30px;}
+	.main .con1 a{top: 31px;}
+	.main .con1 ul li span.txt{font-size: 13px;}
+	.main .con1 ul li .num{font-size: 27px;}
+	.main .con1 ul li{font-size: 14px;}
+
+	.main .con2{padding-top: 80px;}
+	.main .con2 h2{font-size: 26px; margin-bottom: 25px;}
+	.main .con2 .left p{font-size: 15px; line-height: 23px;}
+	.main .con2 .right .item .infor{padding: 20px;}
+	.main .con2 .right .item .infor .tit{font-size: 16px; line-height: 23px;}
+	.main .con2 .right .item .infor .time{margin-right: 0; margin-left: 0;}
+	.main .con2 .right .item .statue{align-items: baseline;}
+	.main .con2 .right .item .statue .rate{font-size: 16px;}
+	.main .con2 .right .item .statue .rate strong{font-size: 25px;}
+	.main .con2 .right .item .statue ul li{font-size: 13px;}
+	.main .con2 .right .item .situation{font-size: 12px;}
+
+	.main .con3{padding-top: 70px;}
+	.main .con3 h2{font-size: 26px; margin-bottom: 50px;}
+	.main .con3 .swiper-slide span.paper{font-size: 13px;}
+	.main .con3 .swiper-slide .tit{font-size: 15px; line-height: 23px; margin-top: 15px;}
+	.main .con3 .swiper-slide p{font-size: 13px;}
+	.main .con3 .swiper-slide .date{font-size: 13px; margin-top: 35px;}
+	.main .con3 .swiper-slide .date img{width: 10px; margin-right: 7px;}
+
+	footer .top ul li a{font-size: 13px;}
+	footer .middle ul:first-child li{font-size: 13px;}
+	footer .middle ul li,footer .middle p{font-size: 12px; line-height: 22px;}
+	footer .middle ul:first-child+ul{flex-wrap: wrap;}
+	footer .middle ul:first-child+ul li{width: 100%; padding-left: 0; margin-left: 0;}
+	footer .middle ul:first-child+ul li:before{background: none;}
+
+	footer p.bottom strong{font-size: 13px; line-height: 23px;}
+	footer p.bottom{font-size: 12px; line-height: 23px;}
+	footer p.bottom span{line-height: 23px;}
+
+	.mypage .history-con .table-wrap{padding: 0;}
+	.invest-page .ban i{right: 5%;}
+	.invest-page .item-wrap .item{margin-bottom: 2%;}
+	.invest-complete .table{width: 100%;}
+	.invest-complete .in{padding-left: 20px; padding-right: 20px;}
+}
+
+@media only screen and (max-width:1024px){
+	header .gnb-pc{display: none;}
+	header .gnb-mb{display: block;}
+	header{padding: 20px 0; border-bottom: 1px #E6E6E6 solid;}
+	header h1{width: 100px;}
+	header h1 img{width: 100%;}
+	header .layout{justify-content: space-between;}
+
+	.main{margin-top: 64px;}
+	.main .con3 a.more{position: static; width: 210px; margin: 30px auto; display: block; text-align: center;}
+	.main .con4 .layout{flex-wrap: wrap;}
+	.main .con4 .layout>div:last-child{width: 100%; display: flex; flex-wrap: wrap; margin-left: 0; margin-top: 30px;}
+	.main .con4 .layout>div.kakao{width: 49%;}
+	.main .con4 .layout>div.inforuse{width: 49%;}
+	.main .con4 .layout>div.inforuse .swiper-slide{background-size: cover;}
+	.main .con4 .service-center{width: 100%;}
+	.main .con4 .personal-qa, .main .con4 .consulting{flex: 1; margin-top: 0; margin-left: 2%; padding: 30px 15px 80px 15px;}
+	.main .con4 .personal-qa{margin-left: 0;}
+	.main .con4 .personal-qa i,.main .con4 .consulting i{width: 40px; height: 40px; right: 15px;}
+	.main .con4 .personal-qa i img,.main .con4 .consulting i img{width: 20px;}
+
+	footer .top ul li{width: 50%; margin-left: 0;}
+
+	.main .gradient.talk{width: 60px; height: 60px;}
+	.main .gradient.talk img{width: 30px;}
+
+	.sub select{background-position-x: calc(100% - 15px);}
+
+	.mypage.mo-ver .layout{padding: 0;}
+	.mypage.mo-ver{padding-top: 117px !important; padding-bottom: 0;}
+
+	.mypage .link-tab li a{font-size: 13px; padding: 15px 0;}
+	.mypage .link-tab{position: fixed; top: 74px; left: 0; right: 0; z-index: 10;}
+	.mypage .dp-flex{flex-wrap: wrap;}
+	.mypage .top,.mypage .middle{grid-template-columns: 1fr;}
+	.mypage .myinfor{width: 100%;}
+	.mypage .my-allmoney{width: 100%; margin-left: 0; margin-top: 20px; padding-bottom: 30px;}
+	.mypage .my-allmoney dl{flex-wrap: wrap; width: 100%; margin-left: 0;}
+	.mypage .middle .today-item,.mypage .kakao,.mypage .middle .invest-limit{grid-column: 1;}
+	.mypage .middle .invest-limit{grid-row: span2; margin-left: 0; margin-top: 20px; padding: 35px 30px;}
+	.mypage .bottom{padding: 40px 20px;}
+	.mypage .bottom .tit{margin-bottom: 40px; margin-top: 12px;}
+	.mypage .bottom ul{flex-wrap: wrap;}
+	.mypage .bottom ul li{flex: none; width: 100%; margin-left: 0; margin-top: 10px; padding: 23px 25px;}
+	.mypage .bottom ul li:first-child{margin-top: 0;}
+	.mypage .history-con{border-radius: 0;}
+	.mypage .history-con .his-tab li a, .mypage .my-tab li a{font-size: 13px; padding: 20px 0 15px 0;}
+	.mypage .history-con .his-tab li.on a, .mypage .my-tab li.on a{border-bottom: 2px #0AB481 solid;}
+	.mypage .history-con h2{font-size: 26px; margin-top: 75px; margin-bottom: 30px;}
+	.mypage .history-con .btns button,.mypage .history-con .btns select{font-size: 12px; height: 30px; width: 100px; margin-bottom: 10px;}
+	.mypage .file{font-size: 11px; background-size: 16px auto; padding: 10px 10px 10px 30px; background-position-x:  8px}
+	.mypage .history-con .btns{padding-bottom: 25px; padding-left: 20px; padding-right: 20px;}
+	.mypage .detail{padding: 0;}
+	.mypage .history-con .all-invest .table-wrap{border-top: 1px #eaeaea solid;}
+	.mypage .history-con .all-invest .table-wrap .head{display: none !important;}
+	.mypage .history-con .all-invest .table-wrap div.row a{display: flex; padding: 25px 100px 25px 20px; flex-wrap: wrap; position: relative;}
+	.mypage .history-con .all-invest .table-wrap div.row.body span{height: auto !important; display: inline-block; font-size: 14px;}
+	.mypage .history-con .all-invest .table-wrap div.row.body span.date,.mypage .history-con .all-invest .table-wrap div.row.body span.period,.mypage .history-con .all-invest .table-wrap div.row.body span.yield-mon
+	{display: none;}
+	.mypage .history-con .all-invest .table-wrap div.row.body span.tit{width: 100%; text-align: left; margin-bottom: 20px; word-break: keep-all; line-height: 22px;}
+	.mypage .history-con .all-invest .table-wrap div.row.body span.position{position: absolute; right: 20px; top: 0; bottom: 0px; display: flex;}
+	.mypage .history-con .all-invest .table-wrap div.row.body span.all{order: 1; padding-left: 10px; margin-left: 10px; position: relative;}
+	.mypage .history-con .all-invest .table-wrap div.row.body span.all:before{content: ''; display: block; width: 1px; height: 10px; background: #e3e3e3; position: absolute; left: 0; top: 50%; margin-top: -5px;}
+	.mypage .history-con .all-invest .table-wrap div.row span.ing button{font-size: 12px; margin-top: 10px; width: 62px;}
+
+	.paging{margin-top: 30px;}
+	.paging ul li a{font-size: 13px;}
+	.paging a img{top: 0;}
+
+	.mypage .detail h2{font-size: 22px;}
+	.mypage .back-area a{font-size: 13px; padding: 17px 0;}
+	.mypage .history-con .schedule .cal thead tr.month th{font-size: 25px;}
+	.mypage .history-con .schedule .cal thead tr.month th a{top: -2px;}
+	.mypage .history-con .schedule .sch-infor{margin-top: 25px;}
+	.mypage .history-con .schedule .sch-infor span{font-size: 13px;}
+	.mypage .history-con .schedule .all{font-size: 15px;}
+
+	.mypage .certificate .btns{display: flex; padding-left: 0; padding-right: 0;}
+	.mypage .certificate .btns button{flex: 1; height: 40px; line-height: 40px;}
+	.mypage .certificate{padding-left: 20px;}
+	.mypage .certificate h3{padding-left: 0;}
+	.mypage .certificate h3{display: none;}
+	.mypage .certificate table thead th{font-size: 12px; padding: 15px 0;}
+	.mypage .certificate table tbody td{font-size: 13px; height: 63px; line-height: 18px;}
+	.mypage .certificate table td span{margin-top: 0;}
+	.mypage .certificate table button{font-size: 12px;}
+	.mypage .certificate .confirm h2{font-size: 20px;}
+	.mypage .certificate .confirm .table-wrap .col .th,.mypage .certificate .confirm .table-wrap .col .s-th{font-size: 12px;}
+	.mypage .certificate .confirm .table-wrap .col .td{font-size: 13px;}
+	.mypage .certificate .confirm ul{margin-top: 25px;}
+	.mypage .certificate .confirm ul li{font-size: 12px;}
+	.mypage .certificate .confirm select{font-size: 13px; width: 85px; height: 30px;}
+	.sub select{background-size: 8px auto; background-position-x: calc(100% - 10px);}
+
+	.mypage .account > div{padding: 25px;}
+	.mypage .account .connect .tit{font-size: 15px;}
+	.mypage .account .connect p{font-size: 12px;}
+	.mypage .account .connect button{font-size: 11px; bottom: 26px; right: 20px;}
+	.mypage .account .virtual .tit{font-size: 16px;}
+	.mypage .account .virtual .tit a{width: 16px; height: 16px; font-size: 12px; line-height: 16px; top: -1px;}
+	.mypage .account .virtual p{font-size: 13px;}
+	.mypage .account .virtual .poss span{font-size: 12px;}
+	.mypage .account .virtual .poss .num{font-size: 20px;}
+	.mypage .account .virtual .poss .num b{font-size: 26px;}
+	.mypage .account .virtual button{font-size: 12px; top: 20px; right: 20px; padding: 4px 12px;}
+	.mypage .account .dpwd{padding: 45px 20px;}
+	.mypage .account .dpwd .tit{font-size: 20px;}
+	.mypage .account .dpwd .self-btn{font-size: 13px;}
+	.mypage .account .dpwd table th{font-size: 12px; padding: 14px 0;}
+	.mypage .account .dpwd table td{font-size: 13px; height: 70px;}
+	.mypage .account .dpwd table td span{font-size: 12px;}
+	.mypage .account .dpwd button{padding: 5px 8px 6px; margin-top: 5px;}
+	.mypage .account .dpwd button img{width: 16px;}
+	.mypage .account .dpwd button.active img{position: relative; top: -1px;}
+
+	.mypage .account .self-write ul li{flex-wrap: wrap;}
+	.mypage .account .self-write ul li .tit{font-size: 13px; width: 100%; margin-bottom: 15px;}
+	.mypage .account .self-write ul li label{font-size: 12px; padding: 10px 0;}
+	.mypage .account .self-write ul li .in{width: 100%;}
+	.mypage .account .self-write ul li .in span{margin-right: 5px; margin-bottom: 5px;}
+	.mypage .account .self-write > button{font-size: 13px;}
+	.mypage .account .self-write ul li .in input{padding: 9px 15px;}
+	.mypage .account .self-write{padding: 35px 20px;}
+	.mypage .account .self-write .close{display: inline-block; width: 24px; height: 24px;}
+	.mypage .account .self-write .close img{width: 100%;}
+
+	.mypage .my-tab{margin-bottom: 50px;}
+	.mypage .meminfor-wrap{border-radius: 0;}
+	.mypage .meminfor h2{font-size: 24px; margin-bottom: 30px;}
+	.mypage .infor-update a{font-size: 12px;}
+
+	.mypage.mypage-loan .my-allmoney{grid-column: 1; grid-row: 2 / 3;}
+	.mypage .my-allmoney p{margin-bottom: 35px;}
+	.mypage .my-allmoney .situ dl,.mypage.mypage-loan .my-allmoney .situ dl{margin-bottom: 10px;}
+	.mypage .my-allmoney .situ dl dt,.mypage .my-allmoney .situ dl dd{padding: 15px 0;}
+	.mypage.mypage-loan .top{padding-left: 20px; padding-right: 20px;width: 100%;}
+	.mypage.mypage-loan .repay{border-radius: 0; padding: 45px 20px;}
+	.mypage.mypage-loan .repay .tit{text-align: center;}
+
+	.mypage.mypage-loan .history-con .table-wrap table th{font-size: 14px;}
+	.mypage.mypage-loan .history-con .table-wrap table th:first-child, .mypage.mypage-loan .history-con .table-wrap table td:first-child{width: 50%;}
+	.mypage.mypage-loan .history-con .table-wrap table td a{font-size: 14px;}
+	.mypage.mypage-loan .history-con .table-wrap table dl dt,.mypage.mypage-loan .history-con .table-wrap table dl dd{font-size: 12px;}
+	.mypage.mypage-loan .history-con .table-wrap table td .num{margin-top: 6px;}
+
+	.invest-page .sub-wrap,.invest-infor .sub-wrap{padding: 64px 0;}
+	.invest-page h2{font-size: 30px; margin-top: 60px; margin-bottom: 45px;}
+	.invest-page .ban p{font-size: 22px; margin-bottom: 10px;}
+	.invest-page .ban span{font-size: 15px;}
+	.invest-page .ban a{font-size: 13px; display: block; width: 130px; margin-left: 0; margin-top: 20px;}
+	.invest-page .ban a img{width: 14px; margin-top: -5px;}
+	.invest-page .ban{background-position-x: calc(100% - 30%); padding: 45px 25px 35px;}
+	.invest-page h3{font-size: 22px; margin-bottom: 25px;}
+	.invest-page .tit .srh-area{position: relative; display: inline-block; margin-bottom: 40px;}
+	.invest-page .tit .srh-area select,.invest-page .tit .srh-area input{height: 36px;}
+	.invest-item .item .img .wait p{font-size: 15px;}
+	.invest-item .item .infor .tit{font-size: 16px; line-height: 22px; word-break: keep-all;}
+	.invest-item .item .situation{font-size: 12px;}
+	.invest-item .item .statue .rate{font-size: 18px;}
+	.invest-item .item .statue .rate strong{font-size: 24px;}
+	.invest-item .item .statue ul li{font-size: 13px;}
+	.invest-item .item .progress label,.invest-item .item .progress .mon{font-size: 12px;}
+	.invest-item .item .progress progress{height: 10px;}
+	.invest-item .item .infor{padding: 25px 20px;}
+	.invest-page .item-wrap{width: 102%;}
+	.invest-page .item-wrap a.more-btn{font-size: 14px; padding: 14px 0;}
+	.invest-page .item-wrap .item{width: 48%;}
+
+	.invest-infor .top.store{background-position-x: calc(100% - 25%);}
+	.invest-infor .top.estate{background-position-x: calc(100% - 30%);}
+	.invest-infor .top.apart{background-position-x: calc(100% - 27%);}
+	.invest-infor .top.land{background-position-x: calc(100% - 30%);}
+	.invest-infor .detail-infor .map img{width: 100%;}
+
+	.invest-infor .detail-infor ol li span{font-size: 14px; line-height: 22px; word-break: keep-all;}
+	.invest-infor .detail-infor ol li p{font-size: 13px; line-height: 22px; word-break: keep-all;}
+
+	.invest-infor .detail-infor .add-paper{flex-wrap: wrap;}
+	.invest-infor .detail-infor .add-paper span{font-size: 13px; background-size: 16px auto; padding-right: 0; margin-right: 2%; flex: none; width: 49%; margin-bottom: 2%;}
+	.invest-infor .detail-infor .add-paper span:nth-child(even){margin-right: 0;}
+	.invest-infor .detail-infor .add-paper{width: 100%;}
+	.invest-infor .detail-infor .content .row{grid-template-columns: 1fr 3fr;}
+	.invest-infor .detail-infor .content .dp-grid .grid4{grid-template-columns: 1fr 3fr;}
+	.invest-infor .detail-infor .content .dp-grid .grid4 div:nth-child(1),.invest-infor .detail-infor .content .dp-grid .grid4 div:nth-child(2)
+	{border-bottom: 1px #e6e6e6 solid;}
+
+	.loan-page .sub-wrap{padding: 64px 0 0;}
+	.loan-page .top ul{flex-wrap: wrap; margin-bottom: 30px;}
+	.loan-page .top ul li{flex: none; width: 49%; margin-left: 0; margin-right: 2%; margin-bottom: 2%;}
+	.loan-page .top ul li:nth-child(even){margin-right: 0;}
+
+	.loan-page .middle ul{flex-wrap: wrap;}
+	.loan-page .middle ul li{flex: none; width: 49%; margin-left: 0; margin-right: 2%; margin-bottom: 2%;}
+	.loan-page .middle ul li:nth-child(even){margin-right: 0;}
+	.loan-page .middle ul li .in{height: 170px;}
+
+	.loan-page .bottom ul{flex-wrap: wrap;}
+	.loan-page .bottom ul li{flex: none; width: 100%; margin-left: 0; margin-bottom: 40px;}
+	.loan-page .bottom ul li:before{width: 2px; height: 40px; border-left: 2px #0AB481 dashed; left: 50%; top: -40px;}
+
+	.invest-grade .top{padding: 70px 0; background-size: cover;}
+	.invest-grade .top h2{font-size: 24px;}
+	.invest-grade .top p{font-size: 14px; margin-top: 25px;}
+	.invest-grade .in h3{font-size: 20px; margin-top: 40px; margin-bottom: 20px;}
+	.invest-grade .in table th{font-size: 12px; padding: 15px 0;  word-break: keep-all; line-height: 18px;}
+	.invest-grade .in table td{font-size: 13px; padding: 25px;}
+	.invest-grade .in .layout div:first-child td{padding: 15px;}
+	.invest-grade .in table ul li{font-size: 13px; line-height: 24px;}
+	.invest-grade .in table ul li p{font-size: 12px; line-height: 24px; word-break: keep-all;}
+	.invest-grade .in .s-tit{font-size: 13px; margin-top: 20px; margin-bottom: 10px;}
+	.invest-grade .in ul li{font-size: 13px; line-height: 18px; word-break: keep-all;}
+
+	.notice-home h2{font-size: 30px; margin-top: 60px; margin-bottom: 35px;}
+	.notice-home .list-top .t-ver{font-size: 13px;}
+	.notice-home .list-top .search-box select{font-size: 12px; height: 36px;}
+	.notice-home .list-top .search-box input[type="text"]{padding: 9px 45px 9px 15px;}
+	.notice-home .list-top .search-box button{height: 36px; width: 36px;}
+	.notice-home .list-box{margin-top: 15px;}
+	.notice-home .list-box li.fix .num span{font-size: 11px;}
+
+	.notice-detail h2{font-size: 25px; margin-top: 60px; margin-bottom: 20px;}
+	.notice-detail .date span{font-size: 13px !important;}
+	.notice-detail .con{margin-top: 30px; padding: 20px 0;}
+	.notice-detail .con p.notice{font-size: 13px; margin-top: 25px; margin-bottom: 30px; line-height: 20px; word-break: keep-all;}
+	.notice-detail a{font-size: 14px; padding: 15px 0; width: 100px; margin-top: 20px;}
+}

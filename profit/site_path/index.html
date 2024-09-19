@@ -1,0 +1,1568 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=720"/>
+<title>프로핏 작업진행현황</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="./css/import.css" rel="stylesheet">
+<script src="./js/jquery.min.js"></script>
+<script src="./js/default.js"></script>
+</head>
+<body>
+<div id="ia-wrap" class="">
+	<div id="ia-container">
+		<div id="ia-content">
+			<div class="ia-content-header">
+				<div class="ia-in-sec">
+					<h1 class="ia-h1">프로핏 작업진행도</h1>
+					<div class="ia-guideLink">
+						<button type="button" class="ia-top" onclick="$(window).scrollTop(0)">TOP</button>
+						<a href="_guide/rule_intro.html">퍼블리싱가이드</a>
+					</div>
+				</div>
+			</div>
+			<div class="ia-content-body">
+				<br>
+				<p class="ia-msg">* 제목영역을 클릭하면 펼치거나, 접을 수 있습니다.</p>
+
+				<!-- 01_Convention -->
+				<section class="ia-section ia-section-ajax" data-file="ajax_ia_1" data-color="01a2de" id="gIA0">
+					<div class="ia-section-header">
+						<h2 class="ia-h2"><a href="#this" class="accordion-toggle">00_메인/로그인/공통</a></h2>
+						<!-- <div class="ia-legend">
+							<span class="item"><em>총 페이지 : </em><em class="legend-total">7</em>,</span>
+							<span class="item c-done"><em>완료 : </em><em class="legend-complete">0</em>,</span>
+							<span class="item"><em>진척률 : </em><em class="legend-process">0%</em></span>
+						</div> -->
+					</div>
+					<div class="ia-section-body" style="height: auto;">
+						<div class="ia-tab-content type-thumb">
+							<div class="ia-iframe-wrap">
+								<div class="ia-iframe-list"></div>
+							</div>
+						</div>
+						<div class="ia-tab-content type-list is-visible">
+							<div class="tbl ia-tbl">
+								<table>
+									<thead>
+										<tr>
+											<th scope="col">번호</th>
+											<th scope="col" class="col-1depth">1Depth</th>
+											<th scope="col" class="col-2depth">2Depth</th>
+											<th scope="col" class="col-3depth">3Depth</th>
+											<th scope="col" class="col-4depth" style="display: none;">4Depth</th>
+											<th scope="col" class="col-5depth" style="display: none;">5Depth</th>
+											<th scope="col" class="col-point">구분</th>
+											<th scope="col">URL</th>
+											
+											<th scope="col">상태</th>
+
+											<th scope="col">비고</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth">메인</td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/main.html" target="_blank">/html/main.html</a></td>
+											
+											<td class="col-complete" data-complete="done"></td>
+
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth">로그인</td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/login.html" target="_blank">/html/login.html</a></td>
+											
+											<td class="col-complete" data-complete="done"></td>
+
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth">헤더</td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/include/header.html" target="_blank">/html/include/header.html</a></td>
+											
+											<td class="col-complete" data-complete="done"></td>
+
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth">헤더(투자자로그인시)</td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/include/invest-header.html" target="_blank">/html/include/invest-header.html</a></td>
+											
+											<td class="col-complete" data-complete="done"></td>
+
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth">헤더(대출자로그인시)</td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/include/loan-header.html" target="_blank">/html/include/loan-header.html</a></td>
+											
+											<td class="col-complete" data-complete="done"></td>
+
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth">푸터</td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/include/footer.html" target="_blank">/html/include/footer.html</a></td>
+											
+											<td class="col-complete" data-complete="done"></td>
+
+											<td class="col-memo"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- //01_Convention -->
+
+				<!-- 01_Convention -->
+				<section class="ia-section ia-section-ajax" data-file="ajax_ia_1" data-color="01a2de" id="gIA0">
+					<div class="ia-section-header">
+						<h2 class="ia-h2"><a href="#this" class="accordion-toggle">투자</a></h2>
+						<!-- <div class="ia-legend">
+							<span class="item"><em>총 페이지 : </em><em class="legend-total">7</em>,</span>
+							<span class="item c-done"><em>완료 : </em><em class="legend-complete">0</em>,</span>
+							<span class="item"><em>진척률 : </em><em class="legend-process">0%</em></span>
+						</div> -->
+					</div>
+					<div class="ia-section-body" style="height: auto;">
+						<div class="ia-tab-content type-thumb">
+							<div class="ia-iframe-wrap">
+								<div class="ia-iframe-list"></div>
+							</div>
+						</div>
+						<div class="ia-tab-content type-list is-visible">
+							<div class="tbl ia-tbl">
+								<table>
+									<thead>
+										<tr>
+											<th scope="col">번호</th>
+											<th scope="col" class="col-1depth">1Depth</th>
+											<th scope="col" class="col-2depth">2Depth</th>
+											<th scope="col" class="col-3depth">3Depth</th>
+											<th scope="col" class="col-4depth" style="display: none;">4Depth</th>
+											<th scope="col" class="col-5depth" style="display: none;">5Depth</th>
+											<th scope="col" class="col-point">구분</th>
+											<th scope="col">URL</th>
+											
+											<th scope="col">상태</th>
+
+											<th scope="col">비고</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth">투자</td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/invest-page.html" target="_blank">/html/invest-page.html</a></td>
+											
+											<td class="col-complete" data-complete="done"></td>
+
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth">1.기본정보</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/invest-infor.html" target="_blank">/html/invest-infor.html</a></td>
+											
+											<td class="col-complete" data-complete="done"></td>
+
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth">1.기본정보(빠른투자 투자한도 초과)</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/invest-infor-2.html" target="_blank">/html/invest-infor-2.html</a></td>
+											
+											<td class="col-complete" data-complete="done"></td>
+
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth">2.리스크 측정</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/invest-risk.html" target="_blank">/html/invest-risk.html</a></td>
+											
+											<td class="col-complete" data-complete="done"></td>
+
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth">3.담보물정보</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/invest-guarantee-infor.html" target="_blank">/html/invest-guarantee-infor.html</a></td>
+											
+											<td class="col-complete" data-complete="done"></td>
+
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth">4.실사의견</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/invest-opinion.html" target="_blank">/html/invest-opinion.html</a></td>
+											
+											<td class="col-complete" data-complete="done"></td>
+
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth">5.추가정보</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/invest-add.html" target="_blank">/html/invest-add.html</a></td>
+											
+											<td class="col-complete" data-complete="done"></td>
+
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth">투자하기</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/go-invest.html" target="_blank">/html/go-invest.html</a></td>
+											
+											<td class="col-complete" data-complete="done"></td>
+
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth">투자완료</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/invest-complete.html" target="_blank">/html/invest-complete.html</a></td>
+											
+											<td class="col-complete" data-complete="done"></td>
+
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth">투자등급안내</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/invest-grade.html" target="_blank">/html/invest-grade.html</a></td>
+											
+											<td class="col-complete" data-complete="done"></td>
+
+											<td class="col-memo"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- //01_Convention -->
+
+				<!-- 01_Convention -->
+				<section class="ia-section ia-section-ajax" data-file="ajax_ia_1" data-color="01a2de" id="gIA0">
+					<div class="ia-section-header">
+						<h2 class="ia-h2"><a href="#this" class="accordion-toggle">대출</a></h2>
+						<!-- <div class="ia-legend">
+							<span class="item"><em>총 페이지 : </em><em class="legend-total">7</em>,</span>
+							<span class="item c-done"><em>완료 : </em><em class="legend-complete">0</em>,</span>
+							<span class="item"><em>진척률 : </em><em class="legend-process">0%</em></span>
+						</div> -->
+					</div>
+					<div class="ia-section-body" style="height: auto;">
+						<div class="ia-tab-content type-thumb">
+							<div class="ia-iframe-wrap">
+								<div class="ia-iframe-list"></div>
+							</div>
+						</div>
+						<div class="ia-tab-content type-list is-visible">
+							<div class="tbl ia-tbl">
+								<table>
+									<thead>
+										<tr>
+											<th scope="col">번호</th>
+											<th scope="col" class="col-1depth">1Depth</th>
+											<th scope="col" class="col-2depth">2Depth</th>
+											<th scope="col" class="col-3depth">3Depth</th>
+											<th scope="col" class="col-4depth" style="display: none;">4Depth</th>
+											<th scope="col" class="col-5depth" style="display: none;">5Depth</th>
+											<th scope="col" class="col-point">구분</th>
+											<th scope="col">URL</th>
+											
+											<th scope="col">상태</th>
+
+											<th scope="col">비고</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth">대출</td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/loan-page.html" target="_blank">/html/loan-page.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth">대출 신청하기</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/go-loan.html" target="_blank">/html/go-loan.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth">대출 신청완료</td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/go-loan-complete.html" target="_blank">/html/go-loan-complete.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- //01_Convention -->
+
+				<!-- 01_Convention -->
+				<section class="ia-section ia-section-ajax" data-file="ajax_ia_1" data-color="01a2de" id="gIA0">
+					<div class="ia-section-header">
+						<h2 class="ia-h2"><a href="#this" class="accordion-toggle">마이페이지(투자자)</a></h2>
+					</div>
+					<div class="ia-section-body" style="height: auto;">
+						<div class="ia-tab-content type-thumb">
+							<div class="ia-iframe-wrap">
+								<div class="ia-iframe-list"></div>
+							</div>
+						</div>
+						<div class="ia-tab-content type-list is-visible">
+							<div class="tbl ia-tbl">
+								<table>
+									<thead>
+										<tr>
+											<th scope="col">번호</th>
+											<th scope="col" class="col-1depth">1Depth</th>
+											<th scope="col" class="col-2depth">2Depth</th>
+											<th scope="col" class="col-3depth">3Depth</th>
+											<th scope="col" class="col-4depth" style="display: none;">4Depth</th>
+											<th scope="col" class="col-5depth" style="display: none;">5Depth</th>
+											<th scope="col" class="col-point">구분</th>
+											<th scope="col">URL</th>
+											
+											<th scope="col">상태</th>
+
+											<th scope="col">비고</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth">1.마이페이지</td>  
+											<td class="col-2depth">1.투자요약</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/mypage1.html" target="_blank">/html/mypage1.html</a></td>
+											
+											<td class="col-complete" data-complete="done"></td>
+
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth">2.투자내역</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/mypage2-1.html" target="_blank">/html/mypage2-1.html</a></td>
+											
+											<td class="col-complete" data-complete="done"></td>
+
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth">투자내역 상세보기</td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/mypage2-1-detail.html" target="_blank">/html/mypage2-1-detail.html</a></td>			
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth">상환스케줄</td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/mypage2-2.html" target="_blank">/html/mypage2-2.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth">증명서발급</td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/mypage2-3.html" target="_blank">/html/mypage2-3.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth">원천징수 확인서</td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/mypage2-3-confirm.html" target="_blank">/html/mypage2-3-confirm.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth">3. 입출금계좌</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/mypage3.html" target="_blank">/html/mypage3.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth">4. 내정보</td>
+											<td class="col-3depth">내회원정보</td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/mypage4-myinfor.html" target="_blank">/html/mypage4-myinfor.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth">비밀번호 변경</td>
+											<td class="col-4depth"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/pw-change.html" target="_blank">/html/pw-change.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth">본인인증</td>
+											<td class="col-4depth"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/self-aut.html" target="_blank">/html/self-aut.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth">내등급정보</td>
+											<td class="col-4depth"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/mygrade-infor.html" target="_blank">/html/mygrade-infor.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth">등급신청(전문투자자)</td>
+											<td class="col-4depth"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/grade-apply.html" target="_blank">/html/grade-apply.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth">등급신청(개인대부업)</td>
+											<td class="col-4depth"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/grade-apply-2.html" target="_blank">/html/grade-apply-2.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth">등급신청(개인대부업 소득적격자)</td>
+											<td class="col-4depth"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/grade-apply-3.html" target="_blank">/html/grade-apply-3.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth">등급신청(개인대부업 전문투자자)</td>
+											<td class="col-4depth"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/grade-apply-4.html" target="_blank">/html/grade-apply-4.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- //01_Convention -->
+
+				<!-- 01_Convention -->
+				<section class="ia-section ia-section-ajax" data-file="ajax_ia_1" data-color="01a2de" id="gIA0">
+					<div class="ia-section-header">
+						<h2 class="ia-h2"><a href="#this" class="accordion-toggle">마이페이지(대출자)</a></h2>
+					</div>
+					<div class="ia-section-body" style="height: auto;">
+						<div class="ia-tab-content type-thumb">
+							<div class="ia-iframe-wrap">
+								<div class="ia-iframe-list"></div>
+							</div>
+						</div>
+						<div class="ia-tab-content type-list is-visible">
+							<div class="tbl ia-tbl">
+								<table>
+									<thead>
+										<tr>
+											<th scope="col">번호</th>
+											<th scope="col" class="col-1depth">1Depth</th>
+											<th scope="col" class="col-2depth">2Depth</th>
+											<th scope="col" class="col-3depth">3Depth</th>
+											<th scope="col" class="col-4depth" style="display: none;">4Depth</th>
+											<th scope="col" class="col-5depth" style="display: none;">5Depth</th>
+											<th scope="col" class="col-point">구분</th>
+											<th scope="col">URL</th>
+											
+											<th scope="col">상태</th>
+
+											<th scope="col">비고</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth">1.마이페이지</td>  
+											<td class="col-2depth">1. 투자요약 (대출자)</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/mypage1-loan.html" target="_blank">/html/mypage1-loan.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth">2. 대출내역 (대출자)</td>
+											<td class="col-3depth">전체대출내역</td>
+											<td class="col-4depth"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/mypage2-1-loan.html" target="_blank">/html/mypage2-1-loan.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth">전체대출내역-상세보기</td>
+											<td class="col-4depth"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/mypage2-1-detail-loan.html" target="_blank">/html/mypage2-1-detail-loan.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth">증명서 발급</td>
+											<td class="col-4depth"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/mypage2-3-loan.html" target="_blank">/html/mypage2-3-loan.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth">4. 내정보</td>
+											<td class="col-3depth">내회원정보</td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/mypage4-myinfor-loan.html" target="_blank">/html/mypage4-myinfor-loan.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth">비밀번호 변경</td>
+											<td class="col-4depth"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/pw-change-loan.html" target="_blank">/html/pw-change-loan.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth">본인인증</td>
+											<td class="col-4depth"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/self-aut-loan.html" target="_blank">/html/self-aut-loan.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- //01_Convention -->
+
+				<!-- 02_Core -->
+				<section class="ia-section ia-section-ajax" data-file="ajax_ia_2" data-color="01a2de" id="gIA1">
+					<div class="ia-section-header">
+						<h2 class="ia-h2"><a href="#this" class="accordion-toggle">B. 회원가입/로그인 (개인)</a></h2>
+						<!-- <div class="ia-legend">
+							<span class="item"><em>총 페이지 : </em><em class="legend-total">4</em>,</span>
+							<span class="item c-done"><em>완료 : </em><em class="legend-complete">0</em>,</span> 
+							<span class="item"><em>진척률 : </em><em class="legend-process">0%</em></span>
+						</div> -->
+					</div>
+					<div class="ia-section-body">
+						<div class="ia-tab-content type-thumb">
+							<div class="ia-iframe-wrap">
+								<div class="ia-iframe-list"></div>
+							</div>
+						</div>
+						<div class="ia-tab-content type-list is-visible">
+							<div class="tbl ia-tbl">
+								<table>
+									<thead>
+										<tr>
+											<th scope="col">번호</th>
+											<th scope="col" class="col-1depth">1Depth</th>
+											<th scope="col" class="col-2depth">2Depth</th>
+											<th scope="col" class="col-3depth">3Depth</th>
+											<th scope="col" class="col-4depth" style="display: none;">4Depth</th>
+											<th scope="col" class="col-5depth" style="display: none;">5Depth</th>
+											<th scope="col" class="col-point">구분</th>
+											<th scope="col">URL</th>
+											
+											<th scope="col">상태</th>
+											<th scope="col">비고</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth">프로핏 시작하기</td>
+											<td class="col-2depth">1.투자/대출</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/invest-type.html" target="_blank">/html/invest-type.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">2.개인사업</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/business-type.html" target="_blank">/html/business-type.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">3.개인대출/법인대출</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/loan-type.html" target="_blank">/html/loan-type.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">3.약관동의</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/agree.html" target="_blank">/html/agree.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">4. 아이디/비번</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/id-pw.html" target="_blank">/html/id-pw.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">5. 회원정보</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/member-infor.html" target="_blank">/html/member-infor.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">6. 본인인증</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/self-cer.html" target="_blank">/html/self-cer.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- //02_Core -->
+
+				<!-- 02_Core -->
+				<section class="ia-section ia-section-ajax" data-file="ajax_ia_2" data-color="01a2de" id="gIA1">
+					<div class="ia-section-header">
+						<h2 class="ia-h2"><a href="#this" class="accordion-toggle">성인</a></h2>
+						<!-- <div class="ia-legend">
+							<span class="item"><em>총 페이지 : </em><em class="legend-total">4</em>,</span>
+							<span class="item c-done"><em>완료 : </em><em class="legend-complete">0</em>,</span> 
+							<span class="item"><em>진척률 : </em><em class="legend-process">0%</em></span>
+						</div> -->
+					</div>
+					<div class="ia-section-body">
+						<div class="ia-tab-content type-thumb">
+							<div class="ia-iframe-wrap">
+								<div class="ia-iframe-list"></div>
+							</div>
+						</div>
+						<div class="ia-tab-content type-list is-visible">
+							<div class="tbl ia-tbl">
+								<table>
+									<thead>
+										<tr>
+											<th scope="col">번호</th>
+											<th scope="col" class="col-1depth">1Depth</th>
+											<th scope="col" class="col-2depth">2Depth</th>
+											<th scope="col" class="col-3depth">3Depth</th>
+											<th scope="col" class="col-4depth" style="display: none;">4Depth</th>
+											<th scope="col" class="col-5depth" style="display: none;">5Depth</th>
+											<th scope="col" class="col-point">구분</th>
+											<th scope="col">URL</th>
+											
+											<th scope="col">상태</th>
+											<th scope="col">비고</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth">성인</td>
+											<td class="col-2depth">1-1.휴대폰 본인인증</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/id-phone-step1.html" target="_blank">/html/id-phone-step1.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">1-2.휴대폰 본인인증02</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/id-phone-step2.html" target="_blank">/html/id-phone-step2.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">2.자금세탁방지를 위한 정보수집</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/policies.html" target="_blank">/html/policies.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">3-1.신분증 인증_주민등록증</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/id-ver.html" target="_blank">/html/id-ver.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">3-2.신분증 인증_운전면허증</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/driver-license.html" target="_blank">/html/driver-license.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">3-3.신분증 인증_여권</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/passport.html" target="_blank">/html/passport.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">4.출금계좌 등록</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/account.html" target="_blank">/html/account.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">5.1원이체</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/transfer.html" target="_blank">/html/transfer.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">6.추가제출</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/add-sm.html" target="_blank">/html/add-sm.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">7.완료</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/complete.html" target="_blank">/html/complete.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- //02_Core -->
+
+				<!-- 02_Core -->
+				<section class="ia-section ia-section-ajax" data-file="ajax_ia_2" data-color="01a2de" id="gIA1">
+					<div class="ia-section-header">
+						<h2 class="ia-h2"><a href="#this" class="accordion-toggle">만 14세이상 - 만 18세 이하</a></h2>
+						<!-- <div class="ia-legend">
+							<span class="item"><em>총 페이지 : </em><em class="legend-total">4</em>,</span>
+							<span class="item c-done"><em>완료 : </em><em class="legend-complete">0</em>,</span> 
+							<span class="item"><em>진척률 : </em><em class="legend-process">0%</em></span>
+						</div> -->
+					</div>
+					<div class="ia-section-body">
+						<div class="ia-tab-content type-thumb">
+							<div class="ia-iframe-wrap">
+								<div class="ia-iframe-list"></div>
+							</div>
+						</div>
+						<div class="ia-tab-content type-list is-visible">
+							<div class="tbl ia-tbl">
+								<table>
+									<thead>
+										<tr>
+											<th scope="col">번호</th>
+											<th scope="col" class="col-1depth">1Depth</th>
+											<th scope="col" class="col-2depth">2Depth</th>
+											<th scope="col" class="col-3depth">3Depth</th>
+											<th scope="col" class="col-4depth" style="display: none;">4Depth</th>
+											<th scope="col" class="col-5depth" style="display: none;">5Depth</th>
+											<th scope="col" class="col-point">구분</th>
+											<th scope="col">URL</th>
+											
+											<th scope="col">상태</th>
+											<th scope="col">비고</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth">성인</td>
+											<td class="col-2depth">1-1.휴대폰 본인인증</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/teen-idphone-step1.html" target="_blank">/html/teen-idphone-step1.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">1-2.휴대폰 본인인증02</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/teen-idphone-step2.html" target="_blank">/html/teen-idphone-step2.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">2.자금세탁방지를 위한 정보수집</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/teen-policies.html" target="_blank">/html/teen-policies.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">3-1.신분증 인증_주민등록증</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/teen-id-ver.html" target="_blank">/html/teen-id-ver.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">4-2.신분증 인증_운전면허증</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/teen-driver-license.html" target="_blank">/html/teen-driver-license.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">4-3.신분증 인증_여권</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/teen-passport.html" target="_blank">/html/teen-passport.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">5.출금계좌 등록</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/teen-account.html" target="_blank">/html/teen-account.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">5.1원이체</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/teen-transfer.html" target="_blank">/html/teen-transfer.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">6.추가제출</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/teen-add-sm.html" target="_blank">/html/teen-add-sm.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">7.완료</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/complete.html" target="_blank">/html/complete.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- //02_Core -->
+
+				<!-- 02_Core -->
+				<section class="ia-section ia-section-ajax" data-file="ajax_ia_2" data-color="01a2de" id="gIA1">
+					<div class="ia-section-header">
+						<h2 class="ia-h2"><a href="#this" class="accordion-toggle">B. 회원가입/로그인(법인)</a></h2>
+						<!-- <div class="ia-legend">
+							<span class="item"><em>총 페이지 : </em><em class="legend-total">4</em>,</span>
+							<span class="item c-done"><em>완료 : </em><em class="legend-complete">0</em>,</span> 
+							<span class="item"><em>진척률 : </em><em class="legend-process">0%</em></span>
+						</div> -->
+					</div>
+					<div class="ia-section-body">
+						<div class="ia-tab-content type-thumb">
+							<div class="ia-iframe-wrap">
+								<div class="ia-iframe-list"></div>
+							</div>
+						</div>
+						<div class="ia-tab-content type-list is-visible">
+							<div class="tbl ia-tbl">
+								<table>
+									<thead>
+										<tr>
+											<th scope="col">번호</th>
+											<th scope="col" class="col-1depth">1Depth</th>
+											<th scope="col" class="col-2depth">2Depth</th>
+											<th scope="col" class="col-3depth">3Depth</th>
+											<th scope="col" class="col-4depth" style="display: none;">4Depth</th>
+											<th scope="col" class="col-5depth" style="display: none;">5Depth</th>
+											<th scope="col" class="col-point">구분</th>
+											<th scope="col">URL</th>
+											
+											<th scope="col">상태</th>
+											<th scope="col">비고</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth">프로핏 시작하기</td>
+											<td class="col-2depth">1.투자/대출</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/invest-type.html" target="_blank">/html/invest-type.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">2.개인투자/법인투자</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/corp-invest-type.html" target="_blank">/html/corp-invest-type.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">3.개인대출/법인대출</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/loan-type.html" target="_blank">/html/loan-type.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">3.약관동의</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/corp-agree.html" target="_blank">/html/corp-agree.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">4.아이디/비번</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/corp-id-pw.html" target="_blank">/html/corp-id-pw.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">5. 법인정보/법인정보 팝업</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/corp-infor.html" target="_blank">/html/corp-infor.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">6. 본인인증</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/corp-self-cer.html" target="_blank">/html/corp-self-cer.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">7-1.휴대폰 본인인증</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/corp-idphone-step1.html" target="_blank">/html/corp-idphone-step1.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">7-2.휴대폰 본인인증</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/corp-idphone-step2.html" target="_blank">/html/corp-idphone-step2.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">8.자금세탁방지를 위한 정보수집</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/corp-policies.html" target="_blank">/html/corp-policies.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">9-1.신분증 인증_주민등록증</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/corp-id-ver.html" target="_blank">/html/corp-id-ver.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">9-2.신분증 인증_운전면허증</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/corp-driver-license.html" target="_blank">/html/corp-driver-license.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">9-3.신분증 인증_여권</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/corp-passport.html" target="_blank">/html/corp-passport.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">10.출금계좌 등록</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/corp-account.html" target="_blank">/html/corp-account.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">11.1원이체</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/corp-transfer.html" target="_blank">/html/corp-transfer.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">11.추가제출</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/corp-add-sm.html" target="_blank">/html/corp-add-sm.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>
+											<td class="col-2depth">12.완료</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth" style="display: none;"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/corp-complete.html" target="_blank">/html/corp-complete.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- //02_Core -->
+				<!-- 01_Convention -->
+				<section class="ia-section ia-section-ajax" data-file="ajax_ia_1" data-color="01a2de" id="gIA0">
+					<div class="ia-section-header">
+						<h2 class="ia-h2"><a href="#this" class="accordion-toggle">고객센터</a></h2>
+					</div>
+					<div class="ia-section-body" style="height: auto;">
+						<div class="ia-tab-content type-thumb">
+							<div class="ia-iframe-wrap">
+								<div class="ia-iframe-list"></div>
+							</div>
+						</div>
+						<div class="ia-tab-content type-list is-visible">
+							<div class="tbl ia-tbl">
+								<table>
+									<thead>
+										<tr>
+											<th scope="col">번호</th>
+											<th scope="col" class="col-1depth">1Depth</th>
+											<th scope="col" class="col-2depth">2Depth</th>
+											<th scope="col" class="col-3depth">3Depth</th>
+											<th scope="col" class="col-4depth" style="display: none;">4Depth</th>
+											<th scope="col" class="col-5depth" style="display: none;">5Depth</th>
+											<th scope="col" class="col-point">구분</th>
+											<th scope="col">URL</th>
+											
+											<th scope="col">상태</th>
+
+											<th scope="col">비고</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth">공지사항</td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/notice-home.html" target="_blank">/html/notice-home.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth"></td>  
+											<td class="col-2depth">공지사항 상세페이지</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/notice-detail.html" target="_blank">/html/notice-detail.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth">사후관리</td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/after-service.html" target="_blank">/html/after-service.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth">1:1문의하기</td>  
+											<td class="col-2depth"></td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/personal-qa.html" target="_blank">/html/personal-qa.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+										<tr>
+											<td class="col-num">1</td>
+											<td class="col-1depth">자주하는 질문</td>  
+											<td class="col-2depth">1.전체</td>
+											<td class="col-3depth"></td>
+											<td class="col-4depth"></td>
+											<td class="col-5depth" style="display: none;"></td>
+											<td class="col-point"></td>
+											<td class="col-url"><a href="../html/qa-1.html" target="_blank">/html/qa-1.html</a></td>
+											<td class="col-complete" data-complete="done"></td>
+											<td class="col-memo"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- //01_Convention -->
+			</div>
+		</div>
+	</div>
+</div>
+
+</body></html>

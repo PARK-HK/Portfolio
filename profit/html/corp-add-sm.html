@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- <meta http-equiv="page-enter" content="blendTrans(duration=0.3)"> -->
+        <title>Profit</title>
+        <link type="text/css" rel="stylesheet" href="../css/layout.css">
+        <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css">
+        <link type="text/css" rel="stylesheet" href="../css/aos.css">
+        <link type="text/css" rel="stylesheet" href="../css/layout_1360.css">
+        <link type="text/css" rel="stylesheet" href="../css/layout_780.css">
+        <link type="text/css" rel="stylesheet" href="../css/mCustomScrollbar.css">
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="../js/aos.js"></script>
+        <script type="text/javascript" src="../js/publish.js"></script>
+        <script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+        <script>
+            $(document).ready(function(){
+                 $('.header_html').load('header.html');
+                 $('.footer_html').load('footer.html');
+            });
+        </script>
+    </head>
+    <body>
+        <!-- [s]: header -->
+        <div class="header_html">
+            
+        </div>
+        <!-- [e]: header -->
+        <div class="sub bg-gray min-100">
+            <div class="sub-wrap start">
+                <ul class="step" data-aos="fade-up" data-aos-once="true">
+                    <li class="ing">01</li>
+                    <li class="dot ing">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li class="ing">02</li>
+                    <li class="dot ing">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li class="ing">03</li>
+                    <li class="dot ing">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li class="ing">04</li>
+                </ul>
+                <div class="start-wrap add-sm mo-pt0" data-aos="fade-up" data-aos-once="true">
+                    <h2>추가서류 제출 (필수)</h2>
+                    <ul class="input-style pt0">
+                        <li>
+                            <span>투자등급</span>
+                            <select name="" id=""><option value="">법인투자자(일반)</option></select>
+                        </li>
+                        <li>
+                            <span>자격요건</span>
+                            <p>없음</p>
+                        </li>
+                        <li>
+                            <span>투자한도</span>
+                            <p>없음 (단, 개별투자상품 모집금액의 40% 이내)</p>
+                        </li>
+                        <li>
+                            <span>증빙서류 (PDF 스캔본)</span>
+                            <table class="document">
+                                <tbody>
+                                    <tr>
+                                        <th>서류</th>
+                                        <td>
+                                            <ul class="corp-paper">
+                                                <li>1. 사업자등록증(대부업-대부업등록증 포함)</li>
+                                                <li>2. 담당자 재직증명서</li>
+                                                <li>3. 위임장(법인인감 날인본)</li>
+                                                <li>4. 법인인감증명서(1개월 내 발급본)</li>
+                                                <li>5. 출금계좌 통장사본</li>
+                                                <li>6. 법인등기부 등본(1개월 내 출력본)</li>
+                                                <li>7. 주주명부</li>
+                                                <li>8. 법인실소유자 신분증<br>(주주명부상 법인대표와 실소유주가 다른 경우)</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>첨부파일</th>
+                                        <td><span class="upload-name"></span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <input type="file" id="choice01" class="file">
+                            <label for="choice01" class="file-choice mt20">파일업로드</label>
+                        </li>
+                    </ul>
+                    <div class="btn-area w-block mt30">
+                        <a href="corp-complete.html" class="border-green mt0">확인</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [s]: footer -->
+        <div class="footer_html">
+            
+        </div>
+        <!-- [s]: footer -->
+        <script>  
+           $(".file").on('change',function(e){
+              var fileName = $(".file").val();
+              $('.upload-name').text(e.target.files[0].name);
+            });
+        </script>
+    </body>
+</html>

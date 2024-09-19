@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- <meta http-equiv="page-enter" content="blendTrans(duration=0.3)"> -->
+        <title>Profit</title>
+        <link type="text/css" rel="stylesheet" href="../css/layout.css">
+        <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css">
+        <link type="text/css" rel="stylesheet" href="../css/aos.css">
+        <link type="text/css" rel="stylesheet" href="../css/layout_1360.css">
+        <link type="text/css" rel="stylesheet" href="../css/layout_780.css">
+        <link type="text/css" rel="stylesheet" href="../css/mCustomScrollbar.css">
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="../js/aos.js"></script>
+        <script type="text/javascript" src="../js/publish.js"></script>
+        <script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+        <script>
+            $(document).ready(function(){
+                 $('.header_html').load('header.html');
+                 $('.footer_html').load('footer.html');
+            });
+        </script>
+    </head>
+    <body>
+        <!-- [s]: header -->
+        <div class="header_html">
+            
+        </div>
+        <!-- [e]: header -->
+        <div class="sub bg-gray min-100">
+            <div class="sub-wrap start">
+                <div class="start-wrap" data-aos="fade-up" data-aos-once="true">
+                    <h2>약관동의</h2>
+                    <div class="agree-area">
+                        <p><input type="checkbox" id="all"><label for="all"><span></span>전체 약관동의(선택포함)</label></p>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="termservice1">
+                                <label for="termservice1">[필수] 서비스 이용약관</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="termservice2">
+                                <label for="termservice2">[필수] 전자금융거래 기본약관</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="termservice3">
+                                <label for="termservice3">[필수] 개인(신용)정보 수집 및 이용동의서</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="termservice4">
+                                <label for="termservice4">[필수] 개인(신용)정보 제 3자 제공동의서</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="termservice5">
+                                <label for="termservice5">[필수] 고유식별정보 처리 동의</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="termservice6">
+                                <label for="termservice6">[선택] 마케팅 목적 개인(신용)정보 이용 동의서</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-area w-block">
+                        <a href="corp-id-pw.html" class="border-green">약관동의</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [s]: footer -->
+        <div class="footer_html">
+            
+        </div>
+        <!-- [s]: footer -->
+        <script>  
+            //전체선택 및 해제
+            $('#all').on('click', function(){
+                var checked = $(this).is(':checked');
+                
+                if(checked) {
+                    $(this).parent().next('ul').find('input[type="checkbox"]').prop('checked', true);
+                } else {
+                    $(this).parent().next('ul').find('input[type="checkbox"]').prop('checked', false);
+                }
+            });
+
+            //하나 선택했을시 전체선택 풀림
+            $('.agree-area ul li input[type="checkbox"]').on('click', function(){
+                var checked = $(this).is(':checked');
+                if (!checked) {
+                    $("#all").prop("checked", false);
+                  }
+            });
+
+            // 체크박스 개별 선택
+                $(".agree-area ul li").on("click", "input", function() {
+                    var is_checked = true;
+                    $(".agree-area ul li input").each(function(){
+                        is_checked = is_checked && $(this).is(":checked");
+                    });
+                    $("#all").prop("checked", is_checked);
+                });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- <meta http-equiv="page-enter" content="blendTrans(duration=0.3)"> -->
+        <title>Profit</title>
+        <link type="text/css" rel="stylesheet" href="../css/layout.css">
+        <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css">
+        <link type="text/css" rel="stylesheet" href="../css/aos.css">
+        <link type="text/css" rel="stylesheet" href="../css/layout_1360.css">
+        <link type="text/css" rel="stylesheet" href="../css/layout_780.css">
+        <link type="text/css" rel="stylesheet" href="../css/mCustomScrollbar.css">
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="../js/aos.js"></script>
+        <script type="text/javascript" src="../js/publish.js"></script>
+        <script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+        <script>
+            $(document).ready(function(){
+                 $('.header_html').load('header.html');
+                 $('.footer_html').load('footer.html');
+            });
+        </script>
+    </head>
+    <body>
+        <!-- [s]: header -->
+        <div class="header_html">
+            
+        </div>
+        <!-- [e]: header -->
+        <div class="sub bg-gray min-100">
+            <div class="sub-wrap start">
+                <ul class="step" data-aos="fade-up" data-aos-once="true">
+                    <li class="ing">01</li>
+                    <li class="dot ing">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li class="ing">02</li>
+                    <li class="dot ing">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li class="ing">03</li>
+                    <li class="dot ing">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li class="ing">04</li>
+                </ul>
+                <div class="start-wrap add-sm mo-pt0" data-aos="fade-up" data-aos-once="true">
+                    <h2>추가서류 제출 (필수)</h2>
+                    <ul class="input-style pt0">
+                        <li>
+                            <span>투자등급</span>
+                            <select name="" id=""><option value="">개인투자자(일반)</option></select>
+                        </li>
+                        <li>
+                            <span>자격요건</span>
+                            <p>없음</p>
+                        </li>
+                        <li>
+                            <span>투자한도</span>
+                            <table>
+                                <colgroup>
+                                    <col width="33.333%">
+                                    <col width="33.333%">
+                                    <col width="33.333%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>구분</th>
+                                        <th>투자한도</th>
+                                        <th>동일차입자 한도</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>개인투자자</td>
+                                        <td>3,000만원<span>(부동산담보 1,000만원)</span></td>
+                                        <td>500만원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>소득적격<br>개인투자자</td>
+                                        <td>1,000만원</td>
+                                        <td>2,000만원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>전문투자자/<br>법인투자자</td>
+                                        <td>제한없음</td>
+                                        <td>제한없음<span>(단,상품별 40%이내만 가능)</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <li>
+                            <span>증빙서류 (PDF 스캔본)</span>
+                            <table class="document">
+                                <tbody>
+                                    <tr>
+                                        <th>서류</th>
+                                        <td>
+                                            <ul>
+                                                <li>개인 투자자 : 추가 제출 서류 없음</li>
+                                                <li>개인 사업자 : 사업자등록증</li>
+                                                <li>대부업 : 사업자등록증, 대부업등록증</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>첨부파일</th>
+                                        <td><span class="upload-name"></span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <input type="file" id="choice01" class="file">
+                            <label for="choice01" class="file-choice mt20">파일업로드</label>
+                        </li>
+                    </ul>
+                    <div class="btn-area w-block mt30">
+                        <a href="complete.html" class="border-green mt0">확인</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [s]: footer -->
+        <div class="footer_html">
+            
+        </div>
+        <!-- [s]: footer -->
+        <script>  
+           $(".file").on('change',function(e){
+              var fileName = $(".file").val();
+              $('.upload-name').text(e.target.files[0].name);
+            });
+        </script>
+    </body>
+</html>
