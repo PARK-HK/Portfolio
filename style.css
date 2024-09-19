@@ -380,7 +380,6 @@ body{font-family:"Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;line-h
 }
 @media only screen and (max-width: 900px){
   h2{margin-bottom: 50px;}
-  .con1, .con2{padding: 100px 0;}
   .con1 .in{flex-direction: column;}
   .con1 .big{font-size: 25px;}
   .con1 p{font-size: 15px; line-height: 22px;}
@@ -414,8 +413,11 @@ body{font-family:"Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;line-h
     .con4 ul li{width: 100%;}
 }
 @media only screen and (max-width: 500px){
+  .main{padding: 0 20px;}
+  .main p{word-break: keep-all;}
+  .main .txt-wrap:before{left: 0; margin-left: 0; right: 0; width: auto; display: none;}
   .con3 ul li{flex-direction: column;}
   .con3 ul li .tit{display: flex; align-items: center;}
   .con3 ul li .tit span{margin-left: 10px;}
-  .con3 ul li .time{margin-top: 15px; }
+  .con3 ul li .time{margin-top: 15px;}
 }
