@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>EDOW - 환경영향평가 정보</title>
+        <link type="text/css" rel="stylesheet" href="../css/common.css">
+        <link type="text/css" rel="stylesheet" href="../css/sub.css">
+    </head>
+    <body>
+        <header>
+            <!--header-wrp -->
+            <div class="header-wrp">
+                <h1 class="logo">
+                    <span>육상풍력단지<br />환경데이터베이스</span>
+                </h1>
+                <div class="gnb">
+                    <div class="login-area">
+                        <ul>
+                            <li>
+                                <a>로그인</a>
+                            </li>
+                            <li>
+                                <a>회원가입</a>
+                            </li>
+                            <li>
+                                <a>공지사항</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--//header-wrp -->
+        </header>
+
+        <!-- container -->
+        <div id="container" class="sub-wrp">
+            <!-- cont-gnb -->
+            <div class="cont-gnb">
+                <div class="cont-wrp">
+                    <ul>
+                        <li>
+                            <a>환경영향평가 정보</a>
+                        </li>
+                        <li class="focused">
+                            <a>분석정보</a>
+                        </li>
+                    </ul>
+                    <div class="btn-area">
+                        <button type="button" class="btn-txt-sky">환경 모니터링 시스템 바로가기</button>
+                    </div>
+                </div>
+            </div>
+            <!--//cont-gnb -->
+            <div class="cont-wrp">
+                <!-- content -->
+                <section class="content row map-content">
+                    <div class="sec-1">
+                        <section class="lnb-section">
+                            <h2 class="page-title">평가분야</h2>
+                            <div class="ico-tab-wrp col-12 pl0">
+                                <ul class="tab row">
+                                    <li class="col-3">
+                                        <i class="ico-natural"></i>
+                                        <span>자연생태</span>
+                                    </li>
+                                    <li class="col-3">
+                                        <i class="ico-water"></i>
+                                        <span>수환경</span>
+                                    </li>
+                                    <li class="col-3">
+                                        <i class="ico-map"></i>
+                                        <span>토지환경</span>
+                                    </li>
+                                    <li class="col-3 focused">
+                                        <i class="ico-home"></i>
+                                        <span>생활환경</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="lnb-section">
+                            <h2 class="page-title">분석 종류</h2>
+                            <div class="sort-wrp">
+                                <ul>
+                                    <li>
+                                        <label for="list01" class="label-input-checkbox">
+                                            <input type="checkbox" id="list01">
+                                            <span class="input-txt">정온시설 이격거리  분석</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="lnb-section">
+                            <h2 class="page-title">분석 도구</h2>
+                            <div class="list-box-wrp">
+                                <!-- list-box -->
+                                <div class="list-box">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <i class="ico-map2"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="row justify-content-between">
+                                                <span class="list-title">지적분석</span>
+                                                <i class="ico-minus"></i>
+                                            </div>
+                                            <div>분석하고자 하는 지적(주소)을 입력하여 선택한 지적에 대해 분석</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//list-box -->
+                                <div class="fold-wrp">
+                                    <div class="address-srch">
+                                        <input type="text" class="form-control form-large" placeholder="검색어를 입력해주세요." />
+                                        <button type="button" class="ico-btn-srch">검색</button>
+                                    </div> <!--//address srch -->
+                                    <div class="address-list">
+                                        <ul>
+                                            <li>
+                                                <div class="col-10 txt-area">강원도 태백시 원동 산 97</div>
+                                                <div class="col-2 btn-area">
+                                                    <button type="button" class="btn-c-wb btn-tiny">담기</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-10 txt-area">강원도 태백시 원동 산 97-1</div>
+                                                <div class="col-2 btn-area">
+                                                    <button type="button" class="btn-c-wb btn-tiny">담기</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-10 txt-area">강원도 태백시 원동 산 97-2</div>
+                                                <div class="col-2 btn-area">
+                                                    <button type="button" class="btn-c-wb btn-tiny">담기</button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div> <!--//address list -->
+                                    <div class="opcity-area mt15 mb15">
+                                        <span class="fold-title">버퍼/투명도 설정</span>
+                                        <div class="row align-items-center mt10">
+                                            <div class="col-6">
+                                                <div class="row align-items-center">
+                                                    <input type="text" class="form-control form-opacity" value="300"/>
+                                                    <span>m</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <form>
+                                                    <input type="range" class="form-range" id="customRange1" value="0">      
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- list-box -->
+                                <div class="list-box">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <i class="ico-shp"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="row justify-content-between">
+                                                <span class="list-title">SHP파일 분석</span>
+                                                <i class="ico-plus"></i>
+                                            </div>
+                                            <div>분석하고자 하는 지역의 SHP<br />파일을 업로드하여 분석</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//list-box -->
+
+                                <!-- list-box -->
+                                <div class="list-box">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <i class="ico-grid"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="row justify-content-between">
+                                                <span class="list-title">그리기 분석</span>
+                                                <i class="ico-plus"></i>
+                                            </div>
+                                            <div>분석하고자 하는 지역에<br />폴리곤을 그려 분석</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//list-box -->
+
+                                <!-- list-box -->
+                                <div class="list-box">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <i class="ico-location"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="row justify-content-between">
+                                                <span class="list-title">지점분석</span>
+                                                <i class="ico-plus"></i>
+                                            </div>
+                                            <div>분석하고자 하는 지역을<br />마우스로 클릭하여 분석
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//list-box -->
+                            </div>
+                        </section>
+                    </div>
+                    <div class="sec-2 map-wrp">
+                        <div class="row mb20 location-select">
+                            <div class="col-4">
+                                <select class="form-control">
+                                    <option>시/도 선택</option>
+                                </select>
+                            </div>
+                            <div class="col-4">
+                                <select class="form-control">
+                                    <option>구/군 선택</option>
+                                </select>
+                            </div>
+                            <div class="col-4">
+                                <select class="form-control">
+                                    <option>읍/면/동 선택</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="map-area">
+                            <img src="../images/map/map10.png" alt="지도" />
+                        </div>
+                    </div>
+                    <div class="sec-3 result">        
+                        <h2 class="page-title">분석결과</h2>
+                        <div class="col-12 mt10 pl0 pr0">
+                            <select class="form-control form-large">
+                                <option>식생보전등급도</option>
+                                <option>식생보전등급도</option>
+                                <option>식생보전등급도</option>
+                            </select>
+                        </div>
+                        <!-- map-grade-wrp -->
+                        <div class="map-grade-wrp mt10">
+                            <img src="../images/map/map11.png" />
+                        </div>
+                        <h3>분석결과(총 6건)</h3>
+                        <div class="tbl-wrp mt20 td-ft-pp pb20 ">
+                            <table>
+                                <colgroup>
+                                    <col style="width:auto;" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" width="140px">구분</th>
+                                        <th scope="col" width="100px">이격거리</th>
+                                        <th scope="col" width="129px">내역</th>
+                                        <th colspan="2" scope="col" width="240px">좌표(X,Y)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td >정온시설 1</td>
+                                        <td >882</td>
+                                        <td >연작골마을</td>
+                                        <td >19552 8153</td>
+                                        <td >519432 4497</td>
+                                    </tr>
+                                    <tr>
+                                        <td >정온시설 2</td>
+                                        <td >882</td>
+                                        <td >연작골마을</td>
+                                        <td >19552 8153</td>
+                                        <td >519432 4497</td>
+                                    </tr>
+                                    <tr>
+                                        <td >정온시설 3</td>
+                                        <td >882</td>
+                                        <td >연작골마을</td>
+                                        <td >19552 8153</td>
+                                        <td >519432 4497</td>
+                                    </tr>
+                                    <tr>
+                                        <td >정온시설 4</td>
+                                        <td >882</td>
+                                        <td >연작골마을</td>
+                                        <td >19552 8153</td>
+                                        <td >519432 4497</td>
+                                    </tr>
+                                    <tr>
+                                        <td >정온시설 5</td>
+                                        <td >882</td>
+                                        <td >연작골마을</td>
+                                        <td >19552 8153</td>
+                                        <td >519432 4497</td>
+                                    </tr>
+                                    <tr>
+                                        <td >정온시설 6</td>
+                                        <td >882</td>
+                                        <td >연작골마을</td>
+                                        <td >19552 8153</td>
+                                        <td >519432 4497</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>             
+                </section>
+                <!--//content -->
+            </div>
+        </div>
+        <!--//container -->
+
+        <footer></footer>
+
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('input[type=range]').on('input', function(){
+                  var val = $(this).val();
+                  $(this).css('background', 'linear-gradient(to right, #328BF2 0%, #328BF2 '+ val +'%, #eeeeee ' + val + '%, #eeeeee 100%)');
+                });
+            });
+        </script>
+    </body>
+</html>

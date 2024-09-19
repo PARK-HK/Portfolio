@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>EDOW - main</title>
+        <link type="text/css" rel="stylesheet" href="../css/common.css">
+        <link type="text/css" rel="stylesheet" href="../css/sub.css">
+    </head>
+    <body class="bg-gray">
+        <header>
+            <!--header-wrp -->
+            <div class="header-wrp">
+                <h1 class="logo">
+                    <span>육상풍력단지<br />환경데이터베이스</span>
+                </h1>
+                <div class="login-area">
+                    <ul>
+                        <li>
+                            <a>로그인</a>
+                        </li>
+                        <li>
+                            <a>회원가입</a>
+                        </li>
+                        <li>
+                            <a>공지사항</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--//header-wrp -->
+        </header>
+
+        <!-- container -->
+        <div id="container">
+            <!-- login-wrp -->
+            <div class="login-wrp">
+                <div class="login-inner">
+                    <h2 class="wrp-title">회원 가입</h2>
+                    <div class="input-wrp  row">
+                        <div class="row btn-area col-12">
+                            <div class="col-9 pr0">
+                                <input type="text" placeholder="아이디" class="form-control" />
+                            </div>
+                            <div class="col-3 pl10">
+                                <button type="button" class="btn-sm btn-c-wb" data-bs-toggle="modal" data-bs-target="#overlapPop">중복확인</button>
+                            </div>
+                        </div>
+                        <div class="col-12 pl0 pr0">
+                            <input type="text" placeholder="비밀번호" class="form-control" />
+                        </div>
+                        <div class="col-12 pl0 pr0">
+                            <input type="text" placeholder="비밀번호 확인" class="form-control" />
+                        </div>
+                        <div class="col-12 pl0 pr0">
+                            <input type="text" placeholder="이름" class="form-control" />
+                        </div>
+                        <div class="col-12 pl0 pr0">
+                            <input type="text" placeholder="소속" class="form-control" />
+                        </div>
+                        <div class="row col-12 pl0 pr0 align-items-center">
+                            <div class="col-6 pr0">
+                                <input type="text" placeholder="이메일" class="form-control" />
+                            </div>
+                            <div class="col-1 cor6">
+                                @
+                            </div>
+                            <div class="col-5 pl0">
+                                <select class="form-control">
+                                    <option>선택</option>
+                                    <option>선택</option>
+                                    <option>선택</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row col-12 pl0 pr0 justify-content-between align-items-center mt20">
+                            <span class="sort-title cor6">이메일 수신여부</span>
+                            <div class="order-last">
+                                <label class="label-input-radio">
+                                    <input type="radio" name="radio1" value="radio1-1" checked />
+                                    <span class="input-txt">수신</span>
+                                </label>
+                                <lable class="label-input-radio">
+                                    <input type="radio" name="radio1" value="radio1-2" />
+                                    <span class="input-txt">수신안함</span>
+                                </lable>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-area col-12 mt50 text-center">
+                        <button type="button" class="btn-c-darkblue btn-login col-12">가입하기</button>
+                        <button type="button" class="btn-txt-underline mt25">이전으로 돌아가기</button>
+                    </div>
+                </div>
+            </div>
+            <!--//login-wrp -->
+        </div>
+        <!--//container -->
+
+        <!-- overlapPop -->
+        <div class="modal fade alert-wrp id_check" id="overlapPop">
+            <div class="modal-dialog modal-sm modal-dialog-centered">
+                <div class="modal-content pb60">
+                    <div class="modal-btn-area">
+                        <button type="button" class="modal-close" data-bs-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="pop-cont">
+                        <p class="msg-center">
+                            아이디 중복검사
+                        </p>
+                        <div class="row btn-area col-12 mt20">
+                            <div class="col-8 pr0">
+                                <input type="text" placeholder="아이디" class="form-control form-large" />
+                            </div>
+                            <div class="col-4 pl10">
+                                <button type="button" class="btn-sm btn-c-wb btn-large" data-bs-toggle="modal" data-bs-target="#overlapPop">중복확인</button>
+                            </div>
+                        </div>
+                        <div class="row notice-wrp mt20">
+                            <span class="col">이미 사용 중인 아이디입니다. </span>
+                        </div>
+                        <div class="row notice-wrp">
+                            <span class="col">사용하실 다른 아이디를 입력하여 주십시오.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- overlapPop -->
+
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    </body>
+</html>

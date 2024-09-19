@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- <meta http-equiv="page-enter" content="blendTrans(duration=0.3)"> -->
+        <title>thesaem</title>
+        <link type="text/css" rel="stylesheet" href="../css/layout.css">
+        <link type="text/css" rel="stylesheet" href="../css/layout_1440.css">
+        <link type="text/css" rel="stylesheet" href="../css/layout_780.css">
+        <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css">
+        <link type="text/css" rel="stylesheet" href="../css/aos.css">
+
+        <script type="text/javascript" src="../js/libs/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/libs/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="../js/publish.js"></script>
+        <script type="text/javascript" src="../js/aos.js"></script>
+        <script type="text/javascript" src="../js/TweenMax.min.js"></script>
+    </head>
+    <body>
+        <!-- [s] : header -->
+        <header>
+            <!-- 2023-10-11 추가 -->
+            <div class="pc-show">
+                <h1><a href="main.html"><img src="../img/logo.png" alt="더 샘"></a></h1>
+                <ul class="gnb">
+                    <li>
+                        <a href="./earth.html">브랜드소개</a>
+                        <div class="depth brand">
+                            <ul>
+                                <li><a href="./earth.html">브랜드 스토리</a></li>
+                                <li><a href="./history.html">브랜드 히스토리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <a href="./all-item.html">제품소개</a>
+                        <div class="depth-wide">
+                            <div class="in">
+                                <div class="depth1">
+                                    <ul>
+                                        <li><a href="">New &amp; Best</a></li>
+                                        <li class="on depth-link"><a href="">유형별</a></li>
+                                        <li class="depth-link"><a href="">라인별</a></li>
+                                        <li class="depth-link"><a href="">피부고민별</a></li>
+                                    </ul>
+                                </div>
+                                <div class="depth-wrap">
+                                    <div class="depth2">
+                                        <div class="flex">
+                                            <ul>
+                                                <li><a href="">스킨케어</a></li>
+                                                <li><a href="">팩/마스크 시트</a></li>
+                                                <li><a href="">아이 메이크업</a></li>
+                                                <li><a href="">클렌징</a></li>
+                                                <li><a href="">헤어케어</a></li>
+                                                <li><a href="">향수/디퓨저/캔들</a></li>
+                                                <li><a href="">미용소품</a></li>
+                                                <li><a href="">선케어</a></li>
+                                                <li><a href="">베이스 메이크업</a></li>
+                                                <li><a href="">립 메이크업</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><a href="">바디케어</a></li>
+                                                <li><a href="">맨즈케어</a></li>
+                                                <li><a href="">네일</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="depth3">
+                                        <div class="flex">
+                                            <ul class="tab">
+                                                <li class="on"><a href="">ㄱ</a></li>
+                                                <li><a href="">ㄴ</a></li>
+                                                <li><a href="">ㄷ</a></li>
+                                                <li><a href="">ㄹ</a></li>
+                                                <li><a href="">ㅁ</a></li>
+                                                <li><a href="">ㅂ</a></li>
+                                                <li><a href="">ㅅ</a></li>
+                                                <li><a href="">ㅇ</a></li>
+                                                <li><a href="">ㅈ</a></li>
+                                                <li><a href="">ㅊ</a></li>
+                                                <li><a href="">ㅋ</a></li>
+                                                <li><a href="">ㅌ</a></li>
+                                                <li><a href="">ㅍ</a></li>
+                                                <li><a href="">ㅎ</a></li>
+                                            </ul>
+                                            <div class="con-wrap">
+                                                <div class="content">
+                                                    <ul>
+                                                        <li><a href="">가든플래져</a></li>
+                                                        <li><a href="">골드 리프팅</a></li>
+                                                        <li><a href="">골드 스네일</a></li>
+                                                        <li><a href="">골드 프라임</a></li>
+                                                        <li><a href="">깔라만시 포어</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="content">
+                                                    <ul>
+                                                        <li><a href="">내추럴 데일리</a></li>
+                                                        <li><a href="">내추럴 마스크</a></li>
+                                                        <li><a href="">내추럴 컨디션</a></li>
+                                                        <li><a href="">네일 웨어</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="content">
+                                                    <ul>
+                                                        <li><a href="">더마 스킨</a></li>
+                                                        <li><a href="">더마 엑스퍼트</a></li>
+                                                        <li><a href="">더마 웨어</a></li>
+                                                        <li><a href="">더마 플랜</a></li>
+                                                        <li><a href="">더마 플랜 그린</a></li>
+                                                        <li><a href="">더샘</a></li>
+                                                        <li><a href="">디 에센셜</a></li>
+                                                        <li><a href="">디어 마이 풋</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="content">
+                                                    <ul>
+                                                        <li><a href="">로열 내추럴</a></li>
+                                                        <li><a href="">리페어 알엑스</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="content">
+                                                    <ul>
+                                                        <li><a href="">마이 클렌즈 레시피</a></li>
+                                                        <li><a href="">메르비에</a></li>
+                                                        <li><a href="">미네랄 옴므</a></li>
+                                                        <li><a href="">미네랄라이징</a></li>
+                                                        <li><a href="">미라클</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="content">
+                                                    <ul>
+                                                        <li><a href="">바디 앤 소울</a></li>
+                                                        <li><a href="">바이오 솔루션</a></li>
+                                                        <li><a href="">벨라벨</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="flex">
+                                                        <ul>
+                                                            <li><a href="">샘물</a></li>
+                                                            <li><a href="">샘물 싱글 블러셔</a></li>
+                                                            <li><a href="">샘물 싱글 섀도우</a></li>
+                                                            <li><a href="">샘물 퍼펙트 포어</a></li>
+                                                            <li><a href="">셀 리뉴 바이오</a></li>
+                                                            <li><a href="">수예란</a></li>
+                                                            <li><a href="">스네일 에센셜</a></li>
+                                                            <li><a href="">스키니 밸런스</a></li>
+                                                            <li><a href="">스테이</a></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li><a href="">스튜디오</a></li>
+                                                            <li><a href="">시크릿 퓨어</a></li>
+                                                            <li><a href="">시티 아르도</a></li>
+                                                            <li><a href="">실크 헤어 리페어</a></li>
+                                                            <li><a href="">실크 헤어 스타일</a></li>
+                                                            <li><a href="">실크 헤어 컬러</a></li>
+                                                            <li><a href="">쓰리 엣지</a></li>
+                                                            <li><a href="">씨앤소</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="flex">
+                                                        <ul>
+                                                            <li><a href="">아이슬란드</a></li>
+                                                            <li><a href="">아트리프</a></li>
+                                                            <li><a href="">애니 퍼퓸</a></li>
+                                                            <li><a href="">액티브 소스</a></li>
+                                                            <li><a href="">액티브 옴므</a></li>
+                                                            <li><a href="">어반 딜라이트</a></li>
+                                                            <li><a href="">어반 브리즈</a></li>
+                                                            <li><a href="">어반 에코 골든 베리 씨</a></li>
+                                                            <li><a href="">어반 에코 와라타</a></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li><a href="">어반 에코 하라케케 </a></li>
+                                                            <li><a href="">어반 에코 하라케케 딥 모이스처</a></li>
+                                                            <li><a href="">에코 소울</a></li>
+                                                            <li><a href="">에코 어스</a></li>
+                                                            <li><a href="">에코 에너지</a></li>
+                                                            <li><a href="">울트라 샷</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <ul>
+                                                        <li><a href="">제주 생생 알로에</a></li>
+                                                        <li><a href="">젬 미라클</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="content">
+                                                    <ul>
+                                                        <li><a href=""></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="content">
+                                                    <ul>
+                                                        <li><a href="">커버 퍼펙션</a></li>
+                                                        <li><a href="">케어 플러스</a></li>
+                                                        <li><a href="">클래식 옴므</a></li>
+                                                        <li><a href="">클린 에브리데이</a></li>
+                                                        <li><a href="">키스버튼</a></li>
+                                                        <li><a href="">키스홀릭</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="content">
+                                                    <ul>
+                                                        <li><a href="">터치 온 바디</a></li>
+                                                        <li><a href="">툴앤썸</a></li>
+                                                        <li><a href="">트루 머쉬룸 엘엑스</a></li>
+                                                        <li><a href="">트루 핏</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="content">
+                                                    <ul>
+                                                        <li><a href="">파워 앰플</a></li>
+                                                        <li><a href="">퍼퓸드 바디</a></li>
+                                                        <li><a href="">퍼퓸드 핸드</a></li>
+                                                        <li><a href="">퓨어 내추럴</a></li>
+                                                        <li><a href="">프레쉬 뱀부</a></li>
+                                                        <li><a href="">프리즘 라이트</a></li>
+                                                        <li><a href="">플로우</a></li>
+                                                        <li><a href="">피치 빛</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="content">
+                                                    <ul>
+                                                        <li><a href="">허니 오트밀</a></li>
+                                                        <li><a href="">허니바이오틱스</a></li>
+                                                        <li><a href="">힐링 듀</a></li>
+                                                        <li><a href="">힐링 티 가든</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="depth4">
+                                        <ul>
+                                            <li><a href="">수분/보습</a></li>
+                                            <li><a href="">민감/진정</a></li>
+                                            <li><a href="">미백/브라이트닝</a></li>
+                                            <li><a href="">안티에이징</a></li>
+                                            <li><a href="">청정/각질</a></li>
+                                            <li><a href="">모공/트러블</a></li>
+                                            <li><a href="">자외선차단</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./korea-store.html">매장안내</a>
+                        <div class="depth store">
+                            <ul>
+                                <li><a href="./korea-store.html">국내매장</a></li>
+                                <li><a href="./overseas-store.html">해외매장</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./magazine.html">매거진</a>
+                        <div class="depth magazine">
+                            <ul>
+                                <li><a href="./magazine.html">CF</a></li>
+                                <li><a href="./award.html">더샘 어워즈</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./faq.html">고객센터</a>  
+                        <div class="depth cscenter">
+                            <ul>
+                                <li><a href="./faq.html">FAQ</a></li>
+                                <li><a href="./personal-qa.html">1:1 문의</a></li>
+                                <li><a href="./membership-check.html">멤버십 안내</a></li>
+                                <li><a href="./inquiry.html">가맹 및 주문 문의</a></li>
+                            </ul>
+                        </div>                  
+                    </li>
+                </ul>
+                <div class="menu-grp">
+                    <a href="" class="search"><img src="../img/ico-search.png" alt=""></a>
+                    <a href="" class="shop-btn">SHOP</a>
+                    <div class="multi">
+                        <a href="">KOR</a>
+                        <ul>
+                            <li><a href="">ENG</a></li>
+                            <li><a href="">CHN</a></li>
+                            <li><a href="">JPN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-show">
+                <div class="layout">
+                    <a href="" class="menu-btn"><span></span></a>
+                    <h1><a href="main.html"><img src="../img/logo.png" alt="더 샘"></a></h1>
+                    <a href="" class="search"><img src="../img/ico-search.png" alt=""></a>
+                    <a href="" class="shop-btn">shop</a>
+                </div>
+                <div class="in">
+                    <ul class="big-tab">
+                        <li class="on"><a href="">브랜드</a></li>
+                        <li><a href="">제품소개</a></li>
+                    </ul>
+                    <div class="con-wrap">
+                        <div class="con brand">
+                            <ul>
+                                <li>
+                                    <a href="">브랜드 소개</a>
+                                    <div class="m-depth">
+                                        <a href="./earth.html">브랜드 스토리</a>
+                                        <a href="./history.html">브랜드 히스토리</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="">매장안내</a>
+                                    <div class="m-depth">
+                                        <a href="./korea-store.html">국내매장</a>
+                                        <a href="./overseas-store.html">해외매장</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="">매거진</a>
+                                    <div class="m-depth">
+                                        <a href="./magazine.html">CF</a>
+                                        <a href="./award.html">더샘어워즈</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="">고객센터</a>
+                                    <div class="m-depth">
+                                        <a href="./faq.html">FAQ</a>
+                                        <a href="./personal-qa.html">1:1문의</a>
+                                        <a href="./membership.html">멤버십안내</a>
+                                        <a href="./inquiry.html">가맹 및 주문 문의</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="con itd">
+                            <ul class="type">
+                                <li class="on no-link"><a href="">유형별</a></li>
+                                <li class="no-link"><a href="">라인별</a></li>
+                                <li class="no-link"><a href="">피부고민별</a></li>
+                                <li><a href="">New&amp;Best</a></li>
+                            </ul>
+                            <div class="type-conwrap">
+                                <div class="type-con type-con1">
+                                    <div class="type-in">
+                                        <ul>
+                                            <li><a href="">스킨케어</a></li>
+                                            <li><a href="">선케어</a></li>
+                                            <li><a href="">팩/마스크시트</a></li>
+                                            <li><a href="">베이스 메이크업</a></li>
+                                            <li><a href="">아이 메이크업</a></li>
+                                            <li><a href="">립 메이크업</a></li>
+                                            <li><a href="">클렌징</a></li>
+                                            <li><a href="">바디케어</a></li>
+                                            <li><a href="">헤어케어</a></li>
+                                            <li><a href="">맨즈케어</a></li>
+                                            <li><a href="">향수/디퓨저/캔들</a></li>
+                                            <li><a href="">네일</a></li>
+                                            <li><a href="">미용소품</a></li>
+                                        </ul>
+                                        <div class="type-depth">
+                                            <div class="con">
+                                                <a href="">토너/패드</a>
+                                                <a href="">에멀젼</a>
+                                                <a href="">에센스/세럼/앰플/스팟</a>
+                                                <a href="">크림/오일</a>
+                                                <a href="">아이케어</a>
+                                                <a href="">멀티 스틱/미스트</a>
+                                                <a href="">세트</a>
+                                            </div>
+                                            <div class="con">
+                                                <a href="">선크림</a>
+                                                <a href="">선스틱</a>
+                                                <a href="">선 팩트/쿠션</a>
+                                                <a href="">선스프레이</a>
+                                            </div>
+                                            <div class="con">
+                                                <a href="">마스크 시트/패치</a>
+                                                <a href="">워시/필 오브 팩</a>
+                                                <a href="">슬리핑팩</a>
+                                                <a href="">기타</a>
+                                            </div>
+                                            <div class="con">
+                                                <a href="">프라이머/메이크업 베이스</a>
+                                                <a href="">파운데이션/BB/CC</a>
+                                                <a href="">쿠션</a>
+                                                <a href="">팩트/파우더</a>
+                                                <a href="">컨실러</a>
+                                                <a href="">블러셔/하이라이터</a>
+                                                <a href="">픽서</a>
+                                            </div>
+                                            <div class="con">
+                                                <a href="">아이섀도우</a>
+                                                <a href="">아이라이너</a>
+                                                <a href="">아이브로우</a>
+                                                <a href="">마스카라</a>
+                                            </div>
+                                            <div class="con">
+                                                <a href="">립스틱/립라이너</a>
+                                                <a href="">립틴트</a>
+                                                <a href="">립글로스/립케어</a>
+                                            </div>
+                                            <div class="con">
+                                                <a href="">클렌징 폼</a>
+                                                <a href="">클렌징 워터/티슈</a>
+                                                <a href="">클렌징 오일/밤</a>
+                                                <a href="">클렌징 크림/로션</a>
+                                                <a href="">립 앤 아이 리무버</a>
+                                                <a href="">스크럽/필링/마사지</a>
+                                                <a href="">클렌징 바</a>
+                                            </div>
+                                            <div class="con">
+                                                <a href="">바디 워시/스크럽</a>
+                                                <a href="">바디 로션/크림/오일</a>
+                                                <a href="">바디 코롱/미스트</a>
+                                                <a href="">수딩 젤/로션</a>
+                                                <a href="">핸드/풋 케어</a>
+                                                <a href="">제모/데오드란트</a>
+                                            </div>
+                                            <div class="con">
+                                                <a href="">샴푸/트리트먼트/팩</a>
+                                                <a href="">세럼/로션/크림</a>
+                                                <a href="">오일/미스트</a>
+                                                <a href="">왁스/스프레이/젤</a>
+                                                <a href="">염모제</a>
+                                            </div>
+                                            <div class="con">
+                                                <a href="">토너/에멀젼</a>
+                                                <a href="">올인원/에센스/크림</a>
+                                                <a href="">쉐이빙/클렌징</a>
+                                                <a href="">선/비비</a>
+                                                <a href="">스타일링</a>
+                                                <a href="">세트</a>
+                                            </div>
+                                            <div class="con">
+                                                <a href="">향수</a>
+                                                <a href="">디퓨저/캔들</a>
+                                            </div>
+                                            <div class="con">
+                                                <a href="">네일 컬러</a>
+                                                <a href="">네일 케어/리무버</a>
+                                                <a href="">네일 스티커</a>
+                                            </div>
+                                            <div class="con">
+                                                <a href="">브러쉬</a>
+                                                <a href="">퍼프/스펀지</a>
+                                                <a href="">메이크업 소품</a>
+                                                <a href="">화장솜/면봉/기름종이</a>
+                                                <a href="">클렌징/바디/헤어 소품</a>
+                                                <a href="">기타 소품</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="type-con type-con2">
+                                    <ul class="cateline-btn">
+                                        <li class="on"><a href="">ㄱ</a></li>
+                                        <li><a href="">ㄴ</a></li>
+                                        <li><a href="">ㄷ</a></li>
+                                        <li><a href="">ㄹ</a></li>
+                                        <li><a href="">ㅁ</a></li>
+                                        <li><a href="">ㅂ</a></li>
+                                        <li><a href="">ㅅ</a></li>
+                                        <li><a href="">ㅇ</a></li>
+                                        <li><a href="">ㅈ</a></li>
+                                        <!-- <li><a href="">ㅊ</a></li> -->
+                                        <li><a href="">ㅋ</a></li>
+                                        <li><a href="">ㅌ</a></li>
+                                        <li><a href="">ㅍ</a></li>
+                                        <li><a href="">ㅎ</a></li>
+                                    </ul>
+                                    <div class="type-depth">
+                                        <div class="con">
+                                            <a href="">가든플래져</a>
+                                            <a href="">골드 리프팅</a>
+                                            <a href="">골드 스네일</a>
+                                            <a href="">골드 프라임</a>
+                                            <a href="">깔라만시 포어</a>
+                                        </div>
+                                        <div class="con">
+                                            <a href="">내추럴 데일리</a>
+                                            <a href="">내추럴 마스크</a>
+                                            <a href="">내추럴 컨디션</a>
+                                            <a href="">네일 웨어</a>
+                                        </div>
+                                        <div class="con">
+                                            <a href="">더마 스킨</a>
+                                            <a href="">더마 엑스퍼트</a>
+                                            <a href="">더마 웨어</a>
+                                            <a href="">더마 플랜</a>
+                                            <a href="">더마 플랜 그린</a>
+                                            <a href="">더샘</a>
+                                            <a href="">디 에센셜</a>
+                                            <a href="">디어 마이 풋</a>
+                                        </div>
+                                        <div class="con">
+                                            <a href="">로열 내추럴</a>
+                                            <a href="">리페어 알엑스</a>
+                                        </div>
+                                        <div class="con">
+                                            <a href="">마이 클렌즈 레시피</a>
+                                            <a href="">메르비에</a>
+                                            <a href="">미네랄 옴므</a>
+                                            <a href="">미네랄라이징</a>
+                                            <a href="">미라클</a>
+                                        </div>
+                                        <div class="con">
+                                            <a href="">바디 앤 소울</a>
+                                            <a href="">바이오 솔루션</a>
+                                            <a href="">벨라벨</a>
+                                        </div>
+                                        <div class="con">
+                                            <a href="">샘물</a>
+                                            <a href="">샘물 싱글 블러셔</a>
+                                            <a href="">샘물 싱글 섀도우</a>
+                                            <a href="">샘물 퍼펙트 포어</a>
+                                            <a href="">셀 리뉴 바이오</a>
+                                            <a href="">수예란</a>
+                                            <a href="">스네일 에센셜</a>
+                                            <a href="">스키니 밸런스</a>
+                                            <a href="">스테이</a>
+                                            <a href="">스튜디오</a>
+                                            <a href="">시크릿 퓨어</a>
+                                            <a href="">시티 아르도</a>
+                                            <a href="">실크 헤어 리페어</a>
+                                            <a href="">실크 헤어 스타일</a>
+                                            <a href="">실크 헤어 컬러</a>
+                                            <a href="">쓰리 엣지</a>
+                                            <a href="">씨앤소</a>
+                                        </div>
+                                        <div class="con">
+                                            <a href="">아이슬란드</a>
+                                            <a href="">아트리프</a>
+                                            <a href="">애니 퍼퓸</a>
+                                            <a href="">액티브 소스</a>
+                                            <a href="">액티브 옴므</a>
+                                            <a href="">어반 딜라이트</a>
+                                            <a href="">어반 브리즈</a>
+                                            <a href="">어반 에코 골든 베리 씨</a>
+                                            <a href="">어반 에코 와라타</a>
+                                            <a href="">어반 에코 하라케케 </a>
+                                            <a href="">어반 에코 하라케케 딥 모이스처</a>
+                                            <a href="">에코 소울</a>
+                                            <a href="">에코 어스</a>
+                                            <a href="">에코 에너지</a>
+                                            <a href="">울트라 샷</a>
+                                        </div>
+                                        <div class="con">
+                                            <a href="">제주 생생 알로에</a>
+                                            <a href="">젬 미라클</a>
+                                        </div>
+                                        <div class="con">
+                                            <a href="">커버 퍼펙션</a>
+                                            <a href="">케어 플러스</a>
+                                            <a href="">클래식 옴므</a>
+                                            <a href="">클린 에브리데이</a>
+                                            <a href="">키스버튼</a>
+                                            <a href="">키스홀릭</a>
+                                        </div>
+                                        <div class="con">
+                                            <a href="">터치 온 바디</a>
+                                            <a href="">툴앤썸</a>
+                                            <a href="">트루 머쉬룸 엘엑스</a>
+                                            <a href="">트루 핏</a>
+                                        </div>
+                                        <div class="con">
+                                            <a href="">파워 앰플</a>
+                                            <a href="">퍼퓸드 바디</a>
+                                            <a href="">퍼퓸드 핸드</a>
+                                            <a href="">퓨어 내추럴</a>
+                                            <a href="">프레쉬 뱀부</a>
+                                            <a href="">프리즘 라이트</a>
+                                            <a href="">플로우</a>
+                                            <a href="">피치 빛</a>
+                                        </div>
+                                        <div class="con">
+                                            <a href="">허니 오트밀</a>
+                                            <a href="">허니바이오틱스</a>
+                                            <a href="">힐링 듀</a>
+                                            <a href="">힐링 티 가든</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="type-con type-con3">
+                                    <a href="">수분/보습</a>
+                                    <a href="">민감/진정</a>
+                                    <a href="">미백/브라이트닝</a>
+                                    <a href="">안티에이징</a>
+                                    <a href="">청정/각질</a>
+                                    <a href="">모공/트러블</a>
+                                    <a href="">자외선차단</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-pop">
+                <a href="" class="close"><img src="../img/search-close.png" alt=""></a>
+                <div class="tit">찾으시는 제품을 입력해주세요.</div>
+                <div class="search-area">
+                    <div class="input">
+                        <input type="text">
+                        <button></button>
+                    </div>
+                    <ul class="history">
+                        <li><a href="">트리플 팟 컨실러</a></li>
+                        <li><a href="">팁 컨실러</a></li>
+                        <li><a href="">그린티 클렌징 워터</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- [e] : header -->
+        <div class="page sub">
+            <div class="earth">
+                <!-- [s] : 공통영역 -->
+                <div class="sub-top">
+                    <div class="tit" data-aos="fade-down">
+                        <span>Brand Story</span>
+                        earth
+                    </div>
+                    <p data-aos="fade-up">
+                       더샘을 통해 세상과 만납니다.<br>
+                       지구 곳곳에 전해 내려오는 다양한 민족의 문화와 풍습, 지혜를 공부합니다.<br>
+                       다양한 삶 속에 숨겨진 아름다움의 비법을 발견합니다.
+                    </p>
+                </div>
+                <div class="sub-tab">
+                    <ul>
+                        <li class="on">
+                            <a href="#!">earth</a>
+                        </li>
+                        <li>
+                            <a href="eco.html">eco</a>
+                        </li>
+                        <li>
+                            <a href="goodproduct.html">good product</a>
+                        </li>
+                        <li>
+                            <a href="worldwide.html">worldwide</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- [e] : 공통영역 -->
+                <ul class="story-list">
+                    <li>
+                        <div class="txt">
+                            <div class="in">
+                                <i>Harakeke</i>
+                                <div class="tit">
+                                    사계절이 뚜렷한 동고서저의 <br>땅남북으로 길게 뻗은 반도, 대한민국
+                                </div>
+                                <p>
+                                    대한민국 남해에는 시원한 해풍과 숲속 맑은 공기, 자욱한 안개가 어우러진 최상의<br> 녹차 재배지, 보성이 있습니다. 
+                                    천혜의 자연 안에서 자연과의 상생을 통해 건강하고<br> 푸르른 최고의 녹차를 키워내는 보성 더 샘은 최고의 풍미와 건강한 영양 성분이<br> 
+                                    가득한 녹차(그린 티) 한 잔이 주는 마음의 여유와 건강한 가치를 그대로 담아 피부<br>를 맑고 촉촉하게 가꾸어 주는 피부의 비밀을 발견했습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="img" data-aos="fade-left" data-aos-anchor-placement="top-center"><img src="../img/sub/earth-img1.jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="img" data-aos="fade-right" data-aos-anchor-placement="top-center"><img src="../img/sub/earth-img2.jpg" alt=""></div>
+                        <div class="txt">
+                            <div class="in">
+                                <i>from New Zealand</i>
+                                <div class="tit">
+                                    청정 자연이 그대로 살아 숨쉬는<br>지구의 국립공원, 뉴질랜드
+                                </div>
+                                <p>
+                                    1,000여 년 전 마오리족이 최초로 그 땅을 밟을 때까지 수 천만년 동안 뉴질랜드는<br> 날 것 그대로의 자연을 간직한 무인도였습니다. 지구의 국립공원, 새들의 나라,<br> 
+                                    약 80%의 땅이 초원과 산림으로 이루어진 나라, 뉴질랜드.<br>
+                                    더샘은 천혜의 자연과 이를 지키며 공생해 온 마오리족의 오랜 지혜와 풍습에서<br>
+                                    하라케케를 발견했습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="txt">
+                            <div class="in">
+                                <i>from Peru</i>
+                                <div class="tit">
+                                    천혜의 대자연과 잉카 문명의 지혜가 <br>공존하는 천상의 땅, 페루
+                                </div>
+                                <p>
+                                    해안부터 정글, 세계 최장의 산맥 안데스까지 다양한 지형과 기후에서 비롯된<br> 
+                                    각양각색의 슈퍼푸드가 자라는 페루는 ‘슈퍼푸드의 천국'이라 불립니다.<br> 
+                                    해발 2,300미터에 이르는 안데스 고산 지대에서 강인한 생명력으로 자생하는 골든<br>  베리는 풍부한 영양과 비타민으로 잉카 시대부터 왕실에서 건강식으로 즐겨 먹던<br> 슈퍼푸드입니다. 
+                                    더샘은 잉카가 사랑한 황금빛 열매, 골든 베리에서 티 없이 맑고 <br>투명한 피부의 열쇠를 찾았습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="img" data-aos="fade-left" data-aos-anchor-placement="top-center"><img src="../img/sub/earth-img3.jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="img" data-aos="fade-right" data-aos-anchor-placement="top-center"><img src="../img/sub/earth-img4.jpg" alt=""></div>
+                        <div class="txt">
+                            <div class="in">
+                                <i>from Iceland</i>
+                                <div class="tit">
+                                    북극권 바로<br> 아래 불과 얼음의 땅, 아이슬란드
+                                </div>
+                                <p>
+                                    화산활동과 빙하작용으로 인해 호수와 폭포가 나라의 대부분을 차지하고 있습니다.<br> 아이슬란드 산 정상의 눈과 비가 그대로 얼어붙은 원시 자연 상태의 만년설 속에서<br> 미네랄이 함축되어 있는 순수하고 깨끗한 물이 숨어 있습니다.<br>
+                                    더샘은 그곳에서 우리 피부를 촉촉하게 지켜줄 비밀을 찾아냈습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="txt">
+                            <div class="in">
+                                <i>from Tahiti</i>
+                                <div class="tit">
+                                    남태평양의 지상낙원<br> 비너스의 섬, 타히티
+                                </div>
+                                <p>
+                                    남태평양에 흩어져 있는 118개의 크고 작은 섬 중에 조롱박 모양의 가장 큰 섬.<br>
+                                    투명한 에메랄드빛 바다, 핑크빛 산호초 라군으로 둘러싸인 아름다운 열대 화산 섬<br> 비너스의 섬으로 불리며 세계인의 사랑을 받고 있는 아름다운 휴양지이자 전 세계<br> 흑진주의 95%를 생산하는 흑진주의 섬 타히티!<br> 
+                                    더샘은 그곳에서 맑고 투명한 빛을 더하는 흑진주의 가치를 발견했습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="img" data-aos="fade-left" data-aos-anchor-placement="top-center"><img src="../img/sub/earth-img5.jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="img" data-aos="fade-right" data-aos-anchor-placement="top-center"><img src="../img/sub/earth-img6.jpg" alt=""></div>
+                        <div class="txt">
+                            <div class="in">
+                                <i>from France</i>
+                                <div class="tit">
+                                    낭만과 예술의 나라 지중해와 맞닿은<br> 향긋한 허브의 본고장, 프랑스
+                                </div>
+                                <p>
+                                    신이 준 선물이라 불리는 ‘허브’는 기원전 유럽의 고대 국가에서부터 심신의 안정과<br> 피부의 활력을 주는 재료로 널리 사용되어 왔습니다. <br>
+                                    기온이 온화하고 지형이 평탄하여 허브가 자라나기에 최상의 조건을 갖추어 드넓은<br> 허브 가든이 가득한 프랑스 남부지역. 
+                                    더샘은 지중해의 깨끗한 공기와 따스한 기후,<br> 비옥한 토양의 에너지를 머금고 자란 향긋한 프랑스의 허브에서 청정하고 편안한<br> 피부의 비밀을 발견했습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- [s] : footer -->
+        <footer>
+            <div class="in">
+                <ul class="menu-list">
+                    <li><a href="">브랜드소개</a></li>
+                    <li><a href="">제품소개</a></li>
+                    <li><a href="">매장안내</a></li>
+                    <li><a href="">매거진</a></li>
+                    <li><a href="">고객센터</a></li>
+                    <li><a href="">이용약관</a></li>
+                </ul>
+                <div class="logo">
+                    <a href=""><img src="../img/footer-logo.png" alt=""></a>
+                    <div class="hide">
+                        <p>
+                            (주)더샘인터내셔날  <span>대표</span> 임진서  <span>주소</span> 서울시 종로구 청계천로 35 관정빌딩 9층
+                        </p>
+                        <p>
+                            <span>사업자등록번호</span> 102-81-33223 [사업자정보확인]  <span>통신판매업신고번호</span> 제2011-서울종로-1004호
+                        </p>
+                        <p>
+                            <span>개인정보관리책임자</span> 경영이사 구경서  <span>대표번호</span> 02-3218-7500 <span>팩스번호</span> 02-3218-7590
+                        </p>
+                    </div>
+                </div>
+                <div class="phone">
+                    <p>더샘 제품 고객상담 <span>080.080.7500</span></p>
+                    <p>온라인몰(힐리브몰)고객상담 <span>1566.9031</span></p>
+                </div>
+                <div class="operating-time">평일 10:00~17:00 (점심시간 12:30~13:30)</div>
+                <ul class="sns-list">
+                    <li><a href=""><img src="../img/ico-youtube.png" alt=""></a></li>
+                    <li><a href=""><img src="../img/ico-insta.png" alt=""></a></li>
+                    <li><a href=""><img src="../img/ico-facebook.png" alt=""></a></li>
+                    <li><a href=""><img src="../img/ico-twitter.png" alt=""></a></li>
+                </ul>
+                <div class="right">© the SAEM International Co.,Ltd. All rights reserved.</div>
+            </div>
+        </footer>
+        <!-- [e] : footer -->
+        <script>  
+
+            $(document).ready(function(){
+
+            }); 
+
+        </script>
+    </body>
+</html>

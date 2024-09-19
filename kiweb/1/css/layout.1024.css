@@ -1,0 +1,238 @@
+@media screen and (max-width:1224px) {
+
+.inner{width: 100%; padding: 0 20px;}
+
+.block_main h1 span{font-size: 14px; line-height: 24px; margin-bottom: 5px;}
+.block_main h1{font-size: 24px; line-height: 30px;}
+.block_main p{font-size: 12px; line-height: 18px; margin-top: 20px;}
+.block_main .tit-wrap a{font-size: 12px; margin-top: 25px;}
+.block_main .video{width: auto; left: 50%; height: auto; padding-bottom: 55%; top: 10%;}
+
+.block_sect01 h3{font-size: 13px;}
+.block_sect01 h2{font-size: 18px;}
+.block_sect01 p{font-size: 15px;}
+
+.fix-menu a{font-size: 13px; margin-left: 40px;}
+
+.block_sect02{padding: 80px 0;}
+.block_sect02 h2{font-size: 24px; line-height: 30px; margin-top: 25px;}
+.block_sect02 p{font-size: 13px; line-height: 20px; margin-top: 15px;}
+
+.block_sect03{padding: 75px 0;}
+.block_sect03 h2{font-size: 22px;}
+.block_sect03 p{font-size: 13px; margin-top: 15px; margin-bottom: 40px;}
+.block_sect03 span{margin-top: 20px;}
+.block_sect03 span strong,.block_sect03 span{font-size: 12px;}
+.block_sect03 .video{width: 50%;}
+
+.block_sect04 h2{font-size: 22px; line-height: 30px;}
+.block_sect04 .swiper-slide .tit{font-size: 18px; line-height: 25px; margin-bottom: 15px;}
+.block_sect04 .swiper-slide .infor{font-size: 12px;}
+.block_sect04 p{font-size: 18px;}
+.block_sect04 .more{font-size: 13px;}
+.block_sect04 .control{width: 82px;}
+.block_sect04 .swiper-button-next,.block_sect04 .swiper-button-prev{width: 30px; height: 30px;}
+
+.block_sect05{padding: 80px 0;}
+.block_sect05 h2{font-size: 22px;}
+.block_sect05 h2 span{font-size: 13px; margin-top: 10px;}
+
+.block_sect06{padding-top: 70px;}
+.block_sect06 h2{font-size: 22px; line-height: 30px;}
+.block_sect06 h2 span{font-size: 13px; margin-top: 10px;}
+.block_sect06 .tab li a{font-size: 18px; padding: 8px 0;}
+.block_sect06 .tab li a span{font-size: 12px;}
+.block_sect06 .tit span{font-size: 12px;}
+.block_sect06 .tit{font-size: 26px;}
+.block_sect06 .tab1 p{font-size: 12px; line-height: 20px;}
+.block_sect06 .tab2 p{font-size: 13px; line-height: 20px;}
+.block_sect06 .tab2 ul li{font-size: 13px;}
+
+.block_sect07{padding: 70px 0;}
+.block_sect07 h2{font-size: 22px; line-height: 30px; margin-bottom: 100px;}
+.block_sect07 h2 span{font-size: 13px;}
+
+.block_sect08{padding: 80px 0;}
+.block_sect08 h2{font-size: 22px; margin-bottom: 40px;}
+.block_sect08 .box{padding: 20px 0;}
+.block_sect08 .box .tit{font-size: 18px; margin-bottom: 20px;}
+.block_sect08 .box p{font-size: 14px; line-height: 20px;}
+
+.scroll_sect05 h2{font-size: 22px; line-height: 30px;}
+.scroll_sect05 .swiper-tit{font-size: 14px;}
+.scroll_sect05 .tit{font-size: 14px;}
+.scroll_sect05 ol ul li{font-size: 12px; line-height: 20px;}
+.scroll_sect05 .tit span{width: 22px; height: 22px; line-height: 20px;}
+.scroll_sect05 .left .in{margin-left: 25%;}
+
+.block_sect09{margin-top: -100vh;}
+.block_sect09 h2{font-size: 22px; margin-bottom: 40px;}
+.block_sect09 h2 span{font-size: 13px; margin-top: 10px;}
+.block_sect09 .num-list .num-tit{font-size: 15px;}
+.block_sect09 .num-list p{font-size: 12px;}
+.block_sect09 .num-list .num{font-size: 50px;}
+.block_sect09 .num-list .num span{font-size: 22px;}
+.block_sect09 h3{font-size: 20px; margin-top: 75px; margin-bottom: 35px;}
+.block_sect09 .plan-img{font-size: 18px;}
+.block_sect09 .program-img{font-size: 18px;}
+.block_sect09 .toggle li a{font-size: 13px; padding: 11px 15px;}
+.block_sect09 .toggle li a span{font-size: 11px;}
+.block_sect09 .txt{font-size: 13px; line-height: 20px; padding: 15px 30px 15px 15px;}
+
+.block_sect10{padding: 70px 0;}
+.block_sect10 h2{font-size: 22px;}
+.block_sect10 h3{font-size: 22px; line-height: 30px;}
+.block_sect10 ul li i{font-size: 12px;}
+.block_sect10 .tit span{font-size: 15px;}
+.block_sect10 .tit{font-size: 25px;}
+.block_sect10 p{font-size: 12px; line-height: 20px;}
+
+.block_sect11{padding: 70px 0;}
+.block_sect11 h2{font-size: 22px; padding-bottom: 25px; margin-bottom: 25px;}
+.block_sect11 .introduce .s-tit{font-size: 14px;}
+.block_sect11 .introduce ul li p{font-size: 15px;}
+.block_sect11 .introduce .apply .pay-tit{font-size: 20px; margin-bottom: 25px;}
+.block_sect11 .introduce .apply .pay-tit span{font-size: 14px;}
+.block_sect11 .introduce .apply p{font-size: 15px;}
+.block_sect11 .introduce .apply p span{font-size: 13px;}
+.block_sect11 .introduce a{font-size: 14px; height: 45px; line-height: 45px; margin-top: 15px;}
+.block_sect11 .introduce .apply .pay{padding: 35px 0;}
+.block_sect11 .process{margin-top: 65px;}
+.block_sect11 .swiper-pagination span{width: 25px; height: 25px; font-size: 13px; line-height: 25px;}
+.block_sect11 .swiper-pagination:before{top: 13px;}
+.block_sect11 .process .pc-tit{font-size: 16px;}
+.block_sect11 .process p{font-size: 14px; line-height: 20px;}
+
+.block_sect12{padding: 75px 0;}
+.block_sect12 h2{font-size: 22px; line-height: 30px;}
+
+.block_sect13 {padding: 70px 0;}
+.block_sect13 h2{font-size: 26px; line-height: 40px; margin-bottom: 40px;}
+
+.block_sect14{padding: 70px 0;}
+.block_sect14 h2{font-size: 26px; line-height: 40px; margin-bottom: 40px;}
+.block_sect14 .toggle a,.block_sect14 .toggle li.on a{font-size: 13px; padding: 20px; background-position-x: calc(100% - 20px);}
+.block_sect14 .txt{font-size: 13px; line-height: 22px; top: 0; padding: 0 20px 20px;}
+.block_sect14 .txt .tip{line-height: 18px;}
+.block_sect14 .toggle li{border-radius: 10px;}
+
+.block_sect15 a{font-size: 14px; height: 45px; line-height: 45px;}
+
+.fix-banner{bottom: 0;}
+.fix-banner .in{width: 100%; border-radius: 0; padding: 10px 20px;}
+.fix-banner p{font-size: 15px; display: block; text-align: left;}
+.fix-banner p span{font-size: 13px; display: block; padding-left: 0; margin-left: 0; margin-top: 5px;}
+.fix-banner p span:before{display: none;}
+.fix-banner a{font-size: 13px; width: 110px; height: 38px; line-height: 38px;}
+
+} 
+
+
+@media screen and (max-width:1024px) {
+    .pop .tit{font-size: 20px; line-height: 25px;}
+    .pop button{font-size: 14px; height: 40px; line-height: 40px;}
+    .apply-pop ul li{font-size: 12px; background-size: 15px auto; padding-left: 20px; margin-top: 5px;}
+    
+
+    .block_main{height: auto; padding-bottom: 40px;}
+    .block_main .inner{display: block; height: auto;}
+    .block_main .video:after{background: linear-gradient( transparent, #101010 80%, #101010 );}
+    .block_main .tit-wrap{width: 100%; }
+    .block_main .video{position: relative; left: 0; margin: 0 -20px; padding-bottom: 70%;}
+    .block_main h1{text-align: center; margin-top: -5%;}
+    .block_main p{text-align: center;}
+    .block_main .tit-wrap a{margin: 25px auto 0;}
+
+    .block_sect06 {padding-bottom: 30px;}
+    .block_sect06 .m-block{display: block;}
+    .block_sect06 .pc-block{display: none !important;}
+    .block_sect06 .tab{display: block; margin-top: 40px;}
+    .block_sect06 .tab > li{margin-left: 0; margin-bottom: 50px;}
+    .block_sect06 .tab1,.block_sect06 .tab2,.block_sect06 .tab3{padding-bottom: 60px;}
+    .block_sect06 .tab li a{background: #6D25B5; color: #FFF;}
+    .block_sect06 .tab2{flex-wrap: wrap;}
+    .block_sect06 .tab2 ul{width: 100%; gap: 5px; margin-top: 40px;}
+    .block_sect06 .tab2 ul li{padding: 15px 0; flex: none; width: calc((100% - 5px) / 2); margin-left: 0px;}
+    .block_sect06 .tab3{padding-top: 60px;}
+    
+    .block_sect07{padding-left: 20px; padding-right: 20px; padding-bottom: 80px;}
+    .block_sect07 h2{margin-bottom: 40px;}
+    .block_sect07 .subswiper1,.block_sect07 .subswiper2{display: none;}
+    .block_sect07 .mainswiper{transform: translateY(0px);}
+    .block_sect07 .swiper{width: 100%;}
+    .block_sect07 .control{width: 110px; left: 50%; margin-left: -55px; top: initial; bottom: 20px;}
+    .block_sect07 .control .swiper-button-next, .block_sect07 .control .swiper-button-prev{width: 40px; height: 40px;}
+
+    .block_sect08 .box-wrap{width: 100%;}
+    
+    .scroll_sect{display: none;}
+    .scroll-mblock{display: block; position: relative; padding: 80px 20px;}
+    .scroll-mblock .tab01:before{content: ''; top: 0; left: 0; right: 0; bottom: 0; z-index: -1; background: #411D63; position: absolute;}
+    .scroll-mblock .tab02:before{content: ''; top: 0; left: 0; right: 0; bottom: 0; z-index: -1; background: #1D1348; position: absolute;}
+    .scroll-mblock h2{color: #FFF; margin-bottom: 20px;}
+    .scroll-mblock .tab{display: flex; gap: 10px;}
+    .scroll-mblock .tab li a{color: #FFF; border-radius: 3px; display: inline-block; width: 100px; height: 26px; line-height: 26px; text-align: center; font-size: 13px; opacity: 0.5;}
+    .scroll-mblock .tab li.on a{opacity: 1;}
+    .scroll-mblock .tab li:first-child a{background: #6D25B5; }
+    .scroll-mblock .tab li:first-child+li a{background: #3730CF;}
+    .scroll-mblock img{width: 100%;}
+    .scroll-mblock .swiper-tit{color: #FFF; font-size: 14px; font-weight: bold; margin-top: 30px; margin-bottom: 20px;}
+    .scroll-mblock .swiper{padding-bottom: 25px;}
+    .scroll-mblock .swiper-wrapper{height: auto;}
+    .scroll-mblock .swiper-pagination{bottom: 0 !important; text-align: left;}
+    .scroll-mblock .swiper-pagination span{display: inline-block; background: none; color: #FFF; font-size: 13px; position: relative; margin-left: 20px !important; opacity: 0.5; font-weight: bold; padding-top: 55px;}
+    .scroll-mblock .swiper-pagination span.swiper-pagination-bullet-active{opacity: 1;}
+    .scroll-mblock .swiper-pagination span.swiper-pagination-bullet-active:after{opacity: 0.2;}
+    .scroll-mblock .swiper-pagination span:first-child:after{display: none;}
+    .scroll-mblock .tab01 .swiper-pagination span:nth-child(1){width: 21px; margin-left: 0 !important;}
+    .scroll-mblock .tab01 .swiper-pagination span:nth-child(1):before{content:'RPG'; position: absolute; bottom: 0; left: 0; width: 100%; display: block;}
+    .scroll-mblock .tab01 .swiper-pagination span:nth-child(2){width: 48px;}
+    .scroll-mblock .tab01 .swiper-pagination span:nth-child(2):before{content:'슈퍼마리오'; position: absolute; bottom: 0px; left: 0; }
+    .scroll-mblock .tab01 .swiper-pagination span:nth-child(3){width: 54px;}
+    .scroll-mblock .tab01 .swiper-pagination span:nth-child(3):before{content: '세븐나이츠2'; position: absolute; bottom: 0px; left: 0;}
+    .scroll-mblock .tab01 .swiper-pagination span:nth-child(4){width: 43px;}
+    .scroll-mblock .tab01 .swiper-pagination span:nth-child(4):before{content: '용과같이8'; position: absolute; bottom: 0px; left: 0;}
+    .scroll-mblock .tab01 .swiper-pagination span:nth-child(5){width: 43px;}
+    .scroll-mblock .tab01 .swiper-pagination span:nth-child(5):before{content: '다크소울3'; position: absolute; bottom: 0px; left: 0;}
+    .scroll-mblock .tab01 .swiper-pagination span:nth-child(6){width: 34px;}
+    .scroll-mblock .tab01 .swiper-pagination span:nth-child(6):before{content: '오딘'; position: absolute; bottom: 0px; left: 0;}
+    .scroll-mblock .tit{font-weight: bold; font-size: 14px; color: #9E3DFF; display: flex; align-items: center;}
+    .scroll-mblock .tit span{border: 1px #9E3DFF solid; border-radius: 50%; display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; margin-right: 15px;}
+    .scroll-mblock ol{margin-top: 45px;}
+    .scroll-mblock ol > li{margin-top: 20px;}
+    .scroll-mblock ol > li:first-child{margin-top: 0px;}
+    .scroll-mblock ol ul{padding-left: 35px; margin-top: 10px;}
+    .scroll-mblock ol ul li{color: #FFF; font-size: 12px; line-height: 22px;}
+    .scroll-mblock .tit span{font-size: 11px; width: 22px; height: 22px; line-height: 20px;}
+    .scroll-mblock .content{display: none;}
+    .scroll-mblock .content:first-child{display: block;}
+    .scroll-mblock .tab02 p{font-size: 13px; color: #FFF; margin-top: 10px;}
+    .scroll-mblock .tab02 .tit{color: #665FFF;}
+    
+    .block_sect09{margin-top: 0;}
+    .block_sect09 .plan{width: 100%;}
+    .block_sect09 .plan-img{width: 50%;}
+    .block_sect09 .program{width: 100%;}
+    .block_sect09 .program-img{width: 50%;}
+    .block_sect09 .toggle{width: calc(100% - 50%);}
+
+    .block_sect10 h3{margin-bottom: 40px;}
+    .block_sect10 ul{width: 100%;}
+    .block_sect10 ul li{display: block;}
+    .block_sect10 .list-img{position: static; margin-top: 10px;}
+    .block_sect10 .list-img img{height: auto; width: 100%;}
+    .block_sect10 p{margin-top: 10px; padding-bottom: 40px;}
+
+    .block_sect11 .introduce{width: 100%;}
+    .block_sect11 .process{width: 100%;}
+    .block_sect11 .process .txt{margin-left: 20px;}
+    .block_sect11 .process img{max-width: 100%;}
+    .block_sect11 .swiper-pagination span:nth-child(1):before,.block_sect11 .swiper-pagination span:nth-child(2):before,
+    .block_sect11 .swiper-pagination span:nth-child(3):before,.block_sect11 .swiper-pagination span:nth-child(4):before,
+    .block_sect11 .swiper-pagination span:nth-child(5):before,.block_sect11 .swiper-pagination span:nth-child(6):before{display: none;}
+    .block_sect11 .process .swiper{padding-top: 60px;}
+    .block_sect11 .swiper-button-prev,.block_sect11 .swiper-button-next{margin-top: -50px;}
+
+    
+
+}

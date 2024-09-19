@@ -1,0 +1,79 @@
+@media screen and (max-width:870px) {
+
+	
+}
+
+@media screen and (max-width:720px) {
+
+	/* pop */
+	.dim .dim-wrap{padding: 0 20px;}
+	.pop{width: 100%;}
+
+	.block_sect01{height: auto;}
+	.block_sect01 .inner{display: block; height: auto; padding: 25px 20px;}
+	.block_sect01 article{width: 100%; display: flex; flex-direction: row; align-items: baseline; margin-top: 15px;}
+	.block_sect01 article:first-child{margin-top: 0;}
+	.block_sect01 p,.block_sect01 h2{justify-content: left; word-break: keep-all;}
+	.block_sect01 h3{width: 80px; text-align: left; word-break: keep-all;}
+	.block_sect01 h2 img{top: 6px;}
+
+	.fix-menu .inner{padding: 0 20px; overflow-x: auto; justify-content: flex-start;}
+
+	.block_sect02 h2 br{display: block;}
+	.block_sect02 .img{width: 160px; margin: 0 auto;}
+	.block_sect02 .img img{max-width: 100%;}
+
+	.block_sect03 .video{width: 100%; padding-bottom: 55%;}
+
+	.block_sect04{padding: 80px 0;}
+	.block_sect04 .control{display: none;}
+	.block_sect04 h2{text-align: center;}
+
+	.block_sect05 .img{margin-top: 0px;}
+
+	.block_sect08 .box-wrap{flex-wrap: wrap;}
+	.block_sect08 .box{width: 100%;}
+
+	.block_sect09 .program{margin-top: 40px;}
+	.block_sect09 .plan,.block_sect09 .program{flex-direction: column;}
+	.block_sect09 .plan-img,.block_sect09 .program-img{width: 100%; margin-bottom: 20px;}
+	.block_sect09 .toggle{width: 100%; margin-left: 0;}
+	.block_sect09 .toggle li{margin-top: 5px;}
+
+	.block_sect11 .introduce .in-box{flex-direction: column;}
+	.block_sect11 .introduce .apply{width: 100%; margin-top: 40px;}
+	.block_sect11 .process .img img{max-width: 100%;}
+	.block_sect11 .process .swiper-slide{flex-direction: column;}
+	.block_sect11 .process .txt{width: 100%; margin-left: 0; margin-top: 30px;}
+	.block_sect11 .swiper-button-prev, .block_sect11 .swiper-button-next{top: initial; margin-top: initial; bottom: 21%;}
+
+	.block_sect15{padding: 50px 20px;}
+	.block_sect15 a{width: 100%;}
+
+	.pop{padding: 30px;}
+	.pop .box1 label,.pop .box2 label,.pop .box1 input:checked+label,.pop .box2 input:checked+label{width: 100%; padding-bottom: 31%; background-size: contain; height: auto;}
+	.pop .form-wrap{gap: 5px;}
+	.pop .form-wrap input[type="text"]{height: 24px; border-radius: 2px;}
+	.pop .agree label{font-size: 12px;}
+	.pop .agree a{font-size: 12px;}
+	.pop .form-wrap .agree{margin-top: 10px;}
+	.apply-pop3 p{font-size: 12px; word-break: keep-all;}
+	}
+	
+	
+	
+	@media screen and (max-width:420px) {
+	
+		.scroll-mblock .swiper-pagination span{margin-left: 10px !important;}
+		.block_sect11 .swiper-button-prev, .block_sect11 .swiper-button-next{bottom: 23%;}
+	
+	}
+
+	@media screen and (max-width:385px) {
+		.block_sect11 .swiper-button-prev, .block_sect11 .swiper-button-next{bottom: 27%;}
+	}
+
+	@media screen and (max-width:375px) {
+		.scroll-mblock .swiper-pagination span{font-size: 12px;}
+		.scroll-mblock .swiper-pagination span{margin-left: 6px !important;}
+	}

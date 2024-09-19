@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>EDOW - list - write</title>
+        <link type="text/css" rel="stylesheet" href="../css/common.css">
+        <link type="text/css" rel="stylesheet" href="../css/sub.css">
+    </head>
+    <body>
+        <header>
+            <!--header-wrp -->
+            <div class="header-wrp">
+                <h1 class="logo">
+                    <span>육상풍력단지<br />환경데이터베이스</span>
+                </h1>
+                <div class="gnb">
+                    <div class="login-area">
+                        <ul>
+                            <li>
+                                <a>로그아웃</a>
+                            </li>
+                            <li>
+                                <a>마이페이지</a>
+                            </li>
+                            <li>
+                                <a>관리자페이지</a>
+                            </li>
+                            <li>
+                                <a>공지사항</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--//header-wrp -->
+        </header>
+
+        <!-- container -->
+        <div id="container" class="sub-wrp">
+            <!-- cont-gnb 
+            <div class="cont-gnb">
+                <div class="cont-wrp">
+                    <ul>
+                        <li class="focused">
+                            <a>모니터링 정보등록</a>
+                        </li>
+                        <li>
+                            <a>모니터링 정보제공</a>
+                        </li>
+                    </ul>
+                    <div class="btn-area">
+                        <button type="button" class="btn-txt-sky">정보공개 시스템 바로가기</button>
+                    </div>
+                </div>
+            </div>
+            //cont-gnb -->
+            <div class="cont-wrp">
+                <div class="wrp-in">
+                    <!-- lnb -->
+                    <div class="lnb adlnb">
+                        <div class="bg"></div>
+                        <ul>
+                            <li>
+                                <a>회원관리</a>
+                            </li>
+                            <li>
+                                <a>공지사항 관리</a>
+                            </li>
+                            <li>
+                                <a>방문자 활동로그</a>
+                            </li>
+                            <li>
+                                <a class="focused">모니터링 대상(코드),<br />데이터셋 관리</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--//lnb -->
+                    <!-- content -->
+                    <section class="content ad-page">
+                        <div class="tab-wrp">
+                            <ul class="tab">
+                                <li>
+                                    <a class="page-title">대상(코드) 관리</a>
+                                </li>
+                                <li class="focused">
+                                    <a class="page-title">데이터셋 관리</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                            <!-- tbl-wrp -->
+                            <div class="tbl-wrp tbl-write form-large">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:10%;" />
+                                        <col style="width:40%;" />
+                                        <col style="width:10%;" />
+                                        <col style="width:40%;" />
+                                    </colgroup>
+                                    <caption>데이터셋 신규등록</caption>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">그룹코드</th>
+                                            <td class="form-input-btn">
+                                                <input type="text" class="form-control" placeholder="그룹코드를 입력하세요" />
+                                                <button type="button" class="btn-c-wb">조회</button>
+                                            </td>
+                                            <th scope="row">그룹명</th>
+                                            <td>
+                                                <input type="text" class="form-control" placeholder="그룹명을 입력하세요" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">데이터셋 코드</th>
+                                            <td class="form-input-btn">
+                                                <input type="text" class="form-control" placeholder="코드를 입력하세요" />
+                                                <button type="button" class="btn-c-wb">조회</button>
+                                            </td>
+                                            <th scope="row">데이터셋명</th>
+                                            <td>
+                                                <input type="text" class="form-control" placeholder="전파장해" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">작성기관</th>
+                                            <td>
+                                                <input type="text" class="form-control" placeholder="코드를 입력하세요" />
+                                            </td>
+                                            <th scope="row">담당자</th>
+                                            <td>
+                                                <input type="text" class="form-control" placeholder="전파장해" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">등록일자</th>
+                                            <td>
+                                                <input type="text" class="form-control" placeholder="코드를 입력하세요" />
+                                            </td>
+                                            <th scope="row">최종 수정일자</th>
+                                            <td>
+                                                <input type="text" class="form-control" placeholder="전파장해" />
+                                            </td>
+                                        </tr>
+                                        <tr class="write-txt">
+                                            <th scope="row">데이터셋 설명</th>
+                                            <td colspan="3">
+                                                <textarea class="form-control" placeholder="내용을 입력해주세요."></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr class="addfile">
+                                            <th rowspan="2" scope="row">항목정보</th>
+                                            <td colspan="3">
+                                                <!-- add-sort-wrp -->
+                                                <div class="add-sort-wrp">
+                                                    <div class="form-wrp col-11">
+                                                        <div class="inputbox">
+                                                            <input type="text" class="form-control col-1" placeholder="NO." />
+                                                            <input type="text" class="form-control col-2" placeholder="Column명(영문)" />
+                                                            <input type="text" class="form-control col-2" placeholder="Column명(한글)" />
+                                                            <input type="text" class="form-control col-2" placeholder="PK여부" />
+                                                            <input type="text" class="form-control col-2" placeholder="데이터 타입" />
+                                                            <input type="text" class="form-control col-2" placeholder="데이터 길이" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-1">
+                                                        <button type="button" class="btn-txt add-btn"><i class="ico-add-sort"></i>항목추가</button>
+                                                    </div>
+                                                </div>
+                                                <!--//add-sort-wrp -->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--//tbl-wrp -->
+                            <!-- tbl-pager-wrp
+                            <div class="tbl-pager-wrp">
+                                <ol>
+                                    <li class="pager-first"><a>first</a></li>
+                                    <li class="pager-prev"><a>prev</a></li>
+                                    <li class="focused"><a>1</a></li>
+                                    <li><a>1</a></li>
+                                    <li><a>1</a></li>
+                                    <li><a>1</a></li>
+                                    <li><a>1</a></li>
+                                    <li class="pager-next"><a>next</a></li>
+                                    <li class="pager-last"><a>last</a></li>
+                                </ol>
+                            </div>
+                            //tbl-pager-wrp -->
+                            <div class="tbl-btn-area text-right">
+                                <!--
+                                <button type="button" class="btn-c-red btn-middle">취소</button>
+                                <button type="button" class="btn-c-blue btn-middle">저장</button>
+                                -->
+                                <button type="button" class="btn-c-blue">등록</button>
+                            </div>
+                    </section>
+                    <!--//content -->
+                </div>
+            </div>
+        </div>
+        <!--//container -->
+
+        <footer></footer>
+
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                function Add(){
+                    var c1 = $('.add-sort-wrp .form-wrp div.inputbox:eq(0)').clone(true); 
+                    $(".add-sort-wrp .form-wrp").append(c1);
+                    return false;
+                }
+                $('.add-btn').click(Add);
+            });
+        </script>
+    </body>
+</html>

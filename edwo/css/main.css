@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+.main-bn-area{
+    position: relative;
+    width: 100%;
+    padding-bottom: 170px;
+}
+.main-bn-area .bn-img{
+    width: 100%;
+    position: absolute;
+    height: -webkit-fill-available;
+}
+.main-bn-area .bn-wrp{
+    max-width: 1400px;
+    min-width: 1400px;
+    margin:0 auto;
+    color:#fff;
+    position: relative;
+    padding-top:245px;
+}
+.main-bn-area .bn-wrp .title{
+    font-size: 50px;
+    font-weight: 500;
+}
+.main-bn-area .bn-wrp .title>b{
+    font-weight: 700;
+}
+.main-bn-area .row.justify-content-between{
+    margin-top:170px;
+align-items: flex-end;}
+.main-bn-area .row.justify-content-between>div:nth-child(1){
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.main-bn-area .row.justify-content-between>div:nth-child(1) .sub-title{
+    font-size: 36px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+}
+.main-bn-area .row.justify-content-between>div:nth-child(2){
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+.main-bn-area [class*=bn-box-]{
+    width: 245px;
+    height: 245px;
+    background-color: #fe902a;
+    color:#fff;
+    padding: 30px;
+    font-size: 24px;
+    display: flex;
+    flex-flow:column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    d
+}
+.main-bn-area [class*=bn-box-].after::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width:195px;
+    height:195px;
+    border-radius: 100% 0 0 0;
+    background-color: #2B83EA;
+    right: 0;
+    bottom: 0;
+}
+.main-bn-area .bn-box-1.after::after{
+    background-color: #FF8311;
+}
+.main-bn-area [class*=bn-box-] [class*=icon-bn]{
+    background: url(../images/main/icon-bn1.svg) no-repeat center/100% auto;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    position: absolute;
+    right:30px;
+    bottom:30px;
+    z-index: 1;
+    opacity: 0;
+}
+.main-bn-area .bn-box-1:hover .icon-bn1{
+    opacity: 1;
+}
+.main-bn-area [class*=bn-box-].after .icon-bn1{
+    background-image: url(../images/main/icon-bn1-after.svg);
+    opacity: 1;
+}
+.main-bn-area [class*=bn-box-].after .icon-bn2{
+    background-image: url(../images/main/icon-bn2-after.svg);
+    opacity: 1;
+}
+
+.main-bn-area .bn-box-2{
+    background-color: #328BF2;
+}

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>EDOW - list - write</title>
+        <link type="text/css" rel="stylesheet" href="../css/common.css">
+        <link type="text/css" rel="stylesheet" href="../css/sub.css">
+        <script src="../js/apexcharts.js"></script>
+    </head>
+    <body>
+        <header>
+            <!--header-wrp -->
+            <div class="header-wrp">
+                <h1 class="logo">
+                    <span>육상풍력단지<br />환경데이터베이스</span>
+                </h1>
+                <div class="login-area">
+                    <ul>
+                        <li>
+                            <a>로그인</a>
+                        </li>
+                        <li>
+                            <a>회원가입</a>
+                        </li>
+                        <li>
+                            <a>공지사항</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--//header-wrp -->
+        </header>
+
+        <!-- container -->
+        <div id="container" class="sub-wrp">
+            <!-- cont-gnb 
+            <div class="cont-gnb">
+                <div class="cont-wrp">
+                    <ul>
+                        <li class="focused">
+                            <a>모니터링 정보등록</a>
+                        </li>
+                        <li>
+                            <a>모니터링 정보제공</a>
+                        </li>
+                    </ul>
+                    <div class="btn-area">
+                        <button type="button" class="btn-txt-sky">정보공개 시스템 바로가기</button>
+                    </div>
+                </div>
+            </div>
+            //cont-gnb -->
+            <div class="cont-wrp">
+                <!-- lnb -->
+                <div class="lnb bg-gray adlnb">
+
+                </div>
+                <!--//lnb -->
+                <!-- content -->
+                <section class="content">
+                    <h2 class="page-title">Modal / Alert</h2>
+                    <button type="button" class="btn-c-blue btn-middle" data-bs-toggle="modal" data-bs-target="#alertComn">기본Alert</button>
+                    <button type="button" class="btn-c-blue btn-middle" data-bs-toggle="modal" data-bs-target="#mapAdd">조사지점 등록</button>
+                    <button type="button" class="btn-c-blue btn-middle" data-bs-toggle="modal" data-bs-target="#metainfor">레이어 메타정보</button>
+                    <button type="button" class="btn-c-blue btn-middle" data-bs-toggle="modal" data-bs-target="#echange">환경변화팝업</button>
+                    <button type="button" class="btn-c-blue btn-middle" data-bs-toggle="modal" data-bs-target="#inforAdd">조사정보 입력</button>
+                </section>
+                <!--//content -->
+            </div>
+        </div>
+        <!--//container -->
+
+        <!-- alertComn -->
+        <div class="modal fade alert-wrp" id="alertComn">
+            <div class="modal-dialog modal-sm modal-dialog-centered">
+                <div class="modal-content">
+                    <p class="msg-center">
+                        수정하시겠습니까?
+                    </p>
+                    <div class="btn-area">
+                        <button type="button" class="btn-c-wg" data-bs-dismiss="modal">취소</button>
+                        <button type="button" class="btn-c-blue">확인</button>
+                    </div>          
+                </div>
+            </div>
+        </div>
+        <!--//alertComn -->
+
+        <!-- [s] : 조사지점등록 팝업 -->
+        <!-- mapAdd -->
+        <div class="modal fade alert-wrp" id="mapAdd">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-btn-area">
+                        <button type="button" class="modal-close" data-bs-dismiss="modal">&times;</button>
+                    </div>
+                    <h2 class="pop-title">조사지점 등록</h2>
+                    <div class="pop-cont">
+                        <!-- map-add-desc -->
+                        <div class="map-add-desc">
+                            <div class="row">
+                                <div class="col-10">
+                                    <input type="text" class="form-control form-large" value="강원도 태백시 원동" />
+                                </div>
+                                <div class="col-2">
+                                    <button type="button" class="btn-c-wb">검색</button>
+                                </div>
+                            </div>
+                            <div class="row desc-list map-infor">
+                                <div class="col-4">                                
+                                    <span class="sort-title">지도에서 직접선택</span>
+                                    <button type="button" class="btn-c-wb btn-tiny btn-location"><i class="ico-location2"></i>위치</button>
+                                </div>
+                                <div class="col-3">                                
+                                    <span class="sort-title">X좌표</span>
+                                    <input type="text" class="form-control form-tiny form-xy" value="192.5" />
+                                </div>
+                                <div class="col-3">                                
+                                    <span class="sort-title">Y좌표</span>
+                                    <input type="text" class="form-control form-tiny form-xy" value="59.3" />
+                                </div>
+                                <div class="col-2">                                
+                                    <button type="button" class="btn-c-wb btn-tiny">좌표확인</button>
+                                </div>
+                            </div>
+                            <div class="row desc-list">
+                                <input type="text" class="form-control form-large" placeholder="조사지점명을 입력해 주세요." />
+                            </div>
+                            <div class="map-area">
+                                map
+                            </div>
+                        </div>
+                        <!--//map-add-desc -->
+                    </div>
+                    <div class="btn-area">
+                        <button type="button" class="btn-c-blue">입력</button>
+                    </div>          
+                </div>
+            </div>
+        </div>
+        <!--//mapAdd -->
+        <!-- [e] : 조사지점 등록 팝업 -->
+
+        <!-- [s] : 조사정보입력 팝업 -->
+        <!-- inforAdd -->
+        <div class="modal fade alert-wrp" id="inforAdd">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-btn-area">
+                        <button type="button" class="modal-close" data-bs-dismiss="modal">&times;</button>
+                    </div>
+                    <h2 class="pop-title">조사정보 입력</h2>
+                    <div class="pop-cont">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col" width="60px">NO</th>
+                                    <th scope="col" width="80px">조사차수</th>
+                                    <th scope="col" width="129px">조사시작일</th>
+                                    <th scope="col" width="129px">조사종료일</th>
+                                    <th scope="col" width="129px">BOD</th>
+                                    <th scope="col" width="129px">pH</th>
+                                    <th scope="col" width="129px">하천수질현황</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">01</th>
+                                    <td class="t_cen"><input type="text" value="1차" class="w_73" readonly></td>
+                                    <td><input type="text" value="22-02-02" class="w_116" readonly></td>
+                                    <td><input type="text" value="22-02-02" class="w_116" readonly></td>
+                                    <td><input type="text" value="" class="w_112" readonly></td>
+                                    <td><input type="text" value="" class="w_112" readonly></td>
+                                    <td><input type="text" value="" class="w_112" readonly></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="" class="add-btn"><span>+</span>조사지수 추가</a>
+                    </div>
+                    <div class="btn-area">
+                        <button type="button" class="btn-c-blue">입력</button>
+                    </div>          
+                </div>
+            </div>
+        </div>
+        <!--//inforAdd -->
+        <!-- [e] : 조사정보 입력 팝업 -->
+
+        <!-- [s] : 레이어 메타정보 팝업 -->
+        <!-- metainfor -->
+        <div class="modal fade alert-wrp" id="metainfor">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-btn-area">
+                        <button type="button" class="modal-close" data-bs-dismiss="modal">&times;</button>
+                    </div>
+                    <h2 class="pop-title">레이어 메타정보</h2>
+                    <div class="pop-cont">
+                        <div class="tbl-wrp"> 
+                            <table class="mb0">
+                                <colgroup>
+                                    <col style="width:150px" />
+                                    <col style="width:330px" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" colspan="2" class="MetaTitle">레이어 메타정보</th>
+                                    </tr>                                    
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>구분</th>
+                                        <td class="text-left">환경관리목</td>
+                                    </tr>
+                                    <tr>
+                                        <th>주제도명</th>
+                                        <td class="text-left">생태자연도</td>
+                                    </tr>
+                                    <tr>
+                                        <th>갱신주기</th>
+                                        <td class="text-left">매년 7월</td>
+                                    </tr>
+                                    <tr>
+                                        <th>해상도(Resolution)</th>
+                                        <td class="text-left">-</td>
+                                    </tr>
+                                </table>
+                                 <table class="mb0">
+                                    <colgroup>
+                                        <col style="width:30%;" />
+                                        <col style="width:70%;" />
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="2" class="in-Title">원시자료 메타정보</th>
+                                        </tr>                                    
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th>원시자료명</th>
+                                        <td class="text-left">환경공간정보서비스 생태자연도 API</td>
+                                    </tr>
+                                    <tr>
+                                        <th>원시자료 출처</th>
+                                        <td class="text-left">환경보,<br />https://egis.me.go.kr/api/ezm.do</td>
+                                    </tr>
+                                    <tr>
+                                        <th>원시자료 지정년도</th>
+                                        <td class="text-left">2020</td>
+                                    </tr>
+                                    <tr>
+                                        <th>원시자료 제작년도</th>
+                                        <td class="text-left">2020</td>
+                                    </tr>
+                                    <tr>
+                                        <th>국토환경정보센터</th>
+                                        <td class="text-left">https://www.neins.go.kr/mid=12010400</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <button type="button" class="btn-c-b-blue"><img src="../images/common/ico-btn-download.svg" alt="">XLS 다운</button>
+                        <button type="button" class="modal-close btn-c-wg" data-bs-dismiss="modal">닫기</button>
+                    </div>          
+                </div>
+            </div>
+        </div>
+        <!--//metainfor -->
+        <!-- [e] : 레이어 메타정보 팝업 -->
+
+         <!-- [s] : 환경변화 팝업 -->
+        <!-- echange -->
+        <div class="modal fade alert-wrp" id="echange">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-btn-area">
+                        <button type="button" class="modal-close" data-bs-dismiss="modal">&times;</button>
+                    </div>
+                    <h2 class="pop-title">환경변화</h2>
+                    <span class="tit_infor">환경영향평가 DB와 모니터DB 비교분석</span>
+                    <div class="pop-cont">
+                        <div class="sel-wrap">
+                            <select class="form-control form-data-set">
+                                <option>원동풍력 발전사업</option>
+                            </select>
+                            <select class="form-control form-data-set">
+                                <option>소음진동</option>
+                            </select>
+                            <select class="form-control form-data-set">
+                                <option>소음</option>
+                            </select>
+                        </div>
+                        <div class="in-wrap">
+                            <div class="map-area">
+                                <h3>선택한 조사지점</h3>
+                                <div class="map-wrap">
+                                    <img src="../images/map/map4.png" alt="지도">
+                                    <span class="ico-b" style="top: 10px; left: 50px;">M1</span>
+                                    <span class="ico-p" style="top: 100px; left: 200px;">A-1</span>
+                                    <span class="ico-b" style="top: 150px; left: 250px;">M2</span>
+                                    <span class="ico-p" style="top: 280px; left: 80px;">A-2</span>
+                                </div>
+                                <div class="list-wrp">
+                                    <span>Legend</span>
+                                    <ol>
+                                        <li class="ico-p">환경영향평가 DB<br />조사지점</li>
+                                        <li class="ico-b">모니터링 DB<br />조사지점</li>
+                                    </ol>
+                                </div>    
+                            </div>
+                            <div class="r-con">
+                                <div>
+                                    <h3>환경영향평가 DB</h3>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">조사지점</th>
+                                                <th scope="col">조사차수</th>
+                                                <th scope="col">조사시작일</th>
+                                                <th scope="col">조사종료일</th>
+                                                <th scope="col">소음(dB)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">A-1</th>
+                                                <td>1차</td>
+                                                <td>2022-01-03</td>
+                                                <td>2022-01-03</td>
+                                                <td>10</td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">A-1</th>
+                                                <td>1차</td>
+                                                <td>2022-01-03</td>
+                                                <td>2022-01-03</td>
+                                                <td>10</td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">A-1</th>
+                                                <td>1차</td>
+                                                <td>2022-01-03</td>
+                                                <td>2022-01-03</td>
+                                                <td>10</td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">A-1</th>
+                                                <td>1차</td>
+                                                <td>2022-01-03</td>
+                                                <td>2022-01-03</td>
+                                                <td>10</td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">A-1</th>
+                                                <td>1차</td>
+                                                <td>2022-01-03</td>
+                                                <td>2022-01-03</td>
+                                                <td>10</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div>
+                                    <h3>모니터링 DB</h3>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">조사지점</th>
+                                                <th scope="col">조사차수</th>
+                                                <th scope="col">조사시작일</th>
+                                                <th scope="col">조사종료일</th>
+                                                <th scope="col">소음(dB)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">P1</th>
+                                                <td>1차</td>
+                                                <td>2022-01-03</td>
+                                                <td>2022-01-03</td>
+                                                <td>10</td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">P1</th>
+                                                <td>1차</td>
+                                                <td>2022-01-03</td>
+                                                <td>2022-01-03</td>
+                                                <td>10</td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">P1</th>
+                                                <td>1차</td>
+                                                <td>2022-01-03</td>
+                                                <td>2022-01-03</td>
+                                                <td>10</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="chart_wrap">
+                                    <h3>소음</h3>
+                                    <ul>
+                                        <li><img src="../images/common/ico-blue.png" alt="">A-1</li>
+                                        <li><img src="../images/common/ico-gray.png" alt="">A-2</li>
+                                        <li><img src="../images/common/ico-orange.png" alt="">A-3</li>
+                                        <li><img src="../images/common/ico-yellow.png" alt="">P1</li>
+                                        <li><img src="../images/common/ico-sky.png" alt="">P2</li>
+                                        <li><img src="../images/common/ico-green.png" alt="">P3</li>
+                                    </ul>
+                                    <div id="chart1"></div>
+                                    <div id="chart2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                          
+                </div>
+            </div>
+        </div>
+        <!--//echange -->
+        <!-- [e] : 환경변화 팝업 -->
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script>
+            // 환경변화 그래프
+            $(function(){
+                  var options = {
+                      series: [
+                      {
+                        name: "High - 2013",
+                        data: [28, 29, 33]
+                      },
+                      {
+                        name: "Low - 2013",
+                        data: [17, 11, 10]
+                      },
+                      {
+                        name: "Low - 2013",
+                        data: [12, 11, 14]
+                      }
+                    ],
+                      chart: {
+                      height: 350,
+                      type: 'line',
+                      
+                      toolbar: {
+                        show: false
+                      }
+                    },
+                    colors: ['#085DAA','#BDBDBD','#FF8C22'],
+                    dataLabels: {
+                      enabled: false,
+                    },
+                    stroke: {
+                      curve: 'straight'
+                    },
+     
+                    markers: {
+                      size: 5
+                    },
+                    xaxis: {
+                      categories: ['1차', '2차', '3차'],
+                      title: {
+                            text: '환경영향평가',
+                            color: '#434343'
+                          }
+                    },
+                    yaxis: {
+                      min: 5,
+                      max: 40
+                    },
+                    legend: {
+                      position: 'top',
+                      horizontalAlign: 'right',
+                      floating: true,
+                      offsetY: -25,
+                      offsetX: -5
+                    }
+                    };
+
+                    var chart = new ApexCharts(document.querySelector("#chart1"), options);
+                    chart.render();
+
+                        var options2 = {
+                          series: [
+                          {
+                            name: "High - 2013",
+                            data: [28, 29, 33, 36]
+                          },
+                          {
+                            name: "Low - 2013",
+                            data: [12, 11, 14, 18]
+                          }
+                          ,
+                          {
+                            name: "Low - 2013",
+                            data: [13, 15, 18, 11]
+                          }
+                        ],
+                          chart: {                            
+                          height: 350,
+                          type: 'line',
+                          toolbar: {
+                            show: false
+                          },
+                        },
+                        colors: ['#FFCE22', '#328BF2','#51B449'],
+                        dataLabels: {
+                          enabled: false,
+                        },
+                        stroke: {
+                          curve: 'straight'
+                        },
+                        markers: {
+                          size: 5,
+                        },
+                        xaxis: {
+                          categories: ['1차', '2차', '3차', '4차'],
+                            title: {
+                            text: '모니터링',
+                            color: '#434343'
+                          }
+                        },
+                        yaxis: {
+                          min: 5,
+                          max: 40,
+                          show: false
+                        },
+                        legend: {
+                          position: 'top',
+                          horizontalAlign: 'right',
+                          floating: true,
+                          offsetY: -25,
+                          offsetX: -5
+                        }
+                        };
+
+                        var chart = new ApexCharts(document.querySelector("#chart2"), options2);
+                        chart.render();
+
+                        //조사정보입력
+                        function Add(){
+                            var c1 = $('#inforAdd tbody tr:eq(0)').clone(true); 
+                            $("#inforAdd tbody").append(c1);
+                            return false;
+                        }
+                        $('.add-btn').click(Add);
+
+                });
+        </script>  
+    </body>
+</html>
