@@ -126,7 +126,7 @@ body{font-family:"Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;line-h
     }
   }
 
-  .con1{padding: 100px 0;}
+  .con1,.con2{padding: 100px 0;}
   .con1 .in {
     display: flex;
     align-items: center;
@@ -140,6 +140,7 @@ body{font-family:"Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;line-h
     font-weight: bold;
     text-align: left;
     margin-bottom: 30px;
+    word-break: keep-all;
   }
   .con1 .img {
     border-radius: 30px;
@@ -148,13 +149,152 @@ body{font-family:"Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;line-h
   }
   .con1 p {
     font-family: "GangwonEdu_OTFBoldA";
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 18px;
+    line-height: 25px;
+    word-break: keep-all;
   }
   .con1 .txt-wrap {
     text-align: left;
   }
-
+  .con2 ul{
+    width: 800px; 
+    margin: 0 auto;
+  }
+  .con2 ul li{
+    font-family: "GangwonEdu_OTFBoldA";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 2%;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px #eee dashed;
+  }
+  .con2 ul li .tit{
+    display: flex;
+    align-items: center;
+  }
+  .con2 ul li span{
+    color: #888;
+    font-size: 15px;
+    padding-left: 10px;
+    margin-left: 10px;
+    position: relative;
+  }
+  .con2 ul li span:before{
+    content: '';
+    width: 2px;
+    height: 2px;
+    background: #888;
+    border-radius: 50%;
+    position: absolute;
+    left: 0; 
+    top: 50%;
+    margin-top: -1px;
+  }
+  .con3{
+    padding-bottom: 100px;
+  }
+  .con3 ul{
+    width: 800px; 
+    margin: 0 auto;
+  }
+  .con3 ul li{
+    font-family: "GangwonEdu_OTFBoldA";
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 3% 2%;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px #eee dashed;
+  }
+  .con3 ul li .tit span{
+    color: #888;
+    font-size: 15px;
+    padding-left: 10px;
+    margin-left: 10px;
+    position: relative;
+    display: block;
+  }
+  .con3 ul li .tit span:before{
+    content: '';
+    width: 2px;
+    height: 2px;
+    background: #888;
+    border-radius: 50%;
+    position: absolute;
+    left: 0; 
+    top: 50%;
+    margin-top: -1px;
+  }
+  .con4 ul{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    column-gap: 15px;
+    row-gap: 50px;
+    flex-wrap: wrap;
+  }
+  .con4 ul li{
+    width: calc((100% - 30px) / 3);
+  }
+  .con4 ul li .img{
+    width: 100%;
+    height: 250px;
+    border: 1px #eee solid;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    overflow: hidden;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .con4 ul li .img img{
+    max-width: 100%;
+    max-height: 100%;
+    transition: all 0.3s;
+    object-fit: cover;
+  }
+  .con4 ul li .img:hover{
+    background: #eee;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
+  .con4 ul li .img:hover img{
+    transform: scale(1.05);
+  }
+  .con4 ul li div{
+    font-family: "GangwonEdu_OTFBoldA";
+  }
+  .con4 ul li div.tit{
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  .con4 ul li .link{
+    display: flex; 
+    column-gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .con4 ul li .link a{
+    flex: 1;
+    display: block;
+    text-align: center;
+    border: 1px #eee solid;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 40px;
+    font-weight: 600;
+    line-height: 45px;
+    transition: all 0.2s;
+    color: #111;
+  }
+  .con4 ul li .link a:hover{
+    background: #eee;
+  }
   h2 {
     font-family: "GangwonEdu_OTFBoldA";
     text-align: center;
@@ -176,8 +316,8 @@ body{font-family:"Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;line-h
     bottom: -15px;
   }
 
-  .aboutme{width: 800px; margin: 0 auto;}
-  .aboutme p.tit{padding-top: 10%; text-align: center; font-size: 35px; position: relative; padding-bottom: 20px; margin-bottom: 5%;}
+.aboutme{width: 800px; margin: 0 auto;}
+.aboutme p.tit{padding-top: 10%; text-align: center; font-size: 35px; position: relative; padding-bottom: 20px; margin-bottom: 5%;}
 .aboutme p.tit:after{content: ''; width: 50px; height: 5px; background: #000; position: absolute; bottom: 0; left: 50%; margin-left: -25px;}
 .aboutme li{ overflow: hidden; padding: 2%; font-family: "GangwonEdu_OTFBoldA";}
 .aboutme span{display: inline-block; font-size: 22px; float: left;}
