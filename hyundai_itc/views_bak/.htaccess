@@ -1,3 +1,0 @@
-<Files ~ "\.(php|htm|html)$">
-Require all granted
-</Files>
