@@ -16,26 +16,23 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="http://www.sibizicommerce.com/js/awesome-marquee.js?ver=2210172"></script>
     <script>
-
       $(document).ready(function () {
         //커졌다 작아지는 텍스트
-      const ani6 = gsap.timeline();
-      ani6
-        .fromTo('.about .scale p', { scale: 8 }, { scale: 1}, 0);
+        const ani6 = gsap.timeline();
+        ani6.fromTo(".about .scale p", { scale: 8 }, { scale: 1 }, 0);
 
         ScrollTrigger.create({
-            animation: ani6,
-            markers: true,
-            trigger: ".about .scale",
-            start: "-=2000",
-            end: "+=3000",
-            scrub: true,
-            //pin: true,
-            anticipatePin: 1,
-            markers: false
+          animation: ani6,
+          markers: true,
+          trigger: ".about .scale",
+          start: "-=2000",
+          end: "+=3000",
+          scrub: true,
+          //pin: true,
+          anticipatePin: 1,
+          markers: false,
         });
       });
-    
     </script>
   </head>
   <body>
@@ -73,312 +70,312 @@
       <section class="about_list">
         <h2>A<span>B</span>OUT</h2>
         <ul class="tab_box">
-          <li><a href="">Introduction</a></li>
-          <li><a href="">History</a></li>
+          <li><a href="./about.html">Introduction</a></li>
+          <li><a href="./history.html">History</a></li>
           <li class="on"><a href="">Award</a></li>
         </ul>
       </section>
       <section class="award_list">
         <ul>
-            <li>
-                <a href="">
-                    <img src="./img/award_img1.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">LS E-Link </div>
-                        <p>
-                            K-AWARDS
-                            <br>
-                            e-Business Division 부문 대상
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./img/award_img2.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">LOCI 공식 온라인몰</div>
-                        <p>
-                            K-AWARDS
-                            <br>
-                            과학기술정보통신부 장관상
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./img/award_img3.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">환경부 미세먼지 통합포털</div>
-                        <p>
-                            K-AWARDS
-                            <br>
-                            정부3.0서비스 융합 부문 최우수상
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./img/award_img4.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">빌리프 X VDL 공식 온라인몰 </div>
-                        <p>
-                            K-AWARDS
-                            <br>
-                            e-커머스 부문 금상
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./img/award_img5.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">CNP 차앤박 화장품 공식 온라인몰</div>
-                        <p>
-                            K-AWARDS
-                            <br>
-                            e-커머스 부문 금상
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./img/award_img6.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">2018 평창동계올림픽 기념관 공식사이트 </div>
-                        <p>
-                            K-AWARDS
-                            <br>
-                            과학기술정보통신부 장관상
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./img/award_img7.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">별밤서재</div>
-                        <p>
-                            K-AWARDS
-                            <br>
-                            e-Business 부문 금상
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./img/award_img8.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">SBA 서울 R&D지원센터</div>
-                        <p>
-                            Web Award Korea 2019
-                            <br>
-                            공공기관분야 최우수상
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./img/award_img9.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">뷰인스 공식 온라인몰</div>
-                        <p>
-                            Web Award Korea 2019
-                            <br>
-                            화장품쇼핑몰분야 최우수상
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./img/award_img10.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">밤부컬렉션</div>
-                        <p>
-                            K-AWARDS
-                            <br>
-                            UI/UX디자인 부문 금상
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./img/award_img11.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">밀리언뷰티</div>
-                        <p>
-                            K-AWARDS
-                            <br>
-                            e-커머스 부문 우수상
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./img/award_img12.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">세종병원 인재채용</div>
-                        <p>
-                            K-AWARDS
-                            <br>
-                            e-Business 부문 금상
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./img/award_img13.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">문경 에코랄라</div>
-                        <p>
-                            K-AWARDS
-                            <br>
-                            정부3.0서비스융합 부문 금상
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./img/award_img14.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">퇴사학교</div>
-                        <p>
-                            K-AWARDS
-                            <br>
-                            디지털콘텐츠&솔루션 부문 금상
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./img/award_img15.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">33떡볶이</div>
-                        <p>
-                            K-AWARDS
-                            <br>
-                            Creative 부문 우수상
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./img/award_img16.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">RMK Korea</div>
-                        <p>
-                            Web Award Korea 2017
-                            <br>
-                            제품일반분야 최우수상
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./img/award_img17.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">성모자애복지관</div>
-                        <p>
-                            Web Award Korea 2017
-                            <br>
-                            비영리기관분야 최우수상
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./img/award_img18.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">2017 핑거밴드 캠페인</div>
-                        <p>
-                            Web Award Korea 2017
-                            <br>
-                            공공프로모션분야 최우수상
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./img/award_img19.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">더배움</div>
-                        <p>
-                            K-AWARDS
-                            <br>
-                            디지털컨텐츠솔루션 부문 금상
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./img/award_img20.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">24길</div>
-                        <p>
-                            K-AWARDS
-                            <br>
-                            Mobile 부문 금상
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./img/award_img21.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">뽀로로 힐더월드</div>
-                        <p>
-                            K-AWARDS
-                            <br>
-                            e-Business 부문 금상
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./img/award_img22.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">수돗물 홍보협의회 착한물 캠페인</div>
-                        <p>
-                            K-AWARDS
-                            <br>
-                            UI/UX디자인 부문 우수상
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./img/award_img23.jpg" alt="">
-                    <div class="award_txt">
-                        <div class="big_tit">한국지식재산보호원</div>
-                        <p>
-                            K-AWARDS
-                            <br>
-                            정부3.0서비스융합 부문 은상
-                        </p>
-                    </div>
-                </a>
-            </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img1.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">LS E-Link</div>
+                <p>
+                  K-AWARDS
+                  <br />
+                  e-Business Division 부문 대상
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img2.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">LOCI 공식 온라인몰</div>
+                <p>
+                  K-AWARDS
+                  <br />
+                  과학기술정보통신부 장관상
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img3.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">환경부 미세먼지 통합포털</div>
+                <p>
+                  K-AWARDS
+                  <br />
+                  정부3.0서비스 융합 부문 최우수상
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img4.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">빌리프 X VDL 공식 온라인몰</div>
+                <p>
+                  K-AWARDS
+                  <br />
+                  e-커머스 부문 금상
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img5.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">CNP 차앤박 화장품 공식 온라인몰</div>
+                <p>
+                  K-AWARDS
+                  <br />
+                  e-커머스 부문 금상
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img6.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">2018 평창동계올림픽 기념관 공식사이트</div>
+                <p>
+                  K-AWARDS
+                  <br />
+                  과학기술정보통신부 장관상
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img7.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">별밤서재</div>
+                <p>
+                  K-AWARDS
+                  <br />
+                  e-Business 부문 금상
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img8.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">SBA 서울 R&D지원센터</div>
+                <p>
+                  Web Award Korea 2019
+                  <br />
+                  공공기관분야 최우수상
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img9.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">뷰인스 공식 온라인몰</div>
+                <p>
+                  Web Award Korea 2019
+                  <br />
+                  화장품쇼핑몰분야 최우수상
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img10.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">밤부컬렉션</div>
+                <p>
+                  K-AWARDS
+                  <br />
+                  UI/UX디자인 부문 금상
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img11.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">밀리언뷰티</div>
+                <p>
+                  K-AWARDS
+                  <br />
+                  e-커머스 부문 우수상
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img12.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">세종병원 인재채용</div>
+                <p>
+                  K-AWARDS
+                  <br />
+                  e-Business 부문 금상
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img13.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">문경 에코랄라</div>
+                <p>
+                  K-AWARDS
+                  <br />
+                  정부3.0서비스융합 부문 금상
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img14.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">퇴사학교</div>
+                <p>
+                  K-AWARDS
+                  <br />
+                  디지털콘텐츠&솔루션 부문 금상
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img15.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">33떡볶이</div>
+                <p>
+                  K-AWARDS
+                  <br />
+                  Creative 부문 우수상
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img16.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">RMK Korea</div>
+                <p>
+                  Web Award Korea 2017
+                  <br />
+                  제품일반분야 최우수상
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img17.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">성모자애복지관</div>
+                <p>
+                  Web Award Korea 2017
+                  <br />
+                  비영리기관분야 최우수상
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img18.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">2017 핑거밴드 캠페인</div>
+                <p>
+                  Web Award Korea 2017
+                  <br />
+                  공공프로모션분야 최우수상
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img19.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">더배움</div>
+                <p>
+                  K-AWARDS
+                  <br />
+                  디지털컨텐츠솔루션 부문 금상
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img20.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">24길</div>
+                <p>
+                  K-AWARDS
+                  <br />
+                  Mobile 부문 금상
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img21.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">뽀로로 힐더월드</div>
+                <p>
+                  K-AWARDS
+                  <br />
+                  e-Business 부문 금상
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img22.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">수돗물 홍보협의회 착한물 캠페인</div>
+                <p>
+                  K-AWARDS
+                  <br />
+                  UI/UX디자인 부문 우수상
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/award_img23.jpg" alt="" />
+              <div class="award_txt">
+                <div class="big_tit">한국지식재산보호원</div>
+                <p>
+                  K-AWARDS
+                  <br />
+                  정부3.0서비스융합 부문 은상
+                </p>
+              </div>
+            </a>
+          </li>
         </ul>
       </section>
       <div class="scale">
@@ -388,20 +385,20 @@
       </div>
       <div class="marquee">
         <div>
-            <span><a href="">프로젝트 의뢰하기</a></span>
-            <span><a href="">프로젝트 의뢰하기</a></span>
-            <span><a href="">프로젝트 의뢰하기</a></span>
-            <span><a href="">프로젝트 의뢰하기</a></span>
-            <span><a href="">프로젝트 의뢰하기</a></span>
-            <span><a href="">프로젝트 의뢰하기</a></span>
-            <span><a href="">프로젝트 의뢰하기</a></span>
-            <span><a href="">프로젝트 의뢰하기</a></span>
-            <span><a href="">프로젝트 의뢰하기</a></span>
-            <span><a href="">프로젝트 의뢰하기</a></span>
-            <span><a href="">프로젝트 의뢰하기</a></span>
-            <span><a href="">프로젝트 의뢰하기</a></span>
+          <span><a href="">프로젝트 의뢰하기</a></span>
+          <span><a href="">프로젝트 의뢰하기</a></span>
+          <span><a href="">프로젝트 의뢰하기</a></span>
+          <span><a href="">프로젝트 의뢰하기</a></span>
+          <span><a href="">프로젝트 의뢰하기</a></span>
+          <span><a href="">프로젝트 의뢰하기</a></span>
+          <span><a href="">프로젝트 의뢰하기</a></span>
+          <span><a href="">프로젝트 의뢰하기</a></span>
+          <span><a href="">프로젝트 의뢰하기</a></span>
+          <span><a href="">프로젝트 의뢰하기</a></span>
+          <span><a href="">프로젝트 의뢰하기</a></span>
+          <span><a href="">프로젝트 의뢰하기</a></span>
         </div>
-        </div>
+      </div>
     </div>
     <!-- 하단 시작 { -->
     <footer>
@@ -432,7 +429,6 @@
     <!-- } 하단 끝 -->
 
     <script>
-
       /* header scroll event */
       let prevScrollTop = 0;
       document.addEventListener("scroll", function () {
