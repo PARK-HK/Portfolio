@@ -1,0 +1,1239 @@
+@media screen and (max-width: 1680px) {
+  /* .main_sec h2 {
+		width: calc(100vw * (952 / 1680));
+		height: calc(100vw * (208 / 1680));
+	}
+	.main_sec span {
+		bottom: calc(100vw * (80 / 1680));
+		font-size: calc(100vw * (16 / 1680));
+	} */
+  .main_sec .cont_txt {
+    top: calc(100vw * (328 / 1680));
+    margin-left: calc(100vw * (296 / 1680));
+  }
+  .main_sec .txt_logo {
+    margin-bottom: calc(100vw * (26 / 1680));
+  }
+  .main_sec .slide01 .txt_logo {
+    width: calc(100vw * (100 / 1680));
+  }
+  .main_sec .slide02 .txt_logo {
+    width: calc(100vw * (155 / 1680));
+  }
+  .main_sec .slide03 .txt_logo {
+    width: calc(100vw * (102 / 1680));
+  }
+  .main_sec .slide04 .txt_logo {
+    width: calc(100vw * (127 / 1680));
+  }
+  .main_sec .slide05 .txt_logo {
+    width: calc(100vw * (120 / 1680));
+  }
+  .main_sec .cont_txt {
+    font-size: calc(100vw * (72 / 1680));
+  }
+  /* main_banner area */
+
+  .satisfied_box .title,
+  .satisfied_sec02 .title {
+    font-size: calc(100vw * (120 / 1680));
+  }
+  .satisfied_box:first-of-type .title {
+    font-size: calc(100vw * (30 / 1680));
+  }
+  .satisfied_box .title p {
+    margin-top: calc(100vw * (38 / 1680));
+    font-size: calc(100vw * (120 / 1680));
+  }
+  .satisfied_sec02 {
+    gap: calc(100vw * (240 / 1680));
+    padding-bottom: calc(100vw * (300 / 1680));
+  }
+  .satisfied_box02 .title::after {
+    padding: calc(100vw * (5 / 1680)) calc(100vw * (15 / 1680));
+    font-size: calc(100vw * (22 / 1680));
+  }
+  .satisfied_box02:first-of-type .title::after {
+    left: calc(100vw * (-40 / 1680));
+  }
+  .satisfied_box02:nth-of-type(2) .title::after {
+    bottom: calc(100vw * (10 / 1680));
+  }
+
+  /* project scroll_img_sec */
+  .project_sec {
+    height: auto;
+  }
+  .project_sec .project_wp {
+    position: unset;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .project_sec .project_cont {
+    padding: calc(100vw * (218 / 1680)) 0;
+    width: calc(100vw * (1175 / 1680));
+    height: auto;
+    gap: calc(100vw * (150 / 1680));
+    flex-wrap: wrap;
+  }
+  .project_item {
+    height: calc(100vw * (572 / 1680));
+    margin: 0;
+  }
+  .project_item img {
+    height: 100%;
+  }
+  .project_item .project_img {
+    width: calc(100vw * (512 / 1680));
+    height: calc(100vw * (512 / 1680));
+  }
+  .project_item::before {
+    top: calc(100vw * (-30 / 1680));
+    height: calc(100vw * (30 / 1680));
+    font-size: calc(100vw * (16 / 1680));
+  }
+  .project_item::after {
+    top: calc(100vw * (-30 / 1680));
+    height: calc(100vw * (30 / 1680));
+    font-size: calc(100vw * (16 / 1680));
+  }
+  .project_item .project_txt {
+    margin-top: calc(100vw * (25 / 1680));
+  }
+  .project_item .project_txt h3 {
+    font-size: calc(100vw * (30 / 1680));
+  }
+
+  /* scroll circle animaion */
+  .cont_wrap .circle_wrap {
+    /* width: 4.69vw;
+		height: 4.69vw;
+		min-height: 4.69vw;
+		margin: 0; */
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    border-radius: 0%;
+  }
+  .txt h2 {
+    font-size: calc(100vw * (86 / 1680));
+  }
+  .txt h2.one {
+    text-indent: -9999px;
+    display: none;
+  }
+  .for_txt {
+    margin-left: calc(100vw * (110 / 1680));
+  }
+
+  /* team scroll_img_sec */
+  .team_sec {
+    height: auto;
+  }
+  .team_sec h2 {
+    font-size: calc(100vw * (120 / 1680));
+  }
+  .team_wp {
+    position: unset;
+    padding: calc(100vw * (210 / 1680)) 0 0 calc(100vw * (236 / 1680));
+  }
+  .team_cont {
+    flex-direction: column;
+    gap: calc(100vw * (194 / 1680));
+    padding-top: calc(100vw * (110 / 1680));
+    width: 100%;
+  }
+  .team_item {
+    opacity: 0;
+    transition: 0.4s linear;
+    gap: calc(100vw * (64 / 1680));
+    height: calc(100vw * (240 / 1680));
+  }
+  .team_gif {
+    width: calc(100vw * (240 / 1680));
+    height: calc(100vw * (240 / 1680));
+  }
+  .team_item .team_txt {
+    padding-top: calc(100vw * (30 / 1680));
+    font-size: calc(100vw * (24 / 1680));
+  }
+  .team_item .team_txt p {
+    margin-top: calc(100vw * (35 / 1680));
+  }
+
+  /* about section */
+  .about_sec {
+    /* padding: calc(100vw*(370/1680)) 0 calc(100vw*(300/1680)); */
+    padding-bottom: calc(100vw * (1000 / 1680));
+  }
+  .about_sec h2 {
+    margin-bottom: calc(100vw * (22 / 1680));
+    font-size: calc(100vw * (120 / 1680));
+  }
+  .about_sec p {
+    font-size: calc(100vw * (24 / 1680));
+  }
+  .company_btn {
+    width: calc(100vw * (304 / 1680));
+    height: calc(100vw * (70 / 1680));
+    bottom: calc(100vh * (400 / 1680));
+    padding-right: calc(100vw * (38 / 1680));
+    font-size: calc(100vw * (20 / 1680));
+    border-radius: calc(100vw * (50 / 1680));
+    background: url("../img/down_ico.svg") center right calc(100vw * (60 / 1680)) / calc(100vw * (24 / 1680)) no-repeat;
+  }
+
+  /* flow banner section */
+  .flow_banner_text {
+    height: calc(100vw * (607 / 1680));
+  }
+  .flow_content_text:nth-of-type(2) {
+    top: calc(100vw * (200 / 1680));
+  }
+  .flow_content_text:last-of-type {
+    top: calc(100vw * (400 / 1680));
+  }
+  .flow_content_list {
+    gap: calc(100vw * (90 / 1680));
+    padding-left: calc(100vw * (90 / 1680));
+  }
+  .flow_content_list li {
+    padding: calc(100vw * (65 / 1680)) 0;
+    font-size: calc(100vw * (64 / 1680));
+  }
+  .flow_content_list .flow_lg {
+    padding: calc(100vw * (65 / 1680)) 0 calc(100vw * (65 / 1680)) calc(100vw * (230 / 1680));
+  }
+  .flow_content_list .flow_pj {
+    padding: calc(100vw * (65 / 1680)) 0 calc(100vw * (65 / 1680)) calc(100vw * (230 / 1680));
+  }
+  .flow_content_list .flow_cj {
+    padding: calc(100vw * (65 / 1680)) 0 calc(100vw * (65 / 1680)) calc(100vw * (230 / 1680));
+  }
+  .flow_content_list .flow_pocket {
+    padding: calc(100vw * (65 / 1680)) 0 calc(100vw * (65 / 1680)) calc(100vw * (300 / 1680));
+  }
+  .flow_content_list .flow_cir {
+    padding: calc(100vw * (65 / 1680)) 0 calc(100vw * (65 / 1680)) calc(100vw * (170 / 1680));
+    background: url("../img/flow_cir.png") center left / calc(100vw * (94 / 1680)) no-repeat;
+  }
+  /* story section */
+  .story_sec {
+    padding: calc(100vw * (338 / 1680)) 0 calc(100vw * (277 / 1680));
+  }
+  .story_sec .inner {
+    width: calc(100vw * (1340 / 1680));
+  }
+  .story_sec h2 {
+    font-size: calc(100vw * (120 / 1680));
+  }
+
+  /* footer banner area */
+  .footer_bnr {
+    height: calc(100vw * (600 / 1680));
+    padding: calc(100vw * (270 / 1680)) 0 calc(100vw * (90 / 1680));
+  }
+  .footer_bnr h2 {
+    font-size: calc(100vw * (64 / 1680));
+  }
+  .footer_bnr .request_btn {
+    width: calc(100vw * (304 / 1680));
+    height: calc(100vw * (70 / 1680));
+    font-size: calc(100vw * (20 / 1680));
+    border-radius: calc(100vw * (50 / 1680));
+  }
+
+  /* project list page */
+  .project_list {
+    width: calc(100vw * (1328 / 1680));
+    padding: calc(100vw * (240 / 1680)) 0 calc(100vw * (232 / 1680));
+  }
+  .project_list h2 {
+    margin-bottom: calc(100vw * (60 / 1680));
+    font-size: calc(100vw * (96 / 1680));
+  }
+  .project_list .tab_box {
+    gap: calc(100vw * (40 / 1680));
+    margin-bottom: calc(100vw * (216 / 1680));
+  }
+  .project_list .tab_box li {
+    font-size: calc(100vw * (20 / 1680));
+  }
+  .project_list .project_cont {
+    gap: calc(100vw * (225 / 1680)) calc(100vw * (0 / 1680));
+  }
+  .load_btn {
+    margin: calc(100vw * (205 / 1680)) auto 0;
+    width: calc(100vw * (70 / 1680));
+    height: calc(100vw * (70 / 1680));
+  }
+  /* contact page start */
+  .contact_sec {
+    padding: calc(100vw * (240 / 1680)) 0 calc(100vw * (180 / 1680));
+    width: calc(100vw * (1328 / 1680));
+  }
+  .contact_title {
+    margin-bottom: calc(100vw * (216 / 1680));
+  }
+  .contact_title h2 {
+    margin-bottom: calc(100vw * (21 / 1680));
+    font-size: calc(100vw * (96 / 1680));
+  }
+  .contact_title small {
+    font-size: calc(100vw * (20 / 1680));
+  }
+  .title_box {
+    margin-bottom: calc(100vw * (34 / 1680));
+  }
+  .contact_list:not(:last-of-type) {
+    margin-bottom: calc(100vw * (144 / 1680));
+  }
+  .contact_list:not(:first-of-type) .title {
+    margin-bottom: calc(100vw * (50 / 1680));
+  }
+  .contact_list .title {
+    font-size: calc(100vw * (30 / 1680));
+  }
+  .contact_list .title::after {
+    right: calc(100vw * (-15 / 1680));
+  }
+  .sub_title {
+    margin-bottom: calc(100vw * (50 / 1680));
+    font-size: calc(100vw * (18 / 1680));
+  }
+  .item_wp {
+    gap: calc(100vw * (32 / 1680));
+  }
+  .item_li label {
+    width: calc(100vw * (240 / 1680));
+    height: calc(100vw * (70 / 1680));
+    font-size: calc(100vw * (18 / 1680));
+    border-radius: calc(100vw * (50 / 1680));
+  }
+  .inform_li,
+  .inform_li input,
+  .contact_list > input {
+    width: calc(100vw * (648 / 1680));
+    height: calc(100vw * (45 / 1680));
+  }
+  .inform_wp {
+    gap: calc(100vw * (30 / 1680));
+    margin-bottom: calc(100vw * (50 / 1680));
+  }
+  .inform_li label {
+    top: calc(100vw * (10 / 1680));
+    font-size: calc(100vw * (18 / 1680));
+  }
+  .inform_li.active label {
+    top: calc(100vw * (-10 / 1680));
+    font-size: calc(100vw * (14 / 1680));
+  }
+  .inform_li::after {
+    height: calc(100vw * (2 / 1680));
+  }
+  .agree_box label {
+    padding-left: calc(100vw * (34 / 1680));
+    font-size: calc(100vw * (18 / 1680));
+  }
+  .contact_list textarea {
+    height: calc(100vw * (420 / 1680));
+    padding: calc(100vw * (30 / 1680));
+    font-size: calc(100vw * (18 / 1680));
+  }
+  .contact_list textarea::placeholder {
+    font-size: calc(100vw * (18 / 1680));
+  }
+  .contact_btn {
+    margin: calc(100vw * (80 / 1680)) auto 0;
+    width: calc(100vw * (304 / 1680));
+    height: calc(100vw * (80 / 1680));
+    font-size: calc(100vw * (20 / 1680));
+  }
+  /* [s] : 새로 추가 */
+  /* about list page */
+  .about_list {
+    width: calc(100vw * (1328 / 1680));
+    padding: calc(100vw * (240 / 1680)) 0 calc(100vw * (200 / 1680));
+  }
+  .about_list h2 {
+    margin-bottom: calc(100vw * (60 / 1680));
+    font-size: calc(100vw * (96 / 1680));
+  }
+  .about_list .tab_box {
+    gap: calc(100vw * (40 / 1680));
+  }
+  .about_list .tab_box li {
+    font-size: calc(100vw * (20 / 1680));
+  }
+  .about .liveBg h3 {
+    font-size: calc(100vw * (56 / 1680));
+  }
+  .about_list .con1 h3 {
+    font-size: calc(100vw * (48 / 1680));
+  }
+  .about_list .con1 .big_tit {
+    font-size: calc(100vw * (32 / 1680));
+  }
+  .about_list .con1 p {
+    font-size: calc(100vw * (18 / 1680));
+    margin-top: calc(100vw * (50 / 1680));
+  }
+  .about_list .con1 .data-list {
+    margin-left: calc(100vw * (-75 / 1680));
+  }
+  .about_list .con2 {
+    padding: calc(100vw * (270 / 1680)) 0;
+  }
+  .about_list .con2 h3 {
+    font-size: calc(100vw * (96 / 1680));
+    margin-bottom: calc(100vw * (130 / 1680));
+  }
+  .about_list .con2 .big_tit {
+    font-size: calc(100vw * (56 / 1680));
+  }
+  .about_list .con2 p {
+    font-size: calc(100vw * (24 / 1680));
+  }
+  .about_list .con2 p span {
+    font-size: calc(100vw * (18 / 1680));
+  }
+  .about_list .con2 ul li {
+    padding: calc(100vw * (75 / 1680)) 0 calc(100vw * (75 / 1680)) calc(100vw * (25 / 1680));
+  }
+  .about_list .con2 ul li .num {
+    font-size: calc(100vw * (14 / 1680));
+    margin-right: calc(100vw * (25 / 1680));
+  }
+  .about_list .con3 {
+    padding-bottom: calc(100vw * (110 / 1680));
+  }
+  .about_list .con3 h3 {
+    font-size: calc(100vw * (64 / 1680));
+  }
+  .about_list .con3 .big_tit {
+    font-size: calc(100vw * (36 / 1680));
+  }
+  .about_list .con3 p {
+    font-size: calc(100vw * (18 / 1680));
+  }
+  .about_list .con3 ul li {
+    margin-top: calc(100vw * (150 / 1680));
+  }
+  .about_list .con3 .box_wrap {
+    margin-top: calc(100vw * (50 / 1680));
+    column-gap: calc(100vw * (10 / 1680));
+  }
+  .about_list .con3 .box_wrap span {
+    font-size: calc(100vw * (16 / 1680));
+    padding: calc(100vw * (7 / 1680)) calc(100vw * (10 / 1680));
+  }
+  .about .scale {
+    padding-top: calc(100vw * (50 / 1680));
+  }
+  .about .marquee {
+    height: calc(100vw * (160 / 1680));
+  }
+  .about .marquee a {
+    padding-right: calc(100vw * (30 / 1680));
+    background-size: calc(100vw * (22 / 1680));
+    padding-left: calc(100vw * (30 / 1680));
+  }
+  .about .marquee:hover a {
+    background-size: calc(100vw * (22 / 1680));
+  }
+  .about .marquee div {
+    height: calc(100vw * (30 / 1680));
+  }
+  /* history page */
+  .history_list {
+    width: calc(100vw * (1328 / 1680));
+    padding: calc(100vw * (240 / 1680)) 0 calc(100vw * (200 / 1680));
+  }
+  .history_list h2 {
+    margin-bottom: calc(100vw * (60 / 1680));
+    font-size: calc(100vw * (96 / 1680));
+  }
+  .history_list .tab_box {
+    gap: calc(100vw * (40 / 1680));
+  }
+  .history_list .tab_box li {
+    font-size: calc(100vw * (20 / 1680));
+  }
+  .history_sec {
+    height: 250vh;
+  }
+  /* [s] : 2024-10-21 수정 */
+  .history_sec .history_cont {
+    padding-top: calc(100vw * (350 / 1680));
+  }
+  /* [e] : 2024-10-21 수정 */
+  .history_sec .big_tit {
+    font-size: calc(100vw * (64 / 1680));
+  }
+  .history_old {
+    width: calc(100vw * (1328 / 1680));
+    padding-top: calc(100vw * (100 / 1680));
+  }
+  .history_old .l_wrap h3 {
+    font-size: calc(100vw * (64 / 1680));
+    padding-top: calc(100vw * (100 / 1680));
+  }
+  .history_old .r_wrap .y {
+    font-size: calc(100vw * (24 / 1680));
+    margin-right: calc(100vw * (80 / 1680));
+  }
+  .history_old .r_wrap ol li {
+    font-size: calc(100vw * (18 / 1680));
+    margin-top: calc(100vw * (20 / 1680));
+  }
+  .history_old .r_wrap ul > li.on:before {
+    left: calc(100vw * (-40 / 1680));
+  }
+  .history_old .r_wrap ul > li.on:before {
+    width: calc(100vw * (20 / 1680));
+    height: calc(100vw * (20 / 1680));
+    background-size: cover;
+  }
+  /* award page */
+  .award_list {
+    width: calc(100vw * (1328 / 1680));
+    padding-bottom: calc(100vw * (300 / 1680));
+  }
+  .award_list ul {
+    column-gap: calc(100vw * (100 / 1680));
+    row-gap: calc(100vw * (140 / 1680));
+  }
+  .award_list ul li {
+    width: calc((100% - calc(100vw * (200 / 1680))) / 3);
+  }
+  .award_list .big_tit {
+    font-size: calc(100vw * (24 / 1680));
+    margin: calc(100vw * (25 / 1680)) 0;
+  }
+  .award_list p {
+    font-size: calc(100vw * (16 / 1680));
+  }
+  /* [e] : 새로 추가 */
+}
+@media screen and (max-width: 1400px) {
+  .about_sec {
+    padding-bottom: calc(100vw * (1000 / 1400));
+  }
+  .company_btn {
+    bottom: calc(100vh * (300 / 1400));
+  }
+  /* [s] : 새로 추가 */
+  /* about list page */
+  .about_list .con1 .data-list {
+    width: calc(100vw * (440 / 1680));
+  }
+  /* history page */
+  .history_sec {
+    height: auto;
+    padding-bottom: calc(100vw * (80 / 1400));
+    width: calc(100vw * (1328 / 1680));
+    margin: 0 auto;
+  }
+  .history_sec::before {
+    content: "";
+    background: #1e1e1e;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    width: 200vw;
+  }
+  .history_sec .history_wp {
+    height: auto;
+    position: unset;
+  }
+  .history_sec .history_cont {
+    padding: calc(100vw * (250 / 1400)) 0 0 0;
+    width: calc(100vw * (1328 / 400));
+    padding: 0;
+    margin: 0 auto;
+    flex-direction: column;
+    height: auto;
+  }
+  .history_sec .history_item ul li {
+    font-size: calc(100vw * (18 / 1400));
+  }
+  .history_sec .big_tit {
+    margin-bottom: calc(100vw * (60 / 1400));
+    display: flex;
+    align-items: center;
+  }
+  .history_sec .big_tit i {
+    width: calc(100vw * (40 / 1400));
+    height: calc(100vw * (42 / 1400));
+    background-size: cover;
+  }
+  .history_sec .history_item {
+    margin-top: calc(100vw * (70 / 1400));
+  }
+  .history_sec .history_item ul li {
+    margin-top: calc(100vw * (15 / 1400));
+  }
+  /* [e] : 새로 추가 */
+}
+@media screen and (max-width: 1200px) {
+  .about_sec {
+    padding-bottom: calc(100vw * (1000 / 1200));
+  }
+  .company_btn {
+    bottom: calc(100vh * (300 / 1200));
+  }
+}
+@media screen and (max-width: 1000px) {
+  .about_sec {
+    padding-bottom: calc(100vw * (1000 / 1000));
+  }
+  .company_btn {
+    bottom: calc(100vh * (300 / 1000));
+  }
+}
+@media screen and (max-width: 800px) {
+  .about_sec {
+    padding-bottom: calc(100vw * (1000 / 800));
+  }
+}
+@media screen and (max-width: 800px) {
+  .about_sec {
+    padding-bottom: calc(100vw * (1000 / 800));
+  }
+  .company_btn {
+    bottom: calc(100vh * (300 / 800));
+  }
+}
+@media screen and (max-width: 770px) {
+  .pBr {
+    display: none;
+  }
+  .mBr {
+    display: block;
+  }
+  /* .main_sec h2 {
+		width: calc(100vw * (277 / 360));
+		height: calc(100vw * (60 / 360));
+	}
+	.main_sec span {
+		bottom: calc(100vw * (86 / 360));
+		font-size: calc(100vw * (12 / 360));
+	} */
+  .main_sec .cont_img img:first-of-type {
+    display: none;
+  }
+  .main_sec .cont_img img:last-of-type {
+    display: block;
+  }
+  .main_sec .cont_txt {
+    top: auto;
+    bottom: calc(100vw * (134 / 360));
+    margin-left: calc(100vw * (20 / 360));
+  }
+  .main_sec .txt_logo {
+    margin-bottom: calc(100vw * (15 / 360));
+  }
+  .main_sec .slide01 .txt_logo {
+    width: calc(100vw * (60 / 360));
+  }
+  .main_sec .slide02 .txt_logo {
+    width: calc(100vw * (91 / 360));
+  }
+  .main_sec .slide03 .txt_logo {
+    width: calc(100vw * (70 / 360));
+  }
+  .main_sec .slide04 .txt_logo {
+    width: calc(100vw * (86 / 360));
+  }
+  .main_sec .slide05 .txt_logo {
+    width: calc(100vw * (75 / 360));
+  }
+  .main_sec .cont_txt {
+    font-size: calc(100vw * (30 / 360));
+  }
+  /* main_banner area */
+
+  .satisfied_box .title,
+  .satisfied_sec02 .title {
+    font-size: calc(100vw * (48 / 360));
+  }
+  .satisfied_box:first-of-type .title {
+    font-size: calc(100vw * (16 / 360));
+  }
+  .satisfied_box .title p {
+    margin-top: calc(100vw * (28 / 360));
+    font-size: calc(100vw * (48 / 360));
+  }
+  .satisfied_sec02 {
+    gap: calc(100vw * (150 / 360));
+    padding-bottom: calc(100vw * (127 / 360));
+  }
+  .satisfied_box02 .title::after {
+    padding: calc(100vw * (2 / 360)) calc(100vw * (8 / 360));
+    font-size: calc(100vw * (10 / 360));
+  }
+  .satisfied_box02:first-of-type .title::after {
+    left: calc(100vw * (-30 / 360));
+    top: calc(100vw * (-5 / 360));
+  }
+  .satisfied_box02:nth-of-type(2) .title::after {
+    bottom: 0;
+    right: calc(100vw * (-15 / 360));
+  }
+  .satisfied_box02:last-of-type .title::after {
+    left: calc(100vw * (-15 / 360));
+    bottom: calc(100vw * (-5 / 360));
+  }
+
+  /* project scroll_img_sec */
+  .project_sec {
+    height: auto;
+  }
+  .project_sec .project_wp {
+    position: unset;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .project_sec .project_cont {
+    padding: calc(100vw * (76 / 360)) 0;
+    width: calc(100vw * (320 / 360));
+    height: auto;
+    gap: calc(100vw * (135 / 360));
+    flex-wrap: wrap;
+  }
+
+  .project_item {
+    margin: 0;
+    height: auto;
+  }
+  .project_item .project_img {
+    width: calc(100vw * (320 / 360));
+    height: calc(100vw * (320 / 360));
+  }
+  .project_item::before {
+    top: calc(100vw * (-30 / 360));
+    height: calc(100vw * (30 / 360));
+    font-size: calc(100vw * (12 / 360));
+  }
+  .project_item::after {
+    top: calc(100vw * (-30 / 360));
+    height: calc(100vw * (30 / 360));
+    font-size: calc(100vw * (12 / 360));
+  }
+  .project_item .project_txt {
+    margin-top: calc(100vw * (20 / 360));
+  }
+  .project_item .project_txt h3 {
+    font-size: calc(100vw * (16 / 360));
+  }
+
+  /* scroll circle animaion */
+  .cont_wrap .circle_wrap {
+    /* width: 4.69vw;
+		height: 4.69vw;
+		min-height: 4.69vw;
+		margin: 0; */
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    border-radius: 0%;
+  }
+  .txt h2 {
+    font-size: calc(100vw * (40 / 360));
+  }
+  .txt h2.one {
+    text-indent: -9999px;
+    display: none;
+  }
+
+  /* team scroll_img_sec */
+  .team_sec {
+    height: auto;
+  }
+  .team_sec h2 {
+    font-size: calc(100vw * (48 / 360));
+  }
+  .team_wp {
+    position: unset;
+    padding: calc(100vw * (160 / 360)) 0 0 calc(100vw * (20 / 360));
+  }
+  .team_cont {
+    gap: calc(100vw * (80 / 360));
+    padding-top: calc(100vw * (110 / 360));
+    width: 100%;
+  }
+  .team_item {
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.4s linear;
+    gap: 0;
+    height: calc(100vw * (257 / 360));
+  }
+  .team_gif {
+    width: calc(100vw * (150 / 360));
+    height: auto;
+  }
+  .team_item .team_txt {
+    padding-top: calc(100vw * (30 / 360));
+    font-size: calc(100vw * (16 / 360));
+  }
+  .team_item .team_txt p {
+    margin-top: calc(100vw * (10 / 360));
+    line-height: 1.5;
+  }
+
+  /* about section */
+  .about_sec {
+    padding-bottom: calc(100vw * (700 / 360));
+  }
+  .about_sec h2 {
+    margin-bottom: calc(100vw * (10 / 360));
+    font-size: calc(100vw * (48 / 360));
+  }
+  .about_sec p {
+    font-size: calc(100vw * (16 / 360));
+  }
+  .company_btn {
+    width: calc(100vw * (190 / 360));
+    height: calc(100vw * (50 / 360));
+    bottom: calc(100vh * (80 / 360));
+    padding-right: calc(100vw * (31 / 360));
+    font-size: calc(100vw * (13 / 360));
+    border-radius: calc(100vw * (50 / 360));
+    background: url("../img/down_ico.svg") center right calc(100vw * (31 / 360)) / calc(100vw * (16 / 360)) no-repeat;
+  }
+
+  /* flow banner section */
+  .flow_banner_text {
+    height: calc(100vw * (318 / 360));
+  }
+  .flow_content_text:nth-of-type(2) {
+    top: calc(100vw * (107 / 360));
+  }
+  .flow_content_text:last-of-type {
+    top: calc(100vw * (212 / 360));
+  }
+  .flow_content_list {
+    gap: calc(100vw * (45 / 360));
+    padding-left: calc(100vw * (45 / 360));
+  }
+  .flow_content_list li {
+    padding: calc(100vw * (38 / 360)) 0;
+    font-size: calc(100vw * (24 / 360));
+  }
+  .flow_content_list .flow_lg {
+    padding: calc(100vw * (38 / 360)) 0 calc(100vw * (38 / 360)) calc(100vw * (120 / 360));
+  }
+  .flow_content_list .flow_pj {
+    padding: calc(100vw * (38 / 360)) 0 calc(100vw * (38 / 360)) calc(100vw * (120 / 360));
+  }
+  .flow_content_list .flow_cj {
+    padding: calc(100vw * (38 / 360)) 0 calc(100vw * (38 / 360)) calc(100vw * (120 / 360));
+  }
+  .flow_content_list .flow_pocket {
+    padding: calc(100vw * (38 / 360)) 0 calc(100vw * (38 / 360)) calc(100vw * (150 / 360));
+  }
+  .flow_content_list .flow_cir {
+    padding: calc(100vw * (38 / 360)) 0 calc(100vw * (38 / 360)) calc(100vw * (120 / 360));
+    background: url("../img/flow_cir.png") center left / calc(100vw * (80 / 360)) no-repeat;
+  }
+  /* story section */
+  .story_sec {
+    position: relative;
+    padding: calc(100vw * (243 / 360)) 0 calc(100vw * (162 / 360));
+  }
+  .story_sec .inner {
+    width: 100%;
+  }
+  .story_sec h2 {
+    width: 100%;
+    font-size: calc(100vw * (48 / 360));
+  }
+  /* footer banner area */
+  .footer_bnr {
+    height: 100%;
+    padding: calc(100vw * (73 / 360)) 0 calc(100vw * (106 / 360));
+    background: url("../img/footer_bnr_img_mb.jpg") center / contain no-repeat;
+  }
+  .footer_bnr h2 {
+    text-align: center;
+    font-size: calc(100vw * (30 / 360));
+  }
+  .footer_bnr .request_btn {
+    width: calc(100vw * (190 / 360));
+    height: calc(100vw * (50 / 360));
+    font-size: calc(100vw * (13 / 360));
+    border-radius: calc(100vw * (50 / 360));
+  }
+
+  /* project list page */
+  .project_list {
+    width: calc(100vw * (320 / 360));
+    padding: calc(100vw * (140 / 360)) 0 calc(100vw * (120 / 360));
+  }
+  .project_list h2 {
+    margin-bottom: calc(100vw * (32 / 360));
+    font-size: calc(100vw * (40 / 360));
+  }
+  .project_list .tab_box {
+    gap: calc(100vw * (20 / 360));
+    margin-bottom: calc(100vw * (95 / 360));
+    overflow: scroll;
+  }
+  .project_list .tab_box li {
+    font-size: calc(100vw * (14 / 360));
+    flex-shrink: 0;
+  }
+  .project_list .project_cont {
+    flex-direction: column;
+    gap: calc(100vw * (100 / 360)) 0;
+  }
+  .load_btn {
+    margin: calc(100vw * (86 / 360)) auto 0;
+    width: calc(100vw * (40 / 360));
+    height: calc(100vw * (40 / 360));
+  }
+  /* contact page */
+  .contact_sec {
+    padding: calc(100vw * (140 / 360)) 0 calc(100vw * (90 / 360));
+    width: calc(100vw * (320 / 360));
+  }
+  .contact_title {
+    margin-bottom: calc(100vw * (76 / 360));
+  }
+  .contact_title h2 {
+    margin-bottom: calc(100vw * (20 / 360));
+    font-size: calc(100vw * (40 / 360));
+  }
+  .contact_title small {
+    font-size: calc(100vw * (14 / 360));
+  }
+  .title_box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: calc(100vw * (6 / 360));
+    margin-bottom: calc(100vw * (11 / 360));
+  }
+  .contact_list:not(:last-of-type) {
+    margin-bottom: calc(100vw * (75 / 360));
+  }
+  .contact_list:not(:first-of-type) .title {
+    margin-bottom: calc(100vw * (20 / 360));
+  }
+  .contact_list .title {
+    font-size: calc(100vw * (16 / 360));
+  }
+  .contact_list .title::after {
+    right: calc(100vw * (-15 / 360));
+  }
+  .sub_title {
+    margin-bottom: calc(100vw * (25 / 360));
+    font-size: calc(100vw * (13 / 360));
+  }
+  .item_wp {
+    flex-wrap: wrap;
+    gap: calc(100vw * (20 / 360));
+  }
+  .item_li label {
+    width: calc(100vw * (150 / 360));
+    height: calc(100vw * (40 / 360));
+    font-size: calc(100vw * (13 / 360));
+    border-radius: calc(100vw * (50 / 360));
+  }
+  .inform_li,
+  .inform_li input,
+  .contact_list > input {
+    width: 100%;
+    height: calc(100vw * (26 / 360));
+  }
+  .inform_wp {
+    gap: calc(100vw * (35 / 360));
+    margin-bottom: calc(100vw * (20 / 360));
+  }
+  .inform_li label {
+    top: 0;
+    font-size: calc(100vw * (13 / 360));
+  }
+  .inform_li.active label {
+    top: calc(100vw * (-10 / 360));
+    font-size: calc(100vw * (11 / 360));
+  }
+  .inform_li::after {
+    height: calc(100vw * (2 / 360));
+  }
+  .agree_box label {
+    padding-left: calc(100vw * (23 / 360));
+    font-size: calc(100vw * (13 / 360));
+  }
+  .contact_list textarea {
+    height: calc(100vw * (372 / 360));
+    padding: calc(100vw * (15 / 360));
+    font-size: calc(100vw * (13 / 360));
+  }
+  .contact_list textarea::placeholder {
+    font-size: calc(100vw * (13 / 360));
+  }
+  .contact_btn {
+    margin: calc(100vw * (40 / 360)) auto 0;
+    width: calc(100vw * (190 / 360));
+    height: calc(100vw * (60 / 360));
+    font-size: calc(100vw * (14 / 360));
+  }
+  /* [s] : 새로 추가 */
+  /* about list page */
+  .about_list {
+    width: calc(100vw * (320 / 360));
+    padding: calc(100vw * (140 / 360)) 0 calc(100vw * (60 / 360));
+  }
+  .about_list h2 {
+    margin-bottom: calc(100vw * (32 / 360));
+    font-size: calc(100vw * (40 / 360));
+  }
+  .about_list .tab_box {
+    gap: calc(100vw * (20 / 360));
+    overflow: scroll;
+  }
+  .about_list .tab_box li {
+    font-size: calc(100vw * (14 / 360));
+    flex-shrink: 0;
+  }
+  .about .liveBg h3 {
+    padding: 0 20px;
+    font-size: calc(100vw * (30 / 360));
+  }
+  .about_list .con1 .section-body {
+    flex-direction: column;
+    align-items: initial;
+    justify-content: center;
+  }
+  .about_list .con1 h3 {
+    top: 0;
+    font-size: 24px;
+  }
+  .about_list .con1 .data-list {
+    width: 65%;
+    margin-left: auto;
+    height: 25%;
+  }
+  .about_list .con1 .post-list {
+    margin-left: auto;
+    width: 65%;
+    padding-bottom: 65%;
+  }
+  .about_list .con1 .big_tit {
+    font-size: 18px;
+  }
+  .about_list .con1 p {
+    font-size: 13px;
+  }
+  .about_list .con2 h3 {
+    font-size: calc(100vw * (32 / 360));
+  }
+  .about_list .con2 ul li {
+    flex-wrap: wrap;
+  }
+  .about_list .con2 ul li .num {
+    font-size: calc(100vw * (10 / 360));
+  }
+  .about_list .con2 .big_tit {
+    font-size: calc(100vw * (26 / 360));
+  }
+  .about_list .con2 p {
+    font-size: calc(100vw * (16 / 360));
+    margin-top: calc(100vw * (30 / 360));
+    padding-left: calc(100vw * (17 / 360));
+  }
+  .about_list .con2 p span {
+    font-size: calc(100vw * (13 / 360));
+  }
+  .about_list .con2 ul li > div.in {
+    width: 100%;
+    flex: initial;
+  }
+  .about_list .con2 ul li {
+    padding: calc(100vw * (45 / 360)) 0;
+  }
+  .about_list .con3 {
+    flex-direction: column;
+  }
+  .about_list .con3 h3 {
+    font-size: calc(100vw * (32 / 360));
+  }
+  .about_list .con3 ul li:first-child,
+  .about_list .con3 ul li {
+    margin-top: calc(100vw * (65 / 360));
+  }
+  .about_list .con3 .big_tit {
+    font-size: calc(100vw * (18 / 360));
+  }
+  .about_list .con3 p {
+    font-size: calc(100vw * (13 / 360));
+    line-height: 1.5;
+  }
+  .about_list .con3 .box_wrap {
+    flex-wrap: wrap;
+    margin-top: calc(100vw * (25 / 360));
+    row-gap: calc(100vw * (10 / 360));
+  }
+  .about_list .con3 .box_wrap span {
+    font-size: calc(100vw * (11 / 360));
+    padding: calc(100vw * (7 / 360)) calc(100vw * (10 / 360));
+  }
+  .about .scale {
+    padding-top: calc(100vw * (25 / 360));
+  }
+  .about .marquee {
+    height: calc(100vw * (80 / 360));
+  }
+  .about .marquee div {
+    height: calc(100vw * (15 / 360));
+    animation: marqueemo 7s linear infinite;
+  }
+  .about .marquee a {
+    font-size: calc(100vw * (16 / 360));
+    padding-right: calc(100vw * (35 / 360));
+    background-size: calc(100vw * (11 / 360));
+    padding-left: calc(100vw * (15 / 360));
+  }
+  .about .marquee:hover a {
+    background-size: calc(100vw * (11 / 360));
+  }
+  .about .marquee span {
+    width: 25%;
+  }
+  @keyframes marqueemo {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -50%;
+    }
+  }
+  /* history page */
+  .history_list {
+    width: calc(100vw * (320 / 360));
+    padding: calc(100vw * (140 / 360)) 0 calc(100vw * (60 / 360));
+  }
+  .history_list h2 {
+    margin-bottom: calc(100vw * (32 / 360));
+    font-size: calc(100vw * (40 / 360));
+  }
+  .history_list .tab_box {
+    gap: calc(100vw * (20 / 360));
+    overflow: scroll;
+  }
+  .history_list .tab_box li {
+    font-size: calc(100vw * (14 / 360));
+    flex-shrink: 0;
+  }
+  .history_sec {
+    padding-bottom: calc(100vw * (80 / 360));
+    width: calc(100vw * (320 / 360));
+  }
+  .history_sec .big_tit {
+    font-size: calc(100vw * (30 / 360));
+    margin-bottom: calc(100vw * (25 / 360));
+  }
+  .history_sec .history_cont {
+    width: 100%;
+  }
+  .history_sec .history_item {
+    margin-top: calc(100vw * (80 / 360));
+  }
+  .history_sec .history_item:first-child {
+    margin-top: 0;
+  }
+  .history_sec .history_item ul li {
+    font-size: calc(100vw * (12 / 360));
+    letter-spacing: -0.02rem;
+    margin-top: calc(100vw * (10 / 360));
+  }
+  .history_sec .big_tit i {
+    width: calc(100vw * (26 / 360));
+    height: calc(100vw * (26 / 360));
+  }
+  .history_old {
+    flex-direction: column;
+    width: calc(100vw * (320 / 360));
+    padding-bottom: calc(100vw * (80 / 360));
+  }
+  .history_old .l_wrap h3 {
+    font-size: calc(100vw * (30 / 360));
+  }
+  .history_old .l_wrap h3 span {
+    display: inline-block;
+    margin: 0 calc(100vw * (5 / 360));
+  }
+  .history_old .r_wrap ul > li {
+    flex-direction: column;
+  }
+  .history_old .r_wrap ul > li.on:before {
+    display: none;
+  }
+  .history_old .r_wrap .y {
+    font-size: calc(100vw * (16 / 360));
+  }
+  .history_old .r_wrap ol li:first-child {
+    margin-top: calc(100vw * (10 / 360));
+  }
+  .history_old .r_wrap ol li {
+    font-size: calc(100vw * (12 / 360));
+    align-items: flex-start;
+    margin-top: calc(100vw * (10 / 360));
+    letter-spacing: -0.02rem;
+  }
+  .history_old .r_wrap i {
+    width: calc(100vw * (16 / 360));
+    height: calc(100vw * (16 / 360));
+    margin-left: calc(100vw * (10 / 360));
+  }
+  /* award page */
+  .award_list {
+    width: calc(100vw * (320 / 360));
+    padding-bottom: calc(100vw * (75 / 360));
+  }
+  .award_list ul {
+    flex-direction: column;
+  }
+  .award_list ul li {
+    width: 100%;
+  }
+  .award_list ul li a {
+    display: flex;
+  }
+  .award_list img {
+    width: 50%;
+  }
+  .award_list .award_txt {
+    width: 50%;
+    padding-left: calc(100vw * (20 / 360));
+    box-sizing: border-box;
+    margin-top: auto;
+  }
+  .award_list .big_tit {
+    font-size: calc(100vw * (15 / 360));
+  }
+  .award_list p {
+    font-size: calc(100vw * (11 / 360));
+  }
+  /* [e] : 새로 추가 */
+}
+@media screen and (max-width: 550px) {
+  /* [s] : 새로 추가 */
+  /* about list page */
+  .about_list .con1 p br {
+    display: none;
+  }
+  /* [e] : 새로 추가 */
+}

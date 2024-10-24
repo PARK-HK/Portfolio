@@ -360,124 +360,376 @@
               </div>
             </div>
           </div>
-          <div class="total_num">
-            <div>전체 <span>59,822</span>건</div>
-            <div>페이지 <span>1</span>/2,991</div>
-            <div class="search_box">
-              <!--box-->
-              <div class="box">
-                <div class="se_box">
-                  <select tabindex="0" name="search" id="search" title="검색조건선택">
-                    <option value="6">전체</option>
-                    <option value="1" selected="">제목</option>
-                    <option value="3">내용</option>
-                    <option value="7">부서</option>
-                  </select>
-                  <input id="keyword" name="keyword" title="검색어입력" placeholder="검색어를 입력하세요" type="text" value="" />
-                  <button type="button" class="btn_search" onclick="Search_form('BO01');">검색</button>
+          <!-- [s] : 2024-10-23 탭추가 -->
+          <div class="con_wrap">
+            <!-- [s] : 전체 -->
+            <div class="con">
+              <div class="total_num">
+                <div>전체 <span>59,822</span>건</div>
+                <div>페이지 <span>1</span>/2,991</div>
+                <div class="search_box">
+                  <!--box-->
+                  <div class="box">
+                    <div class="se_box">
+                      <select tabindex="0" name="search" id="search" title="검색조건선택">
+                        <option value="6">전체</option>
+                        <option value="1" selected="">제목</option>
+                        <option value="3">내용</option>
+                        <option value="7">부서</option>
+                      </select>
+                      <input id="keyword" name="keyword" title="검색어입력" placeholder="검색어를 입력하세요" type="text" value="" />
+                      <button type="button" class="btn_search" onclick="Search_form('BO01');">검색</button>
+                    </div>
+                  </div>
+                  <!--box-->
                 </div>
               </div>
-              <!--box-->
+              <ul class="list">
+                <!-- 
+                접수중 ing
+                마감 end 
+                -->
+                <li class="ing">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster1.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">경기도 1인가구 정책제안 공모전</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">접수중</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="ing">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster2.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">경기도 1인가구 정책제안 공모전</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">접수중</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="ing">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster3.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">경기도 1인가구 정책제안 공모전</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">접수중</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="ing">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster4.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">2024년중독예방홍보캐릭터&스토리텔링및슬로건공모</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">접수중</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="end">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster1.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">경기도 1인가구 정책제안 공모전</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">접수중</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="ing">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster2.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">경기도 1인가구 정책제안 공모전</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">접수</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="end">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster3.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">경기도 1인가구 정책제안 공모전</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">마감</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="end">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster4.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">경기도 1인가구 정책제안 공모전</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">마감</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="pagination">
+                <ul class="clearfix">
+                  <li class="p_img page-prev"><a href="#">이전</a></li>
+                  <li class="on"><a href="#" title="1번 선택됨">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li class="p_img page-next"><a href="#">다음</a></li>
+                </ul>
+              </div>
             </div>
+            <!-- [e] : 전체 -->
+            <!-- [s] : 접수중 -->
+            <div class="con">
+              <div class="total_num">
+                <div>전체 <span>59,822</span>건</div>
+                <div>페이지 <span>1</span>/2,991</div>
+                <div class="search_box">
+                  <!--box-->
+                  <div class="box">
+                    <div class="se_box">
+                      <select tabindex="0" name="search" id="search" title="검색조건선택">
+                        <option value="6">전체</option>
+                        <option value="1" selected="">제목</option>
+                        <option value="3">내용</option>
+                        <option value="7">부서</option>
+                      </select>
+                      <input id="keyword" name="keyword" title="검색어입력" placeholder="검색어를 입력하세요" type="text" value="" />
+                      <button type="button" class="btn_search" onclick="Search_form('BO01');">검색</button>
+                    </div>
+                  </div>
+                  <!--box-->
+                </div>
+              </div>
+              <ul class="list">
+                <!-- 
+                접수중 ing
+                마감 end 
+                -->
+                <li class="ing">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster1.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">경기도 1인가구 정책제안 공모전</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">접수중</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="ing">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster2.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">경기도 1인가구 정책제안 공모전</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">접수중</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="ing">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster3.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">경기도 1인가구 정책제안 공모전</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">접수중</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="ing">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster4.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">2024년중독예방홍보캐릭터&스토리텔링및슬로건공모</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">접수중</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="end">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster1.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">경기도 1인가구 정책제안 공모전</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">접수중</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="ing">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster2.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">경기도 1인가구 정책제안 공모전</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">접수</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="end">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster3.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">경기도 1인가구 정책제안 공모전</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">마감</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="end">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster4.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">경기도 1인가구 정책제안 공모전</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">마감</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="pagination">
+                <ul class="clearfix">
+                  <li class="p_img page-prev"><a href="#">이전</a></li>
+                  <li class="on"><a href="#" title="1번 선택됨">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li class="p_img page-next"><a href="#">다음</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- [e] : 접수중 -->
+            <!-- [s] : 마감 -->
+            <div class="con">
+              <div class="total_num">
+                <div>전체 <span>59,822</span>건</div>
+                <div>페이지 <span>1</span>/2,991</div>
+                <div class="search_box">
+                  <!--box-->
+                  <div class="box">
+                    <div class="se_box">
+                      <select tabindex="0" name="search" id="search" title="검색조건선택">
+                        <option value="6">전체</option>
+                        <option value="1" selected="">제목</option>
+                        <option value="3">내용</option>
+                        <option value="7">부서</option>
+                      </select>
+                      <input id="keyword" name="keyword" title="검색어입력" placeholder="검색어를 입력하세요" type="text" value="" />
+                      <button type="button" class="btn_search" onclick="Search_form('BO01');">검색</button>
+                    </div>
+                  </div>
+                  <!--box-->
+                </div>
+              </div>
+              <ul class="list">
+                <!-- 
+                접수중 ing
+                마감 end 
+                -->
+                <li class="ing">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster1.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">경기도 1인가구 정책제안 공모전</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">접수중</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="ing">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster2.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">경기도 1인가구 정책제안 공모전</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">접수중</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="ing">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster3.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">경기도 1인가구 정책제안 공모전</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">접수중</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="ing">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster4.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">2024년중독예방홍보캐릭터&스토리텔링및슬로건공모</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">접수중</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="end">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster1.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">경기도 1인가구 정책제안 공모전</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">접수중</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="ing">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster2.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">경기도 1인가구 정책제안 공모전</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">접수</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="end">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster3.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">경기도 1인가구 정책제안 공모전</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">마감</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="end">
+                  <a href="">
+                    <div class="img"><img src="./../img/sub/poster4.jpg" alt="" /></div>
+                    <div class="txt">
+                      <div class="tit">경기도 1인가구 정책제안 공모전</div>
+                      <div class="date">경기도<span>2024.08.21</span></div>
+                      <div class="statue">마감</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="pagination">
+                <ul class="clearfix">
+                  <li class="p_img page-prev"><a href="#">이전</a></li>
+                  <li class="on"><a href="#" title="1번 선택됨">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li class="p_img page-next"><a href="#">다음</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- [e] : 마감 -->
           </div>
-          <ul class="list">
-            <!-- 
-            접수중 ing
-            마감 end 
-            -->
-            <li class="ing">
-              <a href="">
-                <div class="img"><img src="./../img/sub/poster1.jpg" alt="" /></div>
-                <div class="txt">
-                  <div class="tit">경기도 1인가구 정책제안 공모전</div>
-                  <div class="date">경기도<span>2024.08.21</span></div>
-                  <div class="statue">접수중</div>
-                </div>
-              </a>
-            </li>
-            <li class="ing">
-              <a href="">
-                <div class="img"><img src="./../img/sub/poster2.jpg" alt="" /></div>
-                <div class="txt">
-                  <div class="tit">경기도 1인가구 정책제안 공모전</div>
-                  <div class="date">경기도<span>2024.08.21</span></div>
-                  <div class="statue">접수중</div>
-                </div>
-              </a>
-            </li>
-            <li class="ing">
-              <a href="">
-                <div class="img"><img src="./../img/sub/poster3.jpg" alt="" /></div>
-                <div class="txt">
-                  <div class="tit">경기도 1인가구 정책제안 공모전</div>
-                  <div class="date">경기도<span>2024.08.21</span></div>
-                  <div class="statue">접수중</div>
-                </div>
-              </a>
-            </li>
-            <li class="ing">
-              <a href="">
-                <div class="img"><img src="./../img/sub/poster4.jpg" alt="" /></div>
-                <div class="txt">
-                  <div class="tit">2024년중독예방홍보캐릭터&스토리텔링및슬로건공모</div>
-                  <div class="date">경기도<span>2024.08.21</span></div>
-                  <div class="statue">접수중</div>
-                </div>
-              </a>
-            </li>
-            <li class="end">
-              <a href="">
-                <div class="img"><img src="./../img/sub/poster1.jpg" alt="" /></div>
-                <div class="txt">
-                  <div class="tit">경기도 1인가구 정책제안 공모전</div>
-                  <div class="date">경기도<span>2024.08.21</span></div>
-                  <div class="statue">접수중</div>
-                </div>
-              </a>
-            </li>
-            <li class="ing">
-              <a href="">
-                <div class="img"><img src="./../img/sub/poster2.jpg" alt="" /></div>
-                <div class="txt">
-                  <div class="tit">경기도 1인가구 정책제안 공모전</div>
-                  <div class="date">경기도<span>2024.08.21</span></div>
-                  <div class="statue">접수</div>
-                </div>
-              </a>
-            </li>
-            <li class="end">
-              <a href="">
-                <div class="img"><img src="./../img/sub/poster3.jpg" alt="" /></div>
-                <div class="txt">
-                  <div class="tit">경기도 1인가구 정책제안 공모전</div>
-                  <div class="date">경기도<span>2024.08.21</span></div>
-                  <div class="statue">마감</div>
-                </div>
-              </a>
-            </li>
-            <li class="end">
-              <a href="">
-                <div class="img"><img src="./../img/sub/poster4.jpg" alt="" /></div>
-                <div class="txt">
-                  <div class="tit">경기도 1인가구 정책제안 공모전</div>
-                  <div class="date">경기도<span>2024.08.21</span></div>
-                  <div class="statue">마감</div>
-                </div>
-              </a>
-            </li>
-          </ul>
-          <div class="pagination">
-            <ul class="clearfix">
-              <li class="p_img page-prev"><a href="#">이전</a></li>
-              <li class="on"><a href="#" title="1번 선택됨">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li><a href="#">6</a></li>
-              <li class="p_img page-next"><a href="#">다음</a></li>
-            </ul>
-          </div>
+          <!-- [e] : 2024-10-23 탭추가 -->
         </div>
       </div>
     </main>
@@ -549,6 +801,15 @@
         //   spaceBetween: 0,
         //   freeMode: true,
         // });
+
+        // [s] : 2024-10-23 탭추가
+        $(".sub_tab a").click(function () {
+          var idx = $(this).parent().index();
+          $(this).parent().addClass("active").siblings().removeClass("active");
+          $(".competition .con_wrap .con").eq(idx).show().siblings().hide();
+          console.log(idx);
+          return false;
+        });
       });
     </script>
   </body>
