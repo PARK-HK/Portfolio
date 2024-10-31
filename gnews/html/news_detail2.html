@@ -11,6 +11,51 @@
     <link type="text/css" rel="stylesheet" href="./../css/swiper-bundle.min.css" />
   </head>
   <body>
+    <nav class="search">
+      <h2 class="blind">검색팝업</h2>
+      <div class="input_area">
+        <input type="text" />
+        <button><img src="./../img/common/ico_search.png" alt="검색버튼이미지" /></button>
+        <ul class="rm_search">
+          <li><a href="">#THE경기패스</a></li>
+          <li><a href="">#공모전</a></li>
+          <li><a href="">#아동양육비</a></li>
+          <li><a href="">#주택가격안내</a></li>
+          <li><a href="">#경기도뉴스레터</a></li>
+        </ul>
+      </div>
+      <svg class="blobCont">
+        <image xlink:href="./../img/common/search_bg.jpg" mask="url(#mask)" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+        <defs>
+          <mask id="mask" x="0" y="0">
+            <g style="filter: url(#gooey)">
+              <circle class="blob" cx="10%" cy="10%" r="80" fill="white" stroke="white" />
+              <circle class="blob" cx="50%" cy="10%" r="40" fill="white" stroke="white" />
+              <circle class="blob" cx="17%" cy="15%" r="70" fill="white" stroke="white" />
+              <circle class="blob" cx="90%" cy="20%" r="120" fill="white" stroke="white" />
+              <circle class="blob" cx="30%" cy="25%" r="30" fill="white" stroke="white" />
+              <circle class="blob" cx="50%" cy="60%" r="80" fill="white" stroke="white" />
+              <circle class="blob" cx="70%" cy="90%" r="10" fill="white" stroke="white" />
+              <circle class="blob" cx="90%" cy="60%" r="90" fill="white" stroke="white" />
+              <circle class="blob" cx="30%" cy="90%" r="80" fill="white" stroke="white" />
+              <circle class="blob" cx="10%" cy="10%" r="80" fill="white" stroke="white" />
+              <circle class="blob" cx="50%" cy="10%" r="20" fill="white" stroke="white" />
+              <circle class="blob" cx="17%" cy="15%" r="70" fill="white" stroke="white" />
+              <circle class="blob" cx="40%" cy="20%" r="120" fill="white" stroke="white" />
+              <circle class="blob" cx="30%" cy="25%" r="30" fill="white" stroke="white" />
+              <circle class="blob" cx="80%" cy="60%" r="80" fill="white" stroke="white" />
+              <circle class="blob" cx="17%" cy="10%" r="100" fill="white" stroke="white" />
+              <circle class="blob" cx="40%" cy="60%" r="90" fill="white" stroke="white" />
+              <circle class="blob" cx="10%" cy="50%" r="80" fill="white" stroke="white" />
+            </g>
+          </mask>
+          <filter id="gooey" height="130%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          </filter>
+        </defs>
+      </svg>
+    </nav>
     <header>
       <!--menu-top-->
       <div class="menu-top">
@@ -146,51 +191,6 @@
               </div>
             </li>
           </ul>
-        </nav>
-        <nav class="search">
-          <h2 class="blind">검색팝업</h2>
-          <div class="input_area">
-            <input type="text" />
-            <button><img src="./../img/common/ico_search.png" alt="검색버튼이미지" /></button>
-            <ul class="rm_search">
-              <li><a href="">#THE경기패스</a></li>
-              <li><a href="">#공모전</a></li>
-              <li><a href="">#아동양육비</a></li>
-              <li><a href="">#주택가격안내</a></li>
-              <li><a href="">#경기도뉴스레터</a></li>
-            </ul>
-          </div>
-          <svg class="blobCont">
-            <image xlink:href="./../img/common/search_bg.jpg" mask="url(#mask)" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
-            <defs>
-              <mask id="mask" x="0" y="0">
-                <g style="filter: url(#gooey)">
-                  <circle class="blob" cx="10%" cy="10%" r="80" fill="white" stroke="white" />
-                  <circle class="blob" cx="50%" cy="10%" r="40" fill="white" stroke="white" />
-                  <circle class="blob" cx="17%" cy="15%" r="70" fill="white" stroke="white" />
-                  <circle class="blob" cx="90%" cy="20%" r="120" fill="white" stroke="white" />
-                  <circle class="blob" cx="30%" cy="25%" r="30" fill="white" stroke="white" />
-                  <circle class="blob" cx="50%" cy="60%" r="80" fill="white" stroke="white" />
-                  <circle class="blob" cx="70%" cy="90%" r="10" fill="white" stroke="white" />
-                  <circle class="blob" cx="90%" cy="60%" r="90" fill="white" stroke="white" />
-                  <circle class="blob" cx="30%" cy="90%" r="80" fill="white" stroke="white" />
-                  <circle class="blob" cx="10%" cy="10%" r="80" fill="white" stroke="white" />
-                  <circle class="blob" cx="50%" cy="10%" r="20" fill="white" stroke="white" />
-                  <circle class="blob" cx="17%" cy="15%" r="70" fill="white" stroke="white" />
-                  <circle class="blob" cx="40%" cy="20%" r="120" fill="white" stroke="white" />
-                  <circle class="blob" cx="30%" cy="25%" r="30" fill="white" stroke="white" />
-                  <circle class="blob" cx="80%" cy="60%" r="80" fill="white" stroke="white" />
-                  <circle class="blob" cx="17%" cy="10%" r="100" fill="white" stroke="white" />
-                  <circle class="blob" cx="40%" cy="60%" r="90" fill="white" stroke="white" />
-                  <circle class="blob" cx="10%" cy="50%" r="80" fill="white" stroke="white" />
-                </g>
-              </mask>
-              <filter id="gooey" height="130%">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
-                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-              </filter>
-            </defs>
-          </svg>
         </nav>
       </div>
       <!-- [e] : PC nav -->
@@ -429,24 +429,24 @@
           </div>
           <div class="postbody">
             <div class="video">
-                <iframe title="‘누구나 즐기는 스포츠 경기도’ 구현 총력" src="https://player.vimeo.com/video/1022001153" width="960px" height="540px" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+              <iframe title="‘누구나 즐기는 스포츠 경기도’ 구현 총력" src="https://player.vimeo.com/video/1022001153" width="960px" height="540px" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
             </div>
             <br />
             <br />
-            [앵커] 스포츠는 직접 하는 사람은 물론 그걸 보는 사람까지 같은 감정을 느끼게 하는 매력을 지니고 있죠.<br>
-            민선 8기 경기도는 도민들의 건강한 삶을 위해 다양한 체육진흥정책을 추진하고 있습니다.<br>
+            [앵커] 스포츠는 직접 하는 사람은 물론 그걸 보는 사람까지 같은 감정을 느끼게 하는 매력을 지니고 있죠.<br />
+            민선 8기 경기도는 도민들의 건강한 삶을 위해 다양한 체육진흥정책을 추진하고 있습니다.<br />
             어떤 정책들이 있는지, 최창순 기자가 정리해봤습니다.
             <br />
             <br />
-            [기자] 검도 심판으로 활동하고 있는 홍성수 씨<br>
-            체육인 자격으로 연간 150만 원의 기회소득을 받게 됐습니다.<br>
-            심판을 위한 지원금은 전무한 상황에서 기회소득은 더 의미가 있습니다.<br>
-            지급받은 기회소득은 검도를 배우려는 후배들을 위한 체육관 시설 개선에 사용했습니다.<br>
-            [홍성수 / ‘체육인 기회소득’ 대상자]<br>
-            “생활체육 하시는 분들이 조금 더 좋은 환경에서 운동할 수 있는 기회가 되지 않았을까 생각을 많이 하고요.”<br>
-            전문적으로 체육선수만 하는 이들의 월평균 소득이 최저임금에도 미치지 못하는 상황에서 경기도가 전국 최초로 체육인 기회소득을 만들었습니다.<br>
-            체육활동을 이어갈 수 있는 기회를 주기 위한 기회소득은 도내 19세 이상 중위소득 120% 이하의 현역선수와 지도자, 심판, 선수 관리자가 대상입니다.<br>
-            현재 화성과 파주, 광주 등 13개 시군에서 신청을 받고 있으며 광명시의 경우 1차 지급을 마쳤습니다.<br>
+            [기자] 검도 심판으로 활동하고 있는 홍성수 씨<br />
+            체육인 자격으로 연간 150만 원의 기회소득을 받게 됐습니다.<br />
+            심판을 위한 지원금은 전무한 상황에서 기회소득은 더 의미가 있습니다.<br />
+            지급받은 기회소득은 검도를 배우려는 후배들을 위한 체육관 시설 개선에 사용했습니다.<br />
+            [홍성수 / ‘체육인 기회소득’ 대상자]<br />
+            “생활체육 하시는 분들이 조금 더 좋은 환경에서 운동할 수 있는 기회가 되지 않았을까 생각을 많이 하고요.”<br />
+            전문적으로 체육선수만 하는 이들의 월평균 소득이 최저임금에도 미치지 못하는 상황에서 경기도가 전국 최초로 체육인 기회소득을 만들었습니다.<br />
+            체육활동을 이어갈 수 있는 기회를 주기 위한 기회소득은 도내 19세 이상 중위소득 120% 이하의 현역선수와 지도자, 심판, 선수 관리자가 대상입니다.<br />
+            현재 화성과 파주, 광주 등 13개 시군에서 신청을 받고 있으며 광명시의 경우 1차 지급을 마쳤습니다.<br />
             경기지역에서 열리는 프로스포츠 경기를 1천 원에 볼 수 있는 정책도 있습니다.
             <br />
             <br />

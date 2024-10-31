@@ -1,19 +1,20 @@
 @media only screen and (max-width: 780px) {
   /* header */
-  .headerinnerwrap nav.search {
+  /* [s] : 2024-10-31 검색창 수정 */
+  nav.search {
     padding: 40px 20px;
   }
-  .headerinnerwrap nav.search .input_area {
+  nav.search .input_area {
     width: 100%;
   }
-  .headerinnerwrap nav.search .input_area input {
+  nav.search .input_area input {
     width: calc(100% - 54px);
   }
-  .headerinnerwrap nav.search .rm_search {
+  nav.search .rm_search {
     width: 100%;
     flex-wrap: wrap;
   }
-
+  /* [e] : 2024-10-31 검색창 수정 */
   /* main */
   .main_wrap .con1 {
     padding-top: 0;
@@ -386,6 +387,11 @@
   .news_list .list .date {
     margin-top: 25px;
   }
+  /* [s] : 2024-10-27 이미지 수정 */
+  .news_list .list li .img {
+    padding-bottom: 30%;
+  }
+  /* [e] : 2024-10-27 이미지 수정 */
   .sub_tab {
     margin-right: -20px;
     margin-left: -20px;

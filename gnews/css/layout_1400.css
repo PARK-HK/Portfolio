@@ -560,19 +560,21 @@
     height: 54px;
     background: url(./../img/common/ico_m_search.png) center no-repeat;
   }
-  .headerinnerwrap nav.search {
+  /* [s] : 2024-10-31 검색창 수정 */
+  nav.search {
     top: 56px;
   }
-  .headerinnerwrap nav.search .input_area input {
+  nav.search .input_area input {
     height: 46px;
   }
-  .headerinnerwrap nav.search .input_area button {
+  nav.search .input_area button {
     width: 46px;
     height: 46px;
   }
-  .headerinnerwrap nav.search .rm_search a {
+  nav.search .rm_search a {
     font-size: 12px;
   }
+  /* [e] : 2024-10-31 검색창 수정 */
   .headerinnerwrap .header_inner .btn_search.active {
     background-size: cover;
     background: #0940a1 url(./../img/common/ico_x.png) center no-repeat;

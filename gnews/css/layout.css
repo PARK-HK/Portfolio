@@ -12,6 +12,9 @@ header {
   z-index: 10;
   min-width: 1440px;
   border-bottom: 1px solid #dbdbdb !important;
+  /* [s] : 2024-10-31 배경색 추가 */
+  background: #fff;
+  z-index: 4;
 }
 header .menu-top {
   border-bottom: 1px solid #dbdbdb;
@@ -215,35 +218,37 @@ header .menu-top .sub_menu dl dd a {
   top: 50%;
   margin-top: -1px;
 }
-.headerinnerwrap nav.search {
+/* [s] : 2024-10-31 검색창 수정 */
+nav.search {
   position: absolute;
-  top: 81px;
+  top: 137px;
   left: 0;
   right: 0;
   padding: 55px 0;
   background: #fff;
   display: none;
+  z-index: 4;
 }
-.headerinnerwrap nav.search.active {
+nav.search.active {
   display: block;
 }
-.headerinnerwrap nav.search:before {
+nav.search:before {
   content: "";
   background: rgba(20, 20, 20, 0.3);
   position: fixed;
-  top: 137px;
+  top: 0px;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: -1;
 }
-.headerinnerwrap nav.search .input_area {
+nav.search .input_area {
   width: 690px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
 }
-.headerinnerwrap nav.search .input_area input {
+nav.search .input_area input {
   border: 1px #525252 solid;
   border-radius: 10px;
   width: 620px;
@@ -252,21 +257,21 @@ header .menu-top .sub_menu dl dd a {
   padding: 0 20px;
   box-sizing: border-box;
 }
-.headerinnerwrap nav.search .input_area button {
+nav.search .input_area button {
   background: linear-gradient(134deg, #0940a1 0%, #0aa4b5 100%);
   width: 60px;
   height: 60px;
   border-radius: 10px;
   margin-left: 5px;
 }
-.headerinnerwrap nav.search .rm_search {
+nav.search .rm_search {
   display: flex;
   column-gap: 20px;
   justify-content: center;
   margin-top: 15px;
   width: 620px;
 }
-.headerinnerwrap nav.search .rm_search a {
+nav.search .rm_search a {
   font-size: 16px;
   font-weight: 400;
   color: #525252;
@@ -279,7 +284,9 @@ header .menu-top .sub_menu dl dd a {
   right: 0;
   bottom: 0;
   height: 100%;
+  background: #fff;
 }
+/* [e] : 2024-10-31 검색창 수정 */
 .blob {
   position: absolute;
 }
@@ -1758,15 +1765,24 @@ header .m_gnb .hide dl:first-child a:before {
 .news_list .list li {
   width: calc((100% - 60px) / 3);
 }
+/* [s] : 2024-10-27 이미지 수정 */
 .news_list .list li .img {
   border-radius: 10px;
   overflow: hidden;
+  position: relative;
+  padding-bottom: 65%;
 }
 .news_list .list li img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
+/* [e] : 2024-10-27 이미지 수정 */
 .news_list .list .tit {
   font-size: 20px;
   font-weight: 600;
@@ -2314,17 +2330,25 @@ body.fs4 .postbody {
 .competition .list li {
   width: calc((100% - 90px) / 4);
 }
+/* [s] : 2024-10-27 이미지 수정 */
 .competition .list .img {
   border: 1px #eee solid;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
+  padding-bottom: 130%;
 }
 .competition .list .img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
+/* [e] : 2024-10-27 이미지 수정 */
 .competition .list .tit {
   font-size: 18px;
   font-weight: 700;
