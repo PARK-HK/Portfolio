@@ -239,6 +239,7 @@ body{font-family:"Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;line-h
   }
   .con4 ul li{
     width: calc((100% - 30px) / 3);
+    position: relative;
   }
   .con4 ul li .img{
     width: 100%;
@@ -286,6 +287,9 @@ body{font-family:"Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;line-h
     padding: 4px 5px 0px 5px;
     margin-left: 7px;
     margin-top: -5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
   .con4 ul li .link{
     display: flex; 

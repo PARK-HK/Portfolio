@@ -647,14 +647,26 @@ header .m_gnb .hide dl:first-child a:before {
   background: #0aa4b5;
   color: #fff;
 }
+/* [s]: 2024-11-07 메인배너 수정 */
 .main_wrap .con1 .left .top_slide .img {
   position: relative;
+}
+.main_wrap .con1 .left .top_slide .img a {
+  display: block;
+  position: relative;
+  padding-bottom: 55%;
 }
 .main_wrap .con1 .left .top_slide .img img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
+/* [e]: 2024-11-07 메인배너 수정 */
 .main_wrap .con1 .left .top_slide .img:before {
   content: "";
   position: absolute;
@@ -743,6 +755,7 @@ header .m_gnb .hide dl:first-child a:before {
 }
 .main_wrap .today .today_list.pc_block p {
   position: absolute;
+  z-index: 2;
   color: #fff;
   left: 25px;
   right: 25px;
@@ -753,9 +766,12 @@ header .m_gnb .hide dl:first-child a:before {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
+/* [s]: 2024-11-07 메인배너 수정 */
 .main_wrap .today .today_list.pc_block .img {
   position: relative;
+  padding-bottom: 64%;
 }
+/* [e]: 2024-11-07 메인배너 수정 */
 .main_wrap .today .today_list.pc_block .img:before {
   content: "";
   position: absolute;
@@ -764,6 +780,7 @@ header .m_gnb .hide dl:first-child a:before {
   right: 0;
   bottom: 0;
   background: rgba(20, 20, 20, 0.3);
+  z-index: 1;
 }
 .main_wrap .today .today_list.pc_block ul li.big {
   height: 335px;
@@ -815,12 +832,19 @@ header .m_gnb .hide dl:first-child a:before {
 .main_wrap .today .today_list.pc_block ul li.big .img:before {
   display: none;
 }
+/* [s]: 2024-11-07 메인배너 수정 */
 .main_wrap .today .today_list.pc_block img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: right;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
+/* [e]: 2024-11-07 메인배너 수정 */
 .main_wrap .today .today_list.mo_block {
   display: none;
 }
@@ -1217,10 +1241,11 @@ header .m_gnb .hide dl:first-child a:before {
 .main_wrap .con3 .middle .con:first-child {
   display: block;
 }
+/* [s] : 2024-11-07 추가 및 수정 */
 .main_wrap .con3 .middle .con ul {
   display: flex;
   column-gap: 30px;
-  row-gap: 15px;
+  row-gap: 10px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -1231,10 +1256,28 @@ header .m_gnb .hide dl:first-child a:before {
 .main_wrap .con3 .middle .con ul li {
   flex: 1;
 }
+.main_wrap .con3 .middle .con ul .img {
+  position: relative;
+  padding-bottom: 121%;
+}
+.main_wrap .con3 .middle .con ul.four .img {
+  padding-bottom: 50%;
+}
+.main_wrap .con3 .middle .con ul.four .tit {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: initial;
+}
 .main_wrap .con3 .middle .con ul img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .main_wrap .con3 .middle .con .tit {
   font-size: 18px;
@@ -1246,6 +1289,7 @@ header .m_gnb .hide dl:first-child a:before {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   margin-top: 15px;
+  min-height: 50px;
 }
 .main_wrap .con3 .middle .con p {
   font-size: 14px;
@@ -1256,9 +1300,32 @@ header .m_gnb .hide dl:first-child a:before {
 .main_wrap .con3 .middle .con p button {
   background: none;
 }
+
+.main_wrap .con3 .middle .con p button img {
+  position: initial;
+}
 .main_wrap .con3 .img {
   position: relative;
+  padding-bottom: 100%;
 }
+.main_wrap .con3 .img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.main_wrap .con3 .right .img {
+  position: relative;
+  padding-bottom: 0%;
+  height: calc(100% - 64px);
+  border-radius: 20px;
+  overflow: hidden;
+}
+/* [e] : 2024-11-07 추가 및 수정 */
 .main_wrap .con3 .img p {
   font-size: 18px;
   line-height: 28px;
@@ -2456,11 +2523,27 @@ body.fs4 .postbody {
   display: flex;
   column-gap: 30px;
 }
+/* [s] : 2024-11-07 수정 */
+.news_detail .popular_news ul li {
+  width: calc((100% - 90px) / 4);
+}
+/* [e] : 2024-11-07 수정 */
+/* [s] : 2024-11-07 추가 및 수정 */
+.news_detail .popular_news ul .img {
+  position: relative;
+  padding-bottom: 60%;
+}
 .news_detail .popular_news img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
+/* [e] : 2024-11-07 추가 및 수정 */
 .news_detail .popular_news .tit {
   font-size: 18px;
   line-height: 24px;
